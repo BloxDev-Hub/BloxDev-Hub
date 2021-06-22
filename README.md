@@ -1,13 +1,7 @@
 # Helpers Documents
 
-Welcome to Helpers Documents, if you can edit this repository, it means that you are one of the selected trusted people that will help the department on this documents.
-
-Please make sure to follow the correct format when updating the documents.
+Welcome to Helpers Documents, a place where you will learn multiple things about developing from our incredible helpers, our main goal is to help people learn or expand their knownledge in every category of developing.
 
 ## It's simple
 
 Here, in the documents, we are going to post articles about developing in general, scripting tutorials? check, good modules? check, basically you can make articles about anything that you think that will help users to expand their knowledge.
-
-## Main goal
-
-Our main goal right now its to create articles about learning how to script.

@@ -1,0 +1,30 @@
+site_name: Helpers Documents
+site_url: https://rodevs-helpers.github.io/Helpers-Documents
+
+extra_css:
+  - stylesheets/extra.css
+  - https://unpkg.com/mermaid@7.1.2/dist/mermaid.css
+extra_javascript:
+  - https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js
+
+theme:
+    language: en
+    name: material
+    palette:
+        scheme: dark
+    features:
+      - navigation.instant
+      - navigation.tabs
+      - navigation.top
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid-experimental
+          format: !!python/name:pymdownx.superfences.fence_div_format
+  - admonition
+  

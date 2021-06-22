@@ -31,3 +31,5 @@ markdown_extensions:
 nav:
    - Home:
         index.md
+   - Lua Learning:
+      - lua_learning/index.md

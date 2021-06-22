@@ -1,6 +1,6 @@
 # Helpers Documents
 
-Welcome to Helpers Documents, if you can see this repository, it means that you are one of the selected trusted people that will help the department on this documents.
+Welcome to Helpers Documents, if you can edit this repository, it means that you are one of the selected trusted people that will help the department on this documents.
 
 Please make sure to follow the correct format when updating the documents.
 

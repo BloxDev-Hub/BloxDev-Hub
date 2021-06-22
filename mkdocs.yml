@@ -29,5 +29,5 @@ markdown_extensions:
   - admonition
  
  nav:
-  - Home:
+    Home:
         index.md

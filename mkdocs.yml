@@ -1,6 +1,10 @@
 site_name: Helpers Documents
 site_url: https://rodevs-helpers.github.io/Helpers-Documents
 
+repo_name: Helpers-Documents
+repo_url: https://github.com/Rodevs-Helpers/Helpers-Documents
+edit_url: ""
+
 extra_css:
   - stylesheets/extra.css
   - https://unpkg.com/mermaid@7.1.2/dist/mermaid.css

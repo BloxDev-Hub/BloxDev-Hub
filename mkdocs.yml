@@ -15,15 +15,7 @@ theme:
     language: en
     name: material
     palette:
-        - scheme: dark
-          toggle:
-            icon: material/toggle-switch
-            name: Switch to light mode
-        - scheme: light
-          toggle:
-            icon: material/toggle-switch-off-outline
-            name: Switch to dark mode
-
+        scheme: dark
     features:
       - navigation.instant
       - navigation.tabs

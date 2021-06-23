@@ -18,11 +18,11 @@ theme:
         - scheme: dark
           toggle:
             icon: material/toggle-switch
-            name: Light mode
+            name: Switch to light mode
         - scheme: light
           toggle:
             icon: material/toggle-switch-off-outline
-            name: Dark mode
+            name: Switch to dark mode
 
     features:
       - navigation.instant

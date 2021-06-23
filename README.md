@@ -6,4 +6,4 @@ Any suggestions/ideas feel free to share them with us.
 
 ## It's simple
 
-Here, in the documents, we are going to post articles about developing in general, scripting tutorials? check, good modules? check, basically you can make articles about anything that you think that will help users to expand their knowledge.
+Here, in the documents, we are going to post articles about developing in general, scripting tutorials? check, good modules? check, basically you can make articles about anything that you think that will help users to expand their knowledge. I hope we can help you.

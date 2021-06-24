@@ -57,6 +57,12 @@ You can create lists very easyly.
 	* remi the remi and remington
 	* remi♪
 	* Discord! (aka remi)
+	* Best misc manager (aka willie)
+	* Best department head (aka willie)
+	* Big Willie
+	* The Willster
+	* The guy in >tag joe
+	* jim
 * Job done.
 
 And you need top put a text in between so the idiotic thing can know where it ends.

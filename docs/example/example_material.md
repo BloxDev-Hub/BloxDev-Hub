@@ -86,11 +86,15 @@ graph LR
   B ---->|No| E[Yay!];
 </div>
 
+[Documentation.](https://mermaid-js.github.io/mermaid/#/)
+
 ## Mathjax
 
 $$
 \operatorname{ker} f=\{g\in G:f(g)=e_{H}\}{\mbox{.}}
 $$
+
+[Documentation.](https://facelessuser.github.io/pymdown-extensions/extensions/arithmatex/)
 
 ## Finally
 

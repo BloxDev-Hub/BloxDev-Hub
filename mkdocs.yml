@@ -51,3 +51,4 @@ nav:
    - Example Page:
       - example/example_index.md
       - example/example_material.md
+      - example/setup.md

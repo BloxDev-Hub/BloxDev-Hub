@@ -6,6 +6,9 @@ extra_css:
   - https://unpkg.com/mermaid@7.1.2/dist/mermaid.css
 extra_javascript:
   - https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js
+  - javascripts/config.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 theme:
     language: en
@@ -26,8 +29,13 @@ theme:
 
 markdown_extensions:
   - attr_list
+  - abbr
+  - def_list
+  - pymdownx.arithmatex:
+      generic: true
   - pymdownx.details
   - pymdownx.highlight
+  - pymdownx.tabbed
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
@@ -40,3 +48,6 @@ nav:
         index.md
    - Lua Learning:
       - lua_learning/index.md
+   - Example Page:
+      - example/example_index.md
+      - example/example_material.md

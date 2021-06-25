@@ -8,7 +8,7 @@ To start creating your own articles you need to do the next steps:
 	This will not only save you time, but also keep your work organized, or do you prefer making everything manually in the command prompt?
 	
 * Clone the repository in your PC via GitHub Desktop <br>
-	![cloning](https://github.com/Rodevs-Helpers/Helpers-Documents/blob/editing/images/CloningRepo.jpg?raw=true)
+	![cloning](https://github.com/Rodevs-Helpers/Helpers-Documents/blob/editing/images/CloneRepo.jpg?raw=true)
 	
 * To start editing select the editing branch
 
@@ -24,4 +24,6 @@ To start creating your own articles you need to do the next steps:
 	First of all in GitHub desktop, commit your changes with a descriptive name and if its needed, description, after that
 	push to the branch. <br>
 	
-	Now open a pull request and complete the fields, and wait until we approve the changes.
+	Now open a pull request and complete the fields, and wait until we approve the changes. <br>
+	
+	If you installed GitHub Desktop you can do all of this with just a few clicks.

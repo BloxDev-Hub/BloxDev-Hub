@@ -31,17 +31,17 @@ markdown_extensions:
   - attr_list
   - abbr
   - def_list
-  - pymdownx.arithmatex:
-      generic: true
+  - admonition
   - pymdownx.details
   - pymdownx.highlight
   - pymdownx.tabbed
+  - pymdownx.arithmatex:
+      generic: true
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
           class: mermaid-experimental
           format: !!python/name:pymdownx.superfences.fence_div_format
-  - admonition
 
 nav:
    - Home:

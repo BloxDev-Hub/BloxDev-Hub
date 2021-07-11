@@ -1,6 +1,10 @@
-# Material for MKDocs Additions
+---
+title: Material for MKDocs additions
+---
 
-Material for MKDocs adds some funny stuff too.
+# Additions
+
+Those are additions provided by Material for MKDocs that will help you make your article look good and fun to read! For more information go to the official site (scroll down)
 
 ## Codeblocks
 

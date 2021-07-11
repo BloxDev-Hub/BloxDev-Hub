@@ -1,3 +1,9 @@
+---
+title: Start working on the project
+---
+
+# Setup
+
 To start creating your own articles you need to do the next steps:
 
 * Install Material for MKDocs.
@@ -24,6 +30,12 @@ To start creating your own articles you need to do the next steps:
 	First of all in GitHub desktop, commit your changes with a descriptive name and if its needed, description, after that
 	push to the branch. <br>
 	
-	Now open a pull request and complete the fields, and wait until we approve the changes. <br>
+	Now open a pull request and merge to the main branch. <br>
 	
 	If you installed GitHub Desktop you can do all of this with just a few clicks.
+
+!!! info
+	You can also install Visual Studio Code and you can edit your text and access the terminal very easily and quick.
+
+!!! warning
+	To keep stuff organizated and safe, when working on the repository, please do all changes in the editing branch, please make sure you didn't broke the page serving the page on your device, and then merge the branches.

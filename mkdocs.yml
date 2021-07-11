@@ -23,15 +23,24 @@ theme:
             icon: material/toggle-switch-off-outline
             name: Switch to dark mode
     features:
+      - search
+      - search.suggest
       - navigation.instant
       - navigation.tabs
       - navigation.top
+
+extra:
+  social:
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/rodevs
+      name: Join the discord server!
 
 markdown_extensions:
   - attr_list
   - abbr
   - def_list
   - admonition
+  - meta
   - pymdownx.details
   - pymdownx.highlight
   - pymdownx.tabbed
@@ -44,11 +53,15 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_div_format
 
 nav:
-   - Home:
-        index.md
-   - Lua Learning:
-      - lua_learning/index.md
-   - Example Page:
-      - example/example_index.md
-      - example/example_material.md
-      - example/setup.md
+  - Home:
+      index.md
+  - Lua Learning:
+     - lua_learning/index.md
+  - Articles:
+     - articles/index.md
+     - Scripting:
+        - articles/scripting/handling_events.md
+  - Example Page:
+     - example_page/example.md
+     - example_page/mkdocs_additions.md
+     - example_page/setup.md

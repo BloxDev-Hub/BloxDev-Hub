@@ -52,16 +52,15 @@ markdown_extensions:
           class: mermaid-experimental
           format: !!python/name:pymdownx.superfences.fence_div_format
 
+plugins:
+  - search
+  - awesome-pages
+
 nav:
-  - Home:
-      index.md
-  - Lua Learning:
-     - lua_learning/index.md
-  - Articles:
-     - articles/index.md
-     - Scripting:
-        - articles/scripting/handling_events.md
+  - Home: index.md
+  - ... | Lua Learning/*.md
+  - ...
   - Example Page:
-     - example_page/example.md
-     - example_page/mkdocs_additions.md
-     - example_page/setup.md
+     - Example Page/example.md
+     - Example Page/mkdocs_additions.md
+     - Example Page/setup.md

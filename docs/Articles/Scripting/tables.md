@@ -331,7 +331,7 @@ You can use the pairs() function to iterate over dictionaries, though it won't l
 	```
 
 ## Thanks for reading!!!!
-Big thanks for reading this article, there are some things that I glossed over for the sake of making this article long and boring.
+Big thanks for reading this article, there are some things that I glossed over for the sake of making this article not long and boring.
 
 Here's some links to learn more about tables.
 

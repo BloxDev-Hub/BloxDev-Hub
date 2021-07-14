@@ -93,6 +93,7 @@ For knowing what does an event returns we recommend you to check the Roblox's AP
 ## Events are not if statements!
 
 The most common error that begginers do when using events, is using them as if they were if statements nesting them like this:
+
 ```lua
 event1:Connect(function()
     event2:Connect(function()
@@ -101,14 +102,20 @@ event1:Connect(function()
 end)
 ```
 
-This is completely wrong, and it's considered a misuse of events! Why? Well its simple, the code above is expected to run in the next way by the one who wrote it:
+Or even using them like this:
 
-<div class="mermaid">
-graph LR
-    a[First event fires] --- b[Wait for second event to fire / Did second event fired?]
-</div>
+```lua
+while true do
+    wait()
+    event:Connect(function()
+        ...
+    end)
+end
+```
 
-And it doesn't work like that, as we saw, when calling the Connect method the event will create a connection and return it to us, this means that for every time the first event fires, a new connection for the second event will get create, this will lead to the code running many times, so if for example the first event ran five times, when the second event fires, the function will get called ten times! And not also that, if we are using anonimous functions (like in our case) we are going to be creating a new function everytime and also as we have no reference for the connection of the second event we have no way of this to stop!
+This is completely wrong, and it's considered a misuse of events! Why? Well its simple, the ones who wrote the code above may be misunderstanding what events are used for and they are using them to check if something happened and, as we said, their purpose is not that.
+
+For the first problem we can say, as we saw, when calling the Connect method the event will create a connection and return it to us, this means that for every time the first event fires, a new connection for the second event will get create, this will lead to the code running many times, so if for example the first event ran five times, when the second event fires, the function will get called ten times! And not also that, if we are using anonimous functions (like in our case) we are going to be creating a new function everytime and also as we have no reference for the connection of the second event we have no way of this to stop!
 
 A simple solution for this, would be using actual if statements and not nesting the events, for example:
 
@@ -127,7 +134,7 @@ This will depend for every case, but in general this is what most of the people 
 
 ## Desconnecting our connections
 
-As we said earlier, Connect method returns a RBXScriptConnection or Connection, this datatype or object contains one but powerful method, which is **Disconnect** and as you guessed, when it gets called it disconnects the listener function from the event, the exact opposite thing that Connect does. You may be asking "Why would be this useful?" well, let me explain you creating another solution for the problem above.
+As we said earlier, Connect method returns a RBXScriptConnection or Connection, this datatype or object contains one but powerful method, which is **Disconnect** and as you guessed, when it gets called it disconnects the listener function from the event, the exact opposite thing that Connect does. You may be asking "Why would be this useful?" well, let me explain you creating another solution for the first problem above.
 ```lua
 local connection -- Initializes the variable on nil
 
@@ -142,6 +149,10 @@ end)
 ```
 
 This may not be the best solution but for the sake of explaining to you what disconnect does, I think it's pretty good, disconnecting a connection when the event it's not going to be used again or similars it's a good practice, since it can avoid us to memory leaks and other weird stuff that could happen in the background; this of course it's not neccesary all the times because for example, when an instance gets destroyed, all the connections do too.
+
+## Memory leaks
+
+As we mentioned above, not disconnecting events in some cases can lead to more memory usage, or memory leaks, lets take as example the second problem mentioned above; every 1/30 seconds we are creating a new connection for the event, this is not good because we are using more memory for storing those connections and all of those stuff, now if you run some code like that, eventually you will see that, when time passes your game can increase its activity, or even experience lag spikes or poor performance, so if your game it's experiencing some of those problems you may want to look over your events and handle them better
 
 ## Thanks for reading
 

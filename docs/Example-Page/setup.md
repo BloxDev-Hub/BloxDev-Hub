@@ -8,8 +8,9 @@ To start creating your own articles you need to do the next steps:
 
 * Install Material for MKDocs.
 	1. Install pip, you will need to install python in order to, but its not a big deal.
-	2. Now that you have been installed pip, open your cmd and type the next command.<br>
-		``pip install mkdocs-material``
+	2. Now that you have been installed pip, open your cmd and type the next commands.<br>
+		``pip install mkdocs-material``<br>
+		``pip install mkdocs-awesome-pages-plugin``
 * Download GitHub Desktop. <br>
 	This will not only save you time, but also keep your work organized, or do you prefer making everything manually in the command prompt?
 	
@@ -24,7 +25,7 @@ To start creating your own articles you need to do the next steps:
 	Now get the path where you cloned your repository and copy it, type the next command: <br>
 	``mkdocs serve``<br>
 	
-	Now go to your browser and type in url ``localhost:8000``.
+	Now go to your browser and type in url ``localhost:8000`` and start making articles or editing them, to make any article, go to the directory ``docs/Articles`` and create your article inside any category folder, if there aren't any create one, example ``Building``, ``Animating``. For making articles for the Lua Learning category go to ``docs/Lua Learning``.
 	
 * Publish changes to repository <br>
 	First of all in GitHub desktop, commit your changes with a descriptive name and if its needed, description, after that

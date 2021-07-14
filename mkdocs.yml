@@ -58,9 +58,9 @@ plugins:
 
 nav:
   - Home: index.md
-  - ... | Lua Learning/*.md
+  - ... | Lua-Learning/*.md
   - ...
   - Example Page:
-     - Example Page/example.md
-     - Example Page/mkdocs_additions.md
-     - Example Page/setup.md
+     - Example-Page/example.md
+     - Example-Page/mkdocs_additions.md
+     - Example-Page/setup.md

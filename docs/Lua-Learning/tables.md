@@ -6,13 +6,13 @@ title: Understanding Tables
  [2]: https://developer.roblox.com/en-us/api-reference/lua-docs/table
  [3]: https://developer.roblox.com/en-us/articles/String
 
-# Tables on Roblox Scripting
+# Tables in lua
 
-Tables are one of the most commonly used data type in Roblox Scripting and in programming in general. Though utilising tables are quite easy, understanding them can be a little tricky, especially for beginners. So in this article I will attemp to explain what [tables][1] are.
+Tables are one of the most commonly used data type in Roblox Scripting and in programming in general. Though utilising tables are quite easy, understanding them can be a little tricky, especially for beginners. So in this article I will attempt to explain what [tables][1] are.
 
 ## What's a table?
 
-[Tables][1] are a data type that can hold multiple values ([Numbers](https://developer.roblox.com/en-us/articles/Numbers), [booleans](https://developer.roblox.com/en-us/articles/Numbers), [strings][3], and more). Creating a table is actually pretty easy, there are 2 ways to create a table, the most common way to create one is by using curly braces ``{}``
+[Tables][1] are a data type that can hold multiple values ([Numbers](https://developer.roblox.com/en-us/articles/Numbers), [booleans](https://developer.roblox.com/en-us/articles/Numbers), [strings][3], and more). Creating a table is actually pretty easy, there are ways to create a table, the most common way to create one is by using curly braces ``{}``
 
 === "Code"
 	```lua
@@ -51,9 +51,7 @@ Creating arrays is very simple, just store the values and seperate each one with
 	}
 	```
 
-#### Reading, writing, inserting, and removing
-
-##### Reading
+#### Reading
 
 Let's say you want to see who the 2nd dude is in the coolDudesList. All you need to do is index the array with a number. Since we want to see the 2nd dude, we'll index the coolDudesList array with the number 2.
 
@@ -69,7 +67,7 @@ Let's say you want to see who the 2nd dude is in the coolDudesList. All you need
 
 Now we know that the 2nd dude in the list is willie.
 
-##### Writing
+#### Writing
 
 Turns out willie is a backstabbing snake and we want to kick him out of the coolDudesList and replace him with remi, we can do that by setting a new value to the 2nd index (Since willie is 2nd in the coolDudesList) like this.
 
@@ -85,7 +83,7 @@ Turns out willie is a backstabbing snake and we want to kick him out of the cool
 	```
 Now we have replaced willie with remi.
 
-##### Inserting
+#### Inserting
 
 ana wants to join coolDudesList. We can insert her name to the coolDudesList by doing this.
 
@@ -122,7 +120,7 @@ Now we have added a new member to the coolDudesList.
 		4 elements
 		```
 
-##### Removing
+#### Removing
 
 After being in the list for some time. joe decided to leave the coolDudesList to pursue other endeavors. We can remove him from the list by doing this.
 
@@ -186,8 +184,6 @@ local dict = {
 }
 ```
 
-#### Reading, writing, and removing
-
 Let's say we have a dictionary of people's statuses
 ```lua
 local statuses = {
@@ -198,7 +194,7 @@ local statuses = {
 }
 ```
 
-##### Reading
+#### Reading
 
 Let's say we want to check remi's status and see if he's still cool, we can easily do that by doing this
 === "Code"
@@ -226,7 +222,7 @@ Let's say we want to check remi's status and see if he's still cool, we can easi
 	local remiStatus2 = statuses.remi
 	```
 
-##### Writing
+#### Writing
 
 After checking all the statuses, we concluded that jim isn't really that cool anymore. To change his status, we can just do this.
 === "Code"
@@ -246,7 +242,7 @@ After checking all the statuses, we concluded that jim isn't really that cool an
 	Uncool
 	```
 
-##### Removing
+#### Removing
 
 After finding out that jim isn't really that cool anymore. We decided to kick him out of the group.
 === "Code"

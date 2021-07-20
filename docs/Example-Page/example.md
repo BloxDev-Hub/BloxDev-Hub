@@ -34,6 +34,7 @@ I think you got it, right?!?!?!?
 
 ---
 ## Modifying text
+---
 
 You can add the regular decorators to a text:
 
@@ -47,6 +48,7 @@ _This is **bold** and **italic**_
 
 ---
 ## Lists
+---
 
 You can create lists very easyly.
 
@@ -73,17 +75,19 @@ And you need top put a text in between so the idiotic thing can know where it en
 
 ---
 ## Images
+---
 
 You can also put images, look
 
-![Image_Placeholder_Text](https://github.com/Rodevs-Helpers/Helpers-Documents/blob/editing/images/Chloe.jpg?raw=true)
+![placeholder](https://github.com/Rodevs-Helpers/Helpers-Documents/blob/editing/images/Chloe.jpg?raw=true)
 
 I know its a little bit **big** but we can fix that using HTML tags
 
-<img src=https://github.com/Rodevs-Helpers/Helpers-Documents/blob/editing/images/Chloe.jpg?raw=true width="75" />
+<img src=https://github.com/Rodevs-Helpers/Helpers-Documents/blob/editing/images/Chloe.jpg?raw=true alt="placeholder" width="75" />
 
 ---
 ## Additionals
+---
 
 You can also add links like [this](https://www.youtube.com/channel/UCVBfcS4Bpznvr251ilsnemQ).
 

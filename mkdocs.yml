@@ -23,7 +23,6 @@ theme:
             icon: material/toggle-switch-off-outline
             name: Switch to dark mode
     features:
-      - search
       - search.suggest
       - navigation.instant
       - navigation.tabs

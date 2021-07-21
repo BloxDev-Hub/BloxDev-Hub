@@ -64,8 +64,8 @@ In this example, we passed "joe" when calling the function, and as you can see, 
 	=== "Code"
 		```lua
 		local function yes(yes1, yes2)
-		print(yes1)
-		print(yes2)
+			print(yes1)
+			print(yes2)
 		end
 
 		yes("hi")
@@ -103,9 +103,9 @@ One thing to note here, any code after ``return`` will **not** run. It will actu
 === "Code"
 	```lua
 	local function hi()
-	print("hi")
-	return "hi2"
-	print("hi3")
+		print("hi")
+		return "hi2"
+		print("hi3")
 	end
 
 	local isHi = hi()

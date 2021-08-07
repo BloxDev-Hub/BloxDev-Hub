@@ -2,9 +2,6 @@
 title: Functions
 ---
 
-# Functions in lua
-Functions are one of the fundamentals of scripting. It's one of the first things you will learn in scripting. In this article, I will explain what functions are, how to use them, and when to use them.
-
 ## What are functions?
 You can think of functions as sets of instructions that can be used multiple times. Functions can make your code look neat and readable.
 

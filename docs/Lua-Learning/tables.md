@@ -6,9 +6,6 @@ title: Understanding Tables
  [2]: https://developer.roblox.com/en-us/api-reference/lua-docs/table
  [3]: https://developer.roblox.com/en-us/articles/String
 
-# Tables in lua
-
-Tables are one of the most commonly used data type in Roblox Scripting and in programming in general. Though utilising tables are quite easy, understanding them can be a little tricky, especially for beginners. So in this article I will attempt to explain what [tables][1] are.
 
 ## What's a table?
 

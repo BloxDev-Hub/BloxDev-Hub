@@ -2,9 +2,6 @@
 title: Variables
 ---
 
-# Variables in lua
-Variables are one of the fundamentals of scripting. It's one of the first things you will learn in scripting. In this article I will explain what variables are and when to use them.
-
 ## Variables? What are those?
 You can think of variables as boxes that contains a value. Variables can store anything you want really, you can store numbers, strings, tables, etc.
 

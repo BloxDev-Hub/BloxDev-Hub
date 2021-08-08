@@ -142,7 +142,7 @@ for property, value in pairs(propertyDictionary) do
 end
 ```
 
-This looks much better now, doesn't it? Not only will your properties be set no matter how many of them you wish to change, you know exactly where to look if you want to change the value of a property! 
+Undoubtedly, this looks way cleaner than our initial approach. Not only that, because we stored our property values in an easy-to-access table, we know exactly where to look when we need to edit a property for our parts in the future. This saves on development time, and is less taxing to maintain.
 
 Things like this really add up when you have multiple parts to change the properties of:
 
@@ -164,9 +164,7 @@ for index, part in ipairs(parts) do
 end
 ```
 
-Undoubtedly, this looks way cleaner than our initial approach. Not only that, because we stored our property values in an easy-to-access table, we know exactly where to look when we need to edit a property for our parts in the future!
-
 **Do make sure to provide the correct property name for your keys however. Otherwise, your script may throw a nil error!**
 
 ## Closing
-Have a suggestion to improve any of the two articles? Ping me on Discord! @valkyria#0001
+Have a suggestion to improve the article? Ping me on Discord! @valkyria#0001

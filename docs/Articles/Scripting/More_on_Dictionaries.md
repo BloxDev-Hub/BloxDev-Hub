@@ -51,7 +51,7 @@ Hold onto this - while this alone may seem like an unnecessary feature, this art
 ## Explorer as a Dictionary
 If you're new to this concept, you might want to hold onto your chair tight and hope you don't get blown back far into your seat:
 
-> *The game is really just a massive dictionary.*
+> *The game world is really just a massive dictionary.*
 
 That's right, it actually is! Remember the demonstration we just did? Now compare it to this:
 
@@ -73,9 +73,9 @@ print(workspace["Baseplate"].Name)
 -- Baseplate
 ```
 
-This is what I meant! The game is really just a massive dictionary where the objects are the keys, and the instances are the values! 
+This is what I meant! The game is really just a massive dictionary where the objects are the keys, and the instances are the values.
 
-In summary, you can get an object with either of these two ways in consideration that the game is a dictionary!
+In summary, you can get an object with either of these two ways in consideration that the game is a dictionary:
 
 ```lua
 print(workspace.Baseplate.Name)
@@ -95,9 +95,9 @@ print(workspace["Baseplate"].Name)
 
 Now here's another shocker:
 
-> *An object is really just another massive dictionary.*
+> *An instance is also another dictionary.*
 
-Yes! Using the same few demonstrations above, we can call the property of an object like as if it was part of a dictionary:
+Yes! Using the same few demonstrations above, we can access the property of an instance like as if it was part of a dictionary:
 
 ```lua
 print(workspace.Baseplate.Name)
@@ -105,6 +105,8 @@ print(workspace.Baseplate["Name"])
 
 -- Both will return "Baseplate".
 ```
+
+The next section will detail how you can apply what you have just discovered into one of the most common constructs/instructions in scripting - setting properties of an instance.
 
 ## Setting properties with loops
 One of the biggest uses of such a feature is that you can set the properties of an object by using a loop. Let's take a look at the typical approach that you might instinctively use:
@@ -121,7 +123,9 @@ workspace.Baseplate.Position = position
 workspace.Baseplate.Size = size
 ```
 
-While this could work, it is not very scalable - not only do you have to store lots of variables, code like this can get very difficult to edit especially when you have lots of properties to change. Fret not, we can change all that using property dictionaries and a generic `for` loop.
+While this could work, it is not very scalable - not only do you have to store lots of variables, code like this can get very difficult to edit especially when you have lots of properties to change. It also becomes very repetitive when you have many properties to set for an instance.
+
+Fret not, we can change all that using dictionaries and a generic `for` loop.
 
 ```lua
 local propertyDictionary = 

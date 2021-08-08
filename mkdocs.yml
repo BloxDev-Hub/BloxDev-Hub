@@ -51,6 +51,8 @@ markdown_extensions:
         - name: mermaid
           class: mermaid-experimental
           format: !!python/name:pymdownx.superfences.fence_div_format
+  - pymdownx.inlinehilite
+  - pymdownx.keys
 
 plugins:
   - search

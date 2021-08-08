@@ -122,7 +122,7 @@ end
 -- Output:
 -- 1, 2, 3, 4, 5.
 
--- Notice the inequality sign (<) in the until statement, and that is different from the repeat loop.
+-- Notice the inequality sign (<) in the while statement, which is different from that in the repeat loop above.
 -- This can be interpreted as "check if i is above 5. If yes, repeat. Else, skip and do not loop anymore."
 -- This is also why the while loop doesn't print 6, while the repeat loop does.
 ```

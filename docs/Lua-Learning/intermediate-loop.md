@@ -3,10 +3,10 @@ title: Intermediates about Loops
 ---
 
 # Pre-requisites
-This guide assumes you have already read the guide for basics about loops. You are also expected to understand about tables and `if` statements - you may face difficulty in understanding this article otherwise.
+This guide assumes you have already read the guide for basics about loops. You are also expected to understand about tables and `if` statements - otherwise, you may face difficulty in understanding this article.
 
 # More about Loops
-In the basics about loops guide, we've talked about some of the loops including `for`, `while` and `repeat`. 
+In the basics about loops guide, we've talked about some of the loops including `for`, `while` and `repeat`.
 
 This guide will cover more on loop manipulation, and some of the other loop variants you can use in your projects.
 
@@ -73,7 +73,7 @@ You may have noticed two things from our examples above:
 * The first example prints values in a numeric fashion. The second example, meanwhile, have a messed up order.
 
 It may not be instinctive at first, but `ipairs` and `pairs` function differently.
-* `pairs` return key-value pairs (eg: key "One" - value "1"). Because keys can be unique, sorting can be too expensive. The results can appear to be garbled and unsorted due to this - this reflects the traits of dictionaries, where order does not matter. For this reason, `pairs` are suited for dictionaries.
+* `pairs` return key-value pairs (eg: key "One" - value "1"). Because keys do not need to be unique, sorting can get troublesome. The results can appear to be garbled and unsorted due to this - this reflects the traits of dictionaries, where order does not matter. For this reason, `pairs` are suited for dictionaries.
 
 * `ipairs` return index-value pairs (eg: index 1 - value "H"), starting from the lowest number index to the highest. The side effect to this trait too, is that the results are in a numeric order. Since this only reads numerical indices, and not keys unlike `pairs`, any non-numerical indices in an array gets ignored. These traits mean that `ipairs` are great for arrays.
 
@@ -177,7 +177,7 @@ end
 
 Notice how `3` is not printed out - when `i` matches `myFavoriteValue`, the `continue` statement is executed, causing the loop to skip the `print(i)` statement while still looping itself afterwards.
 
-Note that `continue` is Luau-exclusive (Roblox implemented this) - vanilla Lua does not have `continue` implemented.
+*Note that `continue` is Luau-exclusive (Roblox implemented this) - vanilla Lua does not have `continue` implemented.*
 
 ## Closing
-Have a suggestion to improve any of the two articles? Ping me on Discord! @valkyria#0001.
+Have a suggestion to improve any of the two articles? Ping me on Discord! @valkyria#0001

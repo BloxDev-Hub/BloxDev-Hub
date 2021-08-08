@@ -11,7 +11,7 @@ This is where loops come in. Loops allow you to repeat a set of instructions to 
 In Lua, there are multiple types of loops that you may use. They fill different niches, and you may have to use them for different occasions.
 ```lua
 while wait(1) do print("valk") end -- 'while' loop.
-for valk = 0, 20 do print(valk) end -- 'for' loop.
+for valk = 0, 20 do print("valk") end -- 'for' loop.
 repeat valk = valk + 1 until valk < 20 end -- 'repeat' loop.
 ```
 

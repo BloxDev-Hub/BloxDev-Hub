@@ -11,7 +11,7 @@ This is where loops come in. Loops allow you to repeat a set of instructions to 
 In Lua, there are multiple types of loops that you may use. They fill different niches, and you may have to use them for different occasions.
 ```lua
 while wait(1) do print("valk") end -- 'while' loop.
-for valk = 0, 20 do print(valk) end -- 'for' loop.
+for valk = 0, 20 do print("valk") end -- 'for' loop.
 repeat valk = valk + 1 until valk < 20 end -- 'repeat' loop.
 ```
 
@@ -122,7 +122,7 @@ end
 -- Output:
 -- 1, 2, 3, 4, 5.
 
--- Notice the inequality sign (<) in the until statement, and that is different from the repeat loop.
+-- Notice the inequality sign (<) in the while statement, which is different from that in the repeat loop above.
 -- This can be interpreted as "check if i is above 5. If yes, repeat. Else, skip and do not loop anymore."
 -- This is also why the while loop doesn't print 6, while the repeat loop does.
 ```

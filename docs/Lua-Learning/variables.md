@@ -3,7 +3,7 @@ title: Variables
 ---
 
 ## Variables? What are those?
-You can think of variables as boxes that contains a value. Variables can store anything you want really, you can store numbers, strings, tables, etc.
+You can think of variables as boxes that contain a value. Variables can store anything you want really, you can store numbers, strings, tables, etc.
 
 ## Naming variables
 In Lua, variable names can be any non-reserved string of letters, digits, and underscores, but they cannot start with a digit:
@@ -22,7 +22,7 @@ local 1stCoolGuy -- even worse!!! stop this!!
 	if, then, return, break, else, elseif
 	```
 	**CANNOT** be used for variable names
-Since lua is a case-sensitive language, that means ``HIIMJOE`` and ``hiimjoe`` are two completely different variables.
+Since Lua is a case-sensitive language, that means ``HIIMJOE`` and ``hiimjoe`` are two completely different variables.
 
 ## Assigning
 Assigning a value to a variable is quite simple, simply do this
@@ -62,8 +62,8 @@ You can even assign values to a bunch of variables in one line!!! (crazy ik)
 	```
 
 ## Local variables vs Global variables
-Variables exists in one of two scopes, **local** or **global**.  
-All the examples I've provided so far uses **local** variables, you can declare a **global** variable by removing the **local** keyword when declaring a **local** variable.  
+Variables exist in one of two scopes, **local** or **global**.
+All the examples I've provided so far use **local** variables, you can declare a **global** variable by removing the **local** keyword when declaring a **local** variable.
 So instead of this,
 ```lua
 local hi = 10
@@ -86,7 +86,7 @@ A **global** variable can be accessed anywhere in a script. While with **local**
 	end
 	print(hi) -- wtf is hi?!?!?!?!?!
 	```
-you can try running both of these seperately, and see what happens ;)
+you can try running both of these separately, and see what happens ;)
 
 ## Thanks for reading !!!!!
 Thanks for reading!!! I've been writing this damn article for too long, if there's something missing/wrong, contact me (willie) or one of the senor helpers and we'll fix it. Once again, thanks and peace out.

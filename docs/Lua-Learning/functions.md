@@ -8,7 +8,7 @@ You can think of functions as sets of instructions that can be used multiple tim
 ## Defining functions
 So here's how you define a function.
 ```lua
-local functionName()
+local function Name()
 	-- <body>
 end
 ```

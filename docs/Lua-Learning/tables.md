@@ -31,7 +31,7 @@ Arrays are basically lists. Let's say you need a list of players in the game, yo
 
 #### How do I create one?
 
-Creating arrays is very simple, just store the values and seperate each one with a comma ``,`` or a semicolon ``;``.
+Creating arrays is very simple, just store the values and separate each one with a comma ``,`` or a semicolon ``;``.
 
 === "Code"
 	```lua
@@ -142,7 +142,7 @@ After being in the list for some time. joe decided to leave the coolDudesList to
 
 But now, we have a problem, the 1st index is now void, which can be unfavourable in some situations. To avoid this we can use the remove function provided by the [table][2] lib
 
-table.remove(array, position) takes 2 arguments, the array and the position. What's cool about this function is it shifts down the rest of the elements in the array. If you didn't understand what I just said, here's a drawing I made in 5 minutes.
+table.remove(array, position) takes 2 arguments, the array, and the position. What's cool about this function is it shifts down the rest of the elements in the array. If you didn't understand what I just said, here's a drawing I made in 5 minutes.
 
 <img src=https://github.com/Rodevs-Helpers/Helpers-Documents/blob/editing/images/table.remove.png?raw=true width="500" height="500"/>
 
@@ -265,7 +265,7 @@ After finding out that jim isn't really that cool anymore. We decided to kick hi
 
 ## Iterating over tables
 
-Iterating over tables is one of the easiest things in scripting. In this section I will guide on what functions to use and when to use them.
+Iterating over tables is one of the easiest things in scripting. In this section, I will guide on what functions to use and when to use them.
 
 ### Iterating over arrays
 
@@ -303,7 +303,7 @@ Index: 4  Value: 1
 ```
 
 ### Iterating over dictionaries
-You can use the pairs() function to iterate over dictionaries, though it won't loop in order, so be weary of that when you iterate over dictionaries.
+You can use the pairs() function to iterate over dictionaries, though it won't loop in order, so be wary of that when you iterate over dictionaries.
 
 === "Code"
 	```lua
@@ -326,7 +326,7 @@ You can use the pairs() function to iterate over dictionaries, though it won't l
 ## Thanks for reading!!!!
 Big thanks for reading this article, there are some things that I glossed over for the sake of making this article not long and boring.
 
-Here's some links to learn more about tables.
+Here are some links to learn more about tables.
 
 * [Devhub's article on tables][1]
 * [Devhub's article on the table lib][2]

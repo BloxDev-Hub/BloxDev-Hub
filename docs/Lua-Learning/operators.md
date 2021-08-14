@@ -184,17 +184,19 @@ This operator checks if one value is less than or equal to to another value
 	```
 
 ## Arithmetic
-Lua supports the usual binary operators along with exponentiation (^), modulus (%), and unary negation (-).
+Lua supports the usual binary operators along with exponentiation (^), modulus (%), and unary negation (-). These are pretty self explanatory, so I won't be providing any explanations.
 
 ### Addition (+)
 
 === "Code"
 	```lua
 	print(2 + 2)
+	print(3 + 6)
 	```
 === "Output"
 	```lua
 	4
+	9
 	```
 
 ### Subtraction (-)
@@ -202,10 +204,12 @@ Lua supports the usual binary operators along with exponentiation (^), modulus (
 === "Code"
 	```lua
 	print(4 - 2)
+	print(5 - 2)
 	```
 === "Output"
 	```lua
 	2
+	3
 	```
 
 ### Multiplication (*)
@@ -213,10 +217,12 @@ Lua supports the usual binary operators along with exponentiation (^), modulus (
 === "Code"
 	```lua
 	print(2 * 3)
+	print(3 * 3)
 	```
 === "Output"
 	```lua
 	6
+	9
 	```
 
 ### Division (/)
@@ -224,10 +230,12 @@ Lua supports the usual binary operators along with exponentiation (^), modulus (
 === "Code"
 	```lua
 	print(6 / 2)
+	print(1 / 2)
 	```
 === "Output"
 	```lua
 	3
+	0.5
 	```
 
 ### Exponentiation (^)
@@ -235,10 +243,12 @@ Lua supports the usual binary operators along with exponentiation (^), modulus (
 === "Code"
 	```lua
 	print(2 ^ 3)
+	print(3 ^ 3)
 	```
 === "Output"
 	```lua
 	8
+	27
 	```
 
 ### Modulus (%)
@@ -246,10 +256,12 @@ Lua supports the usual binary operators along with exponentiation (^), modulus (
 === "Code"
 	```lua
 	print(2 % 2)
+	print(13 % 6)
 	```
 === "Output"
 	```lua
 	0
+	1
 	```
 
 ### Unary negation (-)

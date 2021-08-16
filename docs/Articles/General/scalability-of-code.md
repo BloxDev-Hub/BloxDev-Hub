@@ -2,17 +2,18 @@
 title: Code Scalability
 ---
 
-# Scalability, Development Time & Motivation
-This will all tie in later, I promise.
+# Disclaimer
+This is a fairly long read, but I truly hope what I am talking about here will enlighten you on something.
 
-One thing I don't see many programming/scripting tutorials (even ROBLOX-related ones) talk about is code scalability. While there are different definitions to scalability:
+# Scalability, Development Time & Motivation
+**SCALABILITY** is something you won't see Alvinblox or TheDevKing go through because it's "boring" or "irrelevant". I'd argue quite the opposite, and I hope this article will help you see why. 
+
+While there are a couple of definitions to the term:
 > *Your code should run well no matter how often it gets used - a dozen or a billion.*
 
 > *Your code should be easy to modify with little to no consequences and difficulty.*
 
 ...what I want to focus on in this article is strictly the latter. Far too often I have seen people focus so much on trying to get their code to work in the present that they neglect on future-proofing their code to make it easy for them to modify later.
-
-Hopefully this guide will steer you away from pitfalls like these and make your game dev life that much easier.
 
 ## Tiredly walking on the last lap
 Scripting is akin to climbing a mountain - it's easy at first, and gets progressively tougher as you scale upwards to the peak.
@@ -38,7 +39,8 @@ So why let these problems arise in the first place?
 
 ## Good practices
 
-#### Write clean code, name stuff properly!
+========
+### Write clean code, name stuff properly!
 You may think this seems obvious, right? Unfortunately in teams, this rule tends to get forgotten.
 
 * Name your scripts properly!
@@ -68,21 +70,26 @@ end
 -- valk is cool.
 ```
 
-#### Don't write all your code in one script!
+========
+### Don't write all your code in one script!
 A couple of months ago I witnessed an offline, test version of Phantom Forces, where they had all their game's logic in one script. While it's most likely not the case for the live version, it illustrates a very good point: 10000 lines of code is nigh unreadable in one script.
 
-People have asked me if they should write their code in one script, and I wish the example I made above illustrates my answer - a resounding **no**.
+People have asked me if they should write their code in one script, and I wish the example I made above illustrates my answer:
+
+A resounding **no**.
 
 Plan for the future. If you think you'll need a lot of post-processing related code, even if you only have 6 lines of that at the moment, move it over to a new script and work on that moving forward!
 
 Also for this reason don't bother minifying code (removing all the whitespaces/indents in your code). Sacrificing a massive part of readability for even just a very minor improvement in performance is by no means a good trade!
 
-#### Use folders!
-Folders are for scripts just like how groups are for... groups of parts! 
+========
+### Use folders!
+Folders are for scripts just like how models are for groups of parts.
 
 Keep all your related scripts in one properly named folder! Have multiple scripts handling different parts of datastore stuff for your players and game? Create a new folder, name it something like "Datastore" and put all the scripts in there!
 
-#### Use module scripts!
+========
+### Use module scripts!
 Module scripts are your best friends - bring them on board! 
 
 If you have lots of functions/values that are related/aimed towards doing the same thing, separate it from your main script and put it in a new module script! 
@@ -91,14 +98,16 @@ And again, if you have several module scripts aimed towards a common goal, use f
 
 **This is also why I do not recommend _G.** `_G.` is not slower than module scripts at all, but if you have too many values in `_G.`, debugging it can be a nightmare. If you need values to be shared across scripts at all, again use module scripts! They are just the same as `_G.` in principle, and are infinitely more readable, modifiable and scalable!
 
-#### Don't "nest" require statements!
-What I mean by this is having a module script `require` another module script, and so on. When you nest it too many times, you create lots of dependencies within your module script.
+========
+### Don't "nest" require statements!
+What I mean by this is having a module script `require` another module script, and so on. When you nest it too many times, you create lots of dependencies within your module scripts.
 
 This practice can get problematic - if a base module script that a group of module scripts rely on fails, all of the module scripts within that group fails too. If that group of module scripts fail, all the other scripts that called `require` on it also fails, and the chain continues.
 
 You'll have to trace back more, and debugging becomes slower and more tedious. Don't nest `require`s.
 
-#### Document your code!
+========
+### Document your code!
 This holds especially true if you're working with teams. 
 
 Don't be afraid to use comments/comment blocks to explain how a certain part of your code works and what it does. Using comments don't make you seem stupider or weaker - in fact, quite the opposite.

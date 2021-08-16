@@ -16,11 +16,12 @@ While there are a couple of definitions to the term:
 ...what I want to focus on in this article is strictly the latter. Far too often I have seen people focus so much on trying to get their code to work in the present that they neglect on future-proofing their code to make it easy for them to modify later.
 
 ## Tiredly walking on the last lap
-Scripting is akin to climbing a mountain - it's easy at first, and gets progressively tougher as you scale upwards to the peak.
+A couple of months ago I witnessed an offline, test version of Phantom Forces, where they had all their game's logic in one script. While it's most likely not the case for the live version, it illustrates a very good point: 
+> 10000 lines of code is nigh unreadable in one script. Thousands of badly named variables are no bueno too.
 
 When you work on a game and grow it at some point, your code will most likely span at least a few hundred lines depending on how complicated it is. Once you hit that point, ease of modification of your code starts to become important. 
 
-I have seen scripters storm out the door on even small games, filled with complaints like:
+I have seen scripters storm out the door on even small games, all of them with complaints like:
 > *"All the scripts and functions are everywhere!"*
 
 > *"I can't read the code anymore, it's so messy!"*
@@ -31,7 +32,7 @@ I have seen scripters storm out the door on even small games, filled with compla
 
 > *"I remove this thing, another breaks! How do I work with this piece of junk?!"*
 
-When you start neglecting how to 'code for the future', problems like these arise very quickly, and it gets progressively more difficult to mitigate and fix. 
+When you start neglecting how to Code For The Future, problems like these arise very quickly, and it gets progressively more difficult to mitigate and fix. 
 
 Let the problem grow enough, and development can sometimes even come to a halt - you won't be getting new content out anymore, rather you'll be spending lots of time fixing existing code and its problems. Frustration grows and patience wears thin as you stop feeling motivated since you aren't pumping out new content, and burnout starts setting in.
 
@@ -72,11 +73,9 @@ end
 
 ========
 ### Don't write all your code in one script!
-A couple of months ago I witnessed an offline, test version of Phantom Forces, where they had all their game's logic in one script. While it's most likely not the case for the live version, it illustrates a very good point: 10000 lines of code is nigh unreadable in one script.
-
 People have asked me if they should write their code in one script, and I wish the example I made above illustrates my answer:
 
-A resounding **no**.
+> A resounding **no**.
 
 Plan for the future. If you think you'll need a lot of post-processing related code, even if you only have 6 lines of that at the moment, move it over to a new script and work on that moving forward!
 
@@ -90,9 +89,9 @@ Keep all your related scripts in one properly named folder! Have multiple script
 
 ========
 ### Use module scripts!
-Module scripts are your best friends - bring them on board! 
+Module scripts are your best friends - bring them on board! Haven't learnt them yet? Learn them!
 
-If you have lots of functions/values that are related/aimed towards doing the same thing, separate it from your main script and put it in a new module script! 
+If you have lots of functions/values that are related/aimed towards doing the same thing, separate it from your main script and put it in a new module script.
 
 And again, if you have several module scripts aimed towards a common goal, use folders to organize them too!
 
@@ -102,7 +101,7 @@ And again, if you have several module scripts aimed towards a common goal, use f
 ### Don't "nest" require statements!
 What I mean by this is having a module script `require` another module script, and so on. When you nest it too many times, you create lots of dependencies within your module scripts.
 
-This practice can get problematic - if a base module script that a group of module scripts rely on fails, all of the module scripts within that group fails too. If that group of module scripts fail, all the other scripts that called `require` on it also fails, and the chain continues.
+This practice can get problematic - if a base module script that a group of module scripts rely on fails, all of the module scripts within that group fails too. If that group of module scripts fail, another group of module scripts that rely on them also fails, and the chain continues.
 
 You'll have to trace back more, and debugging becomes slower and more tedious. Don't nest `require`s.
 
@@ -131,6 +130,8 @@ end
 **Obviously use comments in moderation too.** No one needs to know about what a variable is for if it's something obvious such as `local player = game:GetService("Players")`. Too many comments add noise to your code as well.
 
 ## Closing
-i am not done with this. please wait.
+At its core, great code scalability depends on your ability to plan for the future. Expect your game and its code to grow, and prepare your codebase for that. When you have the experience and skill, start thinking long-term for yourself and everyone you might work with.
+
+A good programmer thinks of solutions for the present; a great programmer thinks of solutions for the future.
 
 Have a suggestion to improve this article? Ping me on Discord! @valkyria#0001

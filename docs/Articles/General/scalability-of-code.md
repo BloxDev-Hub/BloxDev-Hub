@@ -7,6 +7,7 @@ This will all tie in later, I promise.
 
 One thing I don't see many programming/scripting tutorials (even ROBLOX-related ones) talk about is code scalability. While there are different definitions to scalability:
 > *Your code should run well no matter how often it gets used - a dozen or a billion.*
+
 > *Your code should be easy to modify with little to no consequences and difficulty.*
 
 ...what I want to focus on in this article is strictly the latter. Far too often I have seen people focus so much on trying to get their code to work in the present that they neglect on future-proofing their code to make it easy for them to modify later.
@@ -20,9 +21,13 @@ When you work on a game and grow it at some point, your code will most likely sp
 
 I have seen scripters storm out the door on even small games, filled with complaints like:
 > *"All the scripts and functions are everywhere!"*
+
 > *"I can't read the code anymore, it's so messy!"*
+
 > *"Why is the code style so bad?!"*
+
 > *"I'm new to this and I don't even understand what this does!"*
+
 > *"I remove this thing, another breaks! How do I work with this piece of junk?!"*
 
 When you start neglecting how to 'code for the future', problems like these arise very quickly, and it gets progressively more difficult to mitigate and fix. 

@@ -42,9 +42,9 @@ end
 
 ========
 ### Don't write all your code in one script!
-People have asked me if they should write their code in one script, and I wish the example I made above illustrates my answer:
+People have asked me if they should write their code in one script, and I wish the Phantom Forces example I made illustrates my answer:
 
-> A resounding **no**.
+> A RESOUNDING **NO**.
 
 Plan for the future. If you think you'll need a lot of post-processing related code, even if you only have 6 lines of that at the moment, move it over to a new script and work on that moving forward!
 

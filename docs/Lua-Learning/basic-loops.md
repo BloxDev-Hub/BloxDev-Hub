@@ -2,7 +2,7 @@
 title: Basics about Loops
 ---
 
-# Loops in lua
+# Loops in Lua
 Sooner or later while scripting, you will have to repeat instructions for your game to run - you do not want to have to constantly copy the instruction you want to keep running.
 
 This is where loops come in. Loops allow you to repeat a set of instructions to your game with none of the copy-paste nightmare. It also keeps your code organized and clean.

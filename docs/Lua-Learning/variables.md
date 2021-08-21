@@ -2,91 +2,94 @@
 title: Variables
 ---
 
-## Variables? What are those?
-You can think of variables as boxes that contains a value. Variables can store anything you want really, you can store numbers, strings, tables, etc.
+## Variables
+The most important feature in all of programming, variables are containers that can hold a value you want.
+
+In Luau, variables are capable of holding a value of any type, be it a string, number, table, instances or even functions.
 
 ## Naming variables
-In Lua, variable names can be any non-reserved string of letters, digits, and underscores, but they cannot start with a digit:
+In Luau, variables can be named any way you like, though you might want to follow conventions. There are however, some rules - variables:
+
+* Cannot start off with digits.
+* Cannot be named the same as a reserved keyword (e.g: `if`, `while`, `end`).
+* Are case-sensitive; `valk` is not the same as `Valk`.
+
 ```lua
-local letters -- yes yes good
-local coolguy1 -- valid
-local snake_case_is_bad -- good
-local _variable -- also valid
+-- Valid:
+local letters
+local coolGuy1
+local snake_case_is_bad
+local _variable
+local TestObject
 
-local if -- no no wtf bad
-local 1stCoolGuy -- even worse!!! stop this!!
+-- Invalid:
+local if
+local 1stCoolGuy
 ```
-??? info "Lua Keywords"
-	Lua keywords like:
-	```lua
-	if, then, return, break, else, elseif
-	```
-	**CANNOT** be used for variable names
-Since lua is a case-sensitive language, that means ``HIIMJOE`` and ``hiimjoe`` are two completely different variables.
 
-## Assigning
-Assigning a value to a variable is quite simple, simply do this
+## Assigning variables
+Assigning a value to a variable is quite simple, simply do this:
 
-=== "Code"
-	```lua
-	local coolGuy = "joe"
-	local coolnessLevel = 1000000000
-	local getsAllTheLadies = true
+```lua
+local coolGuy = "joe"
+local coolnessLevel = 1000000000
+local getsAllTheLadies = true
 
-	print(coolGuy)
-	print(coolnessLevel)
-	print(getsAllTheLadies)
-	```
-=== "Output"
-	```lua
-	joe
-	1000000000
-	true
-	```
+print(coolGuy)
+print(coolnessLevel)
+print(getsAllTheLadies)
 
-You can even assign values to a bunch of variables in one line!!! (crazy ik)
+-- Output:
+-- joe
+-- 1000000000
+-- true
+```
 
-=== "Code"
-	```lua
-	local coolGuy, coolnessLevel, getsAllTheLadies = "joe", 1000000000, true
+You can even assign values to a bunch of variables in one line. This can be referred to as a tuple.
 
-	print(coolGuy)
-	print(coolnessLevel)
-	print(getsAllTheLadies)
-	```
-=== "Output"
-	```lua
-	joe
-	1000000000
-	true
-	```
+```lua
+local coolGuy, coolnessLevel, getsAllTheLadies = "joe", 1000000000, true
+```
 
 ## Local variables vs Global variables
-Variables exists in one of two scopes, **local** or **global**.  
-All the examples I've provided so far uses **local** variables, you can declare a **global** variable by removing the **local** keyword when declaring a **local** variable.  
-So instead of this,
+Variables exists in one of two scopes, **local** or **global**.
+All the examples so far use **local** variables - however, you can declare a global variable by removing the `local` keyword when declaring a local variable.
+
 ```lua
-local hi = 10
+local hi = 10 -- A local variable.
+bye = 20 -- A global variable.
 ```
-you'd have this
+
+A **global** variable can be accessed anywhere in a script - with **local** variables, you are limited.
+
 ```lua
-hi = 10
-```	
-A **global** variable can be accessed anywhere in a script. While with **local** variables, you are limited. Here's an example,
+-- Global:
+print(e) -- The linter will complain, but this will still print 'valk' as per normal.
 
-=== "Global"
-	```lua
-	hi = "hey!"
-	print(hi) -- "hey!"
-	```
-=== "Local"
-	```lua
-	local function kekekekekke()
-		local hi = "hey!"
-	end
-	print(hi) -- wtf is hi?!?!?!?!?!
-	```
-you can try running both of these seperately, and see what happens ;)
+if true then
+	e = "valk"
+end
 
-## Thanks for reading !!!!!
-Thanks for reading!!! I've been writing this damn article for too long, if there's something missing/wrong, contact me (willie) or one of the senor helpers and we'll fix it. Once again, thanks and peace out.
+print(e) 
+
+-- Output:
+-- valk
+-- valk
+```
+```lua
+-- Local:
+if true then
+	local e = "valk"
+end
+
+--print(e) -- This errors.
+```
+
+We will go through this more in another article - Scoping.
+
+**NOTE:** Due to internal reasons, `global` variables are slower for your game to access and modify. They also ruin scoping. Use `local` under all circumstances.
+
+## Closing
+This article was originally written by Willie, vetted by Remi, and edited for brevity by Valkyria.
+
+Have a suggestion to improve this article? Ping me on Discord! @valkyria#0001

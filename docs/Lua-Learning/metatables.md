@@ -17,7 +17,7 @@ they can hold metamethods, which are similar to events. I like to call them tabl
 Metatables are often used to simulate Object Oriented Programming, but aren't essential to that. 
 
 ## Using setmetatable()
-setmetatable() is an in-built function Roblox provides that you can use to set a metatable to a table.
+setmetatable() is a global function by Lua that you can use to set a metatable to a table.
 It takes in the table as the first argument and the metatable as the second.
 
 ```lua

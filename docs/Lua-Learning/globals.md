@@ -5,18 +5,7 @@ title: Lua Globals
 # Global Functions
 Global functions in lua are the built-in funcions which are pre declared and are very useful.
 There are many of them but in this guide we will discuss some common global functions.
-tonumber()
-tostring()
-print()
-_version 
-assert()
-warn()
-error()
-type()
-pcall()
-unpack()
-select()
-rawequal()
+
 ## tonumber()
 ``tonumber(value,base)``
 It converts the given argument in to a ``number`` of desired base (between 2-32). If second argument is missing then by default it converts the given argument into a number of base 10. In case of failure will return ``nil``.

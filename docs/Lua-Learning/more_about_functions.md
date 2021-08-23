@@ -122,7 +122,7 @@ for i,v in iter(tbl) do
 end```
 Output:
 ```
-1 edenroose 
+1 edenroose
 2 hehe
 3 cute
 4 alive

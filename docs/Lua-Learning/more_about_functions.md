@@ -119,7 +119,8 @@ end
 local tbl = { "edenroose" ,"hehe","cute","alive"}
 for i,v in iter(tbl) do
 	print(i,v)
-end```
+end
+```
 Output:
 ```
 1 edenroose

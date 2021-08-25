@@ -71,7 +71,7 @@ In the above example the function ``func`` returns an **anonymous function**. Yo
 
 # Closure Function!
 ## What is closure?
-Closure could be little complicated but I will try mt best to explain you.
+Closure could be little complicated but I will try my best to explain you.
 First thing you should always remember is: a `closure function` is an `anonymous function` but an `anonymous function` is not always a `closure functions`.
 
 I will try to explain you with an example!

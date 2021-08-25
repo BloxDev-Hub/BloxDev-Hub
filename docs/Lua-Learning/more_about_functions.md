@@ -96,7 +96,7 @@ print(v1())
 Now you might be confused but no worry I will explain you :)
 So, Here are few points you should know in order to understand that.
 1) A closure function always have access to the variables (upvalues) of that function which returned this closure function.
-2) If a closure function update any of those upvalues, say it changed the upper value from `"2"` to `"4"`, now when ever that closure function is called the value will be "4".
+2) If a closure function update any of those upvalues, say it changed the upvalue from `"2"` to `"4"`, now when ever that closure function is called the value will be "4".
 
 Now if you look back on the code you might start understanding how a closure function works.
 In the example code we created a function ``func``. Inside the function we created a variable ``number`` and store 1 in it. After that we returned a `closure` function and inside closure we added 1 in the number variable.

@@ -104,7 +104,7 @@ In the example code we created a function ``func``. Inside the function we creat
 We cached that closure function in a variable `v1`. Now when ever we call it, it adds "1" in the `number` variable. For the first time when we called the closure function, the variable "number" had 2 in it. So, after addition it becomes 3 and returned 3. When closure function was called for the second time the number variable had 3 in it and after addition it beacomes 4. And thats how a closure function works.
 
 Hope you understand it now. If there s still any confusion try reading it again.
-You might be thinking closure function a useless thing but if you are thinking then your are 200% wrong because closure functions are pretty useful and very important.
+You might be thinking closure function a useless thing but if you are thinking that then your are 200% wrong because closure functions are pretty useful and very important.
 Using closure you can make cool stuff.
 To show you how much usefull they are I made an iterator function just like ``pairs/ipairs``, and here it is:
 ```lua

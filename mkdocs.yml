@@ -13,22 +13,28 @@ extra_javascript:
 theme:
     language: en
     name: material
+    font:
+      text: Rubik
+      code: JetBrains Mono
     palette:
-        - scheme: Dark
-          toggle:
-            icon: material/toggle-switch
-            name: Switch to light mode
-        - scheme: Light
-          toggle:
-            icon: material/toggle-switch-off-outline
-            name: Switch to dark mode
+      scheme: slate
+      primary: deep orange
+      accent: deep orange
     features:
-      - search.suggest
-      - navigation.instant
       - navigation.tabs
-      - navigation.top
-      - navigation.expand
-
+    admonition:
+      note: fontawesome/solid/sticky-note
+      abstract: fontawesome/solid/book
+      info: fontawesome/solid/info-circle
+      tip: fontawesome/solid/bullhorn
+      success: fontawesome/solid/check
+      question: fontawesome/solid/question-circle
+      warning: fontawesome/solid/exclamation-triangle
+      failure: fontawesome/solid/bomb
+      danger: fontawesome/solid/skull
+      bug: fontawesome/solid/robot
+      example: fontawesome/solid/flask
+      quote: fontawesome/solid/quote-left
 extra:
   social:
     - icon: fontawesome/brands/discord
@@ -44,6 +50,8 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.highlight
   - pymdownx.tabbed
+  - pymdownx.inlinehilite
+  - pymdownx.keys
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.superfences:
@@ -51,8 +59,6 @@ markdown_extensions:
         - name: mermaid
           class: mermaid-experimental
           format: !!python/name:pymdownx.superfences.fence_div_format
-  - pymdownx.inlinehilite
-  - pymdownx.keys
 
 plugins:
   - search

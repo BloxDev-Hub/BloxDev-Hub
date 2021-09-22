@@ -11,7 +11,7 @@ In Luau, variables are capable of holding a value of any type, be it a string, n
 In Luau, variables can be named any way you like, though you might want to follow conventions. There are however, some rules - variables:
 
 * Cannot start off with digits.
-* Cannot be named the same as a reserved keyword (e.g: `if`, `while`, `end`).
+* Cannot be named the same as a reserved keyword (e.g: ``#!lua if``, ``#!lua while``, ``#!lua end``).
 * Are case-sensitive; `valk` is not the same as `Valk`.
 
 ```lua
@@ -52,8 +52,8 @@ local coolGuy, coolnessLevel, getsAllTheLadies = "joe", 1000000000, true
 ```
 
 ## Local variables vs Global variables
-Variables exists in one of two scopes, **local** or **global**.
-All the examples so far use **local** variables - however, you can declare a global variable by removing the `local` keyword when declaring a local variable.
+Variables exists in one of two scopes, ``#!lua local`` or **global**.
+All the examples so far use ``#!lua local`` variables - however, you can declare a global variable by removing the ``#!lua local`` keyword when declaring a local variable.
 
 ```lua
 local hi = 10 -- A local variable.
@@ -87,7 +87,7 @@ end
 
 We will go through this more in another article - Scoping.
 
-**NOTE:** Due to internal reasons, `global` variables are slower for your game to access and modify. They also ruin scoping. Use `local` under all circumstances.
+**NOTE:** Due to internal reasons, `global` variables are slower for your game to access and modify. They also ruin scoping. Use ``#!lua local`` under all circumstances.
 
 ## Closing
 This article was originally written by Willie, vetted by Remi, and edited for brevity by Valkyria.

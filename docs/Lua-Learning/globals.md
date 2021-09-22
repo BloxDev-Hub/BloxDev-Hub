@@ -1,7 +1,6 @@
 ---
 title: Lua Globals
 ---
-
 # Global Functions
 Global functions in lua are the built-in funcions which are pre declared and are very useful.
 There are many of them but in this guide we will discuss some common global functions.

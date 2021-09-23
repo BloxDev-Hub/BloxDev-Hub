@@ -16,7 +16,7 @@ It converts the given argument in to a ``number`` of desired base (between 2-32)
     print(tonumber("abc"))
 	```
 === "Output"
-	```lua
+	```
 	 123
      911
      nil
@@ -32,7 +32,7 @@ It converts the given argument in to a ``string``. Just like ``tonumber()``, If 
     print("Square of 16 is : ".. tostring(16^2))
 	```
 === "Output"
-	```lua
+	```
 	 The statement wastrue
      Square of 16 is : 256
 	```
@@ -47,7 +47,7 @@ It takes multiple arguments and display them in the console/output. In most case
     print("Helpers are the best")
 	```
 === "Output"
-	```lua
+	```
 	 Eden is smart
      Helpers are the best
 	```
@@ -62,7 +62,7 @@ It stops the thread and returns the error message if the given statement is ``fa
     assert(eden == "noob", "eden is not noob")
 	```
 === "Output"
-	```lua
+	```
 	 eden is not noob
 	```
 
@@ -75,7 +75,7 @@ It stops the curent thread and gives the error in the output/console.
 	error("Program terminated!")
 	```
 === "Output"
-	```lua
+	```
 	 Program terminated!
 	```
 
@@ -91,7 +91,7 @@ It returns the type of the given argument.
     print(type(data))
 	```
 === "Output"
-	```lua
+	```
 	 boolean
      table
 	```
@@ -125,9 +125,8 @@ final_index = #table
     print(unpack(tbl,2,5))
 	```
 === "Output"
-	```lua
+	```
 	  Teddy Cake Selfish Smart
-     table
 	```
 ## select()
 ``select(n,args)``
@@ -140,7 +139,7 @@ if n is `#` operator, It returns the number of given arguments
 	print(select("#","hi","good","ok","wow","yep"))
 	```
 === "Output"
-	```lua
+	```
 	  5
 	```
 ## rawequal()
@@ -152,7 +151,7 @@ It returns a bool value. If given arguments are equal, it returns `true`. If the
 	print(rawequal(2,2))
 	```
 === "Output"
-	```lua
+	```
 	 true
 	```
 

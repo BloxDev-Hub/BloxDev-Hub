@@ -97,8 +97,8 @@ It returns the type of the given argument.
 	```
 
 ## pcall()
-``pcall(function)``
-It calls the given function in protected mode. In case of any error the thread will not be terminated. ``pcall`` return two values. The first returned value is a bool which is either `true` or `false` depends if the call succeeded or not. If the call succeed then first value will be true and second value will be the value returned by the function called in the protected mode. If the call could not succeed then pcall will return false with the error message.
+``pcall(function,...)``
+It calls the given function in protected mode. In case of any error the thread will not be terminated. The first returned value is a bool which is either `true` or `false` depends if the call succeeded or not. If the call succeed then first value will be `true` and second value will be the value returned by the function called in the protected mode. If the call could not succeed then pcall will return false with the error message.
 ### Example Code:
 === "Code"
 	```lua
@@ -106,13 +106,12 @@ It calls the given function in protected mode. In case of any error the thread w
 	    print(name)
 	    assert(name == "Edenroose", "Incorrect Name!")
     end
-    local status , result = pcall(test("Willie"))
+    local status , result = pcall(test,"Willie")
     print(status,result)
 	```
 === "Output"
-	```lua
-	 Incorrect Name!
-     table
+	```
+	 false	 Incorrect Name!
 	```
 
 ## unpack()
@@ -158,4 +157,4 @@ It returns a bool value. If given arguments are equal, it returns `true`. If the
 	```
 
 ## Thanks For Reading :)
-In case of any mistake feel free to contact me via discord "EDENROOSE#1630" .
+In case of any mistake feel free to contact me via discord "EDENROOSE#1630".

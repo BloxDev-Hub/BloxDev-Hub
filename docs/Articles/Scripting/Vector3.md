@@ -13,4 +13,6 @@ A vector is drawn from the origin `O` to the `(8,8)` coordinate point of the pla
 
 ## 3D Vector
 In three dimensional space, There are three axis `X-Axis`, `Y-Axis` and `Z-Axis`. A 3D vector is same as 2D but with an extra dimension.
+
+
 -- will complete it very soon 

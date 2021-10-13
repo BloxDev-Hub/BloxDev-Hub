@@ -44,7 +44,7 @@ In order to get all attributes of an instance you need to call **GetAttributes()
 ```lua
 local Part = workspace.Part
 --creating an attribute of part
-Part:SetAttribute("Nickname,"eden")
+Part:SetAttribute("Nickname","eden")
 Part:SetAttribute("IsAlive",true)
 --getting value of all the attributes.
 for Name , Value in pairs(Part:GetAttributes()) do
@@ -64,7 +64,7 @@ Here is an example code:
 ```lua
 local Part = workspace.Part
 --creating an attribute of part
-Part:SetAttribute("Nickname,"eden")
+Part:SetAttribute("Nickname","eden")
 local NickName = Part:GetAttribute()
 print(NickName)
 Part:SetAttribute("NickName","Heaven")

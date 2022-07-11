@@ -8,7 +8,7 @@ There are many of them but in this guide we will discuss some common global func
 ## tonumber()
 ``tonumber(value,base)``
 It converts the given argument in to a ``number`` of desired base (between 2-32). If second argument is missing then by default it converts the given argument into a number of base 10. In case of failure will return ``nil``.
-### Example Code:
+Example Code:
 === "Code"
 	```lua
 	print(tonumber("123"))
@@ -25,7 +25,7 @@ It converts the given argument in to a ``number`` of desired base (between 2-32)
 ## tostring()
 ``tostring(value)``
 It converts the given argument in to a ``string``. Just like ``tonumber()``, If it cannot convert it will return ``nil``.
-### Example Code:
+Example Code:
 === "Code"
 	```lua
 	print("The statement was".. tostring(true))
@@ -40,7 +40,7 @@ It converts the given argument in to a ``string``. Just like ``tonumber()``, If 
 ## print()
 ``print(value)``
 It takes multiple arguments and display them in the console/output. In most cases it is used for debugging.
-### Example Code:
+Example Code:
 === "Code"
 	```lua
 	print("Eden is smart")
@@ -55,7 +55,7 @@ It takes multiple arguments and display them in the console/output. In most case
 ## assert()
 ``assert(statement,error message)
 It stops the thread and returns the error message if the given statement is ``false`` or ``nil``.
-### Example Code:
+Example Code:
 === "Code"
 	```lua
 	local eden =  "Brilliant"
@@ -69,7 +69,7 @@ It stops the thread and returns the error message if the given statement is ``fa
 ## error()
 ``error(message)``
 It stops the curent thread and gives the error in the output/console.
-### Example Code:
+Example Code:
 === "Code"
 	```lua
 	error("Program terminated!")
@@ -82,7 +82,7 @@ It stops the curent thread and gives the error in the output/console.
 ## type()
 ``type(value)``
 It returns the type of the given argument.
-### Example Code:
+Example Code:
 === "Code"
 	```lua
 	local hi = true
@@ -99,7 +99,7 @@ It returns the type of the given argument.
 ## pcall()
 ``pcall(function,...)``
 It calls the given function in protected mode. In case of any error the thread will not be terminated. The first returned value is a bool which is either `true` or `false` depends if the call succeeded or not. If the call succeed then first value will be `true` and second value will be the value returned by the function called in the protected mode. If the call could not succeed then pcall will return false with the error message.
-### Example Code:
+Example Code:
 === "Code"
 	```lua
 	local function test(name)
@@ -118,7 +118,7 @@ It calls the given function in protected mode. In case of any error the thread w
 ``unpack(table,initial_index,final_index)``
 It returns elements of a table in the form of `tuple`, according to the given arguments. By default: initial_index = 1
 final_index = #table
-### Example Code:
+Example Code:
 === "Code"
 	```lua
 	local tbl = {"Edenroose","Teddy","Cake","Selfish","Smart","Intelligent"}
@@ -133,7 +133,7 @@ final_index = #table
 If n is positive, It returns all the given arguments after the index n
 If n is negative, It returns all the given n number of arguments from the end
 if n is `#` operator, It returns the number of given arguments
-### Example Code:
+Example Code:
 === "Code"
 	```lua
 	print(select("#","hi","good","ok","wow","yep"))
@@ -145,7 +145,7 @@ if n is `#` operator, It returns the number of given arguments
 ## rawequal()
 ``rawequal(value1,value2)``
 It returns a bool value. If given arguments are equal, it returns `true`. If the arguments are not equal, it returns false
-### Example Code:
+Example Code:
 === "Code"
 	```lua
 	print(rawequal(2,2))

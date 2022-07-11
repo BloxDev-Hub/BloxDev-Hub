@@ -19,10 +19,12 @@ theme:
     palette:
       #light
       scheme: default
+      toggle:
       primary: light blue
       accent: deep orange
       #dark
       scheme: slate
+      toggle:
       primary: light blue
       accent: deep orange
       

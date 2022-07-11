@@ -17,9 +17,11 @@ theme:
       text: Rubik
       code: JetBrains Mono
     palette:
-      scheme: slate
+      #a
+      scheme: default
       primary: light blue
       accent: deep orange
+      
     features:
       - navigation.tabs
     admonition:

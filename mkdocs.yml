@@ -20,13 +20,13 @@ theme:
       #light
       -  scheme: default
          toggle:
-           icon: material/brightness-7
+           icon: material/weather-night
            name: Switch to dark mode
-         primary: light blue
+         primary: blue
          accent: deep orange
       -  scheme: slate
          toggle:
-           icon: material/brightness-4
+           icon: material/weather-sunny
            name: Switch to dark mode
          primary: light blue
          accent: deep orange

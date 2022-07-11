@@ -20,18 +20,18 @@ theme:
       #light
       scheme: default
       toggle:
-      icon: material/brightness-7
-      name: Switch to dark mode
-      primary: light blue
-      accent: deep orange
+        icon: material/brightness-7
+        name: Switch to dark mode
+        primary: light blue
+        accent: deep orange
       #dark
       scheme: slate
       toggle:
-      icon: material/brightness-4
-      name: Switch to light mode
-      primary: light blue
-      accent: deep orange
-      
+        icon: material/brightness-4
+        name: Switch to light mode
+        primary: light blue
+        accent: deep orange
+
     features:
       - navigation.tabs
     admonition:

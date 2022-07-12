@@ -167,4 +167,4 @@ end
 **Do make sure to provide the correct property name for your keys however. Otherwise, your script may throw a nil error!**
 
 ## Closing
-Have a suggestion to improve the article? Ping me on Discord! @valkyria#0001
+Have a suggestion to improve the article? Ping me on Discord! 

@@ -84,7 +84,7 @@ Boom! its gone now.
 
 # Detecting Changes!
 ## GetAttributeChangedSignal()
-If we want to detect change of any specific attribute we use ``GetPropertyChangedSignal()``.
+If we want to detect change of any specific attribute we use ``GetAttributeChangedSignal()``.
 ## AttributeChanged
 If we want to detect change of any attribute we use ``AttributeChanged``
 Here is an example for you!

@@ -11,4 +11,4 @@ Because of this, functions can be treated just like numbers, strings and tables.
 Since functions are first-class, you can `return` functions just as well as returning a number/string/table? No kidding!
 
 ## Closing
-Have a suggestion to improve the article? Ping me on Discord! @valkyria#0001
+Have a suggestion to improve the article? Ping me on Discord! 

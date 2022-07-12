@@ -3,7 +3,7 @@ title: Attributes
 ---
 
 # What are attributes?
-In Roblox Attributes of an instance are just like its properties but custom properties.
+In Roblox Attributes of an instance are just like it's properties but custom properties.
 It means you can create them, remove them, edit them. They are pretty useful and they also save you from having multiple value instance like ``string value``, ``bool value``, ``int value``.
 You can create tgem manually or by using a script. In this guide we will be creating them via ``scripts``.
 
@@ -27,7 +27,7 @@ When ever we want to get value of an attribute of an instance, we call a method 
 ```lua
 local Part = workspace.Part
 --creating an attribute of part
-Part:SetAttribute("Nickname,"eden")
+Part:SetAttribute("Nickname","eden")
 --getting value of the attribute "Nickname".
 local NickName = Part:GetAttribute("NickName")
 print(NickName)

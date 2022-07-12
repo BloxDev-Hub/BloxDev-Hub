@@ -10,9 +10,9 @@ This is where loops come in. Loops allow you to repeat a set of instructions to 
 ## Types of loops
 In Lua, there are multiple types of loops that you may use. They fill different niches, and you may have to use them for different occasions.
 ```lua
-while wait(1) do print("valk") end -- 'while' loop.
-for valk = 0, 20 do print("valk") end -- 'for' loop.
-repeat valk = valk + 1 until valk < 20 -- 'repeat' loop.
+while wait(1) do print("deden") end -- 'while' loop.
+for deden = 0, 20 do print("valk") end -- 'for' loop.
+repeat deden = deden + 1 until deden < 20 -- 'repeat' loop.
 ```
 
 ## While Loops
@@ -89,7 +89,8 @@ end
 -- 1
 ```
 
-**WARNING:** An increment of 0 results in an infinite loop as the `for` loop never reaches the end value!
+!!! note "WARNING:"
+	An increment of 0 results in an infinite loop as the `for` loop never reaches the end value!
 
 ## Repeat loops
 `repeat` loops run the code, and then checks if the `until` condition is true. If it is NOT true, the loop repeats until the condition is true.

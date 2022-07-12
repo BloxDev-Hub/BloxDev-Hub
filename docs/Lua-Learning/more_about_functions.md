@@ -130,7 +130,7 @@ Output:
 ```
 
 # Thanks For Reading!
-Hope you enjoyed. Incase of any mistake feel free to contact me via discord **"EDENROOSE#1630"**
+Hope you enjoyed. Incase of any mistake feel free to contact me via discord **"EdenRose"**
 
 
 

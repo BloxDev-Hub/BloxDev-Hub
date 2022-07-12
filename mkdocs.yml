@@ -59,7 +59,8 @@ markdown_extensions:
   - meta
   - pymdownx.details
   - pymdownx.highlight
-  - pymdownx.tabbed
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.inlinehilite
   - pymdownx.keys
   - pymdownx.arithmatex:

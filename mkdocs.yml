@@ -17,9 +17,19 @@ theme:
       text: Rubik
       code: JetBrains Mono
     palette:
-      scheme: slate
-      primary: light blue
-      accent: deep orange
+      #light
+      -  scheme: default
+         toggle:
+           icon: material/weather-night
+           name: Switch to dark mode
+         primary: blue
+         accent: deep orange
+      -  scheme: slate
+         toggle:
+           icon: material/weather-sunny
+           name: Switch to dark mode
+         primary: light blue
+         accent: deep orange
     features:
       - navigation.tabs
     admonition:

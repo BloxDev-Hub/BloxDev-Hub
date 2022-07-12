@@ -59,7 +59,7 @@ IsAlive  true
 
 
 # Editing/Removing attributes!
-Now if we want to change nickname of the part to "heaven". we will again use **SetAttribute()**. If the attribute with the given name already exist it just change its value but if the attribute with this name doesn't exist it creattes the attribute then set its value.
+Now if we want to change nickname of the part to "heaven". We will again use **SetAttribute()**. If the attribute with the given name already exist it just change it's value but if the attribute with this name doesn't exist, it creates the attribute then set its value.
 Here is an example code:
 ```lua
 local Part = workspace.Part
@@ -76,7 +76,7 @@ Output:
 eden
 Heaven
 ```
-If we want to remove any attributes we just set its value to ``nil``.
+If we want to remove any attributes we will just set it's value to ``nil``.
 ```lua
 Part:SetAttribute("IsAlive", nil)
 ```
@@ -84,12 +84,12 @@ Boom! its gone now.
 
 # Detecting Changes!
 ## GetAttributeChangedSignal()
-If we want to detect change of any specific attribute we use ``GetPropertyChangedSignal()``.
+If we want to detect change of any specific attribute we use ``GetAttributeChangedSignal()``.
 ## AttributeChanged
 If we want to detect change of any attribute we use ``AttributeChanged``
 Here is an example for you!
 ```lua
-Part:GetAttributehangedSignal("NickName"):Connect(function()
+Part:GetAttributeChangedSignal("NickName"):Connect(function()
      print("nickname changed")
 end)
 
@@ -98,5 +98,5 @@ Part.AttributeChanged:Connect(function(nameoftheattrubute)
 end)
 ```
 # Thanks For Reading
-Now be feel proud because now you can make your own properties
-In case of any mistake feel free to contact me via discord "**EDENROOSE#1630**"
+
+In case of any mistake feel free to contact me via discord "**EdenRose**"

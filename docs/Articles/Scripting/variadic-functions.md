@@ -8,4 +8,4 @@ e.
 ## The Beginning
 
 ## Closing
-Have a suggestion to improve the article? Ping me on Discord! @valkyria#0001
+Have a suggestion to improve the article? Ping me on Discord! 

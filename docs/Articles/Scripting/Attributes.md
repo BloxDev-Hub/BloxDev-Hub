@@ -18,11 +18,11 @@ local Part = workspace.Part --referencing a part in the workspace
 Part:SetAttribute("Nickname","eden")
 ```
 In the above code we created an attribute of part and nameed that attribute `NickName` and set its value to a string "eden".
-Now if you run the script then you can find this attribute in the **Properties** window. But now we how can we use this attribute?.
+Now if you run the script then you can find this attribute in the **Properties** window. But now how can we use this attribute?.
 
 # Getting Attributes!
 ## GetAttribute()
-When ever we want to get value of an attribute of an instance, we call a method **GetAtribute()** over the instance. This method takes only 1 arguments:
+When ever we want to get value of an attribute of any instance, we call a method **GetAtribute()** over the instance. This method takes only 1 arguments:
 1) Name of the attribute.
 ```lua
 local Part = workspace.Part

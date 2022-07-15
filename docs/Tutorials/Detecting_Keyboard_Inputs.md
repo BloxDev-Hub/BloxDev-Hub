@@ -8,14 +8,16 @@ UserInputService is a neat [**API Service**](https://developer.roblox.com/en-us/
 
 ## Getting Started
 First, we are going to need our **LocalScript**, for this tutorial, I will be putting it under **StarterPlayerScripts** and will be calling it **Sprint**. However, you can put this anywhere in a valid location for a LocalScript:
+
 ![](https://i.gyazo.com/e99e00cfd80aa4dd30ee5d1fe09a6213.png)
 
+
 **Valid LocalScript Locations:**
--     A Players Backpack, such as a child of a Tool
--     A Players character model
--     A Players PlayerGui
--     A Players PlayerScripts.
--     The ReplicatedFirst service
+* A Players Backpack, such as a child of a Tool
+* A Players character model
+* A Players PlayerGui
+* A Players PlayerScripts.
+* The ReplicatedFirst service
 
 ## The Fun Part
 Now that we have our LocalScript, we can start getting into it.
@@ -118,4 +120,4 @@ Hey Presto! If you followed this tutorial correctly, your character should speed
 
 I hope you enjoyed learning about [**UserInputService**](https://developer.roblox.com/en-us/api-reference/class/UserInputService).  
 
-- [Learning Resources](https://developer.roblox.com/en-us/)
+* [Learning Resources](https://developer.roblox.com/en-us/)

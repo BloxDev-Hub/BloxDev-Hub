@@ -13,6 +13,7 @@ First, we are going to need our **LocalScript**, for this tutorial, I will be pu
 
 
 **Valid LocalScript Locations:**
+
 * A Players Backpack, such as a child of a Tool
 * A Players character model
 * A Players PlayerGui

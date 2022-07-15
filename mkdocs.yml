@@ -79,7 +79,17 @@ plugins:
 
 nav:
   - Home: index.md
-  - ... | Luau-Learning/*.md
+  - Luau-Learning:
+    - Luau-Learning/Strings.md
+    - Luau-Learning/Variables.md
+    - Luau-Learning/Basics_of_Functions.md
+    - Luau-Learning/basic-loops.md
+    - Luau-Learning/tables.md
+    - Luau-Learning/operators.md
+    - Luau-Learning/handling_events.md
+    - Luau-Learning/globals.md
+    - Luau-Learning/Attributes.md
+    - ... | flat | Luau-Learning/*.md # not sorted yet
   - ...
   - Example Page:
      - Example-Page/example.md

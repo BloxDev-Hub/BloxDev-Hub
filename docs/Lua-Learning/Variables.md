@@ -14,7 +14,7 @@ Variable name can contain English letters, numerical digits and underscores. A v
 	Teerach_Noob
 	Rose22
 	_Willie
-  ```
+        ```
 
 lua is a **case-sensitive** language. This means, `Eden` and `eden` will be treated as two different variables. Keywords such as `for`, `break`, `true`, `local`, etc can't be utilised as variable names.
 

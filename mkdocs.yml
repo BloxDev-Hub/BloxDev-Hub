@@ -1,6 +1,7 @@
 site_name: Helpers Documents
 site_url: https://rodevs-helpers.github.io/Helpers-Documents
 copyright: Copyright 2022 © RoDevs Helper Department. Not affiliated with Roblox or Discord. Home - Privacy Policy
+site_description: Eden is cute.
 
 extra_css:
   - stylesheets/extra.css

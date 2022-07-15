@@ -87,8 +87,8 @@ Variables declared in global scope is accessible in all the scopes of a script. 
 The variable declared in first scope is accessible in second scope.
 
 ??? warning
-    *Because global variables and functions must be accessed by a hash lookup, they can be expensive to use in terms of performance. In fact, a global variable accessed in a time-critical loop can perform 10% slower (or worse) than a local variable in the same loop.
-    *As noted earlier, global variables and functions are only accessible within the associated script, not between multiple scripts.
+    Because global variables and functions must be accessed by a hash lookup, they can be expensive to use in terms of performance. In fact, a global variable accessed in a time-critical loop can perform 10% slower (or worse) than a local variable in the same loop.
+    As noted earlier, global variables and functions are only accessible within the associated script, not between multiple scripts.
 
 ### Local Variables
 Local variables are declared with the keyword `local` and are only accessible in the scope in which they are defined.

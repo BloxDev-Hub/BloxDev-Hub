@@ -20,7 +20,7 @@ lua is a **case-sensitive** language. This means, `Eden` and `eden` will be trea
 
 !!! fail "Wrong Names"
   ```
-	if
+	
   21st_century
   ```
 
@@ -39,7 +39,7 @@ The operator `=` is used for assignment of values. Consider the following exampl
   a lazy animal
   ```
 
-  A declared variable can be changed anytime by assigning another value to it.
+A declared variable can be changed anytime by assigning another value to it.
 
 === "Code"
   ```lua
@@ -48,8 +48,7 @@ The operator `=` is used for assignment of values. Consider the following exampl
 
   Deden = 17
   print(Deden)
-  ```
-
+  ``
 === "Output"
   ```
   4

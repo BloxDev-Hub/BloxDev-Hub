@@ -67,8 +67,8 @@ if (InputObject.KeyCode == SPRINT_KEY) then
 
 Then inside that **if statement**, we can get our [**Character**](https://developer.roblox.com/en-us/api-reference/property/Player/Character) and [**Humanoid**](https://developer.roblox.com/en-us/api-reference/class/Humanoid):
 ```lua
-		local Character = Player.Character or Player.CharacterAdded:Wait()
-		local Humanoid = Character:WaitForChild('Humanoid')
+local Character = Player.Character or Player.CharacterAdded:Wait()		
+local Humanoid = Character:WaitForChild('Humanoid')		
 ```
 
 Once we have the [**Humanoid**](https://developer.roblox.com/en-us/api-reference/class/Humanoid) we can set the [**WalkSpeed**](https://developer.roblox.com/en-us/api-reference/property/Humanoid/WalkSpeed) property to make the character sprint:

@@ -9,6 +9,7 @@ Before learning `Vector3` you need to know what is a "Vector". Vector is a physi
 In a 2 diemensions, where you have two coordinates/axis `X-Axis` and `Y-Axis`. They are perpendicular to each other.
 
 <img src=https://github.com/Rodevs-Helpers/Helpers-Documents/blob/editing/images/2d.png?raw=true width="500" height="500"/>
+
 A vector is drawn from the origin `O` to the `(8,8)` coordinate point of the plane. These coordinate points represent magnitude of the vector on X and Y axis and are written as `(X,Y)`. 
 
 ## 3D Vector

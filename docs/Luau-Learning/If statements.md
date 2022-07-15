@@ -253,18 +253,18 @@ Thanks for reading. If you find any mistakes, you can [report them](https://rode
 	```
 
 ### Operators
-1.
+2.
 	```lua
 	if 3^10 > 5^6 then
 	    print("3")
 	end
 	```
 
-2. `not (true == true)` ==> `not true` ==> `false`
+3. `not (true == true)` ==> `not true` ==> `false`
 
-3. `not not true` ==> `not false` ==> `true`
+4. `not not true` ==> `not false` ==> `true`
 
-4. `not (not (true == false))` = `not (not (false))` = `not (true)` = `false`
+5. `not (not (true == false))` = `not (not (false))` = `not (true)` = `false`
 
 ### elseif and else
 1.

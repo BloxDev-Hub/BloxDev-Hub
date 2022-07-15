@@ -72,18 +72,28 @@ print("17" - 4)
 !!! warning
 If Lua failed to convert any string such as "Rose" then it will return an error causing termination of the thread.
 
-## Conversion of strings
+## Conversion
 A string can be converted into a number by simply using `tonumber()`, a global function of Lua.
 
 === "Code"
 ```lua
 print(tonumber("78")) 
-print(tonumber("hola")
+print(tonumber("hola"))
 ```
 === "Output"
 ```
 78
 nil
+```
+
+Similarly a number can also be converted into a string by the function `tostring()`
+=== "Code"
+```lua
+print(tostring(78))
+```
+=== "Output"
+```
+78
 ```
 
 ## Closing

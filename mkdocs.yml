@@ -79,7 +79,7 @@ plugins:
 
 nav:
   - Home: index.md
-  - ... | Lua-Learning/*.md
+  - ... | Luau-Learning/*.md
   - ...
   - Example Page:
      - Example-Page/example.md

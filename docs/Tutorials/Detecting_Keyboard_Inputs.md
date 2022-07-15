@@ -120,4 +120,4 @@ Hey Presto! If you followed this tutorial correctly, your character should speed
 
 I hope you enjoyed learning about [**UserInputService**](https://developer.roblox.com/en-us/api-reference/class/UserInputService).  
 
-- [Learning Resources](https://developer.roblox.com/en-us/)
+* [Learning Resources](https://developer.roblox.com/en-us/)

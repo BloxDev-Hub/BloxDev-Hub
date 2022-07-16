@@ -10,7 +10,7 @@ Leaderstat/Leaderboard is basically the board that appears on the right top of p
 ## How to create one?
 Making a leaderstats is pretty simple. First of all we will add a **script** in [ServerScriptService](https://developer.roblox.com/en-us/api-reference/class/ServerScriptService).
 
-<img src=https://github.com/Rodevs-Helpers/Helpers-Documents/blob/editing/images/leaderstats2.png?raw=true width="500" height="500"/>
+<img src=https://github.com/Rodevs-Helpers/Helpers-Documents/blob/editing/images/leaderstats2.png?raw=true width="200" height="200"/>
 
 For making leaderstats, we basically have to add a folder inside every player and name it **leaderstats**. Once made the folder, we will add value objects such as [IntValue](https://developer.roblox.com/en-us/api-reference/class/IntValue), [NumberValue](https://developer.roblox.com/en-us/api-reference/class/NumberValue), [StringValue](https://developer.roblox.com/en-us/api-reference/class/StringValue) etc.
 

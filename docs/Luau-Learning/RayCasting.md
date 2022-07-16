@@ -3,7 +3,7 @@ Title: Raycasting
 ---
 
 # Raycasting
-Roblox engine allows it's users to cast an invisible ray from a [Vector3](https://developer.roblox.com/en-us/api-reference/datatype/Vector3) position towards a specified direction. Unlike normal rays, Roblox enables you to set the length of ray according to your needs. Using raycast, you can detect if the ray hits a [Basepart](https://developer.roblox.com/en-us/api-reference/class/BasePart) or [Terrain](https://developer.roblox.com/en-us/api-reference/class/Terrain).
+Roblox engine allows its users to cast an invisible ray from a [Vector3](https://developer.roblox.com/en-us/api-reference/datatype/Vector3) position towards a specified direction. Unlike normal rays, Roblox enables you to set the length of ray according to your needs. Using raycast, you can detect if the ray hits a [Basepart](https://developer.roblox.com/en-us/api-reference/class/BasePart) or [Terrain](https://developer.roblox.com/en-us/api-reference/class/Terrain).
 
 ## Casting A Ray
 For casting a ray we use the method **`:Raycast()`** of worldroot ([workspace](https://developer.roblox.com/en-us/api-reference/class/Workspace)). **`Raycast()`** takes **three** arguments and returns [RaycastResult](https://developer.roblox.com/en-us/api-reference/datatype/RaycastResult)

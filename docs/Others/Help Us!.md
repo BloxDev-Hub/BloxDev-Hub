@@ -11,4 +11,4 @@ We hope, you are having a fun time reading our articles. Your reviews means alot
 
 When reading any of the articles, if you find any mistake then please report us with article name and mention the mistake in as much details, as possible.
 
-[Report :material-flag-variant:](https://rodevs-helpers.github.io/Helpers-Documents/){ .md-button .md-button--primary }
+[Report :material-flag-variant:](https://forms.gle/FgoUCCSkre4BYgms5){ .md-button .md-button--primary }

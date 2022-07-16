@@ -115,7 +115,10 @@ Now, our initial goal is to **find the amount of online players**. You might hav
 Now we know where is the information to get, time to open Roblox Studio.
 
 HttpService requests should always be handled within a `Script` under `ServerScriptService`. Create one by **right clicking the "ServerScriptService" -> Insert Object... -> Script**. Name the script however you want!
+
 ![script](https://i.imgur.com/TnNEjvW.png)
+
+
 Now, take a close look at the following script. Each comment will help you understand each line of code.
 
 === "Code"

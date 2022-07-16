@@ -97,4 +97,4 @@ Now if we place another part between the two parts then ray will intersect the m
 
 ## Closing!
 As always, we hope you enjoyed reading and can utilize raycasting according to your needs. Whatever you are learning, please practice it on the spot. Just reading will not help you if you aren't practicing them.
-Incase of any mistakes, typos, etc please report the article!
+In case of any mistakes, typos, etc please report the article!

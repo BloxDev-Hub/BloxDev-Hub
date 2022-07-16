@@ -13,6 +13,7 @@ HttpService is a built-in API Service, allowing developers to send [Http request
 ## What can HttpService used for?
 
 As mentioned above, HttpService can help you do basic communications between your Roblox game/experience and off-site web services. Some of those being:
+
 * Data storage (though can be done with DataStoreService)
 * Error reporting
 * Feedback system
@@ -101,6 +102,7 @@ When you open the URL, you will see a very long and confusing text (unless you'r
 
 ![raw](https://i.imgur.com/NKq4Loh.png)
 
+
 Now, our initial goal is to **find the amount of online players**. You might have a hard time finding it so I'll do the hard job for you (just this once alright).
 
 ![info](https://i.imgur.com/eVGv4f8.png)
@@ -113,28 +115,32 @@ Now, our initial goal is to **find the amount of online players**. You might hav
 Now we know where is the information to get, time to open Roblox Studio.
 
 HttpService requests should always be handled within a `Script` under `ServerScriptService`. Create one by **right clicking the "ServerScriptService" -> Insert Object... -> Script**. Name the script however you want!
+
 ![script](https://i.imgur.com/TnNEjvW.png)
+
+
 Now, take a close look at the following script. Each comment will help you understand each line of code.
+
 === "Code"
-```lua
--- Get the HttpService through the GetService() method
-local HttpService = game:GetService("HttpService")
-
--- Declare the target URL
--- URL must be put inside quotes. If there're quotes within the URL, use \ to escape it
-local URL = "https://api.mcsrvstat.us/2/mc.hypixel.net"
-
--- As mentioned, GetAsync will return the information so we have to put it into a variable
-local info = HttpService:GetAsync(URL)
-
--- Print the information into the Output window
--- If you can't see the Output, go to View -> Output
-print(info)
-```
+	```lua
+	-- Get the HttpService through the GetService() method
+	local HttpService = game:GetService("HttpService")
+	
+	-- Declare the target URL
+	-- URL must be put inside quotes. If there're quotes within the URL, use \ to escape it
+	local URL = "https://api.mcsrvstat.us/2/mc.hypixel.net"
+	
+	-- As mentioned, GetAsync will return the information so we have to put it into a variable
+	local info = HttpService:GetAsync(URL)
+	
+	-- Print the information into the Output window
+	-- If you can't see the Output, go to View -> Output
+	print(info)
+	```
 === "Output"
-```json
-{"ip":"172.65.230.166","port":25565,"debug":{"ping":true,"query":false,"srv":false,"querymismatch":false,"ipinsrv":false,"cnameinsrv":false,"animatedmotd":false,"cachetime":1657866731,"apiversion":2},"motd":{"raw":["                \u00a7aHypixel Network \u00a7c[1.8-1.19]","  \u00a76\u00a7lSUMMER EVENT \u00a77- \u00a7e\u00a7lLEVEL UP, NEW COSMETICS"],"clean":["                Hypixel Network [1.8-1.19]","  SUMMER EVENT - LEVEL UP, NEW COSMETICS"],"html":["                <span style=\"color: #55FF55\">Hypixel Network <\/span><span style=\"color: #FF5555\">[1.8-1.19]<\/span>","  <span style=\"color: #FFAA00\"><span style=\"font-weight: bold;\">SUMMER EVENT <\/span><\/span><span style=\"color: #AAAAAA\">- <\/span><span style=\"color: #FFFF55\"><span style=\"font-weight: bold;\">LEVEL UP, NEW COSMETICS<\/span><\/span>"]},"players":{"online":39948,"max":200000}, .....
-```
+	```json
+	{"ip":"172.65.230.166","port":25565,"debug":{"ping":true,"query":false,"srv":false,"querymismatch":false,"ipinsrv":false,"cnameinsrv":false,"animatedmotd":false,"cachetime":1657866731,"apiversion":2},"motd":{"raw":["                \u00a7aHypixel Network \u00a7c[1.8-1.19]","  \u00a76\u00a7lSUMMER EVENT \u00a77- \u00a7e\u00a7lLEVEL UP, NEW COSMETICS"],"clean":["                Hypixel Network [1.8-1.19]","  SUMMER EVENT - LEVEL UP, NEW COSMETICS"],"html":["                <span style=\"color: #55FF55\">Hypixel Network <\/span><span style=\"color: #FF5555\">[1.8-1.19]<\/span>","  <span style=\"color: #FFAA00\"><span style=\"font-weight: bold;\">SUMMER EVENT <\/span><\/span><span style=\"color: #AAAAAA\">- <\/span><span style=\"color: #FFFF55\"><span style=\"font-weight: bold;\">LEVEL UP, NEW COSMETICS<\/span><\/span>"]},"players":{"online":39948,"max":200000}, .....
+	```
 Now the output will look the same as the JSON screen when we open the URL. **But we haven't done yet.**
 
 ## 2. `JSONDecode`
@@ -145,6 +151,7 @@ Luau (the programming language that Roblox uses) by itself can NOT handle JSON f
     JSONDecode can be used whether or not the HttpService is enabled.
 
 So far, our code look like this (without the comments):
+
 ```lua
 local HttpService = game:GetService("HttpService")
 local URL = "https://api.mcsrvstat.us/2/mc.hypixel.net"
@@ -175,35 +182,35 @@ print(dict.key) --> value
 The method is simple:
 
 === "Script"
-```lua
-local HttpService = game:GetService("HttpService")
-local URL = "https://api.mcsrvstat.us/2/mc.hypixel.net"
-
-local info = HttpService:GetAsync(URL) -- Raw JSON
-local info_dict = HttpService:JSONDecode(info) -- Decoded JSON
-
-print(info_dict) -- Print the info
-```
+	```lua
+	local HttpService = game:GetService("HttpService")
+	local URL = "https://api.mcsrvstat.us/2/mc.hypixel.net"
+	
+	local info = HttpService:GetAsync(URL) -- Raw JSON
+	local info_dict = HttpService:JSONDecode(info) -- Decoded JSON
+	
+	print(info_dict) -- Print the info
+	```
 === "Output"
-**Note: I've cut off some of the output to keep this screen short. Your output will be filled with a alot of bizzare base64 code, but the format will be the same!**
-**Within your output, click the arrow "▶" to expand a table that looks like `{...}`.**
-```lua
-{
-    ["debug"] =  ▶ {...},
-    ["hostname"] = "mc.hypixel.net",
-    ["icon"] = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAA......zrDmHEPQgkAAAAASUVORK5CYII=",
-    ["ip"] = "172.65.236.36",
-    ["motd"] =  ▶ {...},
-    ["online"] = true,
-    ["players"] =  ▼  {
-       ["max"] = 200000,
-       ["online"] = 39694
-    },
-    ["port"] = 25565,
-    ["protocol"] = 47,
-    ["version"] = "Requires MC 1.8 / 1.19"
-}
-```
+	**Note: I've cut off some of the output to keep this screen short. Your output will be filled with a alot of bizzare base64 code, but the format will be the same!**
+	**Within your output, click the arrow "▶" to expand a table that looks like `{...}`.**
+	```lua
+	{
+    		["debug"] =  ▶ {...},
+    		["hostname"] = "mc.hypixel.net",
+    		["icon"] = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAA......zrDmHEPQgkAAAAASUVORK5CYII=",
+		    ["ip"] = "172.65.236.36",
+    		["motd"] =  ▶ {...},
+    		["online"] = true,
+    		["players"] =  ▼  {
+    		   ["max"] = 200000,
+    		   ["online"] = 39694
+    		},
+    		["port"] = 25565,
+    		["protocol"] = 47,
+    		["version"] = "Requires MC 1.8 / 1.19"
+	}
+	```
 Hey look, it's the players information we're looking for! **The amount of players have changed**, but we have talked this through.
 ![info](https://i.imgur.com/scnPtii.png)
 
@@ -268,22 +275,22 @@ As the name suggest, `JSONEncode` do the exact opposite of what `JSONDecode` do:
 
 Here's a quick code example:
 === "Script"
-```lua
-local HttpService = game:GetService("HttpService")
+	```lua
+	local HttpService = game:GetService("HttpService")
 
-local info = {
-    feedback = "This game is epic",
-    rate = 9,
-    player = "shogi"
-}
+	local info = {
+    	feedback = "This game is epic",
+    	rate = 9,
+    	player = "shogi"
+	}
 
-local json = HttpService:JSONEncode(info) -- Raw JSON
-print(json)
-```
+	local json = HttpService:JSONEncode(info) -- Raw JSON
+	print(json)
+	```
 === "Output"
-```json
-{"feedback":"This game is epic","player":"shogi","rate":9}
-```
+	```json
+	{"feedback":"This game is epic","player":"shogi","rate":9}
+	```
 
 ## Additionals
 * [Official Roblox HttpService documentation](https://create.roblox.com/docs/reference/engine/classes/HttpService)

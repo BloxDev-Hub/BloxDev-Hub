@@ -165,7 +165,7 @@ print(info)
 `JSONDecode` has only one parameter, the raw JSON respond returned by `GetAsync`.
 
 ??? question "Wait, why dictionary?"
-JSON and Luau's dictionary share the same key-value pairs behavior, so the engine can easily "decode" it. After decoding, we can start indexing the information like how we did normally.
+	JSON and Luau's dictionary share the same key-value pairs behavior, so the engine can easily "decode" it. After decoding, we can start indexing the information like how we did normally.
 - JSON
 ```json
 {

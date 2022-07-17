@@ -96,6 +96,7 @@ nav:
   - Tutorials: 
     - intro.md
     - ... | flat | Tutorials/*.md # not sorted yet
+  - Articles
   - Others:
     - Others/Help_Us!.md
     - ... | flat | Others/*.md # not sorted yet

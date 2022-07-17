@@ -7,7 +7,7 @@ As the name suggests, tools are the objects with which players can interact. Too
 Every tool requires a [BasePart](https://developer.roblox.com/en-us/api-reference/class/BasePart) named **Handle** as a child of it unless the property `Tool.RequiresHandle` is set to `false`.
 
 ## Creating A Tool
-Add a part in workspace. Change its shape and color as what ever you like. Name the part as **"Handle"**. Click the (+) icon next to workspace and ad a **Tool**.
+Add a part in workspace. Change its shape and color as what ever you like. Name the part as **"Handle"**. Click the (+) icon next to workspace and add a **Tool** in it.
 
 <img src=https://github.com/Rodevs-Helpers/Helpers-Documents/blob/main/images/Tool1.png?raw=true width="300" height="300"/>
 
@@ -19,7 +19,7 @@ Now place tool inside [StarterPack](https://developer.roblox.com/en-us/api-refer
 
 <img src=https://github.com/Rodevs-Helpers/Helpers-Documents/blob/main/images/Tool3.png?raw=true width="300" height="300"/>
 
-When game runs, All the tools in [StarterPack](https://developer.roblox.com/en-us/api-reference/class/StarterPack) are replicated to player's [Bacpack](https://developer.roblox.com/en-us/api-reference/class/Backpack).
+When game runs, all the tools in [StarterPack](https://developer.roblox.com/en-us/api-reference/class/StarterPack) are replicated to player's [Backpack](https://developer.roblox.com/en-us/api-reference/class/Backpack).
 
 Now if you run the game, you can see a tool in your inventory.
 
@@ -51,13 +51,13 @@ end)
 
 ???+ note ""
     * `Script` is a Roblox global which carries the reference of current [Script](https://developer.roblox.com/en-us/api-reference/class/Script) or [Local Script](https://developer.roblox.com/en-us/api-reference/class/LocalScript).
-    * Equipped event returns `Mouse` object. Because it is deperecated, we will not cover it in this guide.
+    * Equipped event returns `Mouse` object. Because it is deprecated, we will not cover it in this guide.
 
 Similarly, [Tool.Unequipped](https://developer.roblox.com/en-us/api-reference/event/Tool/Unequipped) is fired.
 Example Code:
 
 ```lua
-script.Parent.Uneuipped:Connect(function()
+script.Parent.Unequipped:Connect(function()
 	print("Tool got unequipped")
 end)
 ```

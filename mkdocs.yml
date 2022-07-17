@@ -94,7 +94,7 @@ nav:
     - Luau-Learning/Attributes.md
     - ... | flat | Luau-Learning/*.md # not sorted yet
   - ...
-  - Tutorials:
+  - Tutorials: index.md
     - Detecting_Keyboard_Inputs.md
     - Leaderstats.md
   - Example Page:

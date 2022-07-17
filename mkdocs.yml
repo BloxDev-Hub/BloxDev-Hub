@@ -97,6 +97,7 @@ nav:
   - Tutorials: 
   - Others:
     - Others/Help_Us!.md
+    - ... | flat | Others/*.md # not sorted yet
   - ...
   - Example Page:
      - Example-Page/example.md

@@ -94,9 +94,9 @@ nav:
     - Luau-Learning/Attributes.md
     - ... | flat | Luau-Learning/*.md # not sorted yet
   - Tutorials: 
-    - Tutorials/intro.md
     - ... | flat | Tutorials/*.md # not sorted yet
-  - Articles
+  - Articles:
+    - ... | flat | Articles/*.md # not sorted yet
   - Others:
     - Others/Help_Us!.md
     - ... | flat | Others/*.md # not sorted yet

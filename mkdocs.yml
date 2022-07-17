@@ -34,6 +34,7 @@ theme:
          accent: deep orange
     features:
       - navigation.tabs
+      - navigation.indexes
     admonition:
       note: fontawesome/solid/sticky-note
       abstract: fontawesome/solid/book

@@ -34,6 +34,7 @@ theme:
          accent: deep orange
     features:
       - navigation.tabs
+      - navigation.indexes
     admonition:
       note: fontawesome/solid/sticky-note
       abstract: fontawesome/solid/book
@@ -93,6 +94,9 @@ nav:
     - Luau-Learning/Attributes.md
     - ... | flat | Luau-Learning/*.md # not sorted yet
   - ...
+  - Tutorials:
+    - Detecting_Keyboard_Inputs.md
+    - Leaderstats.md
   - Example Page:
      - Example-Page/example.md
      - Example-Page/mkdocs_additions.md

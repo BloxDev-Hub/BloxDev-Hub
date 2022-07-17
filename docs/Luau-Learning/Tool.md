@@ -9,15 +9,15 @@ Every tool requires a [BasePart](https://developer.roblox.com/en-us/api-referenc
 ## Creating A Tool
 Add a part in workspace. Change its shape and color as what ever you like. Name the part as **"Handle"**. Click the (+) icon next to workspace and ad a **Tool**.
 
-<img src=https://github.com/Rodevs-Helpers/Helpers-Documents/blob/main/images/Tool1.png?raw=true width="150" height="150"/>
+<img src=https://github.com/Rodevs-Helpers/Helpers-Documents/blob/main/images/Tool1.png?raw=true width="300" height="300"/>
 
 Parent the **Handle** to the **Tool**.
 
-<img src=https://github.com/Rodevs-Helpers/Helpers-Documents/blob/main/images/Tool2.png?raw=true width="200" height="200"/>
+<img src=https://github.com/Rodevs-Helpers/Helpers-Documents/blob/main/images/Tool2.png?raw=true width="300" height="300"/>
 
 Now place tool inside [StarterPack](https://developer.roblox.com/en-us/api-reference/class/StarterPack).
 
-<img src=https://github.com/Rodevs-Helpers/Helpers-Documents/blob/main/images/Tool3.png?raw=true width="200" height="200"/>
+<img src=https://github.com/Rodevs-Helpers/Helpers-Documents/blob/main/images/Tool3.png?raw=true width="300" height="300"/>
 
 When game runs, All the tools in [StarterPack](https://developer.roblox.com/en-us/api-reference/class/StarterPack) are replicated to player's [Bacpack](https://developer.roblox.com/en-us/api-reference/class/Backpack).
 

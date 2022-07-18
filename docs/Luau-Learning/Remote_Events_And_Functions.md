@@ -1,3 +1,7 @@
+---
+Title: Remote Events and Functions
+---
+
 # Basic Understandings
 Roblox uses a client-server framework for handling multiplayer games. Roblox engine offers **Remote Events** and **Remote Functions** as a medium for communication between **clients** and **server**.
 

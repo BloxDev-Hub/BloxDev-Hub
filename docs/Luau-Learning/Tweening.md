@@ -47,6 +47,7 @@ Now that you have the basics and uses of tweening on hand, let's do some animati
 ### 2. List of types that can be tweened
 
 `TweenService` can only help animating properties of type in the following list:
+
 * `number`
 * `boolean`
 * [`CFrame`](https://create.roblox.com/docs/reference/engine/datatypes/CFrame)
@@ -61,7 +62,7 @@ Now that you have the basics and uses of tweening on hand, let's do some animati
 
 This list is important to remember, any other properties of type outside of this list can **NOT** be animated by `TweenService`.
 
-??? note What are some valid properties?
+??? note "What are some valid properties?"
     For instances like Part: `Position`, `CFrame`, `Size`, `Color`, `Transparency`, ...
     For UI elements: `Position`, `Size`, `Rotation`, `BackgroundColor3`, `TextColor3`, `BackgroundTransparency`, ...
 
@@ -99,6 +100,7 @@ As you can see, each floor tiles is smoothly changing it's color, creating a col
 Now, take a closer look into the video. **There's a pattern on how the tiles are tweening**. To determine how they tween, we will use the `TweenInfo` datatype, as for **tween**ing **info**rmation.
 
 `TweenInfo` have **only one** constructor, `TweenInfo.new()`, along with **six parameters**:
+
 * `time: number` - Duration of the tween, in seconds
 * `easingStyle: Enum.EasingStyle` - The "style", or how the tween looks like
 * `easingDirection: Enum.EasingDirection` - The direction for the `EasingStyle` to occur

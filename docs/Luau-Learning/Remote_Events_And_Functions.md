@@ -27,25 +27,13 @@ To use remote events, add a remote event in [replicated storage].
 As mentioned earlier, the remote event acts as a single pathway for communication. Here are some possible ways of using remote events.
 
 <div class="mermaid">
-graph LR
-  A[Start] --> B{Error?};
-  B -->|Yes| C[Hmm...];
-  C --> D[Debug];
-  D --> B;
-  B ---->|No| E[Yay!];
-</div>
-
-
-<div class="mermaid">
 graph LR  
    A[Client] --> B{Server};
 </div>
-
 <div class="mermaid">
 graph LR  
    A{Server} --> B[Client];
 </div>
-
 <div class="mermaid">
 graph LR  
    A{Server} --> B[All clients];
@@ -107,7 +95,6 @@ graph LR
    A[Client] --> B{Server};
    B --> C[Client]
 </div>
-
 <div class="mermaid">
 graph LR  
    A[Server] --> B{Client};

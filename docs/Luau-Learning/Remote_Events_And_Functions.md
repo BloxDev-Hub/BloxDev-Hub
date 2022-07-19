@@ -26,30 +26,30 @@ To use remote events, add a remote event in [replicated storage].
 
 As mentioned earlier, the remote event acts as a single pathway for communication. Here are some possible ways of using remote events.
 
-``` mermaid
+<div class="mermaid">
 graph LR
   A[Start] --> B{Error?};
   B -->|Yes| C[Hmm...];
   C --> D[Debug];
   D --> B;
   B ---->|No| E[Yay!];
-```
+</div>
 
 
-```mermaid
+<div class="mermaid">
 graph LR  
    A[Client] --> B{Server};
-```
+</div>
 
-```mermaid
+<div class="mermaid">
 graph LR  
    A{Server} --> B[Client];
-```
+</div>
 
-```mermaid
+<div class="mermaid">
 graph LR  
    A{Server} --> B[All clients];
-```
+</div>
 
 ### Client to Server
 When communicating from a client to the server we call the method **[RemoteEvent:FireServer()](https://developer.roblox.com/en-us/api-reference/function/RemoteEvent/FireServer)**. You can transmit any number of information by passing them as arguments.
@@ -102,17 +102,17 @@ As earlier, add a remote function in [ReplicatedStorage](https://developer.roblo
 
 Remote functions work similarly to remote events but as a bi-directional pathway.
 
-```mermaid
+<div class="mermaid">
 graph LR  
    A[Client] --> B{Server};
    B --> C[Client]
-```
+</div>
 
-```mermaid
+<div class="mermaid">
 graph LR  
    A[Server] --> B{Client};
    B --> C[Server]
-```
+</div>
 
 The remote function acts as a request and waits for the response and then returns.
 

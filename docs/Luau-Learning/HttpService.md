@@ -81,6 +81,7 @@ game:GetService("HttpService").HttpEnabled = true
 It's best to explain with an example. In this article, we will try to get the amount of online players within the [Hypixel Minecraft Server](https://hypixel.net/). This should be interesting enough.
 
 You will use these 2 methods in this example:
+
 * `HttpService:GetAsync(url, nocache, headers)`
 * `HttpService:JSONDecode(input)`
 

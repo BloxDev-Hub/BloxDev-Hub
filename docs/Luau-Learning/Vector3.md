@@ -17,7 +17,7 @@ A vector is drawn from the origin `O` to the `(10,10)` coordinate point of the p
 ## 3D Vector
 In three-dimensional space, There are three axes `X-Axis`, `Y-Axis`, and `Z-Axis`. A 3D vector is the same as 2D but with an extra dimension. The rest of our topic will be based on a three-dimensional vector.
 
-![3dvector](https://imgur.com/iuo7ELL.png)
+![3dvector](https://imgur.com/rvo4Pbz.png)
 
 Similar to a 2D vector, coordinates of a vector in 3 dimensions are written as `(10,10,10)`. These coordinate points represent the magnitude of the vector on the X, Y, and Z axis and are written as `(X, Y, Z)`.
 ??? correct "Confused about how we calculated the magnitude?"
@@ -26,13 +26,12 @@ Similar to a 2D vector, coordinates of a vector in 3 dimensions are written as `
 	
     The length of the vector on each axis is represented by three lines. Each of them is parallel to one of the lines of the axis. The line parallel to the x-axis represents its magnitude on the x-axis, the same for the y and z-axis.
 
-# Vector in Roblox
-In Roblox, a **Vector3** is a vector in the three-dimensional space.
-
- It is created by `Vector3.new(x,y,z)`. Roblox engine uses `Vector3` in multiple cases, such as positioning base parts, size of base parts, setting directions of linear velocities, etc. In every case the origin of the vector is different. We will talk about them later. For now, we will go through some common properties of Vector3.
+## Vector in Roblox
+In Roblox, a **Vector3** is a vector in the three-dimensional space. It is created by `Vector3.new(x,y,z)`. Roblox engine uses `Vector3` in multiple cases, such as positioning base parts, size of base parts, setting directions of linear velocities, etc. In every case the origin of the vector is different. We will talk about them later. For now, we will go through some common properties of Vector3.
 
 ## Magnitude of a Vector.
-	For your easiness, Roblox allows you to get the magnitude of a vector by just `Vector3.Magnitude`. As mentioned earlier, magnitude is the length of the vector. If `v` is a vector and its magnitude is (10,13,10) then its magnitude is given by
+For your easiness, Roblox allows you to get the magnitude of a vector by just `Vector3.Magnitude`. As mentioned earlier, magnitude is the length of the vector. If `v` is a vector and its magnitude is (10,13,10) then its magnitude is given by
+
 ```
 |V| = √(x^2 + y^2 + z^2)
 |V| = √(10^2 + 13^2 + 10^2)
@@ -40,6 +39,7 @@ In Roblox, a **Vector3** is a vector in the three-dimensional space.
 |V| = √(369)
 |V| = 19.209
 ```
+
 Now, in the studio, add the following code is a script and run
 
 === "Code"
@@ -51,6 +51,7 @@ Now, in the studio, add the following code is a script and run
 	```
 	 19.209
 	```
+
 It is the length of a vector given in studs.
 
 ## Unit Vector
@@ -69,13 +70,16 @@ We will first calculate the magnitude and divide it by every component of the ve
 |u| = √(369)
 |u| = 19.209
 ```
+
 Let x2, y2, and z2 be the x,y, and z components of  **û**.
 Dividing x,y, and z components of **u** by |u|
+
 ```
 x2 = x / |u| = 10 / 19.209 = 0.5205
 y2 = y / |u| = 13 / 19.209 = 0.6767
 z2 = z / |u| = 10 / 19.209 = 0.5205
 ```
+
 We have obtained by x,y, and z components of the unit vector (**û**).  Now the coordinates of **û** is (0.5205,0.6767,0.5205). If it is a unit vector then its magnitude must be 1. Let's prove that
 
 ```
@@ -112,5 +116,5 @@ A vector perpendicular to a surface is called a normal vector.
 
 In Roblox, you can find a normal vector in [RaycastResult.Normal](https://developer.roblox.com/en-us/api-reference/datatype/RaycastResult). This vector is normal to the intersected face. There are many other use cases that you will find when computing vector maths
 
-# Closing!
+### Closing!
 I hope it helped in developing a better understanding of vectors and Vector3. Feel free to report this article if there is any mistake. We will discuss use of vector3 in positions and sizes of baseparts. Bai!

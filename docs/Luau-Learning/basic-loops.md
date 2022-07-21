@@ -19,40 +19,42 @@ repeat deden = deden + 1 until deden < 20 -- 'repeat' loop.
 `while` loops first check the condition given. If the condition is true, it runs its code. This will repeat for as long as the condition remains true.
 Notice how the example below stops working when `i` is 5.
 
-```lua
--- Example:
-local i = 0
-while i < 5 do
-	print(i)
-	i = i + 1
-end
+=== "Code"
+	```lua
+	local i = 0
+	while i < 5 do
+		print(i)
+		i = i + 1
+	end
+	```
+=== "Output"
+	```
+	1
+	2
+	3
+	4
+	```
 
--- Output:
--- 1
--- 2
--- 3
--- 4
--- 5
-```
-
-**WARNING:** `while` loops run for as long as the condition is true; if your condition remains true without changing and without a `wait()`, your `while` loop runs forever and will cause your game to hang. This is known as an infinite loop - avoid this at all costs.
+!!! warning ""
+	 `while` loops run for as long as the condition is true; if your condition remains true without changing and without a `wait()`, your `while` loop runs forever and will cause your game to hang. This is known as an infinite loop - avoid this at all costs.
 
 ## For Loops
 Given a number known as the counter, `for` loops repeat for as long as the counter does not hit the given maximum.
 
-```lua
--- Example:
-for i = 1, 5 do
-	print(i)
-end
-
--- Output:
--- 1
--- 2
--- 3
--- 4
--- 5
-```
+=== "Code"
+	```lua
+	for i = 1, 5 do
+		print(i)
+	end
+	```
+=== "Output"
+	```
+	1
+	2
+	3
+	4
+	5
+	```
 
 You may have noticed that `for` loops look very similarly to `while` loops. Consider that the `for` loop example runs similarly to the `while` loop example.
 
@@ -61,33 +63,37 @@ Notice how we used only 2 numbers in the statement `for i = 1, 5 do`. When you p
 
 You can override this behavior by providing a 3rd number, otherwise known as the increment. When you do so, your loop will instead start counting up in that increment.
 
-```lua
-for i = 1, 5, 2 do
-	print(i)
-end
-
--- Output:
--- 1
--- 3
--- 5
-```
+=== "Code"
+	```lua
+	for i = 1, 5, 2 do
+		print(i)
+	end
+	```
+=== "Output"
+	```
+	1
+	3
+	5
+	```
 
 In the example below, we have provided `2` as the increment. This tells the `for` loop to start counting up by 2 instead of the default 1. 
 
 You can even apply this to have your `for` loop count DOWNWARDS.
 
-```lua
-for i = 5, 1, -1 do
-	print(i)
-end
-
--- Output:
--- 5
--- 4
--- 3
--- 2
--- 1
-```
+=== "Code"
+	```lua
+	for i = 5, 1, -1 do
+		print(i)
+	end
+	```
+=== "Output"
+	```
+	5
+	4
+	3
+	2
+	1
+	```
 
 !!! note "WARNING:"
 	An increment of 0 results in an infinite loop as the `for` loop never reaches the end value!
@@ -100,37 +106,52 @@ A good way of phrasing this will be like so:
 * "while this is true, do this" / "check first, then do"
 * "repeat doing this until this is true" / "do first, then check"
 
-```lua
-local i = 0
-repeat 
-	i = i + 1
-	print(i)
-until i > 5
+=== "Code"
+	```lua
+	local i = 0
+	repeat 
+		i = i + 1
+		print(i)
+	until i > 5
+	```
+=== "Output"
+	```
+	1
+	2
+	3 
+	4 
+	5 
+	6
+	```
 
--- Output:
--- 1, 2, 3, 4, 5, 6
+!!! note ""
+	* Notice the inequality sign (>) in the until statement.
+ 	* This can be interpreted as "add 1 to i, then check if i is above 5. If yes, don't repeat anymore. Else, repeat."
 
--- Notice the inequality sign (>) in the until statement.
--- This can be interpreted as "add 1 to i, then check if i is above 5. If yes, don't repeat anymore. Else, repeat."
-```
-```lua
-local i = 0
-while i < 5 do
-	i = i + 1
-	print(i)
-end
+=== "Code"
+	```lua
+	local i = 0
+	while i < 5 do
+		i = i + 1
+		print(i)
+	end
+	```
+=== "Output"
+	```
+	1
+	2
+	3
+	4
+	5
+	```
 
--- Output:
--- 1, 2, 3, 4, 5.
-
--- Notice the inequality sign (<) in the while statement, which is different from that in the repeat loop above.
--- This can be interpreted as "check if i is above 5. If yes, repeat. Else, skip and do not loop anymore."
--- This is also why the while loop doesn't print 6, while the repeat loop does.
-```
+!!! note ""
+	* Notice the inequality sign (<) in the while statement, which is different from that in the repeat loop above.
+	* This can be interpreted as "check if i is above 5. If yes, repeat. Else, skip and do not loop anymore."
+	* This is also why the while loop doesn't print 6, while the repeat loop does.
 
 ## Closing
 Loops are very powerful constructs that let you repeatedly run a set of instructions with minimal copy and paste. This makes your code easy to read and edit and also gives you more control over it.
 
 Where applicable, use the appropriate ones as much as possible!
 
-Note that this is not all there are to loops. Read the intermediate guide to loops if you wish to understand more about loops!

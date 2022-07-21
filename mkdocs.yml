@@ -33,6 +33,7 @@ theme:
          primary: light blue
          accent: deep orange
     features:
+      - navigation.top
       - navigation.tabs
       - navigation.indexes
     admonition:

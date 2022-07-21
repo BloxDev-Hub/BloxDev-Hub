@@ -167,4 +167,4 @@ end
 **Do make sure to provide the correct property name for your keys however. Otherwise, your script may throw a nil error!**
 
 ## Closing
-Have a suggestion to improve the article? Ping me on Discord! 
+The article is an extension to dictionaries. We hope it helped you in improving your concepts. Thanks for reading!

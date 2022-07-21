@@ -117,4 +117,4 @@ A vector perpendicular to a surface is called a normal vector.
 In Roblox, you can find a normal vector in [RaycastResult.Normal](https://developer.roblox.com/en-us/api-reference/datatype/RaycastResult). This vector is normal to the intersected face. There are many other use cases that you will find when computing vector maths
 
 ### Closing!
-I hope it helped in developing a better understanding of vectors and Vector3. Feel free to report this article if there is any mistake. We will discuss use of vector3 in positions and sizes of baseparts. Bai!
+I hope it helped in developing a better understanding of vectors and Vector3. Feel free to report this article if there is any mistake. There is a few stuff left regarding vectors and we will discuss them later. For now, bai!

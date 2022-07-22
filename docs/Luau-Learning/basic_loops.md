@@ -1,5 +1,5 @@
 ---
-Title: Basics about Loops
+title: Basics about Loops
 ---
 
 # Loops in Lua

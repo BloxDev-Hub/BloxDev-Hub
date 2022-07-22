@@ -116,8 +116,6 @@ nav:
     - Luau-Learning/More_on_Dictionaries.md
     - ... | flat | Luau-Learning/*.md # not sorted yet
   - Tutorials:
-    - Tutorials/index.md
-    - Tutorials/Leaderstats.md
     - ... | flat | Tutorials/*.md # not sorted yet
   - ...
   - Example Page:

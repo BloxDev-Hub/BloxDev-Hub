@@ -3,7 +3,7 @@ Title: Creating Leaderstats
 ---
 
 # Leaderstats
-Leaderstat/Leaderboard is basically the board that appears on the right top of player's screen. if you are used to playing games on Roblox then you must have seen this in many games.
+Leaderstats/Leaderboard is basically the board that appears on the right top of player's screen. if you are used to playing games on Roblox then you must have seen this in many games.
 
 <img src=https://github.com/Rodevs-Helpers/Helpers-Documents/blob/editing/images/leaderstats1.png?raw=true width="500" height="500"/>
 

@@ -1,7 +1,7 @@
 site_name: Helpers Documents
 site_url: https://rodevs-helpers.github.io/Helpers-Documents
 copyright: Copyright 2022 - 2023 © RoDevs Helpers Department. Not affiliated with Roblox or Discord. Home - Privacy Policy
-site_description: Helpers Documents, a place where you will learn multiple things about developing from our incredible helpers. https://cdn.discordapp.com/attachments/967211650174308426/977897802661244928/unknown_2.png 
+site_description: Helpers Documents, a place where you will learn multiple things about developing from our incredible helpers. <img src=https://cdn.discordapp.com/attachments/967211650174308426/977897802661244928/unknown_2.png?raw=true width="200" height="200"/>  
 
 extra_css:
   - stylesheets/extra.css

@@ -115,9 +115,9 @@ nav:
     - Luau-Learning/more_about_functions.md
     - Luau-Learning/More_on_Dictionaries.md
     - ... | flat | Luau-Learning/*.md # not sorted yet
-  - Tutorials:
-    - ... | flat | Tutorials/*.md # not sorted yet
   - ...
+  - Others:
+    - ... | flat | Others/*.md # not sorted yet
   - Example Page:
      - Example-Page/example.md
      - Example-Page/mkdocs_additions.md

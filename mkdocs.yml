@@ -85,16 +85,38 @@ plugins:
 nav:
   - Home: index.md
   - Luau-Learning:
+    - Luau-Learning/Introduction_To_Studio.md
     - Luau-Learning/Strings.md
     - Luau-Learning/Variables.md
+    - Luau-Learning/If_statements.md
     - Luau-Learning/Basics_of_Functions.md
     - Luau-Learning/basic-loops.md
     - Luau-Learning/operators.md
+    - Luau-Learning/Tables.md
+    - Luau-Learning/basics_of_properties.md
     - Luau-Learning/handling_events.md
     - Luau-Learning/globals.md
     - Luau-Learning/Attributes.md
+    - Luau-Learning/Scripts_and_Local_scripts.md
+    - Luau-Learning/Players_Service.md
+    - Luau-Learning/Character.md
+    - Luau-Learning/modules.md
+    - Luau-Learning/Vector3.md
+    - Luau-Learning/Vector3_Part_2.md
+    - Luau-Learning/Position_and_Size.md
+    - Luau-Learning/Tweening.md
+    - Luau-Learning/ContextActionService.md
+    - Luau-Learning/Tool.md
+    - Luau-Learning/Remote_Events_And_Functions.md
+    - Luau-Learning/Bindable_events_and_functions.md
+    - Luau-Learning/HttpService.md
+    - Luau-Learning/RayCasting.md
+    - Luau-Learning/metatables.md
+    - Luau-Learning/more_about_functions.md
+    - Luau-Learning/More_on_Dictionaries.md
     - ... | flat | Luau-Learning/*.md # not sorted yet
-  - Tutorials: 
+  - Tutorials:
+    - Tutorials/Leaderstats.md
     - ... | flat | Tutorials/*.md # not sorted yet
   - ...
   - Example Page:

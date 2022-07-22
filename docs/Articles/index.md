@@ -5,4 +5,6 @@ Welcome to the articles tab! Here you will find articles of all categories, all 
 Our main objective is to encourage people to learn something new whenever they can, that's why we want to make a special site for it, in which you can expand your knowledge.<br><br>
 If you want to share your knowledge, contact us.
 
+                                    **COMING SOON!**
+
 ![Thanks](https://github.com/Rodevs-Helpers/Helpers-Documents/blob/editing/images/thanks.jpg?raw=true)

@@ -1,10 +1,4 @@
 ---
-hide:
-  - navigation
-  - footer
----
-
----
 title: Help Us!
 ---
 # Reviews :octicons-heart-fill-24:{ .heart }

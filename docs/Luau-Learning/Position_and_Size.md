@@ -45,7 +45,7 @@ Previously we were changing position from the center of the world. Now if you wa
 
 ![newpos](https://imgur.com/D9jXDBP.png)
 
-We will simply add a vector `(0,4,0)` in the position vector of the part. This will be done through [additon of vectors]().
+We will simply add a vector `(0,4,0)` in the position vector of the part. This will be done through [additon of vectors](https://rodevs-helpers.github.io/Helpers-Documents/Luau-Learning/Vector3_Part_2/#addition-of-vectors).
 
 ```lua
 --Geeting initial position (8,6,8)

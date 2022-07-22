@@ -1,3 +1,7 @@
+---
+Title: Detecting Keyboard Inputs
+---
+
 # Detecting Keyboard Inputs With UserInputService
 In this tutorial, I will be showing you how to detect keyboard inputs with [**UserInputService**](https://developer.roblox.com/en-us/api-reference/class/UserInputService). 
 

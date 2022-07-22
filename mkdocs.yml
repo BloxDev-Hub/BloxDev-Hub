@@ -55,6 +55,9 @@ extra:
     - icon: fontawesome/brands/discord
       link: https://discord.gg/rodevs
       name: Join the discord server!
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/RoDevsWorld
+      name: Follow us on twitter!
 
 markdown_extensions:
   - attr_list

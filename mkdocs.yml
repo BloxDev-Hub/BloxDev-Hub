@@ -52,7 +52,7 @@ theme:
 extra:
   analytics:
     provider: google
-    property: G-XXXXXXXXXX
+    property: G-DK4D1FN7GD
   generator: false
   social:
     - icon: fontawesome/brands/discord

@@ -50,6 +50,9 @@ theme:
       example: fontawesome/solid/flask
       quote: fontawesome/solid/quote-left
 extra:
+  analytics:
+    provider: google
+    property: G-XXXXXXXXXX
   generator: false
   social:
     - icon: fontawesome/brands/discord

@@ -38,7 +38,7 @@ Imagine 2 people, "Steve" and "Alex" respectively, communicating with each other
 
 In this story, Steve is communicating with Alex through texting. Steve sent a question, wanting to know where Alex was and Alex responded with her being at her grandpa's house and she would return by tomorrow.
 
-HttpService works the same way. HttpService communicate with outer servers using the [JSON format](https://www.w3schools.com/whatis/whatis_json.asp) (not regular text!). In order to get information from server X, HttpService send a HTTP request to request data from X (through a method which we will cover in the next part). X will then respond with a data (also in JSON format) that sastisfy the required information from HttpService.
+HttpService works the same way. HttpService communicate with outer servers using the [JSON format](https://www.w3schools.com/whatis/whatis_json.asp) (not regular text!). In order to get information from server X, HttpService send a HTTP request to request data from X (through a method which we will cover in the next part). X will then respond with a data (also in JSON format) that satisfy the required information from HttpService.
 
 ??? question "What does JSON looks like?"
 
@@ -77,7 +77,7 @@ game:GetService("HttpService").HttpEnabled = true
     
     Enabling the service won't heavily damage the in-game security, but make sure to have anti-exploit methods for your game!
     
-### Now is the coding part
+### Then we start coding
 It's best to explain with an example. In this article, we will try to get the amount of online players within the [Hypixel Minecraft Server](https://hypixel.net/). This should be interesting enough.
 
 You will use these 2 methods in this example:
@@ -87,18 +87,18 @@ You will use these 2 methods in this example:
 
 Let's do some communication, like Steve and Alex.
 
-## 1. `GetAsync`
+### 1. `GetAsync`
 In order to know how many players there are in Hypixel, we will request data from that server.
 
 `GetAsync` performs a "Get" request (commonly written as GET) to the target server and get the target information. You can understand "Async" as "waiting", because we don't know when the server will respond. It could be instantly, or 1 second, sometimes 10 seconds. `GetAsync` will yield the script until a respond is given.
 
-### 1.1. Indicating the target URL
+#### 1.1. Indicating the target URL
 `GetAsync` consists of 3 parameters. We will only use the first one, the `url` endpoint parameter.
 
 Now, we need to determine the endpoint URL.  **An endpoint URL is basically where the information is shown**, and in this example I will use the following URL:
 * [`https://api.mcsrvstat.us/2/mc.hypixel.net`](https://api.mcsrvstat.us/2/mc.hypixel.net)
 
-### 1.2. Find the information
+#### 1.2. Find the information
 When you open the URL, you will see a very long and confusing text (unless you're using Firefox, they have a very nice viewer for JSON). This is the JSON that is containing information regarding Hypixel.
 
 ![raw](https://i.imgur.com/NKq4Loh.png)
@@ -112,7 +112,7 @@ Now, our initial goal is to **find the amount of online players**. You might hav
 
     This line indicates that there are, as of the time this image is taken, 40737 online players. **Keep in mind that this number is NOT constant because players join and leave every moment.** These kind of results are expected to change all the time.
 
-### 1.3. Coding
+#### 1.3. Coding
 Now we know where is the information to get, time to open Roblox Studio.
 
 HttpService requests should always be handled within a `Script` under `ServerScriptService`. Create one by **right clicking the "ServerScriptService" -> Insert Object... -> Script**. Name the script however you want!
@@ -144,7 +144,7 @@ Now, take a close look at the following script. Each comment will help you under
 	```
 Now the output will look the same as the JSON screen when we open the URL. **But we haven't done yet.**
 
-## 2. `JSONDecode`
+### 2. `JSONDecode`
 Luau (the programming language that Roblox uses) by itself can NOT handle JSON format. The output you're looking at is a string version of the raw JSON data, and it is a nightmare to work with. Thankfully though, HttpService has another method that can help us turning a JSON mess into something we can code with, the `JSONDecode` method.
 
 !!! info "Note"
@@ -228,8 +228,8 @@ print("There are "..online_players.." players in Hypixel.")
 ```
 Take a look at your output, you will see a line like `There are 32093 players in Hypixel`. Of course, this number is not constant, but if you do see one, that means the request has successfully been done and **you have a basic idea of know how to use `GetAsync` and `JSONDecode`**!
 
-## *. Improvements
-While the URL I picked for you is relatively stable and accurate and the Hypixel server is likely never go offline, sometimes **maintainence** or **sudden outage** can occur, and either one of them will be down. This cause 2 problems to appear:
+### *. Improvements
+While the URL I picked for you is relatively stable and accurate and the Hypixel server is likely never go offline, sometimes **maintenance** or **sudden outage** can occur, and either one of them will be down. This cause 2 problems to appear:
 * The endpoint URL is inaccessible, making the HttpService errored.
 * The request return an error (caused by the offline Hypixel server), making the HttpService errored.
 
@@ -251,11 +251,11 @@ if success then -- success is a boolean value, it should be self-explanatory.
     local online_players = info_dict.players.online
     print("There are "..online_players.." players in Hypixel.")
 else
-    warn('Error occured! '..info) -- This "info" variable will handle our error messages. You can start your debugging process based on this.
+    warn('Error occurred! '..info) -- This "info" variable will handle our error messages. You can start your debugging process based on this.
 end
 ```
 
-## 3. `PostAsync`
+### 3. `PostAsync`
 `PostAsync` is a method that "post" data to a specified web server (this is commonly written as "POST requests") and handle results that returned by said server. **However, `PostAsync` can not be replaced by `GetAsync` and vice versa**. This is because some web servers are designated to handle GET or POST requests only.
 
 `PostAsync` has 5 parameters, the first 2 are **mandatory**: 
@@ -265,14 +265,13 @@ end
 `PostAsync` can be used to make, for example, a feedback system in Roblox, where players send feedback to the feedback section and developers will based on that to improve the game.
 
 
-## 4. `JSONEncode`
-As the name suggest, `JSONEncode` do the exact opposite of what `JSONDecode` do: **convert a dictionary table to raw JSON**. This raw JSON can be used as the `data` argument for the `PostAsync` method.
+### 4. `JSONEncode`
+As the name suggest, `JSONEncode` do the exact opposite of what `JSONDecode` do: **convert a dictionary table to a JSON string**. This raw JSON can be used as the `data` argument for the `PostAsync` method.
 
 !!! info "Note"
-
     JSONEncode can be used whether or not the HttpService is enabled.
 
-`JSONDecode` has only one parameter, a dictionary table.
+`JSONEncode` has only one parameter, a dictionary table.
 
 Here's a quick code example:
 === "Script"
@@ -285,15 +284,18 @@ Here's a quick code example:
     	player = "shogi"
 	}
 
-	local json = HttpService:JSONEncode(info) -- Raw JSON
+	local json = HttpService:JSONEncode(info) -- Raw JSON in string type
 	print(json)
 	```
 === "Output"
 	```json
 	{"feedback":"This game is epic","player":"shogi","rate":9}
 	```
+	
+!!! attention "Note"
+    If one of the value in the dictionary is `nil`, that key-value pair **will be ignored.** That means it will not be translated to JSON `null` value.
 
-## Additionals
+## Additional links
 * [Official Roblox HttpService documentation](https://create.roblox.com/docs/reference/engine/classes/HttpService)
 * [More about HTTP Requests](https://www.w3schools.com/tags/ref_httpmethods.asp)
 * [More about the JSON format](https://www.json.org/json-en.html)

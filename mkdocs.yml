@@ -25,13 +25,13 @@ theme:
            icon: material/weather-night
            name: Switch to dark mode
          primary: blue
-         accent: deep orange
+         accent: green
       -  scheme: slate
          toggle:
            icon: material/weather-sunny
            name: Switch to dark mode
          primary: light blue
-         accent: deep orange
+         accent: green
     features:
       - navigation.top
       - navigation.tabs

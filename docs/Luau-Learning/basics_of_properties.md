@@ -6,7 +6,7 @@ Title: basics_of_properties
 Properties are a very key aspect in instances and Roblox programming. A property is an aspect of an **Instance** which can be changed.
 
 ## Using Properties
-Properties are very imp ortant and can be used in multiple ways. Here's how to access property and edit a property. Here I'll be changing the properties of a part via script.
+Properties are very important and can be used in multiple ways. Here's how to access property and edit a property. Here I'll be changing the properties of a part via script.
 
 ```lua
 local Part = workspace.Part/Instance.new('Part') -- Example
@@ -14,6 +14,7 @@ Part.Name = 'Part' -- We use . to get a property
 Part.Parent = workspace
 Part.BrickColor = BrickColor.new('Really Red')
 ```
+
 ### Common Mistakes Made When Using Properties
 Lots of new scripters commonly make the mistake of **Indirect Changes**.
 An indirect change is where you change the value of a **Variable** but not the value of your property.
@@ -33,9 +34,24 @@ An indirect change is where you change the value of a **Variable** but not the v
 
 The reason didn't work is because when we want to change something like this we have to access the value directly.
 
+Correct way of doing this
+=== "Code"
+    ```lua
+    local Cash = Player.leaderstats.Cash
+    Cash.Value = 50
+    print(Cash)
+    print(Player.leaderstats.Cash.Value) 
+    ```
+=== "Output"
+    ```
+    50
+    50
+    ```
+
 ## How to use properties outside of scripts
 Firstly, make sure you have the properties tab enabled. If you don't, click the view tab at the top of roblox studio and click on properties(near the left).
-Insert screenshot here of view eden
+
+![viewtab](https://imgur.com/CicwqfX.png)
 
 Once that is enabled you can change the properties of anything!
 Click on the instance you want to change and look at the properties menu. Loads of things are waiting to be changed to your liking.

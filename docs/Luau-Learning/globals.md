@@ -86,7 +86,7 @@ It returns the data type of the given argument.
 === "Example Code:"
 	```lua
 	local hi = true
-    local data = {"Edenroose","Teddy","Cake","Selfish"}
+    local data = {"EdenRose","Teddy","Cake","Selfish"}
     print(type(hi))
     print(type(data))
 	```
@@ -104,7 +104,7 @@ It calls the given function in protected mode. In case of any error the thread w
 	```lua
 	local function test(name)
 	    print(name)
-	    assert(name == "Edenroose", "Incorrect Name!")
+	    assert(name == "EdenRose", "Incorrect Name!")
     end
     local status , result = pcall(test,"Willie")
     print(status,result)
@@ -121,7 +121,7 @@ final_index = #table
 
 === "Example Code:"
 	```lua
-	local tbl = {"Edenroose","Teddy","Cake","Selfish","Smart","Intelligent"}
+	local tbl = {"EdenRose","Teddy","Cake","Selfish","Smart","Intelligent"}
     print(unpack(tbl,2,5))
 	```
 === "Output"

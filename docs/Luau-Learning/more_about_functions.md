@@ -123,7 +123,7 @@ local function iter(b)
 		return b[ins] and ins , b[ins]
 	end
 end
-local tbl = {"edenroose", "hehe", "cute", "alive"}
+local tbl = {"edenrose", "hi", "cute", "alive"}
 for i,v in iter(tbl) do
 	print(i,v)
 end
@@ -132,7 +132,7 @@ end
 Output:
 
 ```
-1 edenroose
+1 edenrose
 2 hi
 3 cute
 4 alive

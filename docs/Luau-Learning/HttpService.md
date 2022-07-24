@@ -21,11 +21,11 @@ As mentioned above, HttpService can help you do basic communications between you
 * Other fun API stuff
 
 ### What **can't** be HttpService used for?
-* Interact with [internal Roblox APIs](https://roblox.fandom.com/wiki/List_of_web_APIs) or any Roblox websites
-* Interact with services that have Roblox whitelisted
+* Interact with [internal Roblox APIs](https://roblox.fandom.com/wiki/List_of_web_APIs) or any Roblox websites.
+* Interact with services that are blocked by Roblox.
 * Create/host a web server
     * Hence, this service can not respond to any HTTP requests.
-* URL embedding (e.g. use an image URL as an UI element, or play a YouTube URL)
+* URL embedding (e.g. use an image URL as an UI element, or play a YouTube URL).
 
 
 Next, you will learn how to use HttpService.

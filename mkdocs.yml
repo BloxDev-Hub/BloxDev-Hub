@@ -140,7 +140,3 @@ nav:
   - ...
   - Others:
     - ... | flat | Others/*.md # not sorted yet
-  - Example Page:
-     - Example-Page/example.md
-     - Example-Page/mkdocs_additions.md
-     - Example-Page/setup.md

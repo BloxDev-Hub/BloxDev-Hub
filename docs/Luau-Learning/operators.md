@@ -72,7 +72,7 @@ Just like ``and``, you can also use ``or`` when assigning values to variables.
 	```
 === "Output"
 	```
-	wtf wrong !!!!"
+	wtf wrong !!!!
 	```
 
 ### Not
@@ -143,8 +143,8 @@ This operator checks if one value is less than to another value
 
 === "Code"
 	```lua
-		print(2 < 3)
-		print(4 < -1)
+	print(2 < 3)
+	print(4 < -1)
 	```
 === "Output"
 	```

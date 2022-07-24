@@ -2,7 +2,7 @@
 title: Module Scripts
 ---
 
- # What Is A Module Script?
+# What Is A Module Script?
 What is a [ModuleScript](https://create.roblox.com/docs/education/coding-6/intro-to-module-scripts)?
 
 A module script can host data such as a table, function, strings, and numbers. Anything. But, a Module Script can only **return** one data value.
@@ -94,4 +94,4 @@ end
 No other script will be able to use that function.
 
 # Closing!
-That's pretty much of it. Hope you enjoyed reading it. In case of any mistake, typos, etc. Please report the article. You can also give us reviews [here](https://rodevs-helpers.github.io/Helpers-Documents/Others/Help%20Us%21/)
+That's pretty much of it. Hope you enjoyed reading it. In case of any mistake, typos, etc. Please report the article. You can also give us reviews [here](https://rodevs-helpers.github.io/Helpers-Documents/Others/Help_Us%21/)

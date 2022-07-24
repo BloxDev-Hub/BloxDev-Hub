@@ -85,4 +85,4 @@ ContextActionService:UnbindAction("Input Detection")
 ```
 
 # Closing!
-That's pretty much all of it. I hope you enjoyed reading it and now have a basic understanding of ContextActionService. In case of any mistakes, typos, etc. Please report the article. You can also give us reviews [here](https://rodevs-helpers.github.io/Helpers-Documents/Others/Help%20Us%21/)
+That's pretty much all of it. I hope you enjoyed reading it and now have a basic understanding of ContextActionService. In case of any mistakes, typos, etc. Please report the article. You can also give us reviews [here](https://rodevs-helpers.github.io/Helpers-Documents/Others/Help_Us%21/)

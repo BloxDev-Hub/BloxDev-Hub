@@ -223,4 +223,4 @@ local helperin_dictionary = {
 ```
 
 ## Closing
-Ayo! Thanks for reading! If there are any mistakes, or maybe you felt like something was missing, [report it](https://rodevs-helpers.github.io/Helpers-Documents/Others/Help%20Us%21/)! If you have some free time, perhaps leave us [a review](https://rodevs-helpers.github.io/Helpers-Documents/Others/Help%20Us%21/)! Your feedback means a lot to us and helps us improve our site.
+Ayo! Thanks for reading! If there are any mistakes, or maybe you felt like something was missing, [report it](https://rodevs-helpers.github.io/Helpers-Documents/Others/Help%20Us%21/)! If you have some free time, perhaps leave us [a review](https://rodevs-helpers.github.io/Helpers-Documents/Others/Help_Us%21/)! Your feedback means a lot to us and helps us improve our site.

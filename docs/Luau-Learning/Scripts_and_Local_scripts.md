@@ -3,8 +3,9 @@ Title: Scripts and Local scripts
 ---
 
 #Script
-Script is an object that contains Lua code. It is executed only when its ancestor is either [Workspcase](https://developer.roblox.com/en-us/api-reference/class/Workspace) or [ServerScriptService](https://developer.roblox.com/en-us/api-reference/class/ServerScriptService). It can also run if it's parent property is set to nil.
+Script is an object that contains Lua code.
 Normally a script is used for server-side code execution. It has excess to almost all the objects, properties of data model.
+It can also run if it's parent property is set to nil.
 
 In order to insert a script, click the `+` icon next to the desired instance in explorer window. Every script by default has a command 
 ```lua

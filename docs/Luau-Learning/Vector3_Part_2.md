@@ -10,10 +10,13 @@ Now we will move further and talk about vector manipulation.
 
 ## Addition of Vectors.
 The addition of vectors means putting two or more vectors together. We will add two or more vectors to obtain a new vector equal to the sum of vectors.
+
 There are two laws for the addition of vectors
-Triangle law (Head to tail law)
-Parallelogram law
-In this guide, we will only explain **Triangle law** (sorry).
+
+* Triangle law (Head to tail law)
+* Parallelogram law
+
+In this guide, we will only explain **Triangle law** (sorry but once you understand triangle law you will understand the basic graphical addition of vectors).
 
 ### Addition of Vectors with Triangle Law
 According to this law, two vectors can be added by placing them together in such a way that the head of the one joins the tail of the other. Thus, the resultant vector can be obtained by joining the tail of the first vector with the head of the second vector. This can be explained in the following steps:

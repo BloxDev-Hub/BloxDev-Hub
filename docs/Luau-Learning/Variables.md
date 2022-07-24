@@ -54,7 +54,7 @@ A declared variable can be changed anytime by assigning another value to it.
     ```
 
 ### Multiple assignment
-Lua also enables it users to declare multiple variables at once. It can be done by separating variable names and their values by `,`.
+Lua also enables its users to declare multiple variables at once. It can be done by separating variable names and their values by `,`.
 
 ```lua
 Salzu, Paper, Eden = "Fox", "China", "Rose"

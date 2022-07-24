@@ -81,7 +81,7 @@ It stops the curent thread and gives the error in the output/console.
 
 ## type()
 ``type(value)``
-It returns the type of the given argument.
+It returns the data type of the given argument.
 
 === "Example Code:"
 	```lua
@@ -156,4 +156,4 @@ It returns a bool value. If given arguments are equal, it returns `true`. If the
 	```
 
 ## Thanks For Reading :)
-In case of any mistake feel free to contact me via discord "EdenRose".
+In case of any mistake feel free to report this article!

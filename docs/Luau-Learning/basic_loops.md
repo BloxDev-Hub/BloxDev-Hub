@@ -103,6 +103,7 @@ You can even apply this to have your `for` loop count DOWNWARDS.
 This behaves very similarly to a `while` loop. However, a `while` loop checks its condition first. A `repeat` loop runs the code first, before checking its condition.
 
 A good way of phrasing this will be like so:
+
 * "while this is true, do this" / "check first, then do"
 * "repeat doing this until this is true" / "do first, then check"
 
@@ -154,4 +155,3 @@ A good way of phrasing this will be like so:
 Loops are very powerful constructs that let you repeatedly run a set of instructions with minimal copy and paste. This makes your code easy to read and edit and also gives you more control over it.
 
 Where applicable, use the appropriate ones as much as possible!
-

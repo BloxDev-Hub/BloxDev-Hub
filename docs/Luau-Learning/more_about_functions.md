@@ -7,7 +7,7 @@ In this guide we will discuss some more stuff about functions. Before proceeding
 # Recursive Function
 ## What is recursion/recursive function?
 Recursion in lua is very simple. In recursion a function calls itself until a condition meets, just like a loop!
-Now you must be thinking how a function can call it self?
+Now you must be thinking how a function can call itself?
 So there is an example how you can do it!
 
 ```lua
@@ -30,11 +30,11 @@ Output:
 4
 5
 ```
-In the above code we created a recursive function. it first check if the given argument is not 6 then it adds 1 in to it and again call the function.
-It repeats the process again and again until the n is equal to 6.
+In the above code we created a recursive function. Firstly, it checks if the given argument is not 6 then it adds 1 in to it and again call the function.
+It repeats the process again and again until the `n` is equal to 6.
 
 ### example:
-You can use recursion for lots of stuff. To give you an example I made a recursive function which iterate through an array and print its elements
+You can use recursion for lots of stuff. To give you an example I made a recursive function which iterates through an array and print its elements
 ```lua
 local tbl = {"eden","blueberry","roblox","lua","kebabs"}
 local function iterator(tb,cur_ind)
@@ -59,13 +59,15 @@ kebabs
 # Anonymous Functions!
 ## What is an anonymous function?
 Anonymous Function are just anonymous, It means that they have no name. We just create them anonymously.
-Let me give you an example 
+Let me give you an example
+
 ```lua
 local function func()
    return function() -- anonymous function
    end
 end
 ```
+
 In the above example the function ``func`` returns an **anonymous function**. You can catche this anonymous function then call it.
 
 
@@ -88,15 +90,19 @@ local v1 = func()
 print(v1())
 print(v1())
 ```
+
  Output:
+
  ```
  3
  4
  ```
-Now you might be confused but no worry I will explain you :)
-So, Here are few points you should know in order to understand that.
-1) A closure function always have access to the variables (upvalues) of that function which returned this closure function.
-2) If a closure function update any of those upvalues, say it changed the upvalue from `"2"` to `"4"`, now when ever that closure function is called the value will be "4".
+
+Now you might be confused but no worry I will explain you!
+So, Here are few points you should know in order to understand that
+
+1. A closure function always have access to the variables (upvalues) of that function which returned this closure function.
+2. If a closure function update any of those upvalues, say it changed the upvalue from `"2"` to `"4"`, now when ever that closure function is called the value will be "4".
 
 Now if you look back on the code you might start understanding how a closure function works.
 In the example code we created a function ``func``. Inside the function we created a variable ``number`` and store 1 in it. After that we returned a `closure` function and inside closure we added 1 in the number variable.
@@ -107,6 +113,7 @@ Hope you understand it now. If there s still any confusion try reading it again.
 You might be thinking closure function a useless thing but if you are thinking that then your are 200% wrong because closure functions are pretty useful and very important.
 Using closure you can make cool stuff.
 To show you how much usefull they are I made an iterator function just like ``pairs/ipairs``, and here it is:
+
 ```lua
 local function iter(b)
 	local ins = 0
@@ -116,21 +123,23 @@ local function iter(b)
 		return b[ins] and ins , b[ins]
 	end
 end
-local tbl = { "edenroose" ,"hehe","cute","alive"}
+local tbl = {"edenroose", "hehe", "cute", "alive"}
 for i,v in iter(tbl) do
 	print(i,v)
 end
 ```
+
 Output:
+
 ```
 1 edenroose
-2 hehe
+2 hi
 3 cute
 4 alive
 ```
 
 # Thanks For Reading!
-Hope you enjoyed. Incase of any mistake feel free to contact me via discord **"EdenRose"**
+In case of any misakes, please report the article and don't forget to leave your reviews!
 
 
 

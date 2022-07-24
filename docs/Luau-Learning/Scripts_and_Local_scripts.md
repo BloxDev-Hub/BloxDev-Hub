@@ -20,7 +20,7 @@ Local script also carries Lua code however they are used for client-side code ex
 * [ReplicatedFirst](https://developer.roblox.com/en-us/api-reference/class/ReplicatedFirst)
 
 !!! note ""
-    Basically when local script is placed in any of them, the script is replicated to every player. This means local script runs on every client separately and every client has their own local scripts.
+    Basically when local script is placed in any of them, it is replicated to every player. This means local script runs on every client separately and every client has their own local scripts.
 
 Mainly local scripts are used to access client only objects such as input, camera, etc. Essentially local  scripts are able to access the client running them by using `LocalPlayer` property of [Players](https://developer.roblox.com/en-us/api-reference/class/Players). 
 

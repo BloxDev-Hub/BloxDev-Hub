@@ -25,6 +25,7 @@ Now we will add two [Script(s)](https://developer.roblox.com/en-us/api-reference
 ![Scripts](https://imgur.com/JZJLhRn.png)
 
 We will use "Sender" for firing the event and "Receiver" for receiving that event. For firing a bindable event, we will use a method **[BindableEvent:Fire()](https://developer.roblox.com/en-us/api-reference/function/BindableEvent/Fire)**. **[BindableEvent.Event](https://developer.roblox.com/en-us/api-reference/event/BindableEvent/Event)** will be used for receiving events. Let's implement this!
+
 Code on "Sender":
 
 ```lua
@@ -50,6 +51,7 @@ For bindable functions, we will use the same setup for script and place the bind
 ![explorer](https://imgur.com/9iSqV6D.png)
 
 As done earlier, we will use "Sender" for invoking the bindable function and "Receiver" for binding a function to the bindable function. For doing so, we will be using **[BindableFunction:Invoke](https://developer.roblox.com/en-us/api-reference/function/BindableFunction/Invoke)** and **[BindableFunction..OnInvoke](https://developer.roblox.com/en-us/api-reference/callback/BindableFunction/OnInvoke).**
+
 Code on "Sender":
 
 ```lua

@@ -10,7 +10,7 @@ In 2 dimensions, where you have two coordinates/axis `X-Axis` and `Y-Axis`. They
 
 <img src=https://github.com/Rodevs-Helpers/Helpers-Documents/blob/editing/images/2d.png?raw=true width="500" height="500"/>
 
-A vector is drawn from the origin `O` to the `(10,10)` coordinate point of the plane. These coordinate points represent the magnitude of the vector on the X and Y axis and are written as `(X, Y)`. 
+A vector is drawn from the origin `(0,0)` to the `(10,10)` coordinate point of the plane. These coordinate points represent the magnitude of the vector on the X and Y axis and are written as `(X, Y)`. 
 
 ![2dVector](https://imgur.com/A8nM0in.png)
 
@@ -40,7 +40,7 @@ For your easiness, Roblox allows you to get the magnitude of a vector by just `V
 |V| = 19.209
 ```
 
-Now, in the studio, add the following code is a script and run
+Now, in the studio, add the following code in a script and run.
 
 === "Code"
 	```lua

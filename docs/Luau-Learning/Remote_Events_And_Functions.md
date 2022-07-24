@@ -5,24 +5,25 @@ Title: Remote Events and Functions
 # Remote Events and Functions
 Roblox uses a client-server framework for handling multiplayer games. Roblox engine offers **Remote Events** and **Remote Functions** as a medium for communication between **clients** and **server**.
 
-The device of every player (such as mobile, console, pc) is considered a **client**. In a game, Each client is connected to a Roblox computer called **server**. The server plays a major role in game management.
+The device of every player (such as mobile, console, pc) is considered a **client**. In a game, each client is connected to a Roblox computer called **server**. The server plays a major role in game management.
 During runtime, any changes made on the server are replicated to clients. 
 For example, the position of a base part is changed using a server-side script. As the part changes its position, the server automatically updates every client, and every client changes the position of that part as well. This communication is done by the Roblox engine and developers don't have to care about replication. 
 
 When designing a game, you will find multiple cases where either the server is contacting the client or the client is contacting the server. In such cases, you will have to use **remote events** or **remote functions**. For instance,
-A client wants to move an object.
-The server needs to warn any specific client for violating rules.
-For making in-server announcements.
+
+* A client wants to move an object.
+* The server needs to warn any specific client for violating rules.
+* For making in-server announcements.
 
 Communication between client and server can be either uni-directional or bi-directional. For uni-directional communication, we use **remote events** and **remote functions** for bi-directional. 
 
 ## Remote Events.
-To use remote events, add a remote event in [replicated storage].
+To use remote events, add a remote event in [ReplictedStorage](https://developer.roblox.com/en-us/api-reference/class/ReplicatedStorage).
 
 <img src=https://github.com/Rodevs-Helpers/Helpers-Documents/blob/main/images/remotes1.png?raw=true width="500" height="500"/>
 
 ???+ info "Why replicated storage?"
-	Remote events and remote functions can only work when both the client and server can access them. [Replicted Storage] serves as a perfect place for remotes. Every object placed in replicated storage is accessible to both the server and clients.
+	Remote events and remote functions can only work when both the client and server can access them. [ReplictedStorage](https://developer.roblox.com/en-us/api-reference/class/ReplicatedStorage) serves as a perfect place for remotes. Every object placed in replicated storage is accessible to both the server and clients.
 
 As mentioned earlier, the remote event acts as a single pathway for communication. Here are some possible ways of using remote events.
 
@@ -42,6 +43,7 @@ graph LR
 ### Client to Server
 When communicating from a client to the server we call the method **[RemoteEvent:FireServer()](https://developer.roblox.com/en-us/api-reference/function/RemoteEvent/FireServer)**. You can transmit any number of information by passing them as arguments.
 Once fired from the client, a remote event can be received on the server by the event **[RemoteEvent.OnServerEvent](https://developer.roblox.com/en-us/api-reference/event/RemoteEvent/OnServerEvent)**. The [function](https://developer.roblox.com/en-us/articles/Function) connected to `OnServerEvent` by default, receives the player who fired the event as the first parameter
+
 Example code:
 
 ```lua
@@ -57,6 +59,7 @@ game.ReplicatedStorage.RemoteEvent:FireServer("Eden my beloved")
 ### Server to Client
 For server to client communication, we call the method **[RemoteEvent:FireClient()](https://developer.roblox.com/en-us/api-reference/function/RemoteEvent/FireClient)**. The server itself can't determine, to whom you want to fire the remote event. You need to specify that client as the first argument of `:FireClient()`. 
 RemoteEvent can be recieved on client by using **[RemoteEvent.OnClientEvent](https://developer.roblox.com/en-us/api-reference/event/RemoteEvent/OnClientEvent)**. 
+
 Example Code:
 
 ```lua
@@ -70,7 +73,8 @@ game.ReplicatedStorage.RemoteEvent:FireClient(player,"Eden my beloved")
 ```
 
 ### Server to all Clients
-If you want to fire a remote from the server to all clients, you need to use [RemoteEvent:FireAllClients()](https://developer.roblox.com/en-us/api-reference/function/RemoteEvent/FireAllClients). In this vase you are firing remote event to all clients which means you don't need to specify any client.
+If you want to fire a remote from the server to all clients, you need to use [RemoteEvent:FireAllClients()](https://developer.roblox.com/en-us/api-reference/function/RemoteEvent/FireAllClients). In this case you are firing remote event to all clients which means you don't need to specify any client.
+
 Code Example:
 
 ```lua
@@ -126,6 +130,7 @@ game.ReplicatedStorage.RemoteFunction:InvokeServer("hi")
 ## Server To Client
 !!! error ""
 	Request from the server to any client can be made using `:OnClientInvoke()`. However, it is highly recommended not to use it. Making a request from the server to any client can cause the breaking of your game. Because of the following risks
+
     * If a client got disconnected while being invoked. The invoke call will error.
     * If a client never returned any value, the server will never stop waiting for it.
     * If the client throws an error, the server will pass the error too.

@@ -54,7 +54,7 @@ local initial_position = workspace.Part.Position
 --adding vectors
 local new_position = initial_position + Vector3.new(0,4,0)
 
-workspace.Part.Position = initial_position
+workspace.Part.Position = new_position
 ```
 
 ![Abovepos](https://imgur.com/i3YsYWe.png)

@@ -5,7 +5,7 @@ Title: Character
 # Character
 The Character is the physical 3d model of your [Player](https://create.roblox.com/docs/reference/engine/classes/Player).
 
-## How Do You Acess The Character
+## How Do You Access The Character
 Depending if you're on the [Client/Server](https://developer.roblox.com/en-us/articles/Roblox-Client-Server-Model) the character can be accessed in two different ways.
 
 Client:
@@ -21,12 +21,12 @@ Just to clear up some confusion, the reason we do Player.CharacterAdded:Wait() i
 Now if you're on the server this is a way you can access the character
 
 ```lua
-    local Players = game:GetService('Players')
+local Players = game:GetService('Players')
     Players.PlayerAdded:Connect(function(Player)
         Player.CharacterAdded:Connect(function(Character)
             print(Character.Name) -- TheSalzu
-        end)
     end)
+end)
 ```
 
 Now, this isn't how you're always going to access a Character, they're plenty of ways to get the character.

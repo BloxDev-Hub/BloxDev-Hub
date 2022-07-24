@@ -17,7 +17,7 @@ For example, giving a player coins each time they do something. Having a module 
 
 Module scripts can also be useful to store data. If you have a Twitter code system you can store the codes in that module script with the number of coins they give.
 
- ## How Do You Use Module Scripts
+## How Do You Use Module Scripts
 Module scripts won't run any code unless you **require** them. So how do you require a module script? It's quite simple.
 Firstly though, we're going to make a Module Script inside of ReplicatedStorage.
 
@@ -36,7 +36,7 @@ Then in a server script, we're going to require the module script. It will print
 
 ```lua
 local MoudleScript = require(game.ReplicatedStorage.MyModuleScript) -- This module script has been required.
-print(ModuleScript) -- SalzuIsThBest
+print(ModuleScript) -- SalzuIsTheBest
 ```
 
  We then print the module script returning a table with the value "SalzuIsTheBest"
@@ -60,7 +60,7 @@ end
 
 --You can also add functions like this
 
-function Table.Add(A+B)
+function Table.Add(A,B)
     print(A+B)
 end
 ```
@@ -76,7 +76,7 @@ Here I'll be showing right versus wrong.
 Right:
 
 ```lua
-function ModuleScript.Add(A+B)
+function ModuleScript.Add(A,B)
     print(A+B)
 end
 ```
@@ -86,7 +86,7 @@ Any script we require this module script in will be able to use that function.
 Wrong:
 
 ```lua
-local function ModuleScript.Add(A+B)
+local function ModuleScript.Add(A,B)
     print(A+B)
 end
 ```

@@ -156,4 +156,4 @@ It returns a bool value. If given arguments are equal, it returns `true`. If the
 	```
 
 ## Thanks For Reading :)
-In case of any mistake feel free to contact me via discord "EdenRose".
+In case of any mistake feel free to report this article!

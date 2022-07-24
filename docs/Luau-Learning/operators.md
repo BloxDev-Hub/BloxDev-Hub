@@ -307,4 +307,4 @@ If used on a table, specifically an *array*, it will return the number of elemen
 	```
 
 ## Thanks for reading !!!
-If there are any mistakes found in this article, contact me (willie#5107), or one of the senor helpers, and they'll fix it. Thanks for reading, peace lol
+If there are any mistakes found in this article, please report the artcile!

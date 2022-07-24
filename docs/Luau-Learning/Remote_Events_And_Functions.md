@@ -65,7 +65,7 @@ Example Code:
 ```lua
 -- Local script
 game.ReplicatedStorage.RemoteEvent.OnClientEvent:Connect(function(player, ...)
-print("remote event received on server")
+print("remote event received on client")
 end)
 
 -- Script
@@ -80,7 +80,7 @@ Code Example:
 ```lua
 -- Local script
 game.ReplicatedStorage.RemoteEvent.OnClientEvent:Connect(function(player, ...)
-print("remote event received on server")
+print("remote event received on client")
 end)
 
 -- Script
@@ -116,7 +116,7 @@ A request can be made from a client to the server by **[RemoteFunction:InvokeSer
 Code Example: 
 
 ```lua
--script
+--script
 local function Request_Handler(player, ...)
 print("request recived")
 return "done!"
@@ -136,7 +136,7 @@ game.ReplicatedStorage.RemoteFunction:InvokeServer("hi")
     * If the client throws an error, the server will pass the error too.
 
 # Limitation
-* Any non-string elements of a table passed either using a remote event or remote function will be converteinto a string.
+* Any non-string elements of a table passed either using a remote event or remote function will be converted into a string.
 * Any instance that exists only on a client will be `nil` on the server.
 
 # Closing!

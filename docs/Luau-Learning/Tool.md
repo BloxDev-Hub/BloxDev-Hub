@@ -49,7 +49,7 @@ script.Parent.Equipped:Connect(function()
 end)
 ```
 
-???+ note ""
+???+ note
     * `script` is a Roblox global which carries the reference of current [Script](https://developer.roblox.com/en-us/api-reference/class/Script) or [LocalScript](https://developer.roblox.com/en-us/api-reference/class/LocalScript).
     * Equipped event returns `Mouse` object. Because it is deprecated, we will not cover it in this guide.
 

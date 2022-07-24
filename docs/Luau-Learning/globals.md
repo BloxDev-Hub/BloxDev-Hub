@@ -7,7 +7,7 @@ There are many of them but in this guide we will discuss some common global func
 
 ## tonumber()
 ``tonumber(value,base)``
-It converts the given argument in to a ``number`` of desired base (between 2-32). If second argument is missing then by default it converts the given argument into a number of base 10. In case of failure will return ``nil``.
+It converts the given argument in to a ``number`` of desired base (between 2-36). If second argument is missing then by default it converts the given argument into a number of base 10. In case of failure will return ``nil``.
 
 === "Example Code:"
 	```lua
@@ -17,9 +17,9 @@ It converts the given argument in to a ``number`` of desired base (between 2-32)
 	```
 === "Output"
 	```
-	 123
-     911
-     nil
+	123
+    911
+    nil
 	```
 
 ## tostring()
@@ -28,13 +28,13 @@ It converts the given argument in to a ``string``. Just like ``tonumber()``, If 
 
 === "Example Code:"
 	```lua
-	print("The statement was".. tostring(true))
+	print("The statement was ".. tostring(true))
     print("Square of 16 is : ".. tostring(16^2))
 	```
 === "Output"
 	```
-	 The statement wastrue
-     Square of 16 is : 256
+	The statement was true
+    Square of 16 is : 256
 	```
 
 ## print()
@@ -53,7 +53,7 @@ It takes multiple arguments and display them in the console/output. In most case
 	```
 
 ## assert()
-``assert(statement,error message)
+``assert(statement,error message)``
 It stops the thread and returns the error message if the given statement is ``false`` or ``nil``.
 
 === "Example Code:"
@@ -126,7 +126,7 @@ final_index = #table
 	```
 === "Output"
 	```
-	  Teddy Cake Selfish Smart
+	Teddy Cake Selfish Smart
 	```
 ## select()
 ``select(n,args)``

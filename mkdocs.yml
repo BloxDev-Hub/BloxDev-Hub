@@ -14,6 +14,7 @@ extra_javascript:
 
 theme:
     logo: logo.png
+    favicon: bidenrose.png
     language: en
     name: material
     font:

@@ -6,7 +6,7 @@ Title: Character
 The Character is the physical 3d model of your [Player](https://create.roblox.com/docs/reference/engine/classes/Player).
 
 ## How Do You Acess The Character
-Depending if you're on the [Client/Server](Client/Server Article when made) the character can be accessed in two different ways.
+Depending if you're on the [Client/Server](https://developer.roblox.com/en-us/articles/Roblox-Client-Server-Model) the character can be accessed in two different ways.
 
 Client:
 ```lua
@@ -16,7 +16,7 @@ local Character = Player.Character or Player.CharacterAdded:Wait()
 print(Character.Name) -- TheSalzu
 ```
 
-Just to clear up some confusion, the reason we do Player.CharacterAdded:Wait() is because the player's character may not have fully loaded in yet. If you're also confused about the Players service refer to [Players](PlayersService Article Link)
+Just to clear up some confusion, the reason we do Player.CharacterAdded:Wait() is because the player's character may not have fully loaded in yet. If you're also confused about the Players service refer to [Players](https://developer.roblox.com/en-us/api-reference/class/Players)
 
 Now if you're on the server this is a way you can access the character
 
@@ -72,7 +72,7 @@ The [Humanoid](https://create.roblox.com/docs/reference/engine/classes/Humanoid)
 
 Cool things you can do with the humanoid:
 
-Image of humanoid properties pls :pray:
+![humanoid](https://imgur.com/ltzzVda.png)
 
 As you can see from the image above, the humanoid has a lot of things you can do with it. I will list some here.
 
@@ -83,8 +83,7 @@ As you can see from the image above, the humanoid has a lot of things you can do
     Humanoid.JumpPower = 100
     Humanoid.WalkSpeed = 60
     Humanoid.AutoJumpEnabled = true/false -- On mobile when you hit an obstacle it will auto jump
-    DisplayName = 'String'
-
+    Humanoid.DisplayName = 'String'
 ```
 
 These are the fun ones that you can mess with but now I'll talk about some useful methods the Humanoid has.
@@ -131,7 +130,8 @@ Now we can talk about some useful events the humanoid has
 ```
 
 That's all for the Humanoid. If you want to know more go take a good read at:
-https://create.roblox.com/docs/reference/engine/classes/Humanoid
+
+[Humanoid API](https://create.roblox.com/docs/reference/engine/classes/Humanoid)
 
 ## How To Move A Character
 Moving a character is quite simple. All you have to do is simply change their Pivot via CFrame.
@@ -143,7 +143,8 @@ Moving a character is quite simple. All you have to do is simply change their Pi
 ```
 
 For more information on CFrame go take a read at:
-CFrame helper docs :pray:   
+
+[Roblox's official guide on CFrame](https://developer.roblox.com/en-us/articles/Understanding-CFrame)  
 
 ## Closing!
 That's pretty much of it. Hope you enjoyed reading it. In case of any mistake, typos, etc. Please report the article. You can also give us reviews [here](https://rodevs-helpers.github.io/Helpers-Documents/Others/Help%20Us%21/)

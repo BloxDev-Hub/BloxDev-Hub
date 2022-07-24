@@ -15,7 +15,7 @@ For casting a ray we use the method **`:Raycast()`** of worldroot ([workspace](h
 ```lua
 local Raycast_result = workspace:Raycast(origin, direction, raycastparams)
 ```
-<img src=https://github.com/Rodevs-Helpers/Helpers-Documents/blob/main/images/raycast1.?raw=true width="500" height="500"/> 
+<img src=https://github.com/Rodevs-Helpers/Helpers-Documents/blob/main/images/raycast1.png?raw=true width="500" height="500"/> 
 
 ### Origin
 Origin of a ray is basically a [Vector3](https://developer.roblox.com/en-us/api-reference/datatype/Vector3) position of the world, from where the ray will start. 

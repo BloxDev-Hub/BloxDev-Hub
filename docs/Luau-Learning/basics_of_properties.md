@@ -18,7 +18,7 @@ Part.BrickColor = BrickColor.new('Really Red')
 Lots of new scripters commonly make the mistake of **Indirect Changes**.
 An indirect change is where you change the value of a **Variable** but not the value of your property.
 
- === "Code"
+=== "Code"
     ```lua
     local Cash = Player.leaderstats.Cash.Value -- 25
     Cash = 50
@@ -39,20 +39,28 @@ Insert screenshot here of view eden
 
 Once that is enabled you can change the properties of anything!
 Click on the instance you want to change and look at the properties menu. Loads of things are waiting to be changed to your liking.
-Insert screenshot of properties here eden
+
+![property](https://imgur.com/xWPj57h.png)
 
 
 ### Changing basic properties
 For this section, we'll be changing some common properties of a part.
-Screenshot of a basic part here
 
-Firstly, we'll change the brickcolor and size properties.
-Brickcolor screenshot here(change it to any color)
-Screenshot of the new part
-Nextly we'll change the size
-Size screenshot
-Screenshot of new part
+![initial](https://imgur.com/EpRjzmV.png)
 
+Firstly, we'll change the brickcolor and size properties. This can be easily done by 
+
+```lua
+local part = workspace.Part
+
+--changing brickcolor
+part.BrickColor = BrickColor.new("Really red")
+
+--changing size
+part.Size = Vector3.new(10,10,10)
+```
+
+![final](https://imgur.com/KIbjpuw.png)
 Those are just some basic things you can change with properties!
 
 ## Common properties

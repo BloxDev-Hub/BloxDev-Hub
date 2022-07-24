@@ -38,7 +38,7 @@ However there is an amazing plugin, you can use for adjusting grips
 
 ## Scripting Tool
 
-As with most objects, a tool can be fully utilized by scripting it. Insert a [LocalScript](https://developer.roblox.com/en-us/api-reference/class/LocalScript) in the tool.
+As most of the objects, a tool can be fully utilized by scripting it. Insert a [LocalScript](https://developer.roblox.com/en-us/api-reference/class/LocalScript) in the tool.
 
 When a tool is equipped, the event [Equipped](https://developer.roblox.com/en-us/api-reference/event/Tool/Equipped) is fired.
 Example Code:

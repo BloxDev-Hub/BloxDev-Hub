@@ -81,7 +81,7 @@ It stops the curent thread and gives the error in the output/console.
 
 ## type()
 ``type(value)``
-It returns the type of the given argument.
+It returns the data type of the given argument.
 
 === "Example Code:"
 	```lua

@@ -27,4 +27,4 @@ Mainly local scripts are used to access client only objects such as input, camer
 Local script can be added in the same way as normal script.
 
 # Closing!
-I hope, now you have a basic understanding of local script and a normal script. If you find any typos, or any sort of flaws then please report it [here](https://rodevs-helpers.github.io/Helpers-Documents/Others/Help%20Us%21/)
+I hope, now you have a basic understanding of local script and a normal script. If you find any typos, or any sort of flaws then please report it [here](https://rodevs-helpers.github.io/Helpers-Documents/Others/Help_Us%21/)

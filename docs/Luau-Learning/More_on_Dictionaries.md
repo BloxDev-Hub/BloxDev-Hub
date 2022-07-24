@@ -115,7 +115,7 @@ One of the biggest uses of such a feature is that you can set the properties of 
 local name = "PartName"
 local material = Enum.Material.SmoothPlastic
 local position = Vector3.new(0, 0, 0)
-local size = Vector3.new(1, 1, 1) }
+local size = Vector3.new(1, 1, 1)
 
 workspace.Baseplate.Name = name
 workspace.Baseplate.Material = material
@@ -134,7 +134,7 @@ local propertyDictionary =
         ["Name"] = "PartName",
         ["Material"] = Enum.Material.SmoothPlastic,
         ["Position"] = Vector3.new(0, 0, 0),
-        ["Size"] = Vector3.new(1, 1, 1) },
+        ["Size"] = Vector3.new(1, 1, 1),
     }
 
 for property, value in pairs(propertyDictionary) do
@@ -154,7 +154,7 @@ local propertyDictionary =
         ["Name"] = "PartName",
         ["Material"] = Enum.Material.SmoothPlastic,
         ["Position"] = Vector3.new(0, 0, 0),
-        ["Size"] = Vector3.new(1, 1, 1) },
+        ["Size"] = Vector3.new(1, 1, 1),
     }
 
 for index, part in ipairs(parts) do

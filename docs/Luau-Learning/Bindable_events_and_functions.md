@@ -29,7 +29,7 @@ We will use "Sender" for firing the event and "Receiver" for receiving that even
 Code on "Sender":
 
 ```lua
-game.ServerStorage.BindableEvent:Fire()
+game.ServerStorage.BindableEvent:Fire("eden is cool")
 ```
 !!! note ""
 	Any number of arguments can be passed when firing an event.
@@ -37,7 +37,8 @@ game.ServerStorage.BindableEvent:Fire()
 Code on "Receiver":
 
 ```lua
-game.ServerStorage.BindableEvent.Event:Connect(function(...)
+game.ServerStorage.BindableEvent.Event:Connect(function(value)
+	print(value) --eden is cool
 	print("event recieved")
 end)
 ```
@@ -50,18 +51,19 @@ For bindable functions, we will use the same setup for script and place the bind
 
 ![explorer](https://imgur.com/9iSqV6D.png)
 
-As done earlier, we will use "Sender" for invoking the bindable function and "Receiver" for binding a function to the bindable function. For doing so, we will be using **[BindableFunction:Invoke](https://developer.roblox.com/en-us/api-reference/function/BindableFunction/Invoke)** and **[BindableFunction..OnInvoke](https://developer.roblox.com/en-us/api-reference/callback/BindableFunction/OnInvoke).**
+As done earlier, we will use "Sender" for invoking the bindable function and "Receiver" for binding a function to the bindable function. For doing so, we will be using **[BindableFunction:Invoke](https://developer.roblox.com/en-us/api-reference/function/BindableFunction/Invoke)** and **[BindableFunction.OnInvoke](https://developer.roblox.com/en-us/api-reference/callback/BindableFunction/OnInvoke).**
 
 Code on "Sender":
 
 ```lua
-game.ServerStorage.BindableFunction:Invoke()
+game.ServerStorage.BindableFunction:Invoke("eden is cool")
 ```
 
 Code on "Receiver":
 
 ```lua
-game.ServerStorage.BindableFunction.OnInvoke = function(...)
+game.ServerStorage.BindableFunction.OnInvoke = function(value)
+	print(value) --eden is cool
 	print("function invoked")
 	return true
 end

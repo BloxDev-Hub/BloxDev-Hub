@@ -20,7 +20,7 @@ As mentioned above, HttpService can help you do basic communications between you
 * Real-time communication
 * Other fun API stuff
 
-### What **can't** HttpService used for?
+### What **can't** be HttpService used for?
 * Interact with [internal Roblox APIs](https://roblox.fandom.com/wiki/List_of_web_APIs) or any Roblox websites
 * Interact with services that have Roblox whitelisted
 * Create/host a web server

@@ -13,7 +13,7 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 theme:
-    logo: https://github.com/Rodevs-Helpers/Helpers-Documents/blob/main/images/2d.png
+    logo: mkdocs.png
     language: en
     name: material
     font:

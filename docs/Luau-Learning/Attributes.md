@@ -5,7 +5,7 @@ title: Attributes
 # What are attributes?
 In Roblox Attributes of an instance are just like it's properties but custom properties.
 It means you can create them, remove them, edit them. They are pretty useful and they also save you from having multiple value instance like ``string value``, ``bool value``, ``int value``.
-You can create tgem manually or by using a script. In this guide we will be creating them via ``scripts``.
+You can create them manually or by using a script. In this guide we will be creating them via ``scripts``.
 
 # Creating Attributes!
 ## SetAttribute()
@@ -20,12 +20,12 @@ local Part = workspace.Part --referencing a part in the workspace
 Part:SetAttribute("Nickname","eden")
 ```
 
-In the above code we created an attribute of part and nameed that attribute `NickName` and set its value to a string "eden".
+In the above code we created an attribute of part and named that attribute `Nickname` and set its value to a string "eden".
 Now if you run the script then you can find this attribute in the **Properties** window. But now how can we use this attribute?.
 
 # Getting Attributes!
 ## GetAttribute()
-When ever we want to get value of an attribute of any instance, we call a method **GetAtribute()** over the instance. This method takes only 1 arguments:
+When ever we want to get value of an attribute of any instance, we call a method **GetAtribute()** over the instance. This method takes only 1 argument:
 
 1. Name of the attribute.
 
@@ -34,8 +34,8 @@ local Part = workspace.Part
 --creating an attribute of part
 Part:SetAttribute("Nickname","eden")
 --getting value of the attribute "Nickname".
-local NickName = Part:GetAttribute("NickName")
-print(NickName)
+local Nickname = Part:GetAttribute("Nickname")
+print(Nickname)
 ```
 Output:
 
@@ -65,7 +65,7 @@ end
 Output:
 
 ```
-NickName eden
+Nickname eden
 IsAlive  true
 ```
 
@@ -79,11 +79,11 @@ Here is an example code:
 local Part = workspace.Part
 --creating an attribute of part
 Part:SetAttribute("Nickname","eden")
-local NickName = Part:GetAttribute()
-print(NickName)
-Part:SetAttribute("NickName","Heaven")
-NickName = Part:GetAttribute("NickName")
-print(NickName)
+local Nickname = Part:GetAttribute()
+print(Nickname)
+Part:SetAttribute("Nickname","Heaven")
+Nickname = Part:GetAttribute("Nickname")
+print(Nickname)
 ```
 
 Output:
@@ -108,7 +108,7 @@ If we want to detect change of any attribute we use ``AttributeChanged``
 Here is an example for you!
 
 ```lua
-Part:GetAttributeChangedSignal("NickName"):Connect(function()
+Part:GetAttributeChangedSignal("Nickname"):Connect(function()
      print("nickname changed")
 end)
 

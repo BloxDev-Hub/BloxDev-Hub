@@ -113,4 +113,4 @@ Local variables are declared with the keyword `local` and are only accessible in
 The local variable declared in first scope is accessible only in first scope and is `nil` for second scope.
 
 # Closing!
-Thanks for reading! I hope you enjoyed. We aren't perfect. We make mistakes, typos, etc. so if you found a mistake while reading this article, or any article for that matter, feel free to [report it](https://rodevs-helpers.github.io/Helpers-Documents/Others/Help%20Us%21/), and perhaps you can [review us](https://rodevs-helpers.github.io/Helpers-Documents/Others/Help%20Us%21/) too! Any feedback is appreciated. 
+Thanks for reading! I hope you enjoyed. We aren't perfect. We make mistakes, typos, etc. so if you found a mistake while reading this article, or any article for that matter, feel free to [report it](https://rodevs-helpers.github.io/Helpers-Documents/Others/Help_Us%21/), and perhaps you can [review us](https://rodevs-helpers.github.io/Helpers-Documents/Others/Help_Us%21/) too! Any feedback is appreciated. 

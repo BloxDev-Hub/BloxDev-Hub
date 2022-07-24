@@ -238,7 +238,7 @@ You need to include `myVariable ==` for each condition to actually make it a che
 **The solutions are on the bottom of this article.**
 
 ## Conclusion
-Thanks for reading. If you find any mistakes, you can [report them](https://rodevs-helpers.github.io/Helpers-Documents/Others/Help%20Us%21/).
+Thanks for reading. If you find any mistakes, you can [report them](https://rodevs-helpers.github.io/Helpers-Documents/Others/Help_Us%21/).
 
 ## Solutions
 

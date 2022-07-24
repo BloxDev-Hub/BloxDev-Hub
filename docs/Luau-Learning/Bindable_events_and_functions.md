@@ -78,4 +78,4 @@ end
     * In bindable events, you can create multiple connections on the event but you can not bind multiple functions to [BindableFunction:Invoke](https://developer.roblox.com/en-us/api-reference/function/BindableFunction/Invoke)
 
 # Closing!
-I hope, you enjoyed read it! If you find any typos, or any sort of flaws then please report it [here](https://rodevs-helpers.github.io/Helpers-Documents/Others/Help%20Us%21/).
+I hope, you enjoyed read it! If you find any typos, or any sort of flaws then please report it [here](https://rodevs-helpers.github.io/Helpers-Documents/Others/Help_Us%21/).

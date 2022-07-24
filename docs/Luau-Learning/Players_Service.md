@@ -17,7 +17,7 @@ This event fires when a player enters the game.
 local Players = game:GetService("Players")
 
 Players.PlayerAdded:Connect(function(player)
-	print(player.Name .."has joined the game!")
+	print(player.Name .." has joined the game!")
 end)
 ```
 In the first line, we assign the Players service to a variable ``Players``. In the third line we use the PlayerAdded event, which gets us the player that is joining when the event was fired. And then, we print out the player's name!
@@ -51,8 +51,6 @@ end
 ```
 The following code will print all of the players' names that are currently on the server at the time.
 
-!!! note ""
-	Running this code as it is will print "nil". Put this inside a PlayerAdded event and it will work as intended!
 
 #### GetPlayerFromCharacter
 This method returns the player associated with the given character, or nil if one cannot be found.

@@ -54,7 +54,7 @@ local initial_position = workspace.Part.Position
 --adding vectors
 local new_position = initial_position + Vector3.new(0,4,0)
 
-workspace.Part.Position = initial_position
+workspace.Part.Position = new_position
 ```
 
 ![Abovepos](https://imgur.com/i3YsYWe.png)
@@ -74,4 +74,4 @@ workspace.Part.Position = new_position
 ![otherpos](https://imgur.com/dphtWwM.png)
 
 ## Closing!
-That's pretty much of it. Hope you enjoyed reading it. In case of any mistake, typos, etc. Please report the article. You can also give us reviews [here](https://rodevs-helpers.github.io/Helpers-Documents/Others/Help%20Us%21/)
+That's pretty much of it. Hope you enjoyed reading it. In case of any mistake, typos, etc. Please report the article. You can also give us reviews [here](https://rodevs-helpers.github.io/Helpers-Documents/Others/Help_Us%21/)

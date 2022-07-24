@@ -31,7 +31,7 @@ For binding an action we use the method `:BindAction()`. This function takes fou
 * Name of Action   | type: [String](https://developer.roblox.com/en-us/articles/String)
 * Function handling the action   | type: [Function](https://developer.roblox.com/en-us/articles/Function)
 * Condition for creating touch button   | type: [Bool](https://developer.roblox.com/en-us/articles/Boolean)
-* Input type   | [KeyCode](https://developer.roblox.com/en-us/api-reference/enum/KeyCode) or [UserInputType](https://developer.roblox.com/en-us/api-reference/enum/UserInputType)
+* InputObject   | [KeyCode](https://developer.roblox.com/en-us/api-reference/enum/KeyCode) or [UserInputType](https://developer.roblox.com/en-us/api-reference/enum/UserInputType)
 
 ### Name Of Action
 The name of action can be any suitable string that represents the action.
@@ -85,4 +85,4 @@ ContextActionService:UnbindAction("Input Detection")
 ```
 
 # Closing!
-That's pretty much all of it. I hope you enjoyed reading it and now have a basic understanding of ContextActionService. In case of any mistakes, typos, etc. Please report the article. You can also give us reviews [here](https://rodevs-helpers.github.io/Helpers-Documents/Others/Help%20Us%21/)
+That's pretty much all of it. I hope you enjoyed reading it and now have a basic understanding of ContextActionService. In case of any mistakes, typos, etc. Please report the article. You can also give us reviews [here](https://rodevs-helpers.github.io/Helpers-Documents/Others/Help_Us%21/)

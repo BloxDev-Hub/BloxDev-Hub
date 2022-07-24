@@ -30,7 +30,7 @@ Similar to a 2D vector, coordinates of a vector in 3 dimensions are written as `
 In Roblox, a **Vector3** is a vector in the three-dimensional space. It is created by `Vector3.new(x,y,z)`. Roblox engine uses `Vector3` in multiple cases, such as positioning base parts, size of base parts, setting directions of linear velocities, etc. In every case the origin of the vector is different. We will talk about them later. For now, we will go through some common properties of Vector3.
 
 ## Magnitude of a Vector.
-For your easiness, Roblox allows you to get the magnitude of a vector by just `Vector3.Magnitude`. As mentioned earlier, magnitude is the length of the vector. If `v` is a vector and its magnitude is (10,13,10) then its magnitude is given by
+For your easiness, Roblox allows you to get the magnitude of a vector by just `Vector3.Magnitude`. As mentioned earlier, magnitude is the length of the vector. If `v` is a vector and its coordinates are (10,13,10) then its magnitude is given by
 
 ```
 |V| = √(x^2 + y^2 + z^2)

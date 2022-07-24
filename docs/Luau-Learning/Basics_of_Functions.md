@@ -122,7 +122,7 @@ print(product)
 
 
 ## Closing
-Thanks for reading! We hope you've learned a thing or two about functions and how to utilize 'em. Of course, we aren't perfect. We make mistakes, typos, etc. so if you found a mistake while reading this article, or any article for that matter, feel free to [report it](https://rodevs-helpers.github.io/Helpers-Documents/Others/Help%20Us%21/), and perhaps you can [review us](https://rodevs-helpers.github.io/Helpers-Documents/Others/Help%20Us%21/) too! Any feedback is appreciated. 
+Thanks for reading! We hope you've learned a thing or two about functions and how to utilize 'em. Of course, we aren't perfect. We make mistakes, typos, etc. so if you found a mistake while reading this article, or any article for that matter, feel free to [report it](https://rodevs-helpers.github.io/Helpers-Documents/Others/Help_Us%21/), and perhaps you can [review us](https://rodevs-helpers.github.io/Helpers-Documents/Others/Help_Us%21/) too! Any feedback is appreciated. 
 
 Since this article only discussed the basics of functions, here are some resources that dive deeper into functions:
 

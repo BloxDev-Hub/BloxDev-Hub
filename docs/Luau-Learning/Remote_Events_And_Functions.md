@@ -129,7 +129,7 @@ game.ReplicatedStorage.RemoteFunction:InvokeServer("hi")
 
 ## Server To Client
 !!! error ""
-	Request from the server to any client can be made using `:OnClientInvoke()`. However, it is highly recommended not to use it. Making a request from the server to any client can cause the breaking of your game. Because of the following risks
+	Request from the server to any client can be made using `:InvokeClient()` and received using `.OnClientInvoke`. However, it is highly recommended not to use it. Making a request from the server to any client can cause the breaking of your game. Because of the following risks
 
     * If a client got disconnected while being invoked. The invoke call will error.
     * If a client never returned any value, the server will never stop waiting for it.

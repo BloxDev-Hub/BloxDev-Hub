@@ -208,6 +208,35 @@ end
 -- Larry: 40
 ```
 
+Or you can use good ol' iterator functions: `pairs()` and `ipairs()`. `pairs()` for dictionaries, and `ipairs()` for arrays.
+```lua
+local friends_list = {"Eden", "Willi", "Shogus"}
+
+for index, friend in ipairs(friends_list) do
+	print("Hello! " .. friend)
+end
+-- ^ prints:
+-- Hello! Eden
+-- Hello! Willi
+-- Hello! Shogus
+
+local student_math_test_scores = {
+	["John"] = 98,
+	["Laura"] = 80,
+	["Janet"] = 78,
+	["Larry"] = 40
+}
+
+for student, score in pairs(student_math_test_scores) do
+	print(student .. ": " .. score)
+end
+-- ^ prints
+-- Laura: 80
+-- Janet: 78
+-- John: 98
+-- Larry: 40
+```
+
 !!! warning "THERE'S NO ORDER?!"
 
 	When iterating through dictionaries, you might've realized that it's not ordered correctly. This is because there's no sense of order in dictionaries, unlike arrays which are ordered lists. So be wary of that next time you iterate through a dictionary!

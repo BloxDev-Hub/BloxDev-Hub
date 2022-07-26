@@ -2,13 +2,13 @@
 title: More About Functions
 ---
 # Intro:
-In this guide we will discuss some more stuff about functions. Before proceeding make sure you have some knowledge about function, conditional statements!
+In this guide, we will discuss some more stuff about functions. Before proceeding make sure you have some knowledge about the function and conditional statements!
 
 # Recursive Function
 ## What is recursion/recursive function?
-Recursion in lua is very simple. In recursion a function calls itself until a condition meets, just like a loop!
-Now you must be thinking how a function can call itself?
-So there is an example how you can do it!
+Recursion in Lua is very simple. In recursion, a function calls itself until a condition meets, just like a loop!
+Now you must be thinking about how a function can call itself?
+So there is an example of how you can do it!
 
 ```lua
 local function recursive(n)
@@ -30,11 +30,11 @@ Output:
 4
 5
 ```
-In the above code we created a recursive function. Firstly, it checks if the given argument is not 6 then it adds 1 in to it and again call the function.
+In the above code, we created a recursive function. Firstly, it checks if the given argument is not 6 then it adds 1 to it and again calls the function.
 It repeats the process again and again until the `n` is equal to 6.
 
 ### example:
-You can use recursion for lots of stuff. To give you an example I made a recursive function which iterates through an array and print its elements
+You can use recursion for lots of stuff. To give you an example I made a recursive function that iterates through an array and prints its elements
 ```lua
 local tbl = {"eden","blueberry","roblox","lua","kebabs"}
 local function iterator(tb,cur_ind)
@@ -58,7 +58,7 @@ kebabs
 
 # Anonymous Functions!
 ## What is an anonymous function?
-Anonymous Function are just anonymous, It means that they have no name. We just create them anonymously.
+Anonymous functions are just anonymous, It means that they have no name. We just create them anonymously.
 Let me give you an example
 
 ```lua
@@ -68,19 +68,19 @@ local function func()
 end
 ```
 
-In the above example the function ``func`` returns an **anonymous function**. You can catche this anonymous function then call it.
+In the above example the function ``func`` returns an **anonymous function**. You can cache this anonymous function and then call it.
 
 
 # Closure Function!
-## What is closure?
-Closure could be little complicated but I will try my best to explain you.
-First thing you should always remember is: a `closure function` is an `anonymous function` but an `anonymous function` is not always a `closure functions`.
+## What is a closure?
+The closure could be a little complicated but I will try my best to explain you.
+The first thing you should always remember is: that a `closure function` is an `anonymous function` but an `anonymous function` is not always a `closure function`.
 
 I will try to explain you with an example!
 ```lua
 local function func()
     local number = 2
-    return function() -- a closure funcion
+    return function() -- a closure function
        number = number + 1
        return number
     end
@@ -99,33 +99,33 @@ print(v1())
  ```
 
 Now you might be confused but no worry I will explain you!
-So, Here are few points you should know in order to understand that
+So, here are a few points you should know to understand that
 
-1. A closure function always have access to the variables (upvalues) of that function which returned this closure function.
-2. If a closure function update any of those upvalues, say it changed the upvalue from `"2"` to `"4"`, now when ever that closure function is called the value will be "4".
+1. A closure function always has access to the variables (upvalues) of that function that returned this closure function.
+2. If a closure function updates any of those upvalues say it changed the upvalue from `"2"` to `"4"`, now whenever that closure function is called the value will be "4".
 
 Now if you look back on the code you might start understanding how a closure function works.
-In the example code we created a function ``func``. Inside the function we created a variable ``number`` and store 1 in it. After that we returned a `closure` function and inside closure we added 1 in the number variable.
+In the example code, we created the function ``func``. Inside the function, we created a variable ``number`` and store 1 in it. After that, we returned a `closure` function and inside closure, we added 1 in the number variable.
 
-We cached that closure function in a variable `v1`. Now when ever we call it, it adds "1" in the `number` variable. For the first time when we called the closure function, the variable "number" had 2 in it. So, after addition it becomes 3 and returned 3. When closure function was called for the second time the number variable had 3 in it and after addition it beacomes 4. And thats how a closure function works.
+We cached that closure function in a variable `v1`. Now whenever we call it, it adds "1" to the `number` variable. For the first time when we called the closure function, the variable "number" had 2 in it. So, after adding it becomes 3 and returned 3. When the closure function was called for the second time the number variable had 3 in it and after adding it became 4. And that's how a closure function works.
 
 Hope you understand it now. If there s still any confusion try reading it again.
-You might be thinking closure function a useless thing but if you are thinking that then your are 200% wrong because closure functions are pretty useful and very important.
+You might be thinking the closure function is a useless thing but if you are thinking that then you are 200% wrong because closure functions are pretty useful and very important.
 Using closure you can make cool stuff.
-To show you how much usefull they are I made an iterator function just like ``pairs/ipairs``, and here it is:
+just to show you how much useful they are, I made an iterator function just like ``pairs/ipairs``, and here it is:
 
 ```lua
 local function iter(b)
-	local ins = 0
-	local s
-	return function()
-		ins += 1
-		return b[ins] and ins , b[ins]
-	end
+   local ins = 0
+   local s
+   return function()
+      ins += 1
+      return b[ins] and ins , b[ins]
+   end
 end
 local tbl = {"edenrose", "hi", "cute", "alive"}
 for i,v in iter(tbl) do
-	print(i,v)
+   print(i,v)
 end
 ```
 
@@ -139,7 +139,7 @@ Output:
 ```
 
 # Thanks For Reading!
-In case of any misakes, please report the article and don't forget to leave your reviews!
+In case of any mistakes, please report the article, and don't forget to leave your reviews!
 
 
 

@@ -46,9 +46,11 @@ This is how we can add a script.
 #### Printing.
 `print()` is a Lua global, mainly used for debugging. In the studio, when you print something it is displayed on the output window.
 As an example use, we will print the sum of two numbers.
+
 ```lua
 print(17 + 19)
 ```
+
 You can see the output on the output window.
 
 ![print](https://imgur.com/cmGeY6E.png)

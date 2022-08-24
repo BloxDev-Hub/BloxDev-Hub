@@ -173,34 +173,34 @@ Now that we've gone over the basics of scripting UI we gotta make the UI look go
 
 These make your UI round and give it a nice stroke around it. They're of course many more in the screenshot below.
 
-![screen1](https://imgur.com/88kpaVU)
+![screen1](https://imgur.com/88kpaVU.png)
 
 You can mess around with those, but first, we have to make a button. Insert a ScreenGui and then a TextButton in StarterGui.
 It should look something like this
 
-![screen2](https://imgur.com/r0Hp8Ae)
+![screen2](https://imgur.com/r0Hp8Ae.png)
 
 Nextly, we're going to change so change the text. Click on TextScaled to make the text bigger. Nextly, we're going to change the font. Multiple fonts are available but my favorite is FredokaOne.
 
 It should look like this:
 
-![screen3](https://imgur.com/JqX8nWZ)
+![screen3](https://imgur.com/JqX8nWZ.png)
 
 Now, we're going to change the text color to white and the background color to blue. This is all my preference you don't have to do this.
 
 We can finally get started on the UI corners and UI Strokes. Insert a UI Corner into the TextButton. We set the corner radius to this **0.1,0**
 
-![screen4](https://imgur.com/N3EkH0P)
+![screen4](https://imgur.com/N3EkH0P.png)
 
 Next, we have the UI Stroke. At first, it will create a stroke around your text but we can change that via properties.
 
 Change the ApplyStrokeMode to Border, and the thickness to 2.5. The color is up to you.
 
-![screen5](https://imgur.com/yYZqEe5)
+![screen5](https://imgur.com/yYZqEe5.png)
 
 Finally, I just changed the text and gave it some color and we have this:
 
-![screen6](https://imgur.com/pD1rnwm)
+![screen6](https://imgur.com/pD1rnwm.png)
 
 This is how I make my UI look good and I hope you learned something from this.
 

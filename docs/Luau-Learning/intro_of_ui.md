@@ -20,7 +20,7 @@ They're of course more you can check out but these are the ones you'll most like
 ## Most Common Mistake While Coding UI
 The most common mistake I see is a scripter indexing UI through StarterGUI. Here's an example:
 
-**Incorrect way:**
+Incorrect way:
 
 ```lua
 local MyUi = game.StarterGui.OpenShop
@@ -28,7 +28,7 @@ local MyUi = game.StarterGui.OpenShop
 
 This is wrong because UI in StarterGui gets **replicated** to the PlayerGui. Meaning any UI in StarterGui will go into a folder called PlayerGui inside of the player.
 
-**The correct way:**
+The correct way:
 
 ```lua
 local Player = game.Players.LocalPlayer
@@ -43,7 +43,9 @@ Starting with TextButton we have:
 
 MouseButton1Up
 MouseButton1Down
+
 MouseButton1Click
+
 Activated
 
 These events all fire when a TextButton is clicked. MouseButton1Up fires when left clicked is released, 1Down for when it's first clicked, and the same for 1Click.
@@ -86,14 +88,14 @@ As you may know by now, UI is 2d. Meaning it doesn't have a Z value. So we can't
 Instead we use **UDim2.new(X,X,Y,Y)**
 Before I explain why it takes X, and Y twice I must explain the difference between Scale and Offset.
 
-The scale uses percentages. So 0.1 would be 10% and 1 would be 100%. This is usually better than offset because it will scale better on mobile devices/other platforms.
+Scale uses percentages. So 0.1 would be 10% and 1 would be 100%. This is usually better than offset because it will scale better on mobile devices/other platforms.
 
 Offest uses Pixels, 200 pixels, etc.
 
 Now back to Udim2.new(). It takes X in scale first then X if offset. Same for Y, scale then offset.
 You can always just do Udim2.fromScale(X,Y) or Udim2.fromOffset(X,Y)
 
-For changing the size of a UI, you do UDim2.fromScale(X,y)
+So in order to size UI, you do UDim2.fromScale(X,y)
 Same for position.
 
 ### Basic UI Knowledge
@@ -155,6 +157,7 @@ Ui.Size = Udim2.new(X,X,Y,Y)
 Unlike parts, you can tween UI with the built-in methods of :TweenPosition and :TweenSize
 
 Example:
+
 ```lua
 UI:TweenPosition(
     EndPostion, -- UDim2.new(X,Y,X,Y)
@@ -163,43 +166,43 @@ UI:TweenPosition(
     Duration
 )
 ```
-The same applies to size you just change the EndPosition.
+The same applies to size you just change the EndPosition
 
 ## How To Spice Up Your UI
 Now that we've gone over the basics of scripting UI we gotta make the UI look good. For this, we'll be using Instances called UICorners and UIStrokes.
 
 These make your UI round and give it a nice stroke around it. They're of course many more in the screenshot below.
 
-Screen1
+![screen1](https://imgur.com/88kpaVU)
 
 You can mess around with those, but first, we have to make a button. Insert a ScreenGui and then a TextButton in StarterGui.
 It should look something like this
 
-Sceen2
+![screen2](https://imgur.com/r0Hp8Ae)
 
 Nextly, we're going to change so change the text. Click on TextScaled to make the text bigger. Nextly, we're going to change the font. Multiple fonts are available but my favorite is FredokaOne.
 
 It should look like this:
 
-Screen3
+![screen3](https://imgur.com/JqX8nWZ)
 
 Now, we're going to change the text color to white and the background color to blue. This is all my preference you don't have to do this.
 
 We can finally get started on the UI corners and UI Strokes. Insert a UI Corner into the TextButton. We set the corner radius to this **0.1,0**
 
-Screen4
+![screen4](https://imgur.com/N3EkH0P)
 
 Next, we have the UI Stroke. At first, it will create a stroke around your text but we can change that via properties.
 
 Change the ApplyStrokeMode to Border, and the thickness to 2.5. The color is up to you.
 
-Screen5
+![screen5](https://imgur.com/yYZqEe5)
 
 Finally, I just changed the text and gave it some color and we have this:
 
-Screen6
+![screen6](https://imgur.com/pD1rnwm)
 
 This is how I make my UI look good and I hope you learned something from this.
 
 ## Closing!
-That's pretty much of it. Hope you enjoyed reading it. In case of any mistakes, typos, etc. Please report the article. You can also give us reviews [here](https://rodevs-helpers.github.io/Helpers-Documents/Others/Help%20Us%21/)
+That's pretty much of it. Hope you enjoyed reading it. In case of any mistake, typos, etc. Please report the article. You can also give us reviews [here](https://rodevs-helpers.github.io/Helpers-Documents/Others/Help%20Us%21/)

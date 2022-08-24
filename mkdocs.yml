@@ -129,8 +129,10 @@ nav:
     - Luau-Learning/Tweening.md
     - Luau-Learning/ContextActionService.md
     - Luau-Learning/Tool.md
+    - Luau-Learning/selection_and_highlights.md
     - Luau-Learning/Remote_Events_And_Functions.md
     - Luau-Learning/Bindable_events_and_functions.md
+    - Luau-Learning/intro_of_ui.md
     - Luau-Learning/HttpService.md
     - Luau-Learning/RayCasting.md
     - Luau-Learning/metatables.md

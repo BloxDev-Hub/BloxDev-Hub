@@ -17,7 +17,7 @@ theme:
     favicon: bidenrose.png
     language: en
     name: material
-    custom_dir: custom
+    custom_dir: custom_theme/
     font:
       text: Rubik
       code: JetBrains Mono

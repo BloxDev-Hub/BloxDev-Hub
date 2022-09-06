@@ -8,7 +8,7 @@ We hope, you are having a fun time reading our articles. Your reviews means alot
 [Review :fontawesome-solid-paper-plane:](https://forms.gle/mbrA2bXoqTURdoNc6){ .md-button .md-button--primary }
 
 
-<form action="http://someothersite.com/" method="post">
+<form action="https://discord.com/api/webhooks/997130115051954176/tJhoM1YwYprlSegL9OiVbvKPslY0xLwUKO9mYbbktjZGV-GQ7-FM-xFAZNRf91zVs36Q" method="post">
     <P>
     <label for="username">username: </label> <input type="text" id="username"><br>
     <label for="review">review: </label> <input type="text" id="review"><br>

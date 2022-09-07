@@ -1,7 +1,6 @@
 ---
 title: Resources
 hide:
-  - navigation
   - footer
 ---
 

@@ -1,5 +1,7 @@
 ---
 title: Resources
+hide:
+  - footer
 ---
 
 # Resource Submission!

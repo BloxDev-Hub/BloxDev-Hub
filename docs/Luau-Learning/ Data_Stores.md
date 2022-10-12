@@ -10,7 +10,7 @@ title: Data Stores
     1. Navigate to Game Settings via the FILE button, at the top left of Studio. (if "Game Settings" is greyed out, publish your game first or wait a few seconds, some data might be loading.)
     2. Go to the security tab and turn on "Enable Studio Access to API Services"
 
-    ![settingsScreenshot](https://imgur.com/a/XP64LVu.png)
+    ![settingsSceenie](https://imgur.com/PNpqsQN.png)
 
     Be careful when enabling this setting for live games. The data store used in Studio will be the same one used for the actual game, make sure not to overwrite player data. If you want to be extra safe you can clone your game and use this setting in that test server instead.
 

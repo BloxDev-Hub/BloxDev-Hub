@@ -9,11 +9,14 @@ title: Data Stores
     When testing a game in Studio, by default it will not be able to access data stores and you will have to go in-game to test. To allow ourselves to test our data stores in Studio;
     1. Navigate to Game Settings via the FILE button, at the top left of Studio. (if "Game Settings" is greyed out, publish your game first or wait a few seconds, some data might be loading.)
     2. Go to the security tab and turn on "Enable Studio Access to API Services"
+
     ![settingsScreenshot](https://imgur.com/a/XP64LVu.png)
+
     Be careful when enabling this setting for live games. The data store used in Studio will be the same one used for the actual game, make sure not to overwrite player data. If you want to be extra safe you can clone your game and use this setting in that test server instead.
 
 # Creating a Data Store
 We create a data store by getting the data store service via `game:GetService()` and using the `GetDataStore()` method; which will attempt to get an already existing data store or if one doesn't exist with that name will create a new one.
+
 ```lua
 local dataStoreService = game:GetService("DataStoreService")
 local datastore1 = dataStoreService:GetDataStore("datastore1")
@@ -23,10 +26,12 @@ local datastore1 = dataStoreService:GetDataStore("datastore1")
 !!! warning "You should know:"
     * Local Scripts **cannot** access data stores.
     * Using data stores come with using network calls; these can occasionally fail which is out of your control, use `pcall()` or `xpcall()` to wrap your interaction in case of such an event.
+
 ## Setting/Updating and Getting Data
 We set data in a data store with the `SetAsync()` method; providing a valid UTF-8 string key, a value to set. In essence, data stores are dictionaries. 
 
 A common practice is to set individual players' data using their UserId as a key (itself or combined with a string, for example `"player_54321"`), and a dictionary containing the relevant data. Here is an example of getting someone's data when they join and print out a message if a "hasPlayed" value is false (in this case, nil, as it will not be set).
+
 ```lua
 local playerDataStore = dataStoreService:GetDataStore("playerData")
 game.Players.PlayerAdded:Connect(function(plr)
@@ -49,7 +54,9 @@ game.Players.PlayerAdded:Connect(function(plr)
     end
 end)
 ```
+
 There are other methods:
+
 * **`IncrementAsync()`**: Increment an integer entry by an integer argument
 * **`UpdateAsync()`**: A more complex alternative to `SetAsync()`, takes a key argument and a callback function that takes the current value and DataStoreKeyInfo as parameters and returns the new value. Use this for a safer way of setting data, to make sure data being set by multiple servers at once will not be overwritten. It is slower as it reads before it writes. It also counts toward the [read and write limit](#limits) because of this
 * **`RemoveAsync()`**: Takes a key argument and removes the value associated with this key, any `GetAsync()` calls to it will return nil. Returns the value that was removed.

@@ -6,7 +6,7 @@ You can find tutorials of all categories, all topics, and everything that we thi
 Our main objective is to encourage people to learn something new whenever they can, that's why we want to make a special site for it, in which you can expand your knowledge.
 
 
-![Image title](https://dummyimage.com/600x400/eee/aaa){ align=left } Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor massa, nec semper lorem quam in massa.
+![Thanks](https://github.com/Rodevs-Helpers/Helpers-Documents/blob/editing/images/thanks.jpg?raw=true) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor massa, nec semper lorem quam in massa.
 
 
 ![Thanks](https://github.com/Rodevs-Helpers/Helpers-Documents/blob/editing/images/thanks.jpg?raw=true)

@@ -14,27 +14,27 @@ First of all, we will make a tool that will be our gun. Because this tutorial wi
 
 Add a part in **Workspace** and name it **Handle**.
 
-[gunblock](
+![gunblock](
 https://imgur.com/R0y5POC.png)
 
 Scale the part according to the hand of the player's character.
 
-[partrender](
+![partrender](
 https://imgur.com/BGMFGVT.png)
 
 Now add a **Tool** in **workspace** and parent the **Handle** to the tool. Our explorer hierarchy now looks like this:
 
-[explorertool](
+![explorertool](
 https://imgur.com/6BbUi9p.png)
 
 If you want to test, place your tool in **StarterPack**.
 
-[starterpack](
+![starterpack](
 https://imgur.com/OZ6h3et.png)
 
 Click the play button (or press F5). 
 
-[play1](
+![play1](
 https://imgur.com/3YFnKvy.png)
 
 ## Setting Up

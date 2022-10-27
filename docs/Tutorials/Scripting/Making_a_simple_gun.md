@@ -266,4 +266,4 @@ end)
 https://imgur.com/QrJCp0p.png)
 
 ## Closing
-I hope this tutorial helped you and gave you an idea of how you can design your shooting weapons. You can customize it a lot by changing bullets, shooting styles, and stuff. Thanks a lot for reading! 
+I hope this tutorial helped you and gave you an idea of how you can design your shooting weapons. You can customize it a lot by changing bullets, shooting styles, and stuff. Thanks a lot for reading! Byee!

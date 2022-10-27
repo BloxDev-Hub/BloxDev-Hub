@@ -135,7 +135,7 @@ game.ReplicatedStorage.RemoteEvent.OnServerEvent:Connect(function(player, mouse_
 	local bullet = Instance.new("Part")
 	bullet.Color = Color3.new(1, 1, 0.133333)
 	bullet.Size = Vector3.new(1,1,1)
-b	bullet.CanCollide = false
+	bullet.CanCollide = false
 
 	--creating attachment
 	local attachment = Instance.new("Attachment")
@@ -171,7 +171,7 @@ game.ReplicatedStorage.RemoteEvent.OnServerEvent:Connect(function(player, mouse_
 
     --setting the direction of velocity
     local speed = 50 -- speed of bullet/length of vector
-    velocity.MaxForce = 9e6 --setting maxforce to nine exponent 9
+    velocity.MaxForce = 9e6 --setting maxforce to 0 exponent 9
     local directional_vector = (mouse_pos - origin).Unit * speed
     velocity.VectorVelocity = directional_vector
 
@@ -180,7 +180,9 @@ game.ReplicatedStorage.RemoteEvent.OnServerEvent:Connect(function(player, mouse_
 
 ### Dealing Damage
 This is another important part of gun mechanics. We will use the `Touched` event, as the bullet touches any object we will check its parent and search for a humanoid. If it succeeds in finding the humanoid then we are good to deal damage.
- (hand explanation)
+
+??? warning
+        Always make sure the you are not damaging humanoid of shooter.
 
 ```lua
 game.ReplicatedStorage.RemoteEvent.OnServerEvent:Connect(function(player, mouse_pos, origin)

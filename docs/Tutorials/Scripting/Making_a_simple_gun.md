@@ -4,9 +4,11 @@ title: Making Simple Gun
 
 # Introduction
 In this tutorial, we will be making a simple, blocky gun. This tutorial requires a basic knowledge of the following topics
-[Tools](https://www.helpers-documents.ml/Luau-Learning/Tool/)
-[Vectors](https://www.helpers-documents.ml/Luau-Learning/Vector3/)
-[Client And Server Communication]()
+
+* [Tools](https://www.helpers-documents.ml/Luau-Learning/Tool/)
+* [Vectors](https://www.helpers-documents.ml/Luau-Learning/Vector3/)
+* [Client And Server Communication]()
+
 It's highly recommended not to proceed if you haven't covered those topics.
 
 ## Making a tool
@@ -98,11 +100,13 @@ Congrats! our client side is done. Every time tool is equipped the connection on
 
 ## Server Side
 On the server side, we have the following things to do:
-Creating bullets.
-Setting up velocity constraint.
-Calculating directional vector 
-Dealing damage.
-Destroying bullet.
+
+* Creating bullets.
+* Setting up velocity constraint.
+* Calculating directional vector 
+* Dealing damage.
+* Destroying bullet.
+
 But firstly, we have to check when the remote event is fired.
 
 ```lua

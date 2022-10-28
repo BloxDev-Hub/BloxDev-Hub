@@ -1,7 +1,7 @@
 site_name: Helpers Documents
 site_url: https://rodevs-helpers.github.io/Helpers-Documents/
 copyright: By Rodevs Helpers Department. Not affiliated with Roblox or Discord.
-site_description: Helpers Documents, a place where you will learn multiple things about developing from our incredible helpers, our main goal is to help people learn or expand their knownledge in every category of developing.
+site_description: Rodevs Helpers Documents, a place where you will learn multiple things about developing from our incredible helpers.
 
 extra_css:
   - stylesheets/extra.css

@@ -28,10 +28,10 @@ theme:
            name: Switch to dark mode
          primary: blue
          accent: deep orange
-      -  scheme: Dark
+      -  scheme: slate
          toggle:
            icon: material/weather-sunny
-           name: Switch to dark mode
+           name: Switch to light mode
          primary: light blue
          accent: deep orange
     features:

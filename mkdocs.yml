@@ -32,8 +32,8 @@ theme:
          toggle:
            icon: material/weather-sunny
            name: Switch to light mode
-         primary: light blue
-         accent: deep orange
+         primary: white
+         accent: purple
     features:
       - navigation.top
       - navigation.tabs

@@ -32,7 +32,7 @@
 }
 [data-md-color-scheme="Dark"] {
 	--md-default-bg-color: #000000;
-	--md-default-fg-color: #ffffff;
+	--md-default-fg-color: #000000;
 	--md-default-fg-color--light: #ffffff;
 	--md-default-fg-color--ligther: #ffffff;
 	--md-default-fg-color--lightest: #ffffff;
@@ -41,7 +41,7 @@
 	--md-accent-fg-color: #9a03ff;
 	
 	--md-code-bg-color: #000000;
-	--md-code-fg-color: #ffffff; 
+	--md-code-fg-color: #000000; 
 	
 	--md-code-hl-variable-color: var(--md-code-fg-color);
 	--md-code-hl-operator-color: var(--md-code-fg-color);

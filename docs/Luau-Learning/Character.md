@@ -50,7 +50,7 @@ A general way to get the character is by checking if it has a HumanoidRootPart. 
 local Part = workspace.Part -- Example
 
 Part.Touched:Connect(function(PartThatGotTouched)
-    local HumanoidRootPart = Part.Parent:FindFirstChild('HumanoidRootPart')
+    local HumanoidRootPart = PartThatGotTouched.Parent:FindFirstChild('HumanoidRootPart')
 
     if HumanoidRootPart then
         print('We found a character!')

@@ -7,7 +7,7 @@ In this tutorial, we will be making a simple, blocky gun. This tutorial requires
 
 * [Tools](https://www.helpers-documents.ml/Luau-Learning/Tool/)
 * [Vectors](https://www.helpers-documents.ml/Luau-Learning/Vector3/)
-* [Client And Server Communication]()
+* [Client And Server Communication](https://www.helpers-documents.ml/Luau-Learning/Remote_Events_And_Functions/)
 
 It's highly recommended not to proceed if you haven't covered those topics.
 
@@ -53,7 +53,7 @@ https://imgur.com/VusMpxQ.png)
 On the client side (local script) we will check when the tool is used and request the server to shoot a bullet. First of all, we will store everything we need in variables to make the code look cleaner.
 
 ```lua
-local gun = script.parent -- our tool
+local gun = script.Parent -- our tool
 local remote_event = game.ReplicatedStorage.RemoteEvent
 local mouse = game.Players.LocalPlayer:GetMouse() -- getting the mouse of player
 ```
@@ -62,7 +62,7 @@ We will create a function `shooter`. This function will be responsible for makin
 
 ```lua
 local gun = script.Parent --our tool
-local remote_event = game.ReplicatedStorage.RemoteEvent --remote event
+local remote_event = game.ReplicatedStorage.RemoteEvent -- remote event
 local mouse = game.Players.LocalPlayer:GetMouse() -- getting the mouse of player
 local gun_connection -- variable for caching connection
 
@@ -76,23 +76,23 @@ end
 Now we will connect a function to the `Equipped` event of the tool. In this function, we will connect the shooter function to the `Activated` event of the tool. This connection will be cached in a variable `gun_connection` so we can disconnect it as the tool is unequipped (the `Unequipped` event is fired).
 
 ```lua
-    local gun = script.Parent --our tool
-    local remote_event = game.ReplicatedStorage.RemoteEvent --remote event
-    local mouse = game.Players.LocalPlayer:GetMouse() -- getting the mouse of player
-    local gun_connection -- variable for caching connection
+local gun = script.Parent -- our tool
+local remote_event = game.ReplicatedStorage.RemoteEvent -- remote event
+local mouse = game.Players.LocalPlayer:GetMouse() -- getting the mouse of player
+local gun_connection -- variable for caching connection
 
-    local function shooter()
-        local mouse_pos = mouse.Hit.Position -- the 3d world position where the mouse is pointing.
-        local origin = gun.Handle.Position -- the origin of bullet
-        remote_event:FireServer(mouse_pos, origin)
-    end
+local function shooter()
+    local mouse_pos = mouse.Hit.Position -- the 3d world position where the mouse is pointing.
+    local origin = gun.Handle.Position -- the origin of bullet
+    remote_event:FireServer(mouse_pos, origin)
+end
 
-    gun.Equipped:Connect(function()
-        gun_connection = gun.Activated:Connect(shooter)
-    end)
+gun.Equipped:Connect(function()
+    gun_connection = gun.Activated:Connect(shooter)
+end)
 
-    gun.Unequipped:Connect(function()
-        gun_connection:Disconnect()
+gun.Unequipped:Connect(function()
+    gun_connection:Disconnect()
 end)
 ```
 
@@ -121,35 +121,33 @@ I will be creating blocky shape neon yellow bullets.
 
 ```lua
 game.ReplicatedStorage.RemoteEvent.OnServerEvent:Connect(function(player, mouse_pos)
-
     -- creating bullets
     local bullet = Instance.new("Part")
     bullet.Color = Color3.new(1, 1, 0.133333)
     bullet.Size = Vector3.new(1,1,1)
 
 end)
-
+```
 ### Setting Up Veclocity Constraint
 We will use **Linear Vecloity** to apply a continuous velocity on bullets. For doing so, we have to create an attachment and parent it to the bullet. Then we will create a `LinearVecloity` constraint and assign the attachment to the `Attachment1` property of **LinearVelocity**. It will be parented to bullet as well.
 
 ```lua
 game.ReplicatedStorage.RemoteEvent.OnServerEvent:Connect(function(player, mouse_pos)
-
-	--creating bullet
+  
+	-- creating bullet
 	local bullet = Instance.new("Part")
 	bullet.Color = Color3.new(1, 1, 0.133333)
 	bullet.Size = Vector3.new(1,1,1)
 	bullet.CanCollide = false
 
-	--creating attachment
+	-- creating attachment
 	local attachment = Instance.new("Attachment")
 	attachment.Parent = bullet
 
-	--creating velocity constraint
+	-- reating velocity constraint
 	local velocity = Instance.new("LinearVelocity")
 	velocity.Attachment0 = attachment
 	velocity.Parent = bullet
-
 end)
 ```
 
@@ -158,35 +156,35 @@ Linear velocity requires a `vector3` value that specifies the direction of veloc
 
 ```lua
 game.ReplicatedStorage.RemoteEvent.OnServerEvent:Connect(function(player, mouse_pos, origin)
---creating bullet
+    -- creating bullet
     local bullet = Instance.new("Part")
     bullet.Color = Color3.new(1, 1, 0.133333)
     bullet.Size = Vector3.new(1,1,1)
     bullet.CanCollide = false
 
-    --creating attachment
+    -- creating attachment
     local attachment = Instance.new("Attachment")
     attachment.Parent = bullet
 
-    --creating velocity constraint
+    -- creating velocity constraint
     local velocity = Instance.new("LinearVelocity")
     velocity.Attachment0 = attachment
     velocity.Parent = bullet
 
-    --setting the direction of velocity
+    -- setting the direction of velocity
     local speed = 50 -- speed of bullet/length of vector
     velocity.MaxForce = 9e6 --setting maxforce to 0 exponent 9
     local directional_vector = (mouse_pos - origin).Unit * speed
     velocity.VectorVelocity = directional_vector
-
-    end)
+    
+end)
 ```
 
 ### Dealing Damage
 This is another important part of gun mechanics. We will use the `Touched` event, as the bullet touches any object we will check its parent and search for a humanoid. If it succeeds in finding the humanoid then we are good to deal damage.
 
 ??? warning
-        Always make sure the you are not damaging humanoid of shooter.
+        Always make sure that you are not damaging humanoid of shooter.
 
 ```lua
 game.ReplicatedStorage.RemoteEvent.OnServerEvent:Connect(function(player, mouse_pos, origin)
@@ -207,16 +205,15 @@ game.ReplicatedStorage.RemoteEvent.OnServerEvent:Connect(function(player, mouse_
 
 	--setting the direction of velocity
 	local speed = 50 -- speed of bullet/length of vector
-	velocity.MaxForce = 9e6 --setting maxforce to nine exponent 9
+	velocity.MaxForce = 9e6 -- setting maxforce to 9 exponent 9
 	local directional_vector = (mouse_pos - origin).Unit * speed
 	velocity.VectorVelocity = directional_vector
 
 	--deal damage
 	bullet.Touched:Connect(function(hit)
-		print("hi")
 		if hit.Parent ~= player.Character and hit.Parent:FindFirstChild("Humanoid") then
 			hit.Parent.Humanoid.Health -= 15
-		bullet:Destroy()
+			bullet:Destroy()
 		end
 	end)
 
@@ -245,25 +242,25 @@ game.ReplicatedStorage.RemoteEvent.OnServerEvent:Connect(function(player, mouse_
 	velocity.Attachment0 = attachment
 	velocity.Parent = bullet
 
---setting the direction of velocity
-    local speed = 50 -- speed of bullet/length of vector
-    velocity.MaxForce = 9e6 --setting maxforce to nine exponent 9
-    local directional_vector = (mouse_pos - origin).Unit * speed
-    velocity.VectorVelocity = directional_vector
+	--setting the direction of velocity
+    	local speed = 50 -- speed of bullet/length of vector
+    	velocity.MaxForce = 9e6 --setting maxforce to nine exponent 9
+    	local directional_vector = (mouse_pos - origin).Unit * speed
+    	velocity.VectorVelocity = directional_vector
 
-    --deal damage
-    bullet.Touched:Connect(function(hit)
+    	--deal damage
+    	bullet.Touched:Connect(function(hit)
     
         if hit.Parent ~= player.Character and hit.Parent:FindFirstChild("Humanoid") then
             hit.Parent.Humanoid.Health -= 15
             bullet:Destroy()
         end
-    end)
+   	end)
 
-    bullet.Parent = workspace
-    bullet.Position = origin
+    	bullet.Parent = workspace
+    	bullet.Position = origin
 
-    game.Debris:AddItem(bullet,8)
+   	game.Debris:AddItem(bullet,8)
 end)
 ```
 ![final](

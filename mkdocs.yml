@@ -1,7 +1,7 @@
 site_name: Helpers Documents
 site_url: https://rodevs-helpers.github.io/Helpers-Documents/
 copyright: By Rodevs Helpers Department. Not affiliated with Roblox or Discord.
-site_description: Helpers Documents, a place where you will learn multiple things about developing from our incredible helpers, our main goal is to help people learn or expand their knownledge in every category of developing.
+site_description: Rodevs Helpers Documents, a place where you will learn multiple things about developing from our incredible helpers.
 
 extra_css:
   - stylesheets/extra.css
@@ -18,7 +18,7 @@ theme:
     language: en
     name: material
     font:
-      text: Rubik
+      text: Roboto
       code: JetBrains Mono
     palette:
       #light
@@ -31,9 +31,9 @@ theme:
       -  scheme: slate
          toggle:
            icon: material/weather-sunny
-           name: Switch to dark mode
-         primary: light blue
-         accent: deep orange
+           name: Switch to light mode
+         primary: white
+         accent: purple
     features:
       - navigation.top
       - navigation.tabs

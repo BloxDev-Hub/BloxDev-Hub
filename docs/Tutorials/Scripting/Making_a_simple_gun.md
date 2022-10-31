@@ -128,8 +128,8 @@ game.ReplicatedStorage.RemoteEvent.OnServerEvent:Connect(function(player, mouse_
 
 end)
 ```
-### Setting Up Veclocity Constraint
-We will use **Linear Vecloity** to apply a continuous velocity on bullets. For doing so, we have to create an attachment and parent it to the bullet. Then we will create a `LinearVecloity` constraint and assign the attachment to the `Attachment1` property of **LinearVelocity**. It will be parented to bullet as well.
+### Setting Up Velocity Constraint
+We will use **Linear Velocity** to apply a continuous velocity on bullets. For doing so, we have to create an attachment and parent it to the bullet. Then we will create a `LinearVelocity` constraint and assign the attachment to the `Attachment1` property of **LinearVelocity**. It will be parented to bullet as well.
 
 ```lua
 game.ReplicatedStorage.RemoteEvent.OnServerEvent:Connect(function(player, mouse_pos)
@@ -152,7 +152,7 @@ end)
 ```
 
 ### Calculating Directional Vector
-Linear velocity requires a `vector3` value that specifies the direction of velocity. We need a vector that originates from the tool and points in the direction where the mouse of the player is pointing at.
+Linear velocity requires a `Vector3` value that specifies the direction of velocity. We need a vector that originates from the tool and points in the direction where the mouse of the player is pointing at.
 
 ```lua
 game.ReplicatedStorage.RemoteEvent.OnServerEvent:Connect(function(player, mouse_pos, origin)
@@ -188,22 +188,22 @@ This is another important part of gun mechanics. We will use the `Touched` event
 
 ```lua
 game.ReplicatedStorage.RemoteEvent.OnServerEvent:Connect(function(player, mouse_pos, origin)
-	--creating bullet
+	-- creating bullet
 	local bullet = Instance.new("Part")
 	bullet.Color = Color3.new(1, 1, 0.133333)
 	bullet.Size = Vector3.new(1,1,1)
 	bullet.CanCollide = false
 
-	--creating attachment
+	-- creating attachment
 	local attachment = Instance.new("Attachment")
 	attachment.Parent = bullet
 
-	--creating velocity constraint
+	-- creating velocity constraint
 	local velocity = Instance.new("LinearVelocity")
 	velocity.Attachment0 = attachment
 	velocity.Parent = bullet
 
-	--setting the direction of velocity
+	-- setting the direction of velocity
 	local speed = 50 -- speed of bullet/length of vector
 	velocity.MaxForce = 9e6 -- setting maxforce to 9 exponent 9
 	local directional_vector = (mouse_pos - origin).Unit * speed
@@ -250,17 +250,16 @@ game.ReplicatedStorage.RemoteEvent.OnServerEvent:Connect(function(player, mouse_
 
     	--deal damage
     	bullet.Touched:Connect(function(hit)
-    
-        if hit.Parent ~= player.Character and hit.Parent:FindFirstChild("Humanoid") then
-            hit.Parent.Humanoid.Health -= 15
-            bullet:Destroy()
-        end
+        	if hit.Parent ~= player.Character and hit.Parent:FindFirstChild("Humanoid") then
+            		hit.Parent.Humanoid.Health -= 15
+            		bullet:Destroy()
+        	end
    	end)
-
+	
+	bullet.Position = origin
     	bullet.Parent = workspace
-    	bullet.Position = origin
-
-   	game.Debris:AddItem(bullet,8)
+    	
+   	game.Debris:AddItem(bullet, 8)
 end)
 ```
 ![final](

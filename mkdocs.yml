@@ -109,8 +109,8 @@ nav:
   - Home: index.md
   - Luau-Learning:
     - Luau-Learning/Introduction_To_Studio.md
-    - Luau-Learning/Strings.md
     - Luau-Learning/Variables.md
+    - Luau-Learning/Strings.md
     - Luau-Learning/If_statements.md
     - Luau-Learning/Basics_of_Functions.md
     - Luau-Learning/basic_loops.md

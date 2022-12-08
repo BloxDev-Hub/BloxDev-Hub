@@ -1,7 +1,6 @@
 ---
 title: Home
 template: home.html
-ᴴₒᴴₒᴴₒ: false
 hide:
   - navigation
 ---

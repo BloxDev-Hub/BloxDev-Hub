@@ -17,6 +17,7 @@ theme:
     favicon: bidenrose.png
     language: en
     name: material
+    custom_dir: docs/.overrides
     font:
       text: Roboto
       code: JetBrains Mono

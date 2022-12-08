@@ -1,5 +1,7 @@
 ---
 title: Attributes
+template: home.html
+ᴴₒᴴₒᴴₒ: false
 ---
 
 # What are attributes?

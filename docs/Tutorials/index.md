@@ -1,3 +1,9 @@
+---
+title: Tutorials
+template: tutorial.html
+hide:
+  - navigation
+---
 # Welcome to tutorials section
 
 Tutorials which will enhance your learning experience!

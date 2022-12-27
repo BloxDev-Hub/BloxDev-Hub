@@ -33,7 +33,7 @@ theme:
          toggle:
            icon: material/weather-sunny
            name: Switch to light mode
-         primary: white
+         primary: blue
          accent: purple
     features:
       - navigation.top

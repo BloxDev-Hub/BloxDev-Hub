@@ -2,7 +2,7 @@
 title: Making Shooting Fire Balls.
 ---
 
-In this tutorial, I will be showing you how to make a fireball shooting system. Before starting, keep in your mind that, primarily this guide is supposed to give you concepts that you can utilize in your game. If you are willing to copy everything then you are likely to face issues and might find it unsuitable for your game. This tutorial requires you to have basic knowledge of roblox scripting. Now let's begin!
+In this tutorial I will be showing you how to make a fireball shooting system. Before starting, keep in your mind that primarily this guide is supposed to give you concepts that you can utilize in your game. If you are willing to copy everything then you are likely to face issues and might find it unsuitable for your game. This tutorial requires you to have basic knowledge of roblox scripting. Now let's begin!
 
 # Setting Up
 
@@ -80,7 +80,6 @@ Shooter_Event.OnServerEvent:Connect(function(Player, Mouse_Pos)
     -- creating velocity constraint
     local Velocity = Instance.new("LinearVelocity")
     Velocity.Attachment0 = Attachment
-    Velocity.Parent = Fireball
 
     -- setting the direction of velocity
     local Speed = 50 -- the speed of fireball/length of the vector
@@ -88,6 +87,7 @@ Shooter_Event.OnServerEvent:Connect(function(Player, Mouse_Pos)
     local Directional_Vector = (Mouse_Pos - Fireball.Position).Unit * Speed
     Velocity.VectorVelocity = Directional_Vector --setting velocity
 
+    Velocity.Parent = Fireball
     Fireball.Parent = workspace
     game.Debris:AddItem(Fireball, 3) -- destroying fireball after 3 seconds
 end)
@@ -119,7 +119,6 @@ Shooter_Event.OnServerEvent:Connect(function(Player, Mouse_Pos)
     -- creating velocity constraint
     local Velocity = Instance.new("LinearVelocity")
     Velocity.Attachment0 = Attachment
-    Velocity.Parent = Fireball
 
     -- setting the direction of velocity
     local Speed = 50 -- the speed of fireball/length of the vector
@@ -127,6 +126,7 @@ Shooter_Event.OnServerEvent:Connect(function(Player, Mouse_Pos)
     local Directional_Vector = (Mouse_Pos - Fireball.Position).Unit * Speed
     Velocity.VectorVelocity = Directional_Vector
 
+    Velocity.Parent = Fireball
     Fireball.Parent = workspace
     game.Debris:AddItem(Fireball,3)
 
@@ -182,7 +182,6 @@ Shooter_Event.OnServerEvent:Connect(function(Player, Mouse_Pos)
         -- creating velocity constraint
         local Velocity = Instance.new("LinearVelocity")
         Velocity.Attachment0 = Attachment
-        Velocity.Parent = Fireball
 
         -- setting the direction of velocity
         local Speed = 50 -- the speed of fireball/length of  the vector
@@ -190,6 +189,7 @@ Shooter_Event.OnServerEvent:Connect(function(Player, Mouse_Pos)
         local Directional_Vector = (Mouse_Pos - Fireball.Position).Unit * Speed
         Velocity.VectorVelocity = Directional_Vector
 
+        Velocity.Parent = Fireball
         Fireball.Parent = workspace
         game.Debris:AddItem(Fireball,3)
 

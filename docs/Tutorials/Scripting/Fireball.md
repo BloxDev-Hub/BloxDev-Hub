@@ -9,10 +9,10 @@ In this tutorial, I will be showing you how to make a fireball shooting system. 
 ## Making Fireball
 Add a sphere in the workspace. This sphere will be our fireball. We will name it "Fire_Ball". Set the size of the ball to something that looks good to you. Set the transparency of the ball to `1`. Now, add a **Fire** object in the ball. In the property window, set the heat to 0 to make it look like an actual fireball, not an object having fired on it.
 
-=== "With Heat"
-	![with heat](https://imgur.com/qtdX3QI.png)
 === "Without Heat"
 	![without heat](https://imgur.com/vo9CLUM.png)
+=== "With Heat"
+	![with heat](https://imgur.com/qtdX3QI.png)
 
 
 You can also change the fire color. For this tutorial, I will use purple color and the secondary color pink. And the final result is this:

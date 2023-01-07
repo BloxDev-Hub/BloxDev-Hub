@@ -2,7 +2,7 @@
 title: Making Shooting Fire Balls.
 ---
 
-In this tutorial, I will be showing you how to make a fireball shooting system. Before starting, keep in your mind that, primarily this guide is supposed to give you concepts that you can utilize in your game. If you are willing to copy everything we will do here then you are likely to face issues and might find it unsuitable for your game. Now let's begin!
+In this tutorial, I will be showing you how to make a fireball shooting system. Before starting, keep in your mind that, primarily this guide is supposed to give you concepts that you can utilize in your game. If you are willing to copy everything we will do here then you are likely to face issues and might find it unsuitable for your game. This tutorial requires you to have basic knowledge of roblox scripting. Now let's begin!
 
 # Setting Up
 
@@ -147,7 +147,6 @@ Everything we have done yet looks completely fine but there is still an issue!. 
 We will create a table that will carry record the cooldown of every player. The table will have player names as index/key and duration as the value. We will add the player's name on `PlayerAdded` and remove on `PlayerRemoving` events of `Players Service`. 
 
 ```lua
-
 local Shooter_Event = game.ReplicatedStorage.Shooter
 local Sample_Fireball = game.ServerStorage.FireBall
 

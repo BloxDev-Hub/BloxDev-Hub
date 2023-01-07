@@ -2,7 +2,7 @@
 title: Making Shooting Fire Balls.
 ---
 
-In this tutorial, I will be showing you how to make a fireball shooting system. Before starting, keep in your mind that, primarily this guide is supposed to give you concepts that you can utilize in your game. If you are willing to copy everything we will do here then you are likely to face issues and might find it unsuitable for your game. This tutorial requires you to have basic knowledge of roblox scripting. Now let's begin!
+In this tutorial, I will be showing you how to make a fireball shooting system. Before starting, keep in your mind that, primarily this guide is supposed to give you concepts that you can utilize in your game. If you are willing to copy everything then you are likely to face issues and might find it unsuitable for your game. This tutorial requires you to have basic knowledge of roblox scripting. Now let's begin!
 
 # Setting Up
 
@@ -20,13 +20,13 @@ You can also change the fire color. For this tutorial, I will use purple color a
 ![FireBall](https://imgur.com/46PQFmf.png)
 
 ## Setting Objects
-Place the **Fire_Ball* in **ServerStorage**. Add a **Script** in **ServerScriptService**, a **Local Script** in **StarterPlayerScripts**, and a **Remote Event** in **ReplicatedStorage**. Change the name of the remote event to **Shooter**. Our explorer hierarchy now looks like this
+Place the **Fire_Ball** in **ServerStorage**. Add a **Script** in **ServerScriptService**, a **Local Script** in **StarterPlayerScripts**, and a **Remote Event** in **ReplicatedStorage**. Change the name of the remote event to **Shooter**. Our explorer hierarchy now looks like this
 
 ![explorer](https://imgur.com/0QyDkoN.png)
 
 
 ## Scripting Client Side
-In the local script, we will use [ContextActionService](https://www.helpers-documents.ml/Luau-Learning/ContextActionService/). We will use [UserInputService](https://www.helpers-documents.ml/Tutorials/Scripting/Detecting_Keyboard_Inputs/).
+In the local script, we will use [UserInputService](https://www.helpers-documents.ml/Tutorials/Scripting/Detecting_Keyboard_Inputs/).
 Connect a function to `InputBegan`. In the function check the input type. Get the mouse position and fire it along with the remote event to the server.
 
 ```lua
@@ -37,8 +37,8 @@ local Mouse = game.Players.LocalPlayer:GetMouse()
 local Clock = 0
 local CoolDown = 1 -- cooldown length
 
-UIS.InputBegan:Connect(function(Input, _gameProcessed)
-	if Input.UserInputType == Enum.UserInputType.MouseButton1 and not _gameProcessed then
+UIS.InputBegan:Connect(function(Input, GameProcessed)
+	if Input.UserInputType == Enum.UserInputType.MouseButton1 and not GameProcessed then
 		if os.clock() > Clock then
 
 			Clock = os.clock() + CoolDown
@@ -84,7 +84,7 @@ Shooter_Event.OnServerEvent:Connect(function(Player, Mouse_Pos)
 
     -- setting the direction of velocity
     local Speed = 50 -- the speed of fireball/length of the vector
-    Velocity.MaxForce = 9e6 --setting maxforce to 0 exponent 9
+    Velocity.MaxForce = 9e6 -- setting maxforce to 9*10^6
     local Directional_Vector = (Mouse_Pos - Fireball.Position).Unit * Speed
     Velocity.VectorVelocity = Directional_Vector --setting velocity
 
@@ -123,7 +123,7 @@ Shooter_Event.OnServerEvent:Connect(function(Player, Mouse_Pos)
 
     -- setting the direction of velocity
     local Speed = 50 -- the speed of fireball/length of the vector
-    Velocity.MaxForce = 9e6 --setting maxforce to 0 exponent 9
+    Velocity.MaxForce = 9e6 -- setting maxforce to 9*10^6
     local Directional_Vector = (Mouse_Pos - Fireball.Position).Unit * Speed
     Velocity.VectorVelocity = Directional_Vector
 
@@ -186,7 +186,7 @@ Shooter_Event.OnServerEvent:Connect(function(Player, Mouse_Pos)
 
         -- setting the direction of velocity
         local Speed = 50 -- the speed of fireball/length of  the vector
-        Velocity.MaxForce = 9e6 --setting maxforce to 0 exponent 9
+        Velocity.MaxForce = 9e6 -- setting maxforce to 9*10^6
         local Directional_Vector = (Mouse_Pos - Fireball.Position).Unit * Speed
         Velocity.VectorVelocity = Directional_Vector
 

@@ -1,17 +1,18 @@
-<!DOCTYPE html>
 <html>
   <head>
-    <title>My Blog</title>
+    <title>Posts</title>
   </head>
   <body>
-    <h1>My Blog</h1>
+    <h1>Posts</h1>
+    <p>Welcome to the posts page! Here you will find a list of all of our recent posts:</p>
     <ul>
-      {% for post in page.posts %}
-      <li>
-        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-        <p>{{ post.excerpt }}</p>
-      </li>
-      {% endfor %}
+      <li><a href="#">Post 1</a></li>
+      <li><a href="#">Post 2</a></li>
+      <li><a href="#">Post 3</a></li>
     </ul>
   </body>
 </html>
+
+
+
+

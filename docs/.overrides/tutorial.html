@@ -1,18 +1,139 @@
 <html>
-  <head>
-    <title>Posts</title>
-  </head>
-  <body>
-    <h1>Posts</h1>
-    <p>Welcome to the posts page! Here you will find a list of all of our recent posts:</p>
-    <ul>
-      <li><a href="#">Post 1</a></li>
-      <li><a href="#">Post 2</a></li>
-      <li><a href="#">Post 3</a></li>
-    </ul>
-  </body>
-</html>
-
-
-
-
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.min.css">
+  <style>
+    .hero {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://source.unsplash.com/1600x900");
+      background-size: cover;
+      color: white;
+    }
+    .hero-body {
+      align-items: flex-start;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 3rem 1.5rem;
+    }
+    .hero-title {
+      font-size: 3rem;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+      text-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+    }
+    .hero-subtitle {
+      font-size: 1.5rem;
+      line-height: 1.4;
+      margin-bottom: 1.5rem;
+      text-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+    }
+    .posts {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: -1rem -1rem 2rem;
+    }
+    .post {
+      background-color: white;
+      box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+      margin: 1rem;
+      padding: 1rem;
+      width: calc(50% - 2rem);
+    }
+    .post-image {
+      height: 200px;
+      object-fit: cover;
+      width: 100%;
+    }
+    .post-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin: 1rem 0 0.5rem;
+    }
+    .post-excerpt {
+      font-size: 0.875rem;
+      line-height: 1.5;
+      margin: 0.5rem 0 1rem;
+      text-align: justify;
+    }
+    .pagination {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      margin: 2rem 0;
+    }
+    .pagination-link {
+      align-items: center;
+      background-color: white;
+      border-radius: 50%;
+      display: flex;
+      height: 2.5rem;
+      justify-content: center;
+      margin: 0 0.5rem;
+      width: 2.5rem;
+    }
+    .pagination-link.is-current {
+      background-color: #00d1b2;
+      color: white;
+    }
+    .pagination-link:not(.is-current):hover {
+      background-color: #f5f5f5;
+    }
+    .pagination-link:not(.is-current):focus {
+      box-shadow: 0 0 0 2px #00d1b2;
+      outline: none;
+    }
+    .pagination-link:not(.is-current):active {
+      background-color: #00d1b2;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <section class="hero is-medium">
+    <div class="hero-body">
+      <h1 class="hero-title">Blog</h1>
+      <h2 class="hero-subtitle">Latest posts</h2>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="posts">
+        {% for post in paginator.posts %}
+        <article class="post">
+          <a href="{{ post.url }}">
+            <img class="post-image" src="{{ post.thumbnail }}" alt="{{ post.title }}">
+          </a>
+          <h2 class="post-title">
+            <a href="{{ post.url }}">{{ post.title }}</a>
+          </h2>
+          <p class="post-excerpt">{{ post.excerpt }}</p>
+        </article>
+        {% endfor %}
+      </div>
+      <nav class="pagination" role="navigation" aria-label="pagination">
+        {% if paginator.prev_page %}
+        <a class="pagination-link" href="{{ paginator.prev_page_path }}" aria-label="go to previous page">
+          <span aria-hidden="true">&laquo;</span>
+        </a>
+        {% else %}
+        <span class="pagination-link is-disabled">&laquo;</span>
+        {% endif %}
+        {% for page in paginator.page_range %}
+        {% if page == paginator.page %}
+        <span class="pagination-link is-current">{{ page }}</span>
+        {% elif page == 1 %}
+        <a class="pagination-link" href="/posts">{{ page }}</a>
+        {% else %}
+        <a class="pagination-link" href="/posts/page/{{ page }}">{{ page }}</a>
+        {% endif %}
+        {% endfor %}
+        {% if paginator.next_page %}
+        <a class="pagination-link" href="{{ paginator.next_page_path }}" aria-label="go to next page">
+          <span aria-hidden="true">&raquo;</span>
+        </a>
+        {% else %}
+        <span class="pagination-link is-disabled">&raquo;</span>
+        {% endif %}
+      </nav>
+   

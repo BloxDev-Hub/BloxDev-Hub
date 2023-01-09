@@ -56,37 +56,6 @@
       margin: 0.5rem 0 1rem;
       text-align: justify;
     }
-    .pagination {
-      align-items: center;
-      display: flex;
-      justify-content: center;
-      margin: 2rem 0;
-    }
-    .pagination-link {
-      align-items: center;
-      background-color: white;
-      border-radius: 50%;
-      display: flex;
-      height: 2.5rem;
-      justify-content: center;
-      margin: 0 0.5rem;
-      width: 2.5rem;
-    }
-    .pagination-link.is-current {
-      background-color: #00d1b2;
-      color: white;
-    }
-    .pagination-link:not(.is-current):hover {
-      background-color: #f5f5f5;
-    }
-    .pagination-link:not(.is-current):focus {
-      box-shadow: 0 0 0 2px #00d1b2;
-      outline: none;
-    }
-    .pagination-link:not(.is-current):active {
-      background-color: #00d1b2;
-      color: white;
-    }
   </style>
 </head>
 <body>
@@ -99,41 +68,55 @@
   <section class="section">
     <div class="container">
       <div class="posts">
-        {% for post in paginator.posts %}
         <article class="post">
-          <a href="{{ post.url }}">
-            <img class="post-image" src="{{ post.thumbnail }}" alt="{{ post.title }}">
+          <a href="/posts/post-1">
+            <img class="post-image" src="/images/post-1.jpg" alt="Post1">
           </a>
           <h2 class="post-title">
-            <a href="{{ post.url }}">{{ post.title }}</a>
+            <a href="/posts/post-1">Post 1</a>
           </h2>
-          <p class="post-excerpt">{{ post.excerpt }}</p>
+          <p class="post-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dignissim leo vel justo laoreet, vel facilisis odio ultricies. Sed auctor dolor sit amet sem viverra, id aliquet enim suscipit. Nam eget auctor lorem. In hac habitasse platea dictumst. Nullam id tellus vel velit dignissim euismod. Pellentesque iaculis in metus nec auctor. Aliquam id luctus enim, at faucibus nisl. Fusce eu nunc vitae nisi aliquet rutrum. Morbi non orci sed arcu consectetur tincidunt. Praesent auctor dui sed dui imperdiet, at ullamcorper nisl rutrum. Sed non odio elementum, consectetur elit non, facilisis velit.</p>
         </article>
-        {% endfor %}
-      </div>
-      <nav class="pagination" role="navigation" aria-label="pagination">
-        {% if paginator.prev_page %}
-        <a class="pagination-link" href="{{ paginator.prev_page_path }}" aria-label="go to previous page">
-          <span aria-hidden="true">&laquo;</span>
-        </a>
-        {% else %}
-        <span class="pagination-link is-disabled">&laquo;</span>
-        {% endif %}
-        {% for page in paginator.page_range %}
-        {% if page == paginator.page %}
-        <span class="pagination-link is-current">{{ page }}</span>
-        {% elif page == 1 %}
-        <a class="pagination-link" href="/posts">{{ page }}</a>
-        {% else %}
-        <a class="pagination-link" href="/posts/page/{{ page }}">{{ page }}</a>
-        {% endif %}
-        {% endfor %}
-        {% if paginator.next_page %}
-        <a class="pagination-link" href="{{ paginator.next_page_path }}" aria-label="go to next page">
-          <span aria-hidden="true">&raquo;</span>
-        </a>
-        {% else %}
-        <span class="pagination-link is-disabled">&raquo;</span>
-        {% endif %}
-      </nav>
-   
+        <article class="post">
+          <a href="/posts/post-2">
+            <img class="post-image" src="/images/post-2.jpg" alt="Post 2">
+          </a>
+          <h2 class="post-title">
+            <a href="/posts/post-2">Post 2</a>
+          </h2>
+          <p class="post-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dignissim leo vel justo laoreet, vel facilisis odio ultricies. Sed auctor dolor sit amet sem viverra, id aliquet enim suscipit. Nam eget auctor lorem. In hac habitasse platea dictumst. Nullam id tellus vel velit dignissim euismod. Pellentesque iaculis in metus nec auctor. Aliquam id luctus enim, at faucibus nisl. Fusce eu nunc vitae nisi aliquet rutrum. Morbi non orci sed arcu consectetur tincidunt. Praesent auctor dui sed dui imperdiet, at ullamcorper nisl rutrum. Sed non odio elementum, consectetur elit non, facilisis velit.</p>
+        </article>
+        <article class="post">
+          <a href="/posts/post-3">
+            <img class="post-image" src="/images/post-3.jpg" alt="Post 3">
+          </a>
+          <h2 class="post-title">
+            <a href="/posts/post-3">Post 3</a>
+          </h2>
+          <p class="post-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dignissim leo vel justo laoreet, vel facilisis odio ultricies. Sed auctor dolor sit amet sem viverra, id aliquet enim suscipit. Nam eget auctor lorem. In hac habitasse platea dictumst. Nullam id tellus vel velit dignissim euismod. Pellentesque iaculis in metus nec auctor. Aliquam id luctus enim, at faucibus nisl. Fusce eu nunc vitae nisi aliquet rutrum. Morbi non orci sed arcu consectetur tincidunt. Praesent auctor dui sed dui imperdiet, at ullamcorper nisl rutrum. Sed non odio elementum, consectetur elit non, facilisis velit.</p>
+        </article>
+        <article class="post">
+          <a href="/posts/post-4">
+            <img class="post-image" src="/images/post-4.jpg" alt="Post 4">
+          </a>
+          <h2 class="post-title">
+            <a href="/posts/post-4">Post 4</a>
+          </h2>
+          <p class="post-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dignissim leo vel justo laoreet, vel facilisis odio ultricies. Sed auctor dolor sit amet sem viverra, id aliquet enim suscipit. Nam eget auctor lorem. In hac habitasse platea dictumst. Nullam id tellus vel velit dignissim euismod. Pellentesque iaculis in metus nec auctor. Aliquam id luctus enim, at faucibus nisl. Fusce eu nunc vitae nisi aliquet rutrum. Morbi non orci sed arcu consectetur tincidunt. Praesent auctor dui sed dui imperdiet, at ullamcorper nisl rutrum. Sed non odio elementum, consectetur elit non, facilisis velit.</p>
+        </article>
+        <article class="post">
+          <a href="/posts/post-5">
+            <img class="post-image" src="/images/post-5.jpg" alt="Post 5">
+          </a>
+          <h2 class
+          class="post-title">
+          <a href="/posts/post-5">Post 5</a>
+        </h2>
+        <p class="post-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dignissim leo vel justo laoreet, vel facilisis odio ultricies. Sed auctor dolor sit amet sem viverra, id aliquet enim suscipit. Nam eget auctor lorem. In hac habitasse platea dictumst. Nullam id tellus vel velit dignissim euismod. Pellentesque iaculis in metus nec auctor. Aliquam id luctus enim, at faucibus nisl. Fusce eu nunc vitae nisi aliquet rutrum. Morbi non orci sed arcu consectetur tincidunt. Praesent auctor dui sed dui imperdiet, at ullamcorper nisl rutrum. Sed non odio elementum, consectetur elit non, facilisis velit.</p>
+      </article>
+    </div>
+  </div>
+</section>
+</body>
+</html>
+

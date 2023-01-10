@@ -1,6 +1,6 @@
 ---
 title: Tutorials
-template: tutorial.html
+
 hide:
   - navigation
 ---
@@ -14,5 +14,134 @@ Our main objective is to encourage people to learn something new whenever they c
 
 
 ![Thanks](https://github.com/Rodevs-Helpers/Helpers-Documents/blob/editing/images/thanks.jpg?raw=true)
+
+<html>
+  {#-
+    do not edit
+  -#}
+  {% extends "main.html" %}
+  {% block tabs %}
+    {{ super() }}
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.min.css">
+  <style>
+    .hero {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://source.unsplash.com/1600x900");
+      background-size: cover;
+      color: white;
+    }
+    .hero-body {
+      align-items: flex-start;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 3rem 1.5rem;
+    }
+    .hero-title {
+      font-size: 3rem;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+      text-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+    }
+    .hero-subtitle {
+      font-size: 1.5rem;
+      line-height: 1.4;
+      margin-bottom: 1.5rem;
+      text-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+    }
+    .posts {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: -1rem -1rem 2rem;
+    }
+    .post {
+      background-color: white;
+      box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+      margin: 1rem;
+      padding: 1rem;
+      width: calc(50% - 2rem);
+    }
+    .post-image {
+      height: 200px;
+      object-fit: cover;
+      width: 100%;
+    }
+    .post-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin: 1rem 0 0.5rem;
+    }
+    .post-excerpt {
+      font-size: 0.875rem;
+      line-height: 1.5;
+      margin: 0.5rem 0 1rem;
+      text-align: justify;
+    }
+  </style>
+</head>
+<body>
+  <!-- <section class="hero is-medium">
+    <div class="hero-body">
+      <h1 class="hero-title">Blog</h1>
+      <h2 class="hero-subtitle">Latest posts</h2>
+    </div>
+  </section> -->
+  <section class="section">
+    <div class="container">
+      <div class="posts">
+        <article class="post">
+          <a href="/posts/post-1">
+            <img class="post-image" src="/images/post-1.jpg" alt="Post1">
+          </a>
+          <h2 class="post-title">
+            <a href="/posts/post-1">Post 1</a>
+          </h2>
+          <p class="post-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dignissim leo vel justo laoreet, vel facilisis odio ultricies. Sed auctor dolor sit amet sem viverra, id aliquet enim suscipit. Nam eget auctor lorem. In hac habitasse platea dictumst. Nullam id tellus vel velit dignissim euismod. Pellentesque iaculis in metus nec auctor. Aliquam id luctus enim, at faucibus nisl. Fusce eu nunc vitae nisi aliquet rutrum. Morbi non orci sed arcu consectetur tincidunt. Praesent auctor dui sed dui imperdiet, at ullamcorper nisl rutrum. Sed non odio elementum, consectetur elit non, facilisis velit.</p>
+        </article>
+        <article class="post">
+          <a href="/posts/post-2">
+            <img class="post-image" src="/images/post-2.jpg" alt="Post 2">
+          </a>
+          <h2 class="post-title">
+            <a href="/posts/post-2">Post 2</a>
+          </h2>
+          <p class="post-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dignissim leo vel justo laoreet, vel facilisis odio ultricies. Sed auctor dolor sit amet sem viverra, id aliquet enim suscipit. Nam eget auctor lorem. In hac habitasse platea dictumst. Nullam id tellus vel velit dignissim euismod. Pellentesque iaculis in metus nec auctor. Aliquam id luctus enim, at faucibus nisl. Fusce eu nunc vitae nisi aliquet rutrum. Morbi non orci sed arcu consectetur tincidunt. Praesent auctor dui sed dui imperdiet, at ullamcorper nisl rutrum. Sed non odio elementum, consectetur elit non, facilisis velit.</p>
+        </article>
+        <article class="post">
+          <a href="/posts/post-3">
+            <img class="post-image" src="/images/post-3.jpg" alt="Post 3">
+          </a>
+          <h2 class="post-title">
+            <a href="/posts/post-3">Post 3</a>
+          </h2>
+          <p class="post-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dignissim leo vel justo laoreet, vel facilisis odio ultricies. Sed auctor dolor sit amet sem viverra, id aliquet enim suscipit. Nam eget auctor lorem. In hac habitasse platea dictumst. Nullam id tellus vel velit dignissim euismod. Pellentesque iaculis in metus nec auctor. Aliquam id luctus enim, at faucibus nisl. Fusce eu nunc vitae nisi aliquet rutrum. Morbi non orci sed arcu consectetur tincidunt. Praesent auctor dui sed dui imperdiet, at ullamcorper nisl rutrum. Sed non odio elementum, consectetur elit non, facilisis velit.</p>
+        </article>
+        <article class="post">
+          <a href="/posts/post-4">
+            <img class="post-image" src="/images/post-4.jpg" alt="Post 4">
+          </a>
+          <h2 class="post-title">
+            <a href="/posts/post-4">Post 4</a>
+          </h2>
+          <p class="post-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dignissim leo vel justo laoreet, vel facilisis odio ultricies. Sed auctor dolor sit amet sem viverra, id aliquet enim suscipit. Nam eget auctor lorem. In hac habitasse platea dictumst. Nullam id tellus vel velit dignissim euismod. Pellentesque iaculis in metus nec auctor. Aliquam id luctus enim, at faucibus nisl. Fusce eu nunc vitae nisi aliquet rutrum. Morbi non orci sed arcu consectetur tincidunt. Praesent auctor dui sed dui imperdiet, at ullamcorper nisl rutrum. Sed non odio elementum, consectetur elit non, facilisis velit.</p>
+        </article>
+        <article class="post">
+          <a href="/posts/post-5">
+            <img class="post-image" src="/images/post-5.jpg" alt="Post 5">
+          </a>
+          <h2 class
+          class="post-title">
+          <a href="/posts/post-5">Post 5</a>
+        </h2>
+        <p class="post-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dignissim leo vel justo laoreet, vel facilisis odio ultricies. Sed auctor dolor sit amet sem viverra, id aliquet enim suscipit. Nam eget auctor lorem. In hac habitasse platea dictumst. Nullam id tellus vel velit dignissim euismod. Pellentesque iaculis in metus nec auctor. Aliquam id luctus enim, at faucibus nisl. Fusce eu nunc vitae nisi aliquet rutrum. Morbi non orci sed arcu consectetur tincidunt. Praesent auctor dui sed dui imperdiet, at ullamcorper nisl rutrum. Sed non odio elementum, consectetur elit non, facilisis velit.</p>
+      </article>
+    </div>
+  </div>
+</section>
+</body>
+</html>
+
 
 

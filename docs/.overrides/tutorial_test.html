@@ -1,0 +1,167 @@
+{#-
+  This file was automatically generated - do not edit
+-#}
+{% extends "main.html" %}
+{% block tabs %}
+  
+  <style>.md-header{position:initial}.md-main__inner{margin:0}.md-content{display:none}@media screen and (min-width:60em){.md-sidebar--secondary{display:none}}@media screen and (min-width:76.25em){.md-sidebar--primary{display:none}}</style>
+  <section class="mdx-container">
+    <div class="md-grid md-typeset">
+      <div class="mdx-hero">
+        <!--<div class="mdx-hero__image">
+          <img src="illustration.png"  draggable="false">
+        </div>-->
+        <div class="mdx-hero__content">
+          <h1>Tutorials</h1>
+          <p>{{ config.site_description }}.</p>
+          <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | e }}" class="md-button md-button--primary">
+            Quick start
+          </a>
+          <a href="{{ 'Others/Help_Us%21/' | url }}" title="Help us!" class="md-button">
+            Help us!
+          </a>
+        </div>
+      </div>
+    </div>
+  
+    <head>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.min.css">
+      <style>
+        .hero {
+          background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://source.unsplash.com/1600x900");
+          background-size: cover;
+          color: rgb(#fcfdfd);
+        }
+        .hero-body {
+          align-items: flex-start;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding: 1rem 0.5rem;
+        }
+        .hero-title {
+          font-size: 3rem;
+          line-height: 1.2;
+          margin-bottom: 1rem;
+          text-shadow: 0 2px 3px rgba(255, 255, 255);
+        }
+        .hero-subtitle {
+          font-size: 1.5rem;
+          line-height: 1.4;
+          margin-bottom: 1.5rem;
+          text-shadow: 0 2px 3px rgb(255, 255, 255);
+        }
+        .posts {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          margin: -1rem -1rem 2rem;
+        }
+        .post {
+          background-color: #36393e;
+          box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+          margin: 1rem;
+          padding: 1rem;
+          width: calc(50% - 2rem);
+        }
+        .post-image {
+          height: 200px;
+          object-fit: cover;
+          width: 100%;
+        }
+        .post-title {
+          font-size: 1.25rem;
+          font-weight: 600;
+          margin: 1rem 0 0.5rem;
+        }
+        .post-excerpt {
+          font-size: 0.875rem;
+          line-height: 1.5;
+          margin: 0.5rem 0 1rem;
+          text-align: justify;
+        }
+      </style>
+    </head>
+    <body>
+      <!-- <section class="hero is-medium">
+        <div class="hero-body">
+          <h1 class="hero-title">Blog</h1>
+          <h2 class="hero-subtitle">Latest posts</h2>
+        </div>
+      </section> -->
+      <section class="section">
+        <div class="container">
+          <div class="posts">
+            <article class="post">
+              <a href="/posts/post-1">
+                <img class="post-image" src="https://github.com/Rodevs-Helpers/Helpers-Documents/blob/editing/images/thanks.jpg?raw=true" alt="Post1">
+              </a>
+              <h2 class="post-title">
+                <a href="/posts/post-1">Post 1</a>
+              </h2>
+              <p class="post-excerpt">I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself</p>
+            </article>
+            <article class="post">
+              <a href="/posts/post-2">
+                <img class="post-image" src="https://github.com/Rodevs-Helpers/Helpers-Documents/blob/editing/images/thanks.jpg?raw=true" alt="Post 2">
+              </a>
+              <h2 class="post-title">
+                <a href="/posts/post-2">Post 2</a>
+              </h2>
+              <p class="post-excerpt">I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself</p>
+            </article>
+            <article class="post">
+              <a href="/posts/post-3">
+                <img class="post-image" src="https://github.com/Rodevs-Helpers/Helpers-Documents/blob/editing/images/thanks.jpg?raw=true" alt="Post 3">
+              </a>
+              <h2 class="post-title">
+                <a href="/posts/post-3">Post 3</a>
+              </h2>
+              <p class="post-excerpt">I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself.</p>
+            </article>
+            <article class="post">
+              <a href="/posts/post-4">
+                <img class="post-image" src="https://github.com/Rodevs-Helpers/Helpers-Documents/blob/editing/images/thanks.jpg?raw=true" alt="Post 4">
+              </a>
+              <h2 class="post-title">
+                <a href="/posts/post-4">Post 4</a>
+              </h2>
+              <p class="post-excerpt">I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself.</p>
+            </article>
+            <article class="post">
+              <a href="/posts/post-5">
+                <img class="post-image" src="https://github.com/Rodevs-Helpers/Helpers-Documents/blob/editing/images/thanks.jpg?raw=true" alt="Post 5">
+              </a>
+              <h2 class
+              class="post-title">
+              <a href="/posts/post-5">Post 5</a>
+            </h2>
+            <p class="post-excerpt">I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself.</p>
+          </article>
+          <article class="post">
+            <a href="/posts/post-6">
+              <img class="post-image" src="https://github.com/Rodevs-Helpers/Helpers-Documents/blob/editing/images/thanks.jpg?raw=true" alt="Post 6">
+            </a>
+            <h2 class
+            class="post-title">
+            <a href="/posts/post-6">Post 6</a>
+          </h2>
+          <p class="post-excerpt">I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself I Love myself.</p>
+        </article>
+        </div>
+      </div>
+    </section>
+    </body>
+
+</section>
+
+  
+
+
+{% endblock %}
+
+{% block content %}{% endblock %}
+
+{% block footer %}{% endblock %}
+

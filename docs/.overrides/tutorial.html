@@ -1,35 +1,76 @@
 {#-
-    This file was automatically generated - do not edit
-  -#}
-  {% extends "main.html" %}
-  {% block tabs %}
-    {{ super() }}
-    <!--<style>.md-header{position:initial}.md-main__inner{margin:0}.md-content{display:none}@media screen and (min-width:60em){.md-sidebar--secondary{display:none}}@media screen and (min-width:76.25em){.md-sidebar--primary{display:none}}</style> -->
-    <section class="mdx-container">
-      <div class="md-grid md-typeset">
-        <div class="mdx-hero">
-          <!--<div class="mdx-hero__image">
-            <img src="illustration.png"  draggable="false">
-          </div>-->
-          <div class="mdx-hero__content">
-            <h1>Tutorials</h1>
-            <!--<p>{{ config.site_description }}.</p>-->
-            <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | e }}" class="md-button md-button--primary">
-              Quick start
-            </a>
-            <a href="{{ 'Others/Help_Us%21/' | url }}" title="Help us!" class="md-button">
-              Help us!
-            </a>
-          </div>
+  This file was automatically generated - do not edit
+-#}
+{% extends "main.html" %}
+{% block tabs %}
+  
+  <style>.md-header{position:initial}.md-main__inner{margin:0}.md-content{display:none}@media screen and (min-width:60em){.md-sidebar--secondary{display:none}}@media screen and (min-width:76.25em){.md-sidebar--primary{display:none}}</style>
+  <section class="mdx-container">
+    <div class="md-grid md-typeset">
+      <div class="mdx-hero">
+        <!--<div class="mdx-hero__image">
+          <img src="illustration.png"  draggable="false">
+        </div>-->
+        <div class="mdx-hero__content">
+          <h1>Tutorials</h1>
+          <p>{{ config.site_description }}.</p>
+          <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | e }}" class="md-button md-button--primary">
+            Quick start
+          </a>
+          <a href="{{ 'Others/Help_Us%21/' | url }}" title="Help us!" class="md-button">
+            Help us!
+          </a>
         </div>
       </div>
-    </section>
+    </div>
+  
+    <head>
+      <title>Tutorials</title>
+      <style>
+        .post {
+          display: flex;
+          align-items: center;
+          margin-bottom: 20px;
+        }
+        .post img {
+          width: 100px;
+          height: 100px;
+          margin-right: 20px;
+        }
+      </style>
+    </head>
+    <body>
+      <h1>Blog Posts</h1>
+      <div class="post">
+        <img src="https://github.com/Rodevs-Helpers/Helpers-Documents/blob/editing/images/thanks.jpg?raw=true" alt="Post 1 Image">
+        <div>
+          <h2>Post 1 Title</h2>
+          <p>Short description of post 1 goes here.</p>
+        </div>
+      </div>
+      <div class="post">
+        <img src="https://github.com/Rodevs-Helpers/Helpers-Documents/blob/editing/images/thanks.jpg?raw=true" alt="Post 2 Image">
+        <div>
+          <h2>Post 2 Title</h2>
+          <p>Short description of post 2 goes here.</p>
+        </div>
+      </div>
+      <div class="post">
+        <img src="https://github.com/Rodevs-Helpers/Helpers-Documents/blob/editing/images/thanks.jpg?raw=true" alt="Post 3 Image">
+        <div>
+          <h2>Post 3 Title</h2>
+          <p>Short description of post 3 goes here.</p>
+        </div>
+      </div>
+    </body>
+</section>
 
-    
   
 
-  {% endblock %}
 
-  {% block content %}{% endblock %}
+{% endblock %}
 
-  {% block footer %}{% endblock %}
+{% block content %}{% endblock %}
+
+{% block footer %}{% endblock %}
+

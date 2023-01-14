@@ -21,7 +21,7 @@ extra_html:
   - <meta property="og:type" content="object" />
   - <meta property="og:title" content="Helpers Documents - Enhance your Roblox development skills from our guides and tutorials" />
   - <meta property="og:url" content="https://www.helpers-documents.ml" />
-  - <meta property="og:description" content="Rodevs Helpers Documents, a place where you can learn multiple things about developing from our incredible helpers. />
+  - <meta property="og:description" content="Rodevs Helpers Documents, a place where you can learn multiple things about developing from our incredible helpers." />
 
 
 theme:

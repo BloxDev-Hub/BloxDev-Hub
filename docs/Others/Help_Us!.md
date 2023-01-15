@@ -7,6 +7,9 @@ We hope, you are having a fun time reading our articles. Your reviews means alot
 
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdp-Q99kOpn6kwq3Qu_4SORAgpALuqOUUArbmJehR2NkGBFgQ/viewform?embedded=true" width="800" height="900" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
+<div id="ff-compose"></div>
+<script async defer src="https://formfacade.com/include/113490876670483734447/form/1FAIpQLSdp-Q99kOpn6kwq3Qu_4SORAgpALuqOUUArbmJehR2NkGBFgQ/classic.js?div=ff-compose"></script>
+
 
 # Reports
 

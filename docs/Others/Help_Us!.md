@@ -1,5 +1,6 @@
 ---
 title: Help Us!
+template: docs.html
 ---
 # Reviews :octicons-heart-fill-24:{ .heart }
 

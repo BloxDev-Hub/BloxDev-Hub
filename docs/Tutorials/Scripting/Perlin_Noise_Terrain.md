@@ -1,6 +1,5 @@
 ---
 tite: Perlin Noise Terrain
-template: docs.html
 ---
 
 # Introduction

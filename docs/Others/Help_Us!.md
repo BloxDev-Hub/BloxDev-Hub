@@ -7,6 +7,8 @@ We hope, you are having a fun time reading our articles. Your reviews means alot
 
 [Review :fontawesome-solid-paper-plane:](https://forms.gle/mbrA2bXoqTURdoNc6){ .md-button .md-button--primary }
 
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdp-Q99kOpn6kwq3Qu_4SORAgpALuqOUUArbmJehR2NkGBFgQ/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
 
 # Reports
 

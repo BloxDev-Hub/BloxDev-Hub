@@ -1,5 +1,5 @@
 ---
-tite: Perlin Noise Terrain
+title: Perlin Noise Terrain
 ---
 
 # Introduction

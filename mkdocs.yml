@@ -77,8 +77,6 @@ extra:
       - accept
     cookies:
       analytics:
-        name: Google Analytics
-        checked: true
   analytics:
     provider: google
     property: G-DK4D1FN7GD

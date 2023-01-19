@@ -29,7 +29,7 @@ theme:
     favicon: bidenrose.png
     language: en
     name: material
-    custom_dir: docs/.overrides
+    custom_dir: material/.overrides
     font:
       text: Roboto
       code: JetBrains Mono

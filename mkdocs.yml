@@ -65,13 +65,6 @@ theme:
       example: fontawesome/solid/flask
       quote: fontawesome/solid/quote-left
 extra:
-  alternate:
-    - name: English
-      link: /en/ 
-      lang: en
-    - name: Urdu
-      link: /ur/
-      lang: ur
   consent:
     title: Cookie consent
     description: >- 
@@ -81,7 +74,6 @@ extra:
       make our documentation better.
     actions:
       - accept
-      - reject
     cookies:
       analytics:
         name: Google Analytics

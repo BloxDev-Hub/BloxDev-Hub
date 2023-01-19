@@ -51,6 +51,7 @@ theme:
       - navigation.top
       - navigation.tabs
       - navigation.indexes
+      - navigation.footer
     admonition:
       note: fontawesome/solid/sticky-note
       abstract: fontawesome/solid/book

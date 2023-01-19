@@ -1,0 +1,97 @@
+{#-
+  This file was automatically generated - do not edit
+-#}
+{% extends "main.html" %}
+{% block tabs %}
+  
+  <style>.md-header{position:initial}.md-main__inner{margin:0}.md-content{display:none}@media screen and (min-width:60em){.md-sidebar--secondary{display:none}}@media screen and (min-width:76.25em){.md-sidebar--primary{display:none}}</style>
+  <section class="mdx-container">
+    <div class="md-grid md-typeset">
+      <div class="mdx-hero">
+        <!--<div class="mdx-hero__image">
+          <img src="illustration.png"  draggable="false">
+        </div>-->
+        <div class="mdx-hero__content">
+          <h1>Tutorials</h1>
+          <p>{{ config.site_description }}.</p>
+          <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | e }}" class="md-button md-button--primary">
+            Quick start
+          </a>
+          <a href="{{ 'Others/Help_Us%21/' | url }}" title="Help us!" class="md-button">
+            Help us!
+          </a>
+          
+          <head>
+            <title>Blog Posts</title>
+            <style>
+              .post {
+                display: flex;
+                align-items: center;
+                margin-bottom: 20px;
+              }
+              .post img {
+                width: 100px;
+                height: 100px;
+                margin-right: 20px;
+              }
+              .read-more-btn {
+                background-color: blue;
+                color: white;
+                padding: 8px 15px;
+                border-radius: 5px;
+                text-decoration: none;
+                margin-top: 10px;
+              }
+            </style>
+          </head>
+          <body>
+            <!-- <h1>Blog Posts</h1> -->
+            <div class="post">
+              <img src="illustration.png" alt="Post 1 Image">
+              <div>
+                <h2>Noah noobo</h2>
+                <p>Short description of post 1 goes here.</p>
+                <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | e }}" class="md-button md-button--primary">
+                  Read More!
+                </a>
+              </div>
+            </div>
+            <div class="post">
+              <img src="illustration.png" alt="Post 2 Image">
+              <div>
+                <h2>Post 2 Title</h2>
+                <p>EDEN IS CUTE EDEN IS CUTE EDEN IS CUTE EDEN IS CUTE EDEN IS CUTE EDEN IS CUTE EDEN IS CUTE EDEN IS CUTE EDEN IS CUTE EDEN IS CUTE .</p>
+                <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | e }}" class="md-button md-button--primary">
+                  Read More!
+                </a>
+              </div>
+            </div>
+            <div class="post">
+              <img src="illustration.png" alt="Post 3 Image">
+              <div>
+                <h2>Teerach idk</h2>
+                <p>Short description of post 3 goes here.</p>
+                <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | e }}" class="md-button md-button--primary">
+                  Read More!
+                </a>
+              </div>
+            </div>
+          </body>
+
+        </div>
+      </div>
+    </div>
+</section>
+
+
+
+
+  
+
+
+{% endblock %}
+
+{% block content %}{% endblock %}
+
+{% block footer %}{% endblock %}
+

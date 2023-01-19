@@ -48,6 +48,7 @@ theme:
          primary: blue
          accent: purple
     features:
+      - announce.dismiss
       - navigation.top
       - navigation.tabs
       - navigation.indexes

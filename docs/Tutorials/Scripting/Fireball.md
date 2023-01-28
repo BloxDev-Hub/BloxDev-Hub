@@ -1,6 +1,6 @@
 ---
 title: Making Shootable Fireballs
-og_image: illustration.png
+description: Learn to make shooting fire balls in roblox studio!
 ---
 
 In this tutorial, I will be showing you how to make a fireball shooting system. Before starting, keep in your mind that primarily this guide is supposed to give you concepts that you can utilize in your game. If you are willing to copy everything, then you are likely to face issues and might find it unsuitable for your game. This tutorial requires you to have basic knowledge of roblox scripting. Now let's begin!

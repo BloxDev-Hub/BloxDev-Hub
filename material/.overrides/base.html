@@ -6,10 +6,11 @@
   <head>
     {% block site_meta %}
     <meta charset="UTF-8">
-    <title>{% block title %}{% endblock %}</title>
+    <title>Helpers Documents - {% block title %}{% endblock %}</title>
+    <meta name="description" content="{% block description %}{% endblock %}">
     <meta property="og:image" content="https://www.helpers-documents.ml/illustration.png" />
-    <link rel="stylesheet" href="{{ theme_url }}/css/style.css">
-    <!--<script src="{{ theme_url }}/js/script.js"></script> -->
+    <!-- <link rel="stylesheet" href="{{ theme_url }}/css/style.css">
+    <script src="{{ theme_url }}/js/script.js"></script> -->
     {% endblock %}
     {% block htmltitle %}
       {% if page.meta and page.meta.title %}

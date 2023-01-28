@@ -15,7 +15,7 @@
     <!-- <link rel="stylesheet" href="{{ theme_url }}/css/style.css">
     <script src="{{ theme_url }}/js/script.js"></script> -->
     {% endblock %}
-    <!--{% block htmltitle %}
+    {% block htmltitle %}
       {% if page.meta and page.meta.title %}
         <title>{{ page.meta.title }} - {{ config.site_name }}</title>
       {% elif page.title and not page.is_homepage %}
@@ -56,11 +56,10 @@
       {% for tag in page.meta.meta %}
         <meta {% for key, value in tag.items() %} {{ key }}="{{value}}" {% endfor %}>
       {% endfor %}
-    {% endif %} -->
+    {% endif %}
     {% block extrahead %}{% endblock %}
-    ...
   </head>
-  <!--{% set direction = config.theme.direction or lang.t("direction") %}
+  {% set direction = config.theme.direction or lang.t("direction") %}
   {% if config.theme.palette %}
     {% set palette = config.theme.palette %}
     {% if not palette is mapping %}
@@ -70,10 +69,8 @@
     {% set primary = palette.primary | d("", true) %}
     {% set accent  = palette.accent  | d("", true) %}
     <body dir="{{ direction }}" data-md-color-scheme="{{ scheme | replace(' ', '-') }}" data-md-color-primary="{{ primary | replace(' ', '-') }}" data-md-color-accent="{{ accent | replace(' ', '-') }}">
-  {% else %} -->
-  <body>
-    ...
-    <!--<body dir="{{ direction }}">
+  {% else %}
+    <body dir="{{ direction }}">
   {% endif %}
     {% set features = config.theme.features or [] %}
     {% if not config.theme.palette is mapping %}
@@ -232,6 +229,6 @@
       {% for path in config.extra_javascript %}
         <script src="{{ path | url }}"></script>
       {% endfor %}
-    {% endblock %}-->
+    {% endblock %}
   </body>
 </html>

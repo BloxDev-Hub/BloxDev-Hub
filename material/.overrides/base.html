@@ -1,9 +1,7 @@
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>{% block title %}{% endblock %}</title>
-    <meta property="og:image" content="https://www.helpers-documents.ml/illustration.png" />
-    <link rel="stylesheet" href="{{ theme_url }}/css/style.css">
-    <!--<script src="{{ theme_url }}/js/script.js"></script> -->
-  </head>
-</html>
+<head>
+  ...
+  {% if og_image %}
+  <meta property="og:image" content="{{ og_image }}" />
+  {% endif %}
+  ...
+</head>

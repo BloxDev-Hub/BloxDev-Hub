@@ -1,7 +1,5 @@
 ---
 Title: Character
-meta:
-  - property="og:image" content="https://www.helpers-documents.ml/metaicon.png"
 ---
 
 # Character

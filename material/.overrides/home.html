@@ -2,6 +2,62 @@
     do not edit
   -#}
   {% extends "main.html" %}
+  <head>
+    {% block site_meta %}
+    <meta charset="UTF-8">
+    <title>{{ page.title }} - Helper Documents</title>
+    <meta name="description" content="Rodevs Helpers Documents, a place where you can learn multiple things about developing from our incredible helpers.">
+    <meta property="og:image" content="https://www.helpers-documents.ml/metaicon.png" />
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="113">
+    <meta property="og:image:height" content="128">
+    <!-- <link rel="stylesheet" href="{{ theme_url }}/css/style.css">
+    <script src="{{ theme_url }}/js/script.js"></script> -->
+    {% endblock %}
+    {% block htmltitle %}
+      {% if page.meta and page.meta.title %}
+        <title>{{ page.meta.title }} - {{ config.site_name }}</title>
+      {% elif page.title and not page.is_homepage %}
+        <title>{{ page.title | striptags }} - {{ config.site_name }}</title>
+      {% else %}
+        <title>{{ config.site_name }}</title>
+      {% endif %}
+    {% endblock %}
+    {% block styles %}
+      <link rel="stylesheet" href="{{ 'assets/stylesheets/main.558e4712.min.css' | url }}">
+      {% if config.theme.palette %}
+        {% set palette = config.theme.palette %}
+        <link rel="stylesheet" href="{{ 'assets/stylesheets/palette.2505c338.min.css' | url }}">
+      {% endif %}
+      {% include "partials/icons.html" %}
+    {% endblock %}
+    {% block libs %}{% endblock %}
+    {% block fonts %}
+      {% if config.theme.font != false %}
+        {% set text = config.theme.font.text | d("Roboto", true) %}
+        {% set code = config.theme.font.code | d("Roboto Mono", true) %}
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family={{
+            text | replace(' ', '+') + ':300,300i,400,400i,700,700i%7C' +
+            code | replace(' ', '+') + ':400,400i,700,700i'
+          }}&display=fallback">
+        <style>:root{--md-text-font:"{{ text }}";--md-code-font:"{{ code }}"}</style>
+      {% endif %}
+    {% endblock %}
+    {% for path in config.extra_css %}
+      <link rel="stylesheet" href="{{ path | url }}">
+    {% endfor %}
+    {% include "partials/javascripts/base.html" %}
+    {% block analytics %}
+      {% include "partials/integrations/analytics.html" %}
+    {% endblock %}
+    {% if page.meta and page.meta.meta %}
+      {% for tag in page.meta.meta %}
+        <meta {% for key, value in tag.items() %} {{ key }}="{{value}}" {% endfor %}>
+      {% endfor %}
+    {% endif %}
+    {% block extrahead %}{% endblock %}
+  </head>
   {% block tabs %}
     {{ super() }}
     <style>.md-header{position:initial}.md-main__inner{margin:0}.md-content{display:none}@media screen and (min-width:60em){.md-sidebar--secondary{display:none}}@media screen and (min-width:76.25em){.md-sidebar--primary{display:none}}</style>

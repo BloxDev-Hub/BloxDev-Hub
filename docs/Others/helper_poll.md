@@ -1,6 +1,8 @@
 ---
 title: Helper Of The Month Poll
 description: Vote your favourite helper!
+meta:
+  - property="og:image" content="https://www.helpers-documents.ml/metaicon.png"
 ---
 
 # Helper Of The Month Poll

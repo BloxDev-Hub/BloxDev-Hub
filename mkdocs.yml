@@ -118,6 +118,7 @@ markdown_extensions:
 plugins:
   - search
   - awesome-pages
+  - meta
 
 nav:
   - Home: index.md

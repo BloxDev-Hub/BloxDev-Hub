@@ -15,7 +15,7 @@
     <!-- <link rel="stylesheet" href="{{ theme_url }}/css/style.css">
     <script src="{{ theme_url }}/js/script.js"></script> -->
     {% endblock %}
-    {% block htmltitle %}
+    <!--{% block htmltitle %}
       {% if page.meta and page.meta.title %}
         <title>{{ page.meta.title }} - {{ config.site_name }}</title>
       {% elif page.title and not page.is_homepage %}
@@ -23,15 +23,15 @@
       {% else %}
         <title>{{ config.site_name }}</title>
       {% endif %}
-    {% endblock %}
-    <!--{% block styles %}
+    {% endblock %} -->
+    {% block styles %}
       <link rel="stylesheet" href="{{ 'assets/stylesheets/main.558e4712.min.css' | url }}">
       {% if config.theme.palette %}
         {% set palette = config.theme.palette %}
         <link rel="stylesheet" href="{{ 'assets/stylesheets/palette.2505c338.min.css' | url }}">
       {% endif %}
       {% include "partials/icons.html" %}
-    {% endblock %}-->
+    {% endblock %}
     {% block libs %}{% endblock %}
     {% block fonts %}
       {% if config.theme.font != false %}

@@ -1,8 +1,28 @@
-{#-
-    This file was automatically generated - do not edit
-  -#}
-  {% extends "main.html" %}
-  {% block content %}
-    <h1>404 - Not found</h1>
-  {% endblock %}
-  
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>404 Error</title>
+    <style>
+      .error-message {
+        text-align: center;
+        font-size: 36px;
+        margin-top: 50px;
+      }
+      .go-home-button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: blue;
+        color: white;
+        border-radius: 5px;
+        text-decoration: none;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="error-message">
+      Sorry, the page you are looking for was not found.
+    </div>
+    <a href="/" class="go-home-button">Go Home</a>
+  </body>
+</html>

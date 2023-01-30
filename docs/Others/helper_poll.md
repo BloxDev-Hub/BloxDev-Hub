@@ -1,6 +1,5 @@
 ---
 title: Helper Of The Month Results
-description: Vote your favourite helper!
 ---
 
 # Helper Of The Month Results

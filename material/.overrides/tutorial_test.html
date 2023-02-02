@@ -18,6 +18,13 @@
     <script src="{{ theme_url }}/js/script.js"></script> -->
     {% endblock %}
     <style>
+      .posts-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
       /* Define a grid layout for the posts */
       .post-grid {
         display: grid;
@@ -27,15 +34,17 @@
       
       /* Define the styling for each post */
       .post {
-        justify-content: center;
+        display: flex;
+        flex-direction: column;
         align-items: center;
-        background-color: white;
-        border-radius: 8px;
-        overflow: hidden;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        transition: all 0.3s ease-in-out;
-        text-align: center;
-        cursor: pointer;
+        width: 300px;
+        height: 400px;
+        margin: 20px;
+        padding: 20px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        transition: all 0.2s ease-in-out;
       }
       
       /* Show the post description when hovering over the post */
@@ -99,6 +108,7 @@
   
   <!-- Create a container for the post grid -->
   <div class="post-grid">
+    <div class="posts-container">
     <!-- Define a template for each post -->
     <div class="post">
       <img src="https://imgur.com/dgw1giK.png" alt="Post Image" class="post-image">
@@ -126,6 +136,7 @@
     </div>
     
       </div>
+    </div>
       <!-- Add a click event for each post to lead to another URL -->
       <script>
         const posts = document.querySelectorAll(".post");

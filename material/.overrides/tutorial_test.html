@@ -92,66 +92,65 @@
         
         <div class="mdx-hero__content">
           <h1>Tutorials</h1>
-          <!--<p>{{ config.site_description }}.</p>
-          <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | e }}" class="md-button md-button--primary">
+          <p>{{ config.site_description }}.</p>
+          <!--<a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | e }}" class="md-button md-button--primary">
             Quick start
           </a>
           <a href="{{ 'Others/Help_Us%21/' | url }}" title="Help us!" class="md-button">
             Help us!
           </a>-->
-          <body>
-            <!-- Include the default mkdocs header -->
-            <!-- Create a container for the post grid -->
-            <!--<div class="post-grid">-->
-              <div class="posts-container">
-              <!-- Define a template for each post -->
-              <div class="post" data-url="https://www.helpers-documents.ml/Tutorials/Scripting/Detecting_Keyboard_Inputs/">
-                <img src="https://imgur.com/46PQFmf.png" alt="Post Image" class="post-image">
-                <h2 class="post-title">Detecting Inputs</h2>
-                <p class="post-description"><strong> Learn how to detect user input by using userinputservice. Click here to read more!</strong></p>
-              </div>
-              
-              <!-- Repeat the template for each additional post -->
-              <div class="post" data-url="https://www.helpers-documents.ml/Tutorials/Scripting/Fireball/">
-                <img src="https://imgur.com/46PQFmf.png" alt="Post Image" class="post-image">
-                <h2 class="post-title">Making Shootable Fireballs</h2>
-                <p class="post-description"><strong> Learn how to make shooting fireballs in roblox studio. Click here to read more!</strong></p>
-              </div>
-              
-              <div class="post" data-url="https://www.helpers-documents.ml/Tutorials/Scripting/Leaderstats/">
-                <img src="https://imgur.com/46PQFmf.png" alt="Post Image" class="post-image">
-                <h2 class="post-title">Leaderstats</h2>
-                <p class="post-description"><strong> Learn how to make leaderstats/leaderboard in roblox studio. Click here to read more!</strong></p>
-              </div>
-          
-              <div class="post" data-url="https://www.helpers-documents.ml/Tutorials/Scripting/Making_a_simple_gun/">
-                <img src="https://imgur.com/46PQFmf.png" alt="Post Image" class="post-image">
-                <h2 class="post-title">Making Simple Gun</h2>
-                <p class="post-description"><strong> Learn how to make a simple gun in roblox studio. Click here to read more!</strong></p>
-              </div>    
-              
-              <div class="post" data-url="https://www.helpers-documents.ml/Tutorials/Scripting/Perlin_Noise_Terrain/">
-                <img src="https://imgur.com/46PQFmf.png" alt="Post Image" class="post-image">
-                <h2 class="post-title">Perlin Noise Terrain</h2>
-                <p class="post-description"><strong> Learn how to generate terrain with perlin noise in roblox studio. Click here to read more!</strong></p>
-              </div>
-          
-              </div>
-              <!--</div>-->
-                <!-- Add a click event for each post to lead to another URL -->
-                <script>
-                  const posts = document.querySelectorAll(".post");
-                  posts.forEach(post => {
-                    post.addEventListener("click", () => {
-                      const url = post.getAttribute("data-url");
-                      window.location.href = url;
-                    });
-                  });
-                </script>
-              </body>
 </section>
 
+<body>
+  <!-- Include the default mkdocs header -->
+  <!-- Create a container for the post grid -->
+  <!--<div class="post-grid">-->
+    <div class="posts-container">
+    <!-- Define a template for each post -->
+    <div class="post" data-url="https://www.helpers-documents.ml/Tutorials/Scripting/Detecting_Keyboard_Inputs/">
+      <img src="https://imgur.com/46PQFmf.png" alt="Post Image" class="post-image">
+      <h2 class="post-title">Detecting Inputs</h2>
+      <p class="post-description"><strong> Learn how to detect user input by using userinputservice. Click here to read more!</strong></p>
+    </div>
+    
+    <!-- Repeat the template for each additional post -->
+    <div class="post" data-url="https://www.helpers-documents.ml/Tutorials/Scripting/Fireball/">
+      <img src="https://imgur.com/46PQFmf.png" alt="Post Image" class="post-image">
+      <h2 class="post-title">Making Shootable Fireballs</h2>
+      <p class="post-description"><strong> Learn how to make shooting fireballs in roblox studio. Click here to read more!</strong></p>
+    </div>
+    
+    <div class="post" data-url="https://www.helpers-documents.ml/Tutorials/Scripting/Leaderstats/">
+      <img src="https://imgur.com/46PQFmf.png" alt="Post Image" class="post-image">
+      <h2 class="post-title">Leaderstats</h2>
+      <p class="post-description"><strong> Learn how to make leaderstats/leaderboard in roblox studio. Click here to read more!</strong></p>
+    </div>
 
+    <div class="post" data-url="https://www.helpers-documents.ml/Tutorials/Scripting/Making_a_simple_gun/">
+      <img src="https://imgur.com/46PQFmf.png" alt="Post Image" class="post-image">
+      <h2 class="post-title">Making Simple Gun</h2>
+      <p class="post-description"><strong> Learn how to make a simple gun in roblox studio. Click here to read more!</strong></p>
+    </div>    
+    
+    <div class="post" data-url="https://www.helpers-documents.ml/Tutorials/Scripting/Perlin_Noise_Terrain/">
+      <img src="https://imgur.com/46PQFmf.png" alt="Post Image" class="post-image">
+      <h2 class="post-title">Perlin Noise Terrain</h2>
+      <p class="post-description"><strong> Learn how to generate terrain with perlin noise in roblox studio. Click here to read more!</strong></p>
+    </div>
+
+    </div>
+    <!--</div>-->
+      <!-- Add a click event for each post to lead to another URL -->
+      <script>
+        const posts = document.querySelectorAll(".post");
+        posts.forEach(post => {
+          post.addEventListener("click", () => {
+            const url = post.getAttribute("data-url");
+            window.location.href = url;
+          });
+        });
+      </script>
+    </body>
 
 
   

@@ -5,6 +5,18 @@
 {% block tabs %}
   
 <head>
+  <link rel="shortcut icon" type="image/x-icon" href="bidenrose.png">
+  {% block site_meta %}
+  <meta charset="UTF-8">
+  <title>{{ page.title }} - Helper Documents</title>
+  <meta name="description" content="Rodevs Helpers Documents, a place where you can learn multiple things about developing from our incredible helpers.">
+  <meta property="og:image" content="https://www.helpers-documents.ml/metaicon.png" />
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="113">
+  <meta property="og:image:height" content="128">
+  <!-- <link rel="stylesheet" href="{{ theme_url }}/css/style.css">
+  <script src="{{ theme_url }}/js/script.js"></script> -->
+  {% endblock %}
   <style>
     /* Define a grid layout for the posts */
     .post-grid {
@@ -75,50 +87,47 @@
           <a href="{{ 'Others/Help_Us%21/' | url }}" title="Help us!" class="md-button">
             Help us!
           </a>
-        
-        </head>
-        <body>
-          <!-- Include the default mkdocs header -->
-          <header>
-            <h1>My Fancy Post Grid</h1>
-          </header>
-          
-          <!-- Create a container for the post grid -->
-          <div class="post-grid">
-            <!-- Define a template for each post -->
-            <div class="post">
-              <img src="image1.jpg" alt="Post Image" class="post-image">
-              <h2 class="post-title">Post 1</h2>
-              <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            
-            <!-- Repeat the template for each additional post -->
-            <div class="post">
-              <img src="image2.jpg" alt="Post Image" class="post-image">
-              <h2 class="post-title">Post 2</h2>
-              <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            
-            <div class="post">
-              <img src="image3.jpg" alt="Post Image" class="post-image">
-              <h2 class="post-title">Post 3</h2>
-              <p class="post-description">Lorem ipsum dolor sit amet, consectectur adipiscing elit.</p>
-            </div>
-            
-              </div>
-              <!-- Add a click event for each post to lead to another URL -->
-              <script>
-                const posts = document.querySelectorAll(".post");
-                posts.forEach(post => {
-                  post.addEventListener("click", () => {
-                    window.location.href = "https://www.example.com";
-                  });
-                });
-              </script>
-            </body>
 </section>
 
-
+<body>
+  <!-- Include the default mkdocs header -->
+  <header>
+    <h1>Tutorials</h1>
+  </header>
+  
+  <!-- Create a container for the post grid -->
+  <div class="post-grid">
+    <!-- Define a template for each post -->
+    <div class="post">
+      <img src="illustration.png" alt="Post Image" class="post-image">
+      <h2 class="post-title">Detecting inputs</h2>
+      <p class="post-description">Learn how to detect user input by using userinputservice.</p>
+    </div>
+    
+    <!-- Repeat the template for each additional post -->
+    <div class="post">
+      <img src="illustration.png" alt="Post Image" class="post-image">
+      <h2 class="post-title">Tutorial 2</h2>
+      <p class="post-description">slay ahhh slay ahhh slay ahhh slay ahhh slay ahhh slay ahhh slay ahhh.</p>
+    </div>
+    
+    <div class="post">
+      <img src="illustration.png" alt="Post Image" class="post-image">
+      <h2 class="post-title">Tutorial 3</h2>
+      <p class="post-description">slay ahhh slay ahhh slay ahhh slay ahhh slay ahhh slay ahhh slay ahhh.</p>
+    </div>
+    
+      </div>
+      <!-- Add a click event for each post to lead to another URL -->
+      <script>
+        const posts = document.querySelectorAll(".post");
+        posts.forEach(post => {
+          post.addEventListener("click", () => {
+            window.location.href = "https://www.helpers-documents.ml/Tutorials/Scripting/Detecting_Keyboard_Inputs/";
+          });
+        });
+      </script>
+    </body>
 
 
   

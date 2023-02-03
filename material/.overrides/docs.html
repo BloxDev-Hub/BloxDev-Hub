@@ -4,6 +4,74 @@
 {% extends "main.html" %}
 
 {% block tabs %}
+
+<head>
+  <style>
+    .posts {
+      display: flex;
+      overflow-x: auto;
+      overflow-y: hidden;
+      white-space: nowrap;
+    }
+    
+    .post {
+      background: linear-gradient(to right, #87ceeb, #4682b4);
+      border-radius: 25px;
+      display: inline-block;
+      height: 300px;
+      margin: 20px;
+      position: relative;
+      width: 300px;
+    }
+    
+    .post img {
+      border-radius: 25px;
+      height: 200px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      top: 0;
+      width: 100%;
+    }
+    
+    .post h3 {
+      color: white;
+      font-size: 22px;
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+    }
+    
+    .post p {
+      color: white;
+      font-size: 18px;
+      position: absolute;
+      bottom: 50px;
+      left: 20px;
+    }
+    
+    .move-btn {
+      background-color: #87ceeb;
+      border-radius: 50%;
+      height: 50px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 50px;
+    }
+    
+    .move-btn.left {
+      left: 20px;
+    }
+    
+    .move-btn.right {
+      right: 20px;
+    }
+  </style>
+</head>
+
   {{ super() }}
   <!--<style>.md-header{position:initial}.md-main__inner{margin:0}.md-content{display:none}@media screen and (min-width:60em){.md-sidebar--secondary{display:none}}@media screen and (min-width:76.25em){.md-sidebar--primary{display:none}}</style> -->
   <section class="mdx-container">
@@ -13,21 +81,40 @@
           <!--<img src="illustration.png"  draggable="false"> -->
         </div>
         <div class="mdx-hero__content">
-          <h1>Reviews</h1>
-          <p>We hope, you are having a fun time reading our articles. Your reviews means alot and serve a way to improve our docs. Please give us a detailed review based on your experience experience.</p>
+          <h1>Luau-Learning</h1>
+          <p>Noah is very fat goofy person.</p>
 
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdp-Q99kOpn6kwq3Qu_4SORAgpALuqOUUArbmJehR2NkGBFgQ/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-
-
-          <h2>Reports</h2>
-          <p>While reading any of the articles, if you find any mistake then please report us with article name and mention the mistake in as much details, as possible.</p>
-
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScG8AoWFVmazZ2TRS7KdvFtdkWAFvAnUlIJFb2-P0-DUWJV2Q/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
         </div>
       </div>
     </div>
     
   </section>
+
+  <body>
+    <header>
+      <h1>My Posts</h1>
+    </header>
+    <div class="posts">
+      <button class="move-btn left">&lt;</button>
+      <div class="post">
+        <img src="https://via.placeholder.com/300x200" alt="Post Image">
+        <h3>Post Title 1</h3>
+        <p>Post Description 1</p>
+      </div>
+      <div class="post">
+        <img src="https://via.placeholder.com/300x200" alt="Post Image">
+        <p>Post Description 2</p>
+      </div>
+      <div class="post">
+        <img src="https://via.placeholder.com/300x200" alt="Post Image">
+        <h3>Post Title 3</h3>
+        <p>Post Description 3</p>
+      </div>
+      <button class="move-btn right">&gt;</button>
+    </div>
+  </body>
+
+
 
 {% endblock %}
 {% block content %}{% endblock %}

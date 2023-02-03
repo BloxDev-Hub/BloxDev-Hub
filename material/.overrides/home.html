@@ -107,34 +107,37 @@
               </div>
           </div>
       </div>
-      <!-- confetti -->
-      <body>
-        <button id="confetti-button">Drop Confetti</button>
-        <div id="confetti-container"></div>
       
-        <script>
-          const button = document.getElementById('confetti-button');
-          const container = document.getElementById('confetti-container');
-      
-          button.addEventListener('click', () => {
-            for (let i = 0; i < 50; i++) {
-              const confetti = document.createElement('div');
-              confetti.className = 'confetti';
-              confetti.style.left = `${Math.random() * 100}%`;
-              confetti.style.animationDelay = `${Math.random() * 3}s`;
-              container.appendChild(confetti);
-            }
-      
-            setTimeout(() => {
-              const confetti = document.querySelectorAll('.confetti');
-              confetti.forEach(c => c.remove());
-            }, 3000);
-          });
-        </script>
-      </body>
-      <!-- confetti -->
   </section>
 
+
+  
+  <!-- confetti -->
+  <body>
+    <button id="confetti-button">Drop Confetti</button>
+    <div id="confetti-container"></div>
+  
+    <script>
+      const button = document.getElementById('confetti-button');
+      const container = document.getElementById('confetti-container');
+  
+      button.addEventListener('click', () => {
+        for (let i = 0; i < 50; i++) {
+          const confetti = document.createElement('div');
+          confetti.className = 'confetti';
+          confetti.style.left = `${Math.random() * 100}%`;
+          confetti.style.animationDelay = `${Math.random() * 3}s`;
+          container.appendChild(confetti);
+        }
+  
+        setTimeout(() => {
+          const confetti = document.querySelectorAll('.confetti');
+          confetti.forEach(c => c.remove());
+        }, 3000);
+      });
+    </script>
+  </body>
+  <!-- confetti -->
  
   {% endblock %}
   {% block content %}{% endblock %}

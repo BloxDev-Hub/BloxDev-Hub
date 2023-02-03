@@ -122,8 +122,7 @@ plugins:
 
 nav:
   - Home: index.md
-  - Luau-Learning: 
-    - index.md
+  - Luau-Learning: Luau-Learning/index.md
     - Luau-Learning/Introduction_To_Studio.md
     - Luau-Learning/Variables.md
     - Luau-Learning/Strings.md

@@ -1,6 +1,5 @@
 ---
 title: Introduction To Studio
-template: docs.html
 ---
 
 # Introduction To Studio

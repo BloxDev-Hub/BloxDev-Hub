@@ -16,23 +16,21 @@ do not edit
       margin: 0 auto;
       max-width: 1140px;
     }
-
     .grid-item {
       background-color: white;
-      border-radius: 10px;
+      border-radius: 50%;
+      overflow: hidden;
       position: relative;
       transition: all 0.3s ease;
     }
-
     .grid-item img {
       width: 100%;
       height: auto;
+      border-radius: 50%;
     }
-
     .grid-item h2 {
       margin-top: 10px;
     }
-
     .grid-item .description {
       background-color: rgba(255, 255, 255, 0.8);
       bottom: 0;
@@ -43,16 +41,13 @@ do not edit
       opacity: 0;
       transition: all 0.3s ease;
     }
-
     .grid-item:hover .description {
       opacity: 1;
     }
-
     .grid-item:hover {
       transform: scale(1.1);
       z-index: 1;
     }
-
     h1 {
       text-align: center;
       font-size: 36px;

@@ -1,7 +1,7 @@
 site_name: Helpers Documents
-site_url: https://rodevs-helpers.github.io/Helpers-Documents/
+site_url: https://www.helpers-documents.ml/
 copyright: By Rodevs Helpers Department. Not affiliated with Roblox or Discord.
-site_description: Rodevs Helpers Documents, a place where you will learn multiple things about developing from our incredible helpers.
+site_description: Rodevs Helpers Documents, a place where you can learn multiple things about developing from our incredible helpers.
 
 extra_css:
   - stylesheets/extra.css
@@ -11,13 +11,26 @@ extra_javascript:
   - javascripts/config.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - meta_tag.js
+  - https://www.helpers-documents.ml/illustration.png
+extra_html:
+  - <meta property="og:image" content="https://www.helpers-documents.ml/illustration.png" />
+  - <meta property="og:image:alt" content="Rodevs Helpers Documents" />
+  - <meta property="og:image:width" content="1053" />
+  - <meta property="og:image:height" content="984" />
+  - <meta property="og:site_name" content="Helpers Documents" />
+  - <meta property="og:type" content="object" />
+  - <meta property="og:title" content="Helpers Documents - Enhance your Roblox development skills from our guides and tutorials" />
+  - <meta property="og:url" content="https://www.helpers-documents.ml" />
+  - <meta property="og:description" content="Rodevs Helpers Documents, a place where you can learn multiple things about developing from our incredible helpers." />
+
 
 theme:
     logo: logo.png
     favicon: bidenrose.png
     language: en
     name: material
-    custom_dir: docs/.overrides
+    custom_dir: material/.overrides
     font:
       text: Roboto
       code: JetBrains Mono
@@ -33,12 +46,14 @@ theme:
          toggle:
            icon: material/weather-sunny
            name: Switch to light mode
-         primary: white
+         primary: blue
          accent: purple
     features:
+      - announce.dismiss
       - navigation.top
       - navigation.tabs
       - navigation.indexes
+      - navigation.footer
     admonition:
       note: fontawesome/solid/sticky-note
       abstract: fontawesome/solid/book
@@ -62,7 +77,6 @@ extra:
       make our documentation better.
     actions:
       - accept
-      - reject
     cookies:
       analytics:
         name: Google Analytics

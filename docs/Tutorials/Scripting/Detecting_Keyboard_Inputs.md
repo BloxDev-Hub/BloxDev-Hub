@@ -1,5 +1,6 @@
 ---
 Title: Detecting Keyboard Inputs
+description: Learn to make inputs!
 ---
 
 # Detecting Keyboard Inputs With UserInputService

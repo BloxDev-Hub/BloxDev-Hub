@@ -7,54 +7,73 @@
 
 <head>
   <style>
-    .post {
-      width: 300px;
-      height: 400px;
-      background-color: white;
-      border-radius: 10px;
-      display: inline-block;
-      margin-right: 20px;
+    /* Grid container */
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-gap: 20px;
+      align-items: center;
+    }
+
+    /* Grid item */
+    .grid-item {
       position: relative;
+      background-color: white;
+      border-radius: 5px;
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.5s ease;
     }
-    .post img {
-      width: 100%;
-      border-radius: 10px;
-    }
-    .post h3 {
+
+    /* Grid item description */
+    .grid-item .description {
       position: absolute;
-      bottom: 0;
+      top: 0;
       left: 0;
       right: 0;
-      background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.8));
-      color: white;
-      padding: 10px;
+      bottom: 0;
+      background-color: rgba(255, 255, 255, 0.9);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.5s ease, visibility 0s 0.5s;
+    }
+
+    /* Grid item on hover */
+    .grid-item:hover {
+      transform: scale(1.1);
+    }
+
+    .grid-item:hover .description {
+      opacity: 1;
+      visibility: visible;
+      transition-delay: 0s;
+    }
+
+    /* Grid item title */
+    .grid-item h2 {
       margin: 0;
+      padding: 10px;
+      font-size: 20px;
+      font-weight: bold;
+      color: black;
+      text-shadow: 1px 1px rgba(255, 255, 255, 0.5);
+    }
+
+    /* Grid item image */
+    .grid-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
     }
   </style>
-  <script>
-    var btnLeft = document.getElementById("btnLeft");
-    var btnRight = document.getElementById("btnRight");
-    var slider = document.getElementById("slider");
-    var isAtStart = false;
-    var isAtEnd = false;
-    btnLeft.addEventListener("click", function() {
-      slider.scrollLeft -= 300;
-      btnRight.style.display = "block";
-      if (slider.scrollLeft <= 0) {
-        btnLeft.style.display = "none";
-        isAtStart = true;
-      }
-    });
-    btnRight.addEventListener("click", function() {
-      slider.scrollLeft += 300;
-      btnLeft.style.display = "block";
-      if (slider.scrollLeft >= slider.scrollWidth - slider.offsetWidth) {
-        btnRight.style.display = "none";
-        isAtEnd = true;
-      }
-    });
-  </script>
 </head>
+<body>
 
   {{ super() }}
   <!--<style>.md-header{position:initial}.md-main__inner{margin:0}.md-content{display:none}@media screen and (min-width:60em){.md-sidebar--secondary{display:none}}@media screen and (min-width:76.25em){.md-sidebar--primary{display:none}}</style> -->
@@ -75,24 +94,46 @@
   </section>
 
   <body>
-    <div id="slider">
-      <div class="post">
-        <img src="https://picsum.photos/300/300" alt="Image 1">
-        <h3>Post 1</h3>
-      </div>
-      <div class="post">
-        <img src="https://picsum.photos/300/300" alt="Image 2">
-        <h3>Post 2</h3>
-      </div>
-      <div class="post">
-        <img src="https://picsum.photos/300/300" alt="Image 3">
-        <h3>Post 3</h3>
-      </div>
-    </div>
-    <button id="btnLeft" style="display:none;">Left</button>
-    <button id="btnRight">Right</button>
-  </body>
+    <!-- Default mkdocs header -->
+    <header>
+      <nav>
+        <!-- Your navigation links here -->
+      </nav>
+    </header>
 
+    <!-- Posts section -->
+    <section>
+      <h1>Featured Posts</h1>
+      <div class="grid-container">
+        <!-- Example grid item -->
+        <div class="grid-item" onclick="window.location='http://example.com/post1'">
+          <img src="post1-image.jpg" alt="Post 1 Image">
+          <div class="description">
+            <h2>Post 1 Title</h2>
+            <p>Post 1 Description</p>
+          </div>
+        </div>
+
+        <div class="grid-item" onclick="window.location='http://example.com/post1'">
+          <img src="post1-image.jpg" alt="Post 1 Image">
+          <div class="description">
+            <h2>Post 2 Title</h2>
+            <p>Post 2 Description</p>
+          </div>
+        </div>
+        
+        <div class="grid-item" onclick="window.location='http://example.com/post1'">
+          <img src="post1-image.jpg" alt="Post 1 Image">
+          <div class="description">
+            <h2>Post 3 Title</h2>
+            <p>Post 3 Description</p>
+          </div>
+        </div>
+
+        <!-- Add more grid items here -->
+      </div>
+    </section>
+  </body>
 
 
 {% endblock %}

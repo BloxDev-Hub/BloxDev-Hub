@@ -1,5 +1,5 @@
 {#-
-  do not edit
+do not edit
 -#}
 {% extends "main.html" %}
 
@@ -7,68 +7,55 @@
 
 <head>
   <style>
-    /* Grid container */
     .grid-container {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      grid-gap: 1em;
-      margin: 1em auto;
-      max-width: 1200px;
-      justify-content: center;
+      grid-gap: 20px;
+      padding: 20px;
+      text-align: center;
+      margin: 0 auto;
+      max-width: 1140px;
     }
 
-    /* Grid item */
     .grid-item {
-      background-color: lightgray;
+      background-color: white;
+      border-radius: 10px;
       position: relative;
-      width: 100%;
-      height: 300px;
-      overflow: hidden;
-      transition: all 0.3s ease-in-out;
-    }
-    
-    .grid-item:hover {
-      transform: scale(1.1);
+      transition: all 0.3s ease;
     }
 
-    /* Image */
     .grid-item img {
       width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: all 0.3s ease-in-out;
+      height: auto;
     }
 
-    /* Description */
+    .grid-item h2 {
+      margin-top: 10px;
+    }
+
     .grid-item .description {
+      background-color: rgba(255, 255, 255, 0.8);
+      bottom: 0;
+      color: black;
+      padding: 10px;
       position: absolute;
-      top: 0;
-      left: 0;
       width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       opacity: 0;
-      transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease;
     }
 
-    /* Show description on hover */
     .grid-item:hover .description {
       opacity: 1;
     }
 
-    /* Title */
-    .grid-item h2 {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      padding: 1em;
-      background-color: rgb(48, 142, 250);
-      color: white;
-      width: 100%;
+    .grid-item:hover {
+      transform: scale(1.1);
+      z-index: 1;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 36px;
     }
   </style>
 </head>
@@ -91,78 +78,47 @@
         </div>
       </div>
     </div>
-    
+
   </section>
 
   <body>
-    <!-- Featured posts section -->
-    <section>
-      <h1 style="text-align: center; font-size: 36px;">Featured Posts</h1>
-      <div class="grid-container">
-        <!-- Grid item for a post -->
-        <div class="grid-item" onclick="window.location='http://example.com/post1'">
-          <h2>Post 1 Title</h2>
-          <img src="https://imgur.com/46PQFmf.png" alt="Post 1 Image">
-          <div class="description">
-            <p>Post 1 Description</p>
-          </div>
+    <h1>Featured Posts</h1>
+    <section class="grid-container">
+      <div class="grid-item" onclick="window.location='http://example.com/post1'">
+        <h2>Post 1 Title</h2>
+        <img src="https://imgur.com/46PQFmf.png" alt="Post 1 Image">
+        <div class="description">
+          <p>Post 1 Description</p>
         </div>
+      </div>
 
-        <!-- More grid items for additional posts -->
-        <div class="grid-item" onclick="window.location='http://example.com/post2'">
-          <h2>Post 2 Title</h2>
-          <img src="https://imgur.com/46PQFmf.png" alt="Post 2 Image">
-          <div class="description">
-            <p>Post 2 Description</p>
-          </div>
+      <div class="grid-item" onclick="window.location='http://example.com/post2'">
+        <h2>Post 2 Title</h2>
+        <img src="https://imgur.com/46PQFmf.png" alt="Post 2 Image">
+        <div class="description">
+          <p>Post 2 Description</p>
         </div>
-        <div class="grid-item" onclick="window.location='http://example.com/post3'">
-          <h2>Post 3 Title</h2>
-          <img src="https://imgur.com/46PQFmf.png" alt="Post 3 Image">
-          <div class="description">
-            <p>Post 3 Description</p>
-          </div>
+      </div>
+      <div class="grid-item" onclick="window.location='http://example.com/post3'">
+        <h2>Post 3 Title</h2>
+        <img src="https://imgur.com/46PQFmf.png" alt="Post 3 Image">
+        <div class="description">
+          <p>Post 3 Description</p>
         </div>
-        <div class="grid-item" onclick="window.location='http://example.com/post3'">
-          <h2>Post 3 Title</h2>
-          <img src="https://imgur.com/46PQFmf.png" alt="Post 3 Image">
-          <div class="description">
-            <p>Post 3 Description</p>
-          </div>
-        </div>
-        <div class="grid-item" onclick="window.location='http://example.com/post3'">
-          <h2>Post 3 Title</h2>
-          <img src="https://imgur.com/46PQFmf.png" alt="Post 3 Image">
-          <div class="description">
-            <p>Post 3 Description</p>
-          </div>
-        </div>
-        <div class="grid-item" onclick="window.location='http://example.com/post3'">
-          <h2>Post 3 Title</h2>
-          <img src="https://imgur.com/46PQFmf.png" alt="Post 3 Image">
-          <div class="description">
-            <p>Post 3 Description</p>
-          </div>
-        </div>
-        <div class="grid-item" onclick="window.location='http://example.com/post3'">
-          <h2>Post 3 Title</h2>
-          <img src="https://imgur.com/46PQFmf.png" alt="Post 3 Image">
-          <div class="description">
-            <p>Post 3 Description</p>
-          </div>
-        </div>
-        <div class="grid-item" onclick="window.location='http://example.com/post3'">
-          <h2>Post 3 Title</h2>
-          <img src="https://imgur.com/46PQFmf.png" alt="Post 3 Image">
-          <div class="description">
-            <p>Post 3 Description</p>
-          </div>
+      </div>
+
+      <div class="grid-item" onclick="window.location='http://example.com/post3'">
+        <h2>Post 3 Title</h2>
+        <img src="https://imgur.com/46PQFmf.png" alt="Post 3 Image">
+        <div class="description">
+          <p>Post 3 Description</p>
         </div>
       </div>
     </section>
+
   </body>
 
 
-{% endblock %}
-{% block content %}{% endblock %}
-{% block footer %}{% endblock %}
+  {% endblock %}
+  {% block content %}{% endblock %}
+  {% block footer %}{% endblock %}

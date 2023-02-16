@@ -1,5 +1,5 @@
 ---
-title: Welcome to Luau Learning
+title: Scripting Section
 template: luau.html
 ---
 

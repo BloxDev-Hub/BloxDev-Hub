@@ -112,7 +112,7 @@ plugins:
 nav:
   - Home: index.md
   - Scripting:
-    - Scripting/luau.md
+    - Scripting/Scripting.md
     - Basic-Courses:
       - Scripting/Basic-Courses/Introduction_To_Studio.md
       - Scripting/Basic-Courses/Variables.md

@@ -123,6 +123,7 @@ plugins:
 nav:
   - Home: index.md
   - Luau-Learning: 
+    - luau-learning/index.md
     - Basic-Courses:
       - Luau-Learning/Basic-Courses/Introduction_To_Studio.md
       - Luau-Learning/Basic-Courses/Variables.md
@@ -131,31 +132,33 @@ nav:
       - Luau-Learning/Basic-Courses/basics_of_properties.md
       - Luau-Learning/Basic-Courses/If_statements.md
       - Luau-Learning/Basic-Courses/basic_loops.md
-    - Luau-Learning/Basics_of_Functions.md
-    - Luau-Learning/Tables.md
-    - Luau-Learning/handling_events.md
-    - Luau-Learning/globals.md
-    - Luau-Learning/Attributes.md
-    - Luau-Learning/Scripts_and_Local_scripts.md
-    - Luau-Learning/Players_Service.md
-    - Luau-Learning/Character.md
-    - Luau-Learning/modules.md
-    - Luau-Learning/Vector3.md
-    - Luau-Learning/Vector3_Part_2.md
-    - Luau-Learning/Position_and_Size.md
-    - Luau-Learning/Tweening.md
-    - Luau-Learning/Data_Stores.md
-    - Luau-Learning/ContextActionService.md
-    - Luau-Learning/Tool.md
-    - Luau-Learning/selection_and_highlights.md
-    - Luau-Learning/Remote_Events_And_Functions.md
-    - Luau-Learning/Bindable_events_and_functions.md
-    - Luau-Learning/intro_of_ui.md
-    - Luau-Learning/HttpService.md
-    - Luau-Learning/RayCasting.md
-    - Luau-Learning/metatables.md
-    - Luau-Learning/more_about_functions.md
-    - Luau-Learning/More_on_Dictionaries.md
+    - Intermediate-Courses:
+      - Luau-Learning/Intermediate-Courses/Basics_of_Functions.md
+      - Luau-Learning/Intermediate-Courses/Tables.md
+      - Luau-Learning/Intermediate-Courses/handling_events.md
+      - Luau-Learning/Intermediate-Courses/Scripts_and_Local_scripts.md
+      - Luau-Learning/Intermediate-Courses/Players_Service.md
+      - Luau-Learning/Intermediate-Courses/Character.md
+      - Luau-Learning/Intermediate-Courses/Tool.md
+      - Luau-Learning/Intermediate-Courses/modules.md
+      - Luau-Learning/Intermediate-Courses/Vector3.md
+      - Luau-Learning/Intermediate-Courses/Position_and_Size.md
+      - Luau-Learning/Intermediate-Courses/Tweening.md
+      - Luau-Learning/Intermediate-Courses/Attributes.md
+      - Luau-Learning/Intermediate-Courses/Data_Stores.md
+      - Luau-Learning/Intermediate-Courses/ContextActionService.md
+      - Luau-Learning/Intermediate-Courses/selection_and_highlights.md
+      - Luau-Learning/Intermediate-Courses/Remote_Events_And_Functions.md 
+      - Luau-Learning/Intermediate-Courses/intro_of_ui.md
+      - Luau-Learning/Intermediate-Courses/RayCasting.md
+      - Luau-Learning/Intermediate-Courses/globals.md
+    - Advanced-Courses:
+      - Luau-Learning/Vector3_Part_2.md
+      - Luau-Learning/Advanced-Courses/Bindable_events_and_functions.md
+      - Luau-Learning/Advanced-Courses/more_about_functions.md
+      - Luau-Learning/Advanced-Courses/More_on_Dictionaries.md
+      - Luau-Learning/metatables.md
+      - Luau-Learning/HttpService.md
     - ... | flat | Luau-Learning/*.md # not sorted yet
   - ...
   - Others:

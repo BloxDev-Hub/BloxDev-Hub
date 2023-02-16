@@ -1,6 +1,6 @@
 ---
 title: Welcome to Luau Learning
-template: tutorial_test.html
+template: luau.html
 ---
 
 https://imgur.com/46PQFmf.png

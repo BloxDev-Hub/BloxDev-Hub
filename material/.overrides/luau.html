@@ -70,20 +70,24 @@
 
 <body>
   <div class="post">
-    <img src="image1.jpg" alt="Post 1">
+    <img src="https://imgur.com/WEbD6Be.png" alt="Post 1">
     <div>
       <h2>Post 1</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce gravida interdum nibh, ut consequat quam feugiat id.</p>
-      <a href="#">Read more</a>
+      <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | e }}" class="md-button md-button--primary">
+        Learn more!
+      </a>
     </div>
   </div>
   
   <div class="post">
-    <img src="image2.jpg" alt="Post 2">
+    <img src="https://imgur.com/WEbD6Be.png" alt="Post 2">
     <div>
       <h2>Post 2</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce gravida interdum nibh, ut consequat quam feugiat id.</p>
-      <a href="#">Read more</a>
+      <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | e }}" class="md-button md-button--primary">
+        Learn more!
+      </a>
     </div>
   </div>
   

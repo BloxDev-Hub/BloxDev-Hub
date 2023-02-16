@@ -122,7 +122,8 @@ plugins:
 
 nav:
   - Home: index.md
-  - Luau-Learning: index.md
+  - Luau-Learning: 
+    - index.md
     - Basic-Courses:
       - Luau-Learning/Basic-Courses/Introduction_To_Studio.md
       - Luau-Learning/Basic-Courses/Variables.md

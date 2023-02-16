@@ -123,17 +123,16 @@ plugins:
 nav:
   - Home: index.md
   - Luau-Learning: 
-    - index.md
     - Basic-Courses:
       - Luau-Learning/Basic-Courses/Introduction_To_Studio.md
       - Luau-Learning/Basic-Courses/Variables.md
       - Luau-Learning/Basic-Courses/Strings.md
-      - Luau-Learning/Basic-Courses/If_statements.md
       - Luau-Learning/Basic-Courses/operators.md
+      - Luau-Learning/Basic-Courses/basics_of_properties.md
+      - Luau-Learning/Basic-Courses/If_statements.md
       - Luau-Learning/Basic-Courses/basic_loops.md
     - Luau-Learning/Basics_of_Functions.md
     - Luau-Learning/Tables.md
-    - Luau-Learning/basics_of_properties.md
     - Luau-Learning/handling_events.md
     - Luau-Learning/globals.md
     - Luau-Learning/Attributes.md

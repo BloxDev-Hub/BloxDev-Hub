@@ -1,5 +1,5 @@
 site_name: Helpers Documents
-site_url: https://www.helpers-documents.ml/
+site_url: https://docs.rodevs.com/
 copyright: By Rodevs Helpers Department. Not affiliated with Roblox or Discord.
 site_description: Rodevs Helpers Documents, a place where you can learn multiple things about developing from our incredible helpers.
 
@@ -112,7 +112,7 @@ plugins:
 nav:
   - Home: index.md
   - Scripting:
-    - Scripting/Scripting.md
+    - Scripting/home.md
     - Basic-Courses:
       - Scripting/Basic-Courses/Introduction_To_Studio.md
       - Scripting/Basic-Courses/Variables.md

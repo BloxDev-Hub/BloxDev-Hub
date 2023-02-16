@@ -4,64 +4,78 @@
 {% extends "main.html" %}
 {% block tabs %}
   
+  <head>
+    <style>
+      .posts-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
 
-<head>
-  <meta charset="UTF-8">
-  <title>My Blog</title>
-  <style>
-    .container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      margin: 20px 0;
-    }
-    
-    .post {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      width: 200px;
-      height: 200px;
-      background-color: #f2f2f2;
-      border-radius: 10px;
-      padding: 10px;
-      box-sizing: border-box;
-    }
-    
-    .post img {
-      max-width: 100%;
-      height: auto;
-      margin-bottom: 10px;
-    }
-    
-    .post h2 {
-      font-size: 16px;
-      margin-top: 0;
-      margin-bottom: 10px;
+      /* Define a grid layout for the posts */
+      .post-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 16px;
+      }
+      
+      /* Define the styling for each post */
+      .post {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 350px;
+        height: 250px;
+        margin: 20px;
+        padding: 10px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        transition: all 0.2s ease-in-out;
+        background: linear-gradient(to bottom, rgb(4, 133, 253), rgb(245, 242, 247));;
+      }
+      
+      /* Show the post description when hovering over the post */
+      .post:hover .post-description {
+        opacity: 1;
+        visibility: visible;
+      }
+      
+      /* Style the post image */
+      .post-image {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+      
+      /* Style the post title */
+      .post-title {
+        padding: 16px;
+        font-size: 18px;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+      
+      /* Style the post description */
+      .post-description {
+        padding: 16px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease-in-out;
+        font-size: 14px;
+        color: rgb(221, 220, 220);
+      }
+
+      h1 {
       text-align: center;
-    }
-    
-    .post a {
-      display: inline-block;
-      margin-top: 10px;
-      font-weight: bold;
-      text-align: center;
-      color: #fff;
-      background-color: #007bff;
-      border: 1px solid #007bff;
-      padding: 5px 10px;
-      border-radius: 5px;
-      text-decoration: none;
-    }
-    
-    .post a:hover {
-      background-color: #0069d9;
-      border-color: #0062cc;
-    }
-  </style>
-</head>
+      font-size: 36px;
+      }
+    </style>
+  </head>
   {{ super() }}
   <style>.md-header{position:initial}.md-main__inner{margin:0}.md-content{display:none}@media screen and (min-width:60em){.md-sidebar--secondary{display:none}}@media screen and (min-width:76.25em){.md-sidebar--primary{display:none}}</style>
   <section class="mdx-container">
@@ -72,7 +86,7 @@
         </div>-->
         
         <div class="mdx-hero__content">
-          <h1>LUAU Learning!</h1>
+          <h1>LUAU LEARNING!</h1>
           <p>{{ config.site_description }}.</p>
           <!--<a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | e }}" class="md-button md-button--primary">
             Quick start
@@ -83,34 +97,52 @@
 </section>
 
 <body>
-  <div class="container">
-    <div class="post">
-      <img src="image1.jpg" alt="Post 1">
-      <h2>Post 1</h2>
-      <a href="#">Read more</a>
+  <h1>Basic Courses</h1>
+  <!-- Include the default mkdocs header -->
+  <!-- Create a container for the post grid -->
+  <!--<div class="post-grid">-->
+    <div class="posts-container">
+    <!-- Define a template for each post -->
+    <div class="post" data-url="https://www.helpers-documents.ml/Tutorials/Scripting/Detecting_Keyboard_Inputs/">
+      <img src="https://imgur.com/WEbD6Be.png" alt="Post Image" class="post-image">
+      <h2 class="post-title">Introduction</h2>
     </div>
     
-    <div class="post">
-      <img src="image2.jpg" alt="Post 2">
-      <h2>Post 2</h2>
-      <a href="#">Read more</a>
+    <!-- Repeat the template for each additional post -->
+    <div class="post" data-url="https://www.helpers-documents.ml/Tutorials/Scripting/Fireball/">
+      <img src="https://imgur.com/WEbD6Be.png" alt="Post Image" class="post-image">
+      <h2 class="post-title">Variables</h2>
     </div>
     
-    <div class="post">
-      <img src="image3.jpg" alt="Post 3">
-      <h2>Post 3</h2>
-      <a href="#">Read more</a>
+    <div class="post" data-url="https://www.helpers-documents.ml/Tutorials/Scripting/Leaderstats/">
+      <img src="https://imgur.com/WEbD6Be.png" alt="Post Image" class="post-image">
+      <h2 class="post-title">Operators</h2>
     </div>
+
+    <div class="post" data-url="https://www.helpers-documents.ml/Tutorials/Scripting/Making_a_simple_gun/">
+      <img src="https://imgur.com/WEbD6Be.png" alt="Post Image" class="post-image">
+      <h2 class="post-title">Loops</h2>
+    </div>    
     
-    <div class="post">
-      <img src="image4.jpg" alt="Post 4">
-      <h2>Post 4</h2>
-      <a href="#">Read more</a>
+    <div class="post" data-url="https://www.helpers-documents.ml/Tutorials/Scripting/Perlin_Noise_Terrain/">
+      <img src="https://imgur.com/WEbD6Be.png" alt="Post Image" class="post-image">
+      <h2 class="post-title">Perlin Noise Terrain</h2>
     </div>
-  </div>
-  
-  <!-- add more posts as needed -->
-</body>
+
+    </div>
+    <!--</div>-->
+      <!-- Add a click event for each post to lead to another URL -->
+      <script>
+        const posts = document.querySelectorAll(".post");
+        posts.forEach(post => {
+          post.addEventListener("click", () => {
+            const url = post.getAttribute("data-url");
+            window.location.href = url;
+          });
+        });
+      </script>
+    </body>
+
 
   
 
@@ -120,3 +152,4 @@
 {% block content %}{% endblock %}
 
 {% block footer %}{% endblock %}
+

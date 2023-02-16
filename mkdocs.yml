@@ -111,44 +111,44 @@ plugins:
 
 nav:
   - Home: index.md
-  - Luau-Learning: 
-    - luau-learning/luau.md
+  - Scripting:
+    - Scripting/luau.md
     - Basic-Courses:
-      - Luau-Learning/Basic-Courses/Introduction_To_Studio.md
-      - Luau-Learning/Basic-Courses/Variables.md
-      - Luau-Learning/Basic-Courses/Strings.md
-      - Luau-Learning/Basic-Courses/operators.md
-      - Luau-Learning/Basic-Courses/basics_of_properties.md
-      - Luau-Learning/Basic-Courses/If_statements.md
-      - Luau-Learning/Basic-Courses/basic_loops.md
+      - Scripting/Basic-Courses/Introduction_To_Studio.md
+      - Scripting/Basic-Courses/Variables.md
+      - Scripting/Basic-Courses/Strings.md
+      - Scripting/Basic-Courses/operators.md
+      - Scripting/Basic-Courses/basics_of_properties.md
+      - Scripting/Basic-Courses/If_statements.md
+      - Scripting/Basic-Courses/basic_loops.md
     - Intermediate-Courses:
-      - Luau-Learning/Intermediate-Courses/Basics_of_Functions.md
-      - Luau-Learning/Intermediate-Courses/Tables.md
-      - Luau-Learning/Intermediate-Courses/handling_events.md
-      - Luau-Learning/Intermediate-Courses/Scripts_and_Local_scripts.md
-      - Luau-Learning/Intermediate-Courses/Players_Service.md
-      - Luau-Learning/Intermediate-Courses/Character.md
-      - Luau-Learning/Intermediate-Courses/Tool.md
-      - Luau-Learning/Intermediate-Courses/modules.md
-      - Luau-Learning/Intermediate-Courses/Vector3.md
-      - Luau-Learning/Intermediate-Courses/Position_and_Size.md
-      - Luau-Learning/Intermediate-Courses/Tweening.md
-      - Luau-Learning/Intermediate-Courses/Attributes.md
-      - Luau-Learning/Intermediate-Courses/Data_Stores.md
-      - Luau-Learning/Intermediate-Courses/ContextActionService.md
-      - Luau-Learning/Intermediate-Courses/selection_and_highlights.md
-      - Luau-Learning/Intermediate-Courses/Remote_Events_And_Functions.md 
-      - Luau-Learning/Intermediate-Courses/intro_of_ui.md
-      - Luau-Learning/Intermediate-Courses/RayCasting.md
-      - Luau-Learning/Intermediate-Courses/globals.md
+      - Scripting/Intermediate-Courses/Basics_of_Functions.md
+      - Scripting/Intermediate-Courses/Tables.md
+      - Scripting/Intermediate-Courses/handling_events.md
+      - Scripting/Intermediate-Courses/Scripts_and_Local_scripts.md
+      - Scripting/Intermediate-Courses/Players_Service.md
+      - Scripting/Intermediate-Courses/Character.md
+      - Scripting/Intermediate-Courses/Tool.md
+      - Scripting/Intermediate-Courses/modules.md
+      - Scripting/Intermediate-Courses/Vector3.md
+      - Scripting/Intermediate-Courses/Position_and_Size.md
+      - Scripting/Intermediate-Courses/Tweening.md
+      - Scripting/Intermediate-Courses/Attributes.md
+      - Scripting/Intermediate-Courses/Data_Stores.md
+      - Scripting/Intermediate-Courses/ContextActionService.md
+      - Scripting/Intermediate-Courses/selection_and_highlights.md
+      - Scripting/Intermediate-Courses/Remote_Events_And_Functions.md 
+      - Scripting/Intermediate-Courses/intro_of_ui.md
+      - Scripting/Intermediate-Courses/RayCasting.md
+      - Scripting/Intermediate-Courses/globals.md
     - Advanced-Courses:
-      - Luau-Learning/Advanced-Courses/Vector3_Part_2.md
-      - Luau-Learning/Advanced-Courses/Bindable_events_and_functions.md
-      - Luau-Learning/Advanced-Courses/more_about_functions.md
-      - Luau-Learning/Advanced-Courses/More_on_Dictionaries.md
-      - Luau-Learning/Advanced-Courses/metatables.md
-      - Luau-Learning/Advanced-Courses/HttpService.md
-    - ... | flat | Luau-Learning/*.md # not sorted yet
+      - Scripting/Advanced-Courses/Vector3_Part_2.md
+      - Scripting/Advanced-Courses/Bindable_events_and_functions.md
+      - Scripting/Advanced-Courses/more_about_functions.md
+      - Scripting/Advanced-Courses/More_on_Dictionaries.md
+      - Scripting/Advanced-Courses/metatables.md
+      - Scripting/Advanced-Courses/HttpService.md
+    - ... | flat | Scripting/*.md # not sorted yet
   - ...
   - Others:
     - ... | flat | Others/*.md # not sorted yet

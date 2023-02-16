@@ -142,12 +142,12 @@ nav:
       - Luau-Learning/Intermediate-Courses/RayCasting.md
       - Luau-Learning/Intermediate-Courses/globals.md
     - Advanced-Courses:
-      - Luau-Learning/Vector3_Part_2.md
+      - Luau-Learning/Advanced-Courses/Vector3_Part_2.md
       - Luau-Learning/Advanced-Courses/Bindable_events_and_functions.md
       - Luau-Learning/Advanced-Courses/more_about_functions.md
       - Luau-Learning/Advanced-Courses/More_on_Dictionaries.md
-      - Luau-Learning/metatables.md
-      - Luau-Learning/HttpService.md
+      - Luau-Learning/Advanced-Courses/metatables.md
+      - Luau-Learning/Advanced-Courses/HttpService.md
     - ... | flat | Luau-Learning/*.md # not sorted yet
   - ...
   - Others:

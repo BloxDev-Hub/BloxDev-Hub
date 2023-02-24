@@ -22,12 +22,10 @@ do not edit
 
   </section>
   
-  {% raw %}
   {% set mkdocs_page_title = page.title %}
   {% filter markdown %}
   {{ content }}
   {% endfilter %}
-  {% endraw %}
 
 
   {% endblock %}

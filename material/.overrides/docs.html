@@ -13,22 +13,13 @@ do not edit
           <!--<img src="illustration.png"  draggable="false"> -->
         </div>
         <div class="mdx-hero__content">
-          <h1>Luau-Learning</h1>
+          <h1>{{ page.title }}</h1>
           <p>Noah is very fat goofy person.</p>
-
         </div>
       </div>
     </div>
 
   </section>
   
-  {% raw %}
-  {% set mkdocs_page_title = page.title %}
-  {% filter markdown %}
-  {{ content }}
-  {% endfilter %}
-  {% endraw %}
-
-
   {% endblock %}
   

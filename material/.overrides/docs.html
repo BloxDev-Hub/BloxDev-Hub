@@ -2,22 +2,23 @@
 do not edit
 -#}
 {% extends "main.html" %}
+
+{% block head %}
+  <style>
+    .big-heading {
+      font-size: 3em; /* increase the font size as desired */
+    }
+  </style>
+{% endblock %}
+
 {% block tabs %}
-  <head>
-    <style>
-      h1 {
-      font-size: 80;
-      }
-    </style>
-  </head>
   {{ super() }}
   <!--<style>.md-header{position:initial}.md-main__inner{margin:0}.md-content{display:none}@media screen and (min-width:60em){.md-sidebar--secondary{display:none}}@media screen and (min-width:76.25em){.md-sidebar--primary{display:none}}</style> -->
   <section class="mdx-container">
     <div class="md-grid md-typeset">
       <div class="mdx-hero">
-
         <div class="mdx-hero__content">
-          <h1>{{ page.title }}</h1>
+          <h1 class="big-heading">{{ page.title }}</h1>
         </div>
       </div>
     </div>

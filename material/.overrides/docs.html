@@ -22,7 +22,7 @@ do not edit
 
   </section>
 
-  {% set mkdocs_page_title = {{ page.title }} %}
+  {% set mkdocs_page_title = page.title %}
   {% filter markdown %}
   {{ content }}
   {% endfilter %}

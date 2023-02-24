@@ -6,8 +6,7 @@ do not edit
 {% block tabs %}
   {{ super() }}
   <style>
-    .big-heading {
-      font-size: 7em;
+    h1 {
       white-space: nowrap;
 
     }
@@ -20,7 +19,7 @@ do not edit
           <!--<img src="illustration.png"  draggable="false"> -->
         </div>
         <div class="mdx-hero__content">
-           <h1 class="big-heading"> {{ page.title }}</h1>
+          <h1 style="font-size: 3.5em;">{{ page.title }}</h1>
         </div>
       </div>
     </div>

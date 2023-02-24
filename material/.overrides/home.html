@@ -1,8 +1,8 @@
 {#-
     do not edit
   -#}
-  {% block head %}
-  <link rel="shortcut icon" type="image/x-icon" href="bidenrose.png">
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="bidenrose.png">
     {% block site_meta %}
     <meta charset="UTF-8">
     <title>{{ page.title }} - Helper Documents</title>
@@ -12,9 +12,7 @@
     <meta property="og:image:width" content="113">
     <meta property="og:image:height" content="128">
     {% endblock %}
-  {% endblock %}
-
-  
+  </head>
   {% extends "main.html" %}
   {% block tabs %}
     {{ super() }}

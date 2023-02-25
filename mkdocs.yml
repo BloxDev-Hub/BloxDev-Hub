@@ -12,7 +12,7 @@ extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - meta_tag.js
-  - https://www.helpers-documents.ml/illustration.png
+  - https://docs.rodevs.com/illustration.png
 
 theme:
     logo: logo.png
@@ -38,7 +38,7 @@ theme:
          primary: blue
          accent: purple
     features:
-      - announce.dismiss
+      # - announce.dismiss
       - navigation.top
       - navigation.tabs
       - navigation.indexes

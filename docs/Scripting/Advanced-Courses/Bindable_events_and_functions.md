@@ -1,5 +1,5 @@
 ---
-Title: Bindable Events and Functions
+title: Bindable Events and Functions
 template: docs.html
 ---
 

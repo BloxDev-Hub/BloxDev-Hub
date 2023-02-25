@@ -4,7 +4,7 @@ template: docs.html
 ---
 
 
-# Bindable Events and Functions
+# Bindables
 Bindable events and functions are pretty much similar to [Remote Events and Functions](https://rodevs-helpers.github.io/Helpers-Documents/Luau-Learning/Remote_Events_And_Functions/). However, In this guide, we will explain bindable events and functions from scratch. 
 
 ## Basic Info

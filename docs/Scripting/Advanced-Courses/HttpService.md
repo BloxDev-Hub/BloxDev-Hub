@@ -1,5 +1,6 @@
 ---
 title: HttpService
+template: docs.html
 ---
 
 # HttpService

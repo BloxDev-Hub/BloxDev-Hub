@@ -150,5 +150,7 @@ nav:
       - Scripting/Advanced-Courses/HttpService.md
     - ... | flat | Scripting/*.md # not sorted yet
   - ...
+  - Courses:
+    - ... | flat | Scripting/*.md # not sorted yet
   - Others:
     - ... | flat | Others/*.md # not sorted yet

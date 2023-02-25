@@ -151,6 +151,6 @@ nav:
     - ... | flat | Scripting/*.md # not sorted yet
   - ...
   - Courses:
-    - ... | flat | Scripting/*.md # not sorted yet
+    - ... | flat | Courses/*.md # not sorted yet
   - Others:
     - ... | flat | Others/*.md # not sorted yet

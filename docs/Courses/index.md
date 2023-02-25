@@ -1,5 +1,5 @@
 ---
-title: Home
+title: Courses
 template: courses.html
 og_image: illustration.png
 hide:

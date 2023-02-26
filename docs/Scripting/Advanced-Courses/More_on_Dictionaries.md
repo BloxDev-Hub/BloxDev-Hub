@@ -1,5 +1,6 @@
 ---
 title: More on Dictionaries
+template: docs.html
 ---
 
 # For real? There's more?

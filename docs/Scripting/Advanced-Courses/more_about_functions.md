@@ -1,5 +1,6 @@
 ---
 title: More About Functions
+template: docs.html
 ---
 # Intro:
 In this guide, we will discuss some more stuff about functions. Before proceeding make sure you have some knowledge about the function and conditional statements!

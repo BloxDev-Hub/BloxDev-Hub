@@ -1,4 +1,9 @@
-# Vector3 pt. 2
+---
+title: Vector3 Part 2
+template: docs.html
+---
+
+# Recap
 Previously we talked about
 
 * Vectors

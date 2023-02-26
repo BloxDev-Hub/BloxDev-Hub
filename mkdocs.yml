@@ -112,7 +112,8 @@ plugins:
 nav:
   - Home: index.md
   - Scripting:
-    - Scripting/home.md
+    - ... | flat | Scripting/*.md
+    # - Scripting/home.md
     - Basic-Courses:
       - Scripting/Basic-Courses/Introduction_To_Studio.md
       - Scripting/Basic-Courses/Variables.md
@@ -137,18 +138,18 @@ nav:
       - Scripting/Intermediate-Courses/Data_Stores.md
       - Scripting/Intermediate-Courses/ContextActionService.md
       - Scripting/Intermediate-Courses/selection_and_highlights.md
-      - Scripting/Intermediate-Courses/Remote_Events_And_Functions.md 
+      - Scripting/Intermediate-Courses/Remote_Events_And_Functions.md
+      - Scripting/Intermediate-Courses/Bindable_events_and_functions.md
       - Scripting/Intermediate-Courses/intro_of_ui.md
       - Scripting/Intermediate-Courses/RayCasting.md
       - Scripting/Intermediate-Courses/globals.md
     - Advanced-Courses:
       - Scripting/Advanced-Courses/Vector3_Part_2.md
-      - Scripting/Advanced-Courses/Bindable_events_and_functions.md
       - Scripting/Advanced-Courses/more_about_functions.md
       - Scripting/Advanced-Courses/More_on_Dictionaries.md
       - Scripting/Advanced-Courses/metatables.md
       - Scripting/Advanced-Courses/HttpService.md
-    - ... | flat | Scripting/*.md # not sorted yet
+    # - ... | flat | Scripting/*.md # not sorted yet
   - ...
   - Courses:
     - ... | flat | Courses/*.md # not sorted yet

@@ -1,5 +1,7 @@
 ---
 template: poll.html
+hide:
+  - navigation
 ---
 
 

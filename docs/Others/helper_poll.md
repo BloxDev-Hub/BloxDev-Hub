@@ -1,5 +1,4 @@
 ---
-title: Helper Of The Month Poll
 template: docs.html
 ---
 

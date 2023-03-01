@@ -1,5 +1,5 @@
 ---
-template: docs.html
+template: poll.html
 ---
 
 

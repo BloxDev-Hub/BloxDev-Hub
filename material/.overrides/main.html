@@ -5,7 +5,7 @@
   
   {% block extrahead %}
     <link rel="stylesheet" href="{{ 'assets/stylesheets/custom.9097afc2.min.css' | url }}">
-    <link rel="shortcut icon" type="image/x-icon" href="bidenrose.png">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url('static', path='bidenrose.png') }}">
     {% block site_meta %}
     <meta charset="UTF-8">
     <title>{{ page.title }} - Helper Documents</title>

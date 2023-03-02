@@ -15,7 +15,7 @@ extra_javascript:
   - https://docs.rodevs.com/illustration.png
 
 theme:
-    logo: logo.png
+    logo: whiteicon.png
     favicon: bidenrose.png
     language: en
     name: material

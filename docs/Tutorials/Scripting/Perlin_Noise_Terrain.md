@@ -1,5 +1,6 @@
 ---
 title: Perlin Noise Terrain
+og_image: https://i.imgur.com/z0deBFG.png
 ---
 
 # Introduction

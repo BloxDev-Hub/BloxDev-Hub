@@ -1,5 +1,6 @@
 ---
 title: Introduction To Studio
+og_image: https://imgur.com/WEbD6Be.png
 ---
 
 # Introduction To Studio

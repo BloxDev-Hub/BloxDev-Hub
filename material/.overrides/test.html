@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Review Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+      }
+      h1 {
+        text-align: center;
+        color: #333;
+        margin-top: 50px;
+      }
+      form {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      }
+      label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 10px;
+        color: #333;
+      }
+      input[type="text"], textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+      }
+      input[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Review Form</h1>
+    <form action="https://discord.com/api/webhooks/997130115051954176/tJhoM1YwYprlSegL9OiVbvKPslY0xLwUKO9mYbbktjZGV-GQ7-FM-xFAZNRf91zVs36Q" method="POST">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username">
+      <label for="userid">User ID:</label>
+      <input type="text" id="userid" name="userid">
+      <label for="review">Review:</label>
+      <textarea id="review" name="review" rows="5" cols="40"></textarea>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>

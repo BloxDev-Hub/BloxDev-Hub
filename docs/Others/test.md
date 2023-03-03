@@ -1,3 +1,5 @@
 ---
-template: test.html
+template: ew.html
+hide:
+  - navigation
 ---

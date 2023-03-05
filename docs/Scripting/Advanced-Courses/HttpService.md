@@ -1,6 +1,8 @@
 ---
 title: HttpService
 template: docs.html
+hide:
+  - navigation
 ---
 
 # HttpService

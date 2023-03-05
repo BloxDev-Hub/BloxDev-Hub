@@ -108,6 +108,11 @@ markdown_extensions:
 plugins:
   - search
   - awesome-pages
+  - social:
+      cards_color:
+        fill: "#0FF1CE" 
+        text: "#FFFFFF"
+      cards_font: Roboto
 
 nav:
   - Home: index.md

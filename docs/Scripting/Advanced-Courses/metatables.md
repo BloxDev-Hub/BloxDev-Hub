@@ -1,6 +1,8 @@
 ---
 title: Metatables
 template: docs.html
+hide:
+  - navigation
 ---
 
  [1]: https://developer.roblox.com/en-us/articles/Metatables

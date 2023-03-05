@@ -1,6 +1,8 @@
 ---
 title: More on Dictionaries
 template: docs.html
+hide:
+  - navigation
 ---
 
 # For real? There's more?

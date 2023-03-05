@@ -1,6 +1,8 @@
 ---
 title: Vector3 Part 2
 template: docs.html
+hide:
+  - navigation
 ---
 
 # Recap

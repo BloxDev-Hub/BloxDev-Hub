@@ -110,9 +110,9 @@ plugins:
   - awesome-pages
   - social:
       cards_color:
-        fill: "#020FFF" 
+        fill: "#1A87FD" 
         text: "#FFFFFF"
-      cards_font: Roboto
+      cards_font: Tilt Warp
       cards_dir: images/cards
 
 nav:

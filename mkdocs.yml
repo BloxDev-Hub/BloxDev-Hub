@@ -4,7 +4,7 @@ copyright: By Rodevs Helpers Department. Not affiliated with Roblox or Discord.
 site_description: Rodevs Helpers Documents, a place where you can learn multiple things about developing from our incredible helpers.
 
 extra_css:
-  - stylesheets/extra.css
+  - stylesheets/custom.css
   - https://unpkg.com/mermaid@7.1.2/dist/mermaid.css
 extra_javascript:
   - https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js
@@ -25,7 +25,7 @@ theme:
       code: JetBrains Mono
     palette:
       #light
-      -  scheme: rumi
+      -  scheme: default
          toggle:
            icon: material/weather-night
            name: Switch to dark mode

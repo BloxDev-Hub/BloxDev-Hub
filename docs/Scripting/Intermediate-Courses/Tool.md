@@ -1,5 +1,5 @@
 ---
-Title: Tools
+title: Tools
 template: docs.html
 hide:
   - navigation

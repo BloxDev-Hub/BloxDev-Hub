@@ -1,5 +1,5 @@
 ---
-Title: Variables
+title: Variables
 template: docs.html
 hide:
   - navigation

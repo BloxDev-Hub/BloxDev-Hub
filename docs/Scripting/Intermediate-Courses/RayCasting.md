@@ -1,5 +1,5 @@
 ---
-Title: Raycasting
+title: Raycasting
 template: docs.html
 hide:
   - navigation

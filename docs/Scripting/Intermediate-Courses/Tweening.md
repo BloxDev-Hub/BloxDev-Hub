@@ -4,7 +4,7 @@ template: docs.html
 hide:
   - navigation
 ---
-# Tweening
+# Starting
 
 This article will teach you about the concept of tweening, how tweening is useful in development and how to use the `TweenService` in Roblox.
 

@@ -1,10 +1,9 @@
 ---
-Title: Basics_Of_Properties
+title: Basics_Of_Properties
 template: docs.html
 hide:
   - navigation
 ---
-
 # Properties
 Properties are a very key aspect in instances and Roblox programming. A property is an aspect of an **Instance** which can be changed.
 

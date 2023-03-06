@@ -1,5 +1,5 @@
 ---
-Title: Remote Events and Functions
+title: Remote Events and Functions
 template: docs.html
 hide:
   - navigation

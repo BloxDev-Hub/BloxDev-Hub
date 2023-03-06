@@ -1,5 +1,5 @@
 ---
-Title: Scripts and Local scripts
+title: Scripts and Local scripts
 template: docs.html
 hide:
   - navigation

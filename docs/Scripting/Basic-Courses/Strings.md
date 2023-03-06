@@ -1,5 +1,5 @@
 ---
-Title: String
+title: String
 template: docs.html
 hide:
   - navigation

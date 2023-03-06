@@ -1,11 +1,11 @@
 ---
-title: Character
+title: Player's Character
 template: docs.html
 hide:
   - navigation
 ---
 
-# Introduction
+# Character
 The Character is the physical 3d model of your [Player](https://create.roblox.com/docs/reference/engine/classes/Player).
 
 ## How Do You Access The Character

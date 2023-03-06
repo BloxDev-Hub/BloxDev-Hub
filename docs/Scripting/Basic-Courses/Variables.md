@@ -1,11 +1,11 @@
 ---
-title: Variables
+title: Declaring Variables
 template: docs.html
 hide:
   - navigation
 ---
 
-# Starting
+# Varibales
 A variable is basically a name that can hold values. These values can be [numbers](https://developer.roblox.com/en-us/articles/Numbers), [strings](https://developer.roblox.com/en-us/articles/String), [tables](https://developer.roblox.com/en-us/articles/Tables) and other Roblox [data types](https://developer.roblox.com/en-us/api-reference/data-types).
 
 ## Naming Variables

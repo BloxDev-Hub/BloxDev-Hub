@@ -1,11 +1,11 @@
 ---
-title: Players Service
+title: Introduction To Players Service
 template: docs.html
 hide:
   - navigation
 ---
 
-# Introduction
+# Players Service
 Hey! In this article, you'll learn how to use the [**Players Service**](https://create.roblox.com/docs/reference/engine/classes/Players).
 Before we begin, make sure you understand the basics of Roblox Scripting. You could start [**here**](https://rodevs-helpers.github.io/Helpers-Documents/Lua-Learning/basic-loops/).
 This tutorial may not cover all of the Players service, but only the most frequently used parts!

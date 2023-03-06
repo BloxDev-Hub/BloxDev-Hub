@@ -1,5 +1,5 @@
 ---
-title: Changing Size and Position 
+title: Introduction To Size and Position 
 template: docs.html
 hide:
   - navigation

@@ -5,7 +5,7 @@ hide:
   - navigation
 ---
 
-# What Is UI?
+# User Inter Face
 UI, commonly known as User Interface is all of the buttons/text you see on your screen. The open shop button, close shop, buy gamepass, etc.
 This small tutorial will teach you the basics of UI scripting and in the end.
 

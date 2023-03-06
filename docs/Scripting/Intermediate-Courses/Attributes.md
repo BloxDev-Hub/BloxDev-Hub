@@ -1,11 +1,11 @@
 ---
-title: Attributes
+title: What Are Attributes?
 template: docs.html
 hide:
   - navigation
 ---
 
-# What are attributes?
+# Attributes
 In Roblox Attributes of an instance are just like it's properties but custom properties.
 It means you can create them, remove them, edit them. They are pretty useful and they also save you from having multiple value instance like ``string value``, ``bool value``, ``int value``.
 You can create them manually or by using a script. In this guide we will be creating them via ``scripts``.

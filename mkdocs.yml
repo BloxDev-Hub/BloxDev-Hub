@@ -31,7 +31,7 @@ theme:
            name: Switch to dark mode
          primary: blue
          accent: deep orange
-      -  scheme: dark
+      -  scheme: rumi
          toggle:
            icon: material/weather-sunny
            name: Switch to light mode

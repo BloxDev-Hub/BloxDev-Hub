@@ -31,12 +31,12 @@ theme:
            name: Switch to dark mode
          primary: blue
          accent: deep orange
-      -  scheme: rumi
+      -  scheme: Dark
          toggle:
            icon: material/weather-sunny
            name: Switch to light mode
          primary: blue
-         accent: deep orange
+         accent: purple
     features:
       - announce.dismiss
       - navigation.top

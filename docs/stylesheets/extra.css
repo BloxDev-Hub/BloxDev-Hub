@@ -1,11 +1,39 @@
 
 
 :root {
-	--md-primary-fg-color: #ff602f;
-	--md-primary-bg-color: #ffffff;
-	--md-footer-bg-color: #444444;
-	--md-footer-bg-color--dark: #040404;
-}
+	--md-primary-color: #00bcd4;
+	--md-primary-background-color: #000;
+	--md-primary-text-color: #fff;
+	--md-secondary-color: #8bc34a;
+	--md-secondary-background-color: #212121;
+	--md-secondary-text-color: #fff;
+	--md-accent-color: #ff9800;
+	--md-accent-background-color: #212121;
+	--md-accent-text-color: #fff;
+	--md-warning-color: #f44336;
+	--md-warning-text-color: #fff;
+	--md-danger-color: #f44336;
+	--md-danger-text-color: #fff;
+	--md-info-color: #2196f3;
+	--md-info-text-color: #fff;
+	--md-success-color: #4caf50;
+	--md-success-text-color: #fff;
+	--md-code-background-color: #1c1c1c;
+	--md-table-odd-row-background-color: #1e1e1e;
+	--md-background-color: #000;
+	--md-text-color: #fff;
+	--md-link-color: #00bcd4;
+	--md-link-hover-color: #8bc34a;
+	--md-sidebar-background-color: #212121;
+	--md-sidebar-text-color: #fff;
+	--md-sidebar-link-color: #8bc34a;
+	--md-sidebar-link-hover-color: #fff;
+	--md-searchbox-background-color: #212121;
+	--md-searchbox-text-color: #fff;
+	--md-searchbox-border-color: #8bc34a;
+	--md-searchbox-focus-border-color: #00bcd4;
+  }
+  
 [data-md-color-scheme="Light"] {
 	--md-default-bg-color: #f0f0f0;
 	--md-default-fg-color--light: #4e4e4e;

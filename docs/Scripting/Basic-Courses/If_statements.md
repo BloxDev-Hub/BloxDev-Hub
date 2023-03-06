@@ -1,6 +1,9 @@
-# If statements
+---
+title: If Statements
+template: docs.html
+---
 
-## What are if statements?
+# What are if statements?
 
 If statements offer you a way to only run a certain piece of code if a certain condition holds true.
 They are a very important part of programming.

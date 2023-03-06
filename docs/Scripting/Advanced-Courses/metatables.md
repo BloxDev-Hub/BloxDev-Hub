@@ -12,7 +12,7 @@ hide:
 Before reading this tutorial, you should know about tables.
 An explanation of tables exists in the Lua-Learning folder.
 
-## What's a metatable?
+# What's a metatable?
 Metatables allow tables to become more powerful. Any table can have a metatable and
 they can hold metamethods, which are similar to events. I like to call them table-events.
 

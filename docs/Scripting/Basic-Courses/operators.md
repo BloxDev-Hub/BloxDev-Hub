@@ -1,5 +1,6 @@
 ---
 title: Operators
+template: docs.html
 ---
 
 ## What are operators

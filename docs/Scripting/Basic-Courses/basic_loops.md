@@ -1,5 +1,6 @@
 ---
 title: Basics about Loops
+template: docs.html
 ---
 
 # Loops in Lua

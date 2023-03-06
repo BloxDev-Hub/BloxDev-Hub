@@ -1,6 +1,8 @@
 ---
 title: Introduction To Studio
 template: docs.html
+hide:
+  - navigation
 ---
 
 # Starting

@@ -1,6 +1,8 @@
 ---
 Title: String
 template: docs.html
+hide:
+  - navigation
 ---
 # Introduction
 Strings are an important part of programming and are used in many high-level programming languages. A string is a combination of alphabetical letters, numbers, and other symbols.

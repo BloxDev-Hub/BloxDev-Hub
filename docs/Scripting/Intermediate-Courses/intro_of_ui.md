@@ -1,5 +1,8 @@
 ---
 title: Coding With UI
+template: docs.html
+hide:
+  - navigation
 ---
 
 # What Is UI?

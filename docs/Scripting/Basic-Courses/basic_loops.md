@@ -1,6 +1,8 @@
 ---
 title: Basics about Loops
 template: docs.html
+hide:
+  - navigation
 ---
 
 # Loops in Lua

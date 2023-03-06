@@ -1,6 +1,8 @@
 ---
 Title: Variables
 template: docs.html
+hide:
+  - navigation
 ---
 
 # Starting

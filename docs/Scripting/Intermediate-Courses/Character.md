@@ -1,5 +1,8 @@
 ---
 Title: Character
+template: docs.html
+hide:
+  - navigation
 ---
 
 # Character

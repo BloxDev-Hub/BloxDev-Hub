@@ -1,5 +1,7 @@
 ---
-title: Attributes
+template: docs.html
+hide:
+  - navigation
 ---
 
 # What are attributes?

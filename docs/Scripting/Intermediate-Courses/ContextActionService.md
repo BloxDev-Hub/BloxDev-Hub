@@ -1,8 +1,11 @@
 ---
 title: Context Action Service
+template: docs.html
+hide:
+  - navigation
 ---
 
-# Context Action Service
+# Introduction
 Context action is a service that helps in binding actions to inputs. It is similar to [UserInputService](https://developer.roblox.com/en-us/api-reference/class/UserInputService) but has some cooler features.
 
 ## Understanding Use Case

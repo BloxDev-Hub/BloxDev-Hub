@@ -1,7 +1,9 @@
 ---
 title: Selection And Highlights
+template: docs.html
+hide:
+  - navigation
 ---
-
 # Introduction
 
 **Selection Boxes/Spheres** and **Highlights** are objects that you can use in your game for multiple purposes. These objects add a boundary over other parts/models. Let's try to use them.

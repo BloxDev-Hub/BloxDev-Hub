@@ -1,5 +1,8 @@
 ---
 title: Data Stores
+template: docs.html
+hide:
+  - navigation
 ---
 
 # Introduction

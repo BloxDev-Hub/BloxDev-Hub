@@ -1,6 +1,8 @@
 ---
 title: Operators
 template: docs.html
+hide:
+  - navigation
 ---
 
 ## What are operators

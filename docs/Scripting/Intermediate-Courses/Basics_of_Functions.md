@@ -1,5 +1,12 @@
-# Basics of Functions
-I don't like typing a lot of code, YOU probably don't like typing a lot of code. Wouldn't it be nice if you can compress multiple instructions into 1 line of code? Well, that's what functions are for!
+---
+title: Basics Of Functions
+template: docs.html
+hide:
+  - navigation
+---
+
+# Functions
+I don't like typing a lot of code, you probably don't like typing a lot of code. Wouldn't it be nice if you can compress multiple instructions into 1 line of code? Well, that's what functions are for!
 
 Functions let you run multiple instructions in one line, making your code look more organized and clean, and also making you type less code.
 

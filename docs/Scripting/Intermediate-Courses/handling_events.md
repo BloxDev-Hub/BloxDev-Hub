@@ -1,5 +1,8 @@
 ---
 title: Understanding events
+template: docs.html
+hide:
+  - navigation
 ---
 
 # Events on Roblox Studio

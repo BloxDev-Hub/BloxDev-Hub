@@ -1,6 +1,8 @@
 ---
 title: If Statements
 template: docs.html
+hide:
+  - navigation
 ---
 
 # What are if statements?

@@ -1,8 +1,10 @@
 ---
 title: Understanding the Basics of Tables
+template: docs.html
+hide:
+  - navigation
 ---
-
-# Understanding the Basics of Tables
+# Tables
 One of the things you're going to be doing a lot when scripting is handling data and values: *strings*, *numbers*, *booleans*, etc. Wouldn't it be nice to have a way *“encapsulate”* or *“group”* that data together into one single data type?
 
 Introducing tables! Tables let you group data into a single data type. This makes it easier to work with and manipulate data.

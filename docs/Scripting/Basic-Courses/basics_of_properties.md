@@ -1,6 +1,8 @@
 ---
 Title: Basics_Of_Properties
 template: docs.html
+hide:
+  - navigation
 ---
 
 # Properties

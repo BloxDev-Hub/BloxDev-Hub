@@ -1,5 +1,8 @@
 ---
 title: Module Scripts
+template: docs.html
+hide:
+  - navigation
 ---
 
 # What Is A Module Script?

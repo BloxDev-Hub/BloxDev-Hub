@@ -1,7 +1,9 @@
 ---
 title: Changing Size and Position 
+template: docs.html
+hide:
+  - navigation
 ---
-
 
 # Changing Size and Position 
 Previously we explained vectors, their types, addition, and product of vectors. Now we will move further and talk about its usage in changing positions and sizes. Once you have cleared your mind regarding vectors, you are surely able to understand their usage in Roblox.

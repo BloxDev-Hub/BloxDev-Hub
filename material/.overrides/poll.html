@@ -21,25 +21,52 @@
     </style>
     {% endblock %}
   </head>
+
+  {% block styles %}
+  {{ super() }}
+  <style>
+    /* Add your custom CSS rules here */
+    .md-header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+    .md-header__title {
+      font-size: 2em;
+      margin: 0;
+    }
+  </style>
+{% endblock %}
+{% block header %}
+  <header class="md-header">
+    <div class="md-header__inner">
+      <div class="md-header__left">
+        {% block logo %}
+          <a href="{{ config.site_url }}" class="md-header__logo">
+            <img src="{{ config.site_logo }}" alt="{{ config.site_name }}" />
+          </a>
+        {% endblock %}
+        {% block nav %}
+          {{ super() }}
+        {% endblock %}
+      </div>
+      <div class="md-header__right">
+        {% block search %}
+          {{ super() }}
+        {% endblock %}
+        {% block actions %}
+          {{ super() }}
+        {% endblock %}
+        {% block language_select %}
+          {{ super() }}
+        {% endblock %}
+      </div>
+    </div>
+  </header>
+{% endblock %}
   {% extends "main.html" %}
-  {% block tabs %}
-    {{ super() }}
-    <style>
-      /* styles for screens with a maximum width of 767px */
-      @media screen and (max-width: 767px) {
-        h1 {
-          font-size: 2em;
-        }
-      }
-      
-      /* styles for screens with a minimum width of 768px */
-      @media screen and (min-width: 768px) {
-        h1 {
-          font-size: 3.5em;
-          white-space: nowrap;
-        }
-      }
-    </style>
+  
     
   <!-- <style>.md-header{position:initial}.md-main__inner{margin:0}.md-content{display:none}@media screen and (min-width:60em){.md-sidebar--secondary{display:none}}@media screen and (min-width:76.25em){.md-sidebar--primary{display:none}}</style> -->
     <section class="mdx-container">

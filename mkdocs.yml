@@ -113,9 +113,6 @@ plugins:
         fill: "#0756FF" 
         text: "#FFFFFF"
       cards_font: Tilt Warp
-  - sitemap:
-      changefreq: daily
-      priority: 0.7
   
 
 nav:

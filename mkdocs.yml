@@ -110,7 +110,7 @@ plugins:
   - awesome-pages
   - social:
       cards_color:
-        fill: "#0096FF" 
+        fill: "#0FF1CE" 
         text: "#FFFFFF"
       cards_font: Tilt Warp
   

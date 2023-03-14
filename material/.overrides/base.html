@@ -5,8 +5,9 @@
 	<title>{% block title %}{% endblock %}</title>
 	<style>
 		body {
-			background-color: #f5f5f5;
+			background-color: #2e9ccf;
 			font-family: Arial, sans-serif;
+			overflow: hidden;
 		}
 		
 		.loader {
@@ -36,6 +37,14 @@
 			100% { transform: rotate(360deg); }
 		}
 	</style>
+	<script>
+		window.addEventListener("load", function(){
+			setTimeout(function(){
+				document.querySelector(".loader").style.display = "none";
+				document.body.style.overflow = "auto";
+			}, 3000);
+		});
+	</script>
 </head>
 <body>
 	<div class="loader">
@@ -45,12 +54,5 @@
 	<div id="content">
 		{% block content %}{% endblock %}
 	</div>
-	
-	<script>
-		window.addEventListener("load", function(){
-			document.querySelector(".loader").style.display = "none";
-			document.querySelector("#content").style.display = "block";
-		});
-	</script>
 </body>
 </html>

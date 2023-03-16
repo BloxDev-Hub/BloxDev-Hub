@@ -52,6 +52,22 @@
       .post button:hover {
         background-color: #0062cc;
       }
+
+      .post:hover::before {
+			content: "";
+			display: block;
+			position: absolute;
+			left: 0;
+			top: calc(50% + 10px);
+			height: 2px;
+			width: 0;
+			background-color: purple;
+			transition: width 0.3s ease;
+		}
+
+		.post:hover::before {
+			width: 100%;
+		}
     </style>
   </head>
   {{ super() }}

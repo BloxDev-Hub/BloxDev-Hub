@@ -6,61 +6,63 @@
   
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<style>
-		.container {
-			display: grid;
-			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* adjusted minmax value */
-			grid-gap: 20px;
-			align-items: center;
-		}
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        grid-gap: 20px;
+        align-items: center;
+      }
 
-		.post {
-			display: flex;
-			flex-direction: column; /* changed flex-direction to column */
-			align-items: center;
-			background-color: #f2f2f200;
-			border: 1px solid #cccccc00;
-			padding: 20px;
-			height: 400px; /* added a fixed height for the post container */
-		}
+      .post {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: #f2f2f200;
+        border: 1px solid #cccccc00;
+        padding: 20px;
+      }
 
-		.post img {
-			width: 200px; /* increased the size of the image */
-			height: 200px; /* increased the size of the image */
-			object-fit: cover;
-			margin-bottom: 20px; /* added a margin to the bottom of the image */
-		}
+      .post img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        margin-right: 20px;
+      }
 
-		.post h2 {
-			font-size: 24px;
-			margin: 0;
-			text-align: center; /* centered the post title */
-		}
+      .post h2 {
+        font-size: 24px;
+        margin: 0;
+      }
 
-		.post p {
-			margin: 10px 0 20px 0;
-			line-height: 1.5;
-		}
+      .post p {
+        margin: 10px 0 20px 0;
+        line-height: 1.5;
+      }
 
-		.post button {
-			background-color: #007bff;
-			color: #fff;
-			border: none;
-			padding: 10px 20px;
-			font-size: 16px;
-			cursor: pointer;
-			transition: all 0.3s ease;
-		}
+      .post button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
 
-		.post button:hover {
-			background-color: #0062cc;
-		}
-		
-		@media (min-width: 768px) { /* added a media query for larger screens */
-			.container {
-				grid-template-columns: repeat(3, 1fr); /* changed to 3 columns for larger screens */
-			}
-		}
+      .post button:hover {
+        background-color: #0062cc;
+      }
+      
+      @media (max-width: 768px) {
+        .container {
+          display: block;
+        }
+        .post {
+          margin-bottom: 20px;
+        }
+      }
+
       .alert-box {
         border: 2px solid yellow;
         background-color: #ffffe000;
@@ -113,7 +115,7 @@
     <body>
       <div class="container">
         <div class="post">
-          <img src="https://via.placeholder.com/200" alt="Post Image">
+          <img src="https://via.placeholder.com/150" alt="Post Image">
           <div>
             <h2>Tutorial Title 1</h2>
             <p>IDK IDK IDK IDK IDK v IDK IDK  IDK IDK IDK.</p>
@@ -121,7 +123,7 @@
           </div>
         </div>
         <div class="post">
-          <img src="https://via.placeholder.com/200" alt="Post Image">
+          <img src="https://via.placeholder.com/150" alt="Post Image">
           <div>
             <h2>Tutorial Title 2</h2>
             <p>IDKIDKIDKIDKIDKIDK IDKIDK IDK</p>
@@ -129,7 +131,7 @@
           </div>
         </div>
         <div class="post">
-          <img src="https://via.placeholder.com/200" alt="Post Image">
+          <img src="https://via.placeholder.com/150" alt="Post Image">
           <div>
             <h2>Tutorial Title 3</h2>
             <p>IDK IDK IDK IDK IDK IDK  IDK IDK IDK IDK</p>
@@ -137,7 +139,7 @@
           </div>
         </div>
         <div class="post">
-          <img src="https://via.placeholder.com/200" alt="Post Image">
+          <img src="https://via.placeholder.com/150" alt="Post Image">
           <div>
             <h2>Tutorial Title 4</h2>
             <p>IDK IDK IDK IDK IDK IDK  IDK IDK IDK IDK</p>
@@ -145,7 +147,7 @@
           </div>
         </div>
         <div class="post">
-          <img src="https://via.placeholder.com/200" alt="Post Image">
+          <img src="https://via.placeholder.com/150" alt="Post Image">
           <div>
             <h2>Tutorial Title 5</h2>
             <p>IDK IDK IDK IDK IDK IDK  IDK IDK IDK IDK</p>

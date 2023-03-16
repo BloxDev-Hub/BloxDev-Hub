@@ -53,21 +53,28 @@
         background-color: #0062cc;
       }
 
-      .post:hover::before {
-			content: "";
-			display: block;
-			position: absolute;
-			left: 0;
-			top: calc(50% + 10px);
-			height: 2px;
-			width: 0;
-			background-color: purple;
-			transition: width 0.3s ease;
-		}
-
-		.post:hover::before {
-			width: 100%;
-		}
+      .alert-box {
+        border: 2px solid yellow;
+        background-color: #FFFFE0;
+        position: relative;
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+      .alert-box:before {
+        content: "!";
+        color: yellow;
+        font-size: 30px;
+        font-weight: bold;
+        position: absolute;
+        top: 0;
+        left: 0;
+        animation: blink 1s infinite;
+      }
+      @keyframes blink {
+        0% { opacity: 1; }
+        50% { opacity: 0; }
+        100% { opacity: 1; }
+      }
     </style>
   </head>
   {{ super() }}
@@ -81,8 +88,8 @@
         
         <div class="mdx-hero__content">
           <h1>Tutorials</h1>
-          <p>{{ config.site_description }}.</p>
-          <!--<a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | e }}" class="md-button md-button--primary">
+          <!--<p>{{ config.site_description }}.</p>
+          <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | e }}" class="md-button md-button--primary">
             Quick start
           </a>
           <a href="{{ 'Others/Help_Us%21/' | url }}" title="Help us!" class="md-button">
@@ -136,6 +143,13 @@
           </div>
         </div>
       </div>
+
+      <body>
+        <div class="alert-box">
+          <p>Do not just copy the code in tutorials but try to read them and understand them.
+            They are made for you to learn so you can utilize these concepts and make something that fulfils the needs of your game.</p>
+        </div>
+      </body>
     </body>
 
 

@@ -5,6 +5,21 @@
 {% block tabs %}
   
   <head>
+    <link rel="stylesheet" href="{{ 'assets/stylesheets/custom.9097afc2.min.css' | url }}">
+    <link rel="shortcut icon" type="image/x-icon" href="https://docs.rodevs.com/bidenrose.png">
+    {% block site_meta %}
+    <meta charset="UTF-8">
+    <title>{{ page.title }} - Helper Documents</title>
+    <meta name="description" content="Rodevs Helpers Documents, a place where you can learn multiple things about developing from our incredible helpers.">
+    <meta property="og:image" content="https://docs.rodevs.com/metacard.png" />
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1220">
+    <meta property="og:image:height" content="820">
+    <meta property="og:image:alt" content="Helpers Documents">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#00FFFF">
+    <meta property="og:type" content="website">
+    {% endblock %}
     <style>
       .container {
         display: grid;
@@ -14,20 +29,22 @@
       }
   
       .post {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        background-color: #f2f2f200;
-        border: 0px solid #ccc;
-        padding: 20px;
-      }
-  
-      .post img {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      background-color: #f2f2f200;
+      border: 1px solid #cccccc00;
+      padding: 40px;
+      width: 500px;
+      height: 200px;
+    }
+
+    .post img {
         width: 150px;
         height: 150px;
         object-fit: cover;
         margin-right: 20px;
-      }
+    }
   
       .post h2 {
         font-size: 24px;
@@ -90,8 +107,8 @@
         
         <div class="mdx-hero__content">
           <h1>Tutorials</h1>
-          <!--<p>{{ config.site_description }}.</p>
-          <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | e }}" class="md-button md-button--primary">
+          <p>{{ config.site_description }}.</p>
+          <!--<a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | e }}" class="md-button md-button--primary">
             Quick start
           </a>
           <a href="{{ 'Others/Help_Us%21/' | url }}" title="Help us!" class="md-button">

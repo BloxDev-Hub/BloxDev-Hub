@@ -18,6 +18,32 @@
         .strawpoll-embed iframe {
             border: none;
         }
+        
+        .alert-box {
+        border: 2px solid red;
+        background-color: #ffffe000;
+        position: relative;
+        padding: 15px;
+        margin: 10px auto;
+        width: 70%;
+        border-radius: 10px;
+      }
+      .alert-box:before {
+        content: "!";
+        color: rgb(255, 0, 0);
+        font-size: 40px;
+        font-weight: bold;
+        position: absolute;
+        top: -20px;
+        left: -20px;
+        animation: blink 1s infinite;
+      }
+      @keyframes blink {
+        0% { opacity: 1; }
+        50% { opacity: 0; }
+        100% { opacity: 1; }
+      }
+      
     </style>
     {% endblock %}
   </head>
@@ -54,6 +80,15 @@
       </div>
      </div>
    </section>
+   
+   <body>
+        <div class="alert-box">
+          <p>*You can only vote one helper and once you have voted, you won't be able to edit your vote.
+          
+             *Please fill every field properly otherwise your vote will be deleted without any notice.
+             </p>
+        </div>
+      </body>
     <div class="strawpoll-embed" id="strawpoll_w4nWrRMYqyA" style="height: 2540px; max-width: 940px; width: 100%; margin: 0 auto; display: flex; flex-direction: column;"><iframe title="StrawPoll Embed" id="strawpoll_iframe_w4nWrRMYqyA" src="https://strawpoll.com/embed/polls/w4nWrRMYqyA" style="position: static; visibility: visible; display: block; width: 100%; flex-grow: 1;" frameborder="0" allowfullscreen allowtransparency>Loading...</iframe><script async src="https://cdn.strawpoll.com/dist/widgets.js" charset="utf-8"></script></div>
     
     {% endblock %}

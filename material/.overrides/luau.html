@@ -1,140 +1,100 @@
 {#-
   do not edit
 -#}
-{% extends "main.html" %}
-
-{% block tabs %}
-<head>
-  <link rel="stylesheet" href="{{ 'assets/stylesheets/custom.9097afc2.min.css' | url }}">
-  <link rel="shortcut icon" type="image/x-icon" href="https://docs.rodevs.com/bidenrose.png">
-
-  {% block site_meta %}
-  <meta charset="UTF-">
-  <title>{{ page.title }} - Helper Documents</title>
-  <meta name="description" content="Rodevs Helpers Documents, a place where you can learn multiple things about developing from our incredible helpers.">
-  <meta property="og:image" content="https://docs.rodevs.com/metacard.png" />
-  <meta property="og:image:type" content="image/png">
-  <meta property="og:image:width" content="1220">
-  <meta property="og:image:height" content="820">
-  <meta property="og:image:alt" content="Helpers Documents">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#00FFFF">
-  <meta property="og:type" content="website">
+  {% extends "main.html" %}
+  {% block tabs %}
+  
+  <head>
+    <link rel="stylesheet" href="{{ 'assets/stylesheets/custom.9097afc2.min.css' | url }}">
+    <link rel="shortcut icon" type="image/x-icon" href="https://docs.rodevs.com/bidenrose.png">
+    {% block site_meta %}
+    <meta charset="UTF-">
+    <title>{{ page.title }} - Helper Documents</title>
+    <meta name="description" content="Rodevs Helpers Documents, a place where you can learn multiple things about developing from our incredible helpers.">
+    <meta property="og:image" content="https://docs.rodevs.com/metacard.png" />
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1220">
+    <meta property="og:image:height" content="820">
+    <meta property="og:image:alt" content="Helpers Documents">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#00FFFF">
+    <meta property="og:type" content="website">
   {% endblock %}
+    <style>
+      .posts-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
 
-  <style>
-    /* Define the styling for each post */
-    .post {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin: 20px;
-      width: 100%;
-      height: 300px;
-      background-color: #ffffff;
-      border-radius: 20px;
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-      transition: all 0.2s ease-in-out;
-    }
-
-    /* Show the post description when hovering over the post */
-    .post:hover .post-description {
-      opacity: 1;
-      visibility: visible;
-      transform: translateY(-20px);
-    }
-
-    /* Style the post image */
-    .post-image {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 20px 20px 0 0;
-    }
-
-    /* Style the post title */
-    .post-title {
-      margin-top: 20px;
-      font-size: 24px;
-      font-weight: bold;
-      color: #333333;
-      text-align: center;
-    }
-
-    /* Style the post description */
-    .post-description {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      padding: 20px;
-      opacity: 0;
-      visibility: hidden;
-      transition: all 0.3s ease-in-out;
-      font-size: 16px;
-      font-weight: 400;
-      color: #333333;
-      background-color: rgba(255, 255, 255, 0.9);
-      border-radius: 0 0 20px 20px;
-      box-shadow: 0 -8px 16px rgba(0, 0, 0, 0.3);
-      text-align: center;
-      line-height: 1.5;
-    }
-
-    h3 {
-      margin: 40px 0 20px;
-      font-size: 36px;
-      font-weight: bold;
-      color: #333333;
-     
+      /* Define a grid layout for the posts */
+      .post-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 16px;
+      }
+      
+      /* Define the styling for each post */
       .post {
-  background-color: #ffffff;
-  border: 1px solid #dddddd;
-  border-radius: 4px;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-  padding: 20px;
-}
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 360px;
+        height: 280px;
+        margin: 20px;
+        padding: 10px;
+        box-sizing: border-box;
+        border: 0px solid #ccc;
+        border-radius: 10px;
+        transition: all 0.2s ease-in-out;
+        background: linear-gradient(to bottom, rgb(4, 133, 253), rgb(0, 0, 0));;
+      }
+      
+      /* Show the post description when hovering over the post */
+      .post:hover .post-description {
+        opacity: 1;
+        visibility: visible;
+      }
+      
+      .post:hover {
+        transform: scale(1.1);
+        z-index: 1;
+        cursor: pointer;
+      }
+      
+      /* Style the post image */
+      .post-image {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+      
+      /* Style the post title */
+      .post-title {
+        padding: 10px;
+        font-size: 18px;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+      
+      /* Style the post description */
+      .post-description {
+        padding: 16px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease-in-out;
+        font-size: 14px;
+        color: rgb(221, 220, 220);
+      }
 
-.post h2 {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.post p {
-  font-size: 16px;
-  line-height: 1.5;
-  margin-bottom: 20px;
-}
-
-.post a {
-  color: #0088cc;
-  text-decoration: none;
-}
-
-.post a:hover {
-  text-decoration: underline;
-}
-
-.post .meta {
-  border-top: 1px solid #dddddd;
-  font-size: 14px;
-  margin-top: 20px;
-  padding-top: 10px;
-}
-
-.post .meta a {
-  color: #666666;
-  text-decoration: none;
-}
-
-.post .meta a:hover {
-  text-decoration: underline;
-}
-
+      h3 {
+      text-align: center;
+      font-size: 36px;
+      }
     </style>
   </head>
   {{ super() }}

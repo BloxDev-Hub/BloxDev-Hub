@@ -1,101 +1,95 @@
 {#-
   do not edit
 -#}
-  {% extends "main.html" %}
-  {% block tabs %}
-  
-  <head>
-    <link rel="stylesheet" href="{{ 'assets/stylesheets/custom.9097afc2.min.css' | url }}">
-    <link rel="shortcut icon" type="image/x-icon" href="https://docs.rodevs.com/bidenrose.png">
-    {% block site_meta %}
-    <meta charset="UTF-">
-    <title>{{ page.title }} - Helper Documents</title>
-    <meta name="description" content="Rodevs Helpers Documents, a place where you can learn multiple things about developing from our incredible helpers.">
-    <meta property="og:image" content="https://docs.rodevs.com/metacard.png" />
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="1220">
-    <meta property="og:image:height" content="820">
-    <meta property="og:image:alt" content="Helpers Documents">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#00FFFF">
-    <meta property="og:type" content="website">
+{% extends "main.html" %}
+{% block tabs %}
+<head>
+  <link rel="stylesheet" href="{{ 'assets/stylesheets/custom.9097afc2.min.css' | url }}">
+  <link rel="shortcut icon" type="image/x-icon" href="https://docs.rodevs.com/bidenrose.png">
+  {% block site_meta %}
+  <meta charset="UTF-">
+  <title>{{ page.title }} - Helper Documents</title>
+  <meta name="description" content="Rodevs Helpers Documents, a place where you can learn multiple things about developing from our incredible helpers.">
+  <meta property="og:image" content="https://docs.rodevs.com/metacard.png" />
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1220">
+  <meta property="og:image:height" content="820">
+  <meta property="og:image:alt" content="Helpers Documents">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#00FFFF">
+  <meta property="og:type" content="website">
   {% endblock %}
-    <style>
-      .posts-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-      }
+  <style>
+    /* Style the posts container */
+    .posts-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 0;
+      background-color: #f8f8f8;
+      border-radius: 20px;
+    }
 
-      /* Define a grid layout for the posts */
-      .post-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 16px;
-      }
-      
-      /* Define the styling for each post */
-      .post {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 360px;
-        height: 280px;
-        margin: 20px;
-        padding: 10px;
-        box-sizing: border-box;
-        border: 0px solid #ccc;
-        border-radius: 10px;
-        transition: all 0.2s ease-in-out;
-        background: linear-gradient(to bottom, rgb(4, 133, 253), rgb(0, 0, 0));;
-      }
-      
-      /* Show the post description when hovering over the post */
-      .post:hover .post-description {
-        opacity: 1;
-        visibility: visible;
-      }
-      
-      .post:hover {
-        transform: scale(1.1);
-        z-index: 1;
-        cursor: pointer;
-      }
-      
-      /* Style the post image */
-      .post-image {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-        border-radius: 10px;
-      }
-      
-      /* Style the post title */
-      .post-title {
-        padding: 10px;
-        font-size: 18px;
-        font-weight: bold;
-        color: rgb(255, 255, 255);
-        text-transform: uppercase;
-        letter-spacing: 2px;
-      }
-      
-      /* Style the post description */
-      .post-description {
-        padding: 16px;
-        opacity: 0;
-        visibility: hidden;
-        transition: all 0.3s ease-in-out;
-        font-size: 14px;
-        color: rgb(221, 220, 220);
-      }
+    /* Define the styling for each post */
+    .post {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 360px;
+      height: 280px;
+      padding: 20px;
+      box-sizing: border-box;
+      border: 2px solid #ddd;
+      border-radius: 20px;
+      background-color: #fff;
+      transition: all 0.2s ease-in-out;
+      font-family: 'Roboto', sans-serif;
+    }
 
-      h3 {
+    /* Style the post image */
+    .post-image {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    /* Style the post title */
+    .post-title {
+      margin-top: 10px;
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+      text-transform: uppercase;
       text-align: center;
-      font-size: 36px;
-      }
-    </style>
+    }
+
+    /* Style the post description */
+    .post-description {
+      margin-top: 10px;
+      font-size: 16px;
+      color: #555;
+      text-align: center;
+    }
+
+    /* Hover effects for the posts */
+    .post:hover {
+      transform: translateY(-10px);
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+      border-color: #007bff;
+    }
+
+    .post:hover .post-title {
+      color: #007bff;
+    }
+
+    .post:hover .post-description {
+      color: #333;
+    }
+  </style>
   </head>
   {{ super() }}
   <style>.md-header{position:initial}.md-main__inner{margin:0}.md-content{display:none}@media screen and (min-width:60em){.md-sidebar--secondary{display:none}}@media screen and (min-width:76.25em){.md-sidebar--primary{display:none}}</style>

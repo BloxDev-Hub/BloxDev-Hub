@@ -20,82 +20,70 @@
     <meta name="theme-color" content="#00FFFF">
     <meta property="og:type" content="website">
   {% endblock %}
-    <style>
-      .posts-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-      }
+  <style>
+    .posts-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+    }
 
-      /* Define a grid layout for the posts */
-      .post-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 16px;
-      }
-      
-      /* Define the styling for each post */
-      .post {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 360px;
-        height: 280px;
-        margin: 20px;
-        padding: 10px;
-        box-sizing: border-box;
-        border: 0px solid #ccc;
-        border-radius: 10px;
-        transition: all 0.2s ease-in-out;
-        background: linear-gradient(to bottom, rgb(4, 133, 253), rgb(0, 0, 0));;
-      }
-      
-      /* Show the post description when hovering over the post */
-      .post:hover .post-description {
-        opacity: 1;
-        visibility: visible;
-      }
-      
-      .post:hover {
-        transform: scale(1.1);
-        z-index: 1;
-        cursor: pointer;
-      }
-      
-      /* Style the post image */
-      .post-image {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-        border-radius: 10px;
-      }
-      
-      /* Style the post title */
-      .post-title {
-        padding: 10px;
-        font-size: 18px;
-        font-weight: bold;
-        color: rgb(255, 255, 255);
-        text-transform: uppercase;
-        letter-spacing: 2px;
-      }
-      
-      /* Style the post description */
-      .post-description {
-        padding: 16px;
-        opacity: 0;
-        visibility: hidden;
-        transition: all 0.3s ease-in-out;
-        font-size: 14px;
-        color: rgb(221, 220, 220);
-      }
-
-      h3 {
+    /* Define the styling for each post */
+    .post {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100%;
+      margin: 0;
+      padding: 2rem;
+      box-sizing: border-box;
+      border: 1px solid #e6e6e6;
+      border-radius: 0.5rem;
+      background-color: #fff;
+      transition: all 0.2s ease-in-out;
+      overflow: hidden;
+    }
+    
+    /* Show the post description when hovering over the post */
+    .post:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+    }
+    
+    /* Style the post image */
+    .post-image {
+      width: 100%;
+      height: 12rem;
+      object-fit: cover;
+      border-radius: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    
+    /* Style the post title */
+    .post-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #222;
+      text-transform: uppercase;
+      letter-spacing: 0.1rem;
+      margin-bottom: 0.5rem;
       text-align: center;
-      font-size: 36px;
-      }
-    </style>
+    }
+    
+    /* Style the post description */
+    .post-description {
+      font-size: 1rem;
+      color: #666;
+      text-align: center;
+    }
+
+    h3 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-top: 4rem;
+      margin-bottom: 2rem;
+    }
+  </style>
   </head>
   {{ super() }}
   <style>.md-header{position:initial}.md-main__inner{margin:0}.md-content{display:none}@media screen and (min-width:60em){.md-sidebar--secondary{display:none}}@media screen and (min-width:76.25em){.md-sidebar--primary{display:none}}</style>

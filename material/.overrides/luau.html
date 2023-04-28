@@ -5,90 +5,95 @@
   {% block tabs %}
   
   <head>
-    <link rel="stylesheet" href="{{ 'assets/stylesheets/custom.9097afc2.min.css' | url }}">
-    <link rel="shortcut icon" type="image/x-icon" href="https://docs.rodevs.com/bidenrose.png">
-  
-    {% block site_meta %}
-    <meta charset="UTF-">
-    <title>{{ page.title }} - Helper Documents</title>
-    <meta name="description" content="Rodevs Helpers Documents, a place where you can learn multiple things about developing from our incredible helpers.">
-    <meta property="og:image" content="https://docs.rodevs.com/metacard.png" />
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="1220">
-    <meta property="og:image:height" content="820">
-    <meta property="og:image:alt" content="Helpers Documents">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#00FFFF">
-    <meta property="og:type" content="website">
-    {% endblock %}
-  
-    <style>
-      /* Custom styles for the posts */
-      .posts-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        grid-gap: 2rem;
-        margin-top: 3rem;
-      }
-  
-      .post {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 300px;
-        padding: 2rem;
-        border-radius: 1rem;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-        transition: all 0.3s ease-in-out;
-        background-color: rgba(255, 255, 255, 0.9);
-        overflow: hidden;
-      }
-  
-      .post:hover {
-        transform: translateY(-5px);
-        box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
-      }
-  
-      .post-image {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        z-index: -1;
-        transition: all 0.3s ease-in-out;
-        filter: brightness(50%);
-      }
-  
-      .post:hover .post-image {
-        transform: scale(1.1);
-      }
-  
-      .post-title {
-        margin-bottom: 1rem;
-        font-size: 2rem;
-        font-weight: bold;
-        text-align: center;
-        color: #fff;
-        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-        z-index: 1;
-      }
-  
-      .post-description {
-        margin-top: auto;
-        padding: 1rem;
-        font-size: 1rem;
-        text-align: center;
-        color: #333;
-        opacity: 0;
-        transition: all 0.3s ease-in-out;
-      }
-  
-      .post:hover .post-description {
-        opacity: 1;
+      <link rel="stylesheet" href="{{ 'assets/stylesheets/custom.9097afc2.min.css' | url }}">
+      <link rel="shortcut icon" type="image/x-icon" href="https://docs.rodevs.com/bidenrose.png">
+    
+      {% block site_meta %}
+      <meta charset="UTF-">
+      <title>{{ page.title }} - Helper Documents</title>
+      <meta name="description" content="Rodevs Helpers Documents, a place where you can learn multiple things about developing from our incredible helpers.">
+      <meta property="og:image" content="https://docs.rodevs.com/metacard.png" />
+      <meta property="og:image:type" content="image/png">
+      <meta property="og:image:width" content="1220">
+      <meta property="og:image:height" content="820">
+      <meta property="og:image:alt" content="Helpers Documents">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="theme-color" content="#00FFFF">
+      <meta property="og:type" content="website">
+      {% endblock %}
+    
+      <style>
+        /* Custom styles for the posts */
+        .posts-container {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+          grid-gap: 2rem;
+          margin-top: 3rem;
+        }
+    
+        .post {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          height: 300px;
+          padding: 2rem;
+          border-radius: 1rem;
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+          transition: all 0.3s ease-in-out;
+          background-color: rgba(255, 255, 255, 0.9);
+          overflow: hidden;
+        }
+    
+        .post:hover {
+          transform: translateY(-5px);
+          box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+        }
+    
+        .post-image {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          z-index: -1;
+          transition: all 0.3s ease-in-out;
+          filter: brightness(50%);
+        }
+    
+        .post:hover .post-image {
+          transform: scale(1.1);
+        }
+    
+        .post-title {
+          margin-bottom: 1rem;
+          font-size: 2rem;
+          font-weight: bold;
+          text-align: center;
+          color: #fff;
+          text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+          z-index: 1;
+        }
+    
+        .post-description {
+          margin-top: auto;
+          padding: 1rem;
+          font-size: 1rem;
+          text-align: center;
+          color: #333;
+          opacity: 0;
+          transition: all 0.3s ease-in-out;
+        }
+    
+        .post:hover .post-description {
+          opacity: 1;
+        }
+
+      h3 {
+      text-align: center;
+      font-size: 36px;
       }
     </style>
   </head>

@@ -6,12 +6,6 @@ site_description: Rodevs Helpers Documents, a place where you can learn multiple
 extra_css:
   - stylesheets/extra.css
   - https://unpkg.com/mermaid@7.1.2/dist/mermaid.css
-  - |
-    @media (prefers-color-scheme: dark) {
-      body {
-        background-color: black;
-      }
-    }
 extra_javascript:
   - https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js
   - javascripts/config.js
@@ -36,13 +30,11 @@ theme:
            name: Switch to dark mode
          primary: blue
          accent: deep orange
-      -  scheme: slate
-         toggle:
-           icon: material/weather-sunny
-           name: Switch to light mode
-         primary: blue
-         accent: purple
-         background: black
+      -  scheme: black_slate
+         primary: deep purple
+         accent: indigo
+         background: '#000000'
+         text: '#ffffff'
     features:
       - announce.dismiss
       - navigation.top

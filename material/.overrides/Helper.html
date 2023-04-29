@@ -1,0 +1,130 @@
+<head>
+    <link rel="stylesheet" href="{{ 'assets/stylesheets/custom.9097afc2.min.css' | url }}">
+    <link rel="shortcut icon" type="image/x-icon" href="https://docs.rodevs.com/bidenrose.png">
+    {% block site_meta %}
+    <meta charset="UTF-8">
+    <title>{{ page.title }} - Helper Documents</title>
+    <meta name="description" content="Rodevs Helpers Documents, a place where you can learn multiple things about developing from our incredible helpers.">
+    <meta property="og:image" content="https://docs.rodevs.com/metacard.png" />
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1220">
+    <meta property="og:image:height" content="820">
+    <meta property="og:image:alt" content="Helpers Documents">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#00FFFF">
+    <meta property="og:type" content="website">
+    {% endblock %}
+
+    <style>
+        /* Reset default styles */
+        * {
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+          font-family: 'Roboto', sans-serif;
+        }
+        /* Style for the header */
+        header {
+          background-color: #2a2a72;
+          color: #fff;
+          padding: 30px;
+          text-align: center;
+        }
+        /* Style for the main content */
+        main {
+          padding: 30px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        /* Style for the sections */
+        section {
+          max-width: 800px;
+          margin-bottom: 30px;
+          text-align: justify;
+        }
+        /* Style for the section title */
+        section h2 {
+          font-size: 36px;
+          font-weight: bold;
+          margin-bottom: 20px;
+        }
+        /* Style for the section image */
+        section img {
+          width: 100%;
+          max-width: 800px;
+          height: auto;
+          margin-bottom: 20px;
+          border-radius: 5px;
+          box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        }
+        /* Style for the section text */
+        section p {
+          font-size: 18px;
+          line-height: 1.5;
+          color: #555;
+          margin-bottom: 20px;
+        }
+        /* Style for the join section */
+        #join {
+          background-color: #f9f9f9;
+          padding: 30px;
+          text-align: center;
+        }
+        /* Style for the join title */
+        #join h2 {
+          font-size: 36px;
+          font-weight: bold;
+          margin-bottom: 20px;
+        }
+        /* Style for the join text */
+        #join p {
+          font-size: 18px;
+          line-height: 1.5;
+          color: #555;
+          margin-bottom: 20px;
+        }
+        /* Style for the join button */
+        #join button {
+          background-color: #2a2a72;
+          color: #fff;
+          border: none;
+          padding: 15px 30px;
+          border-radius: 5px;
+          font-size: 18px;
+          cursor: pointer;
+          transition: background-color 0.3s ease-in-out;
+        }
+        /* Hover style for the join button */
+        #join button:hover {
+          background-color: #1c1c4f;
+        }
+      </style>
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+      <h1>Department of Information</h1>
+    </header>
+  
+    <!-- Main content section -->
+    <main>
+      <!-- About Us section -->
+      <section>
+        <h2>About Us</h2>
+        <img src="https://picsum.photos/id/1047/800/400" alt="Department of Information">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. S<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.</p>
+        <p>Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue.</p>
+      </section>
+  
+      <!-- Join Us section -->
+      <section id="join">
+        <h2>Join Us</h2>
+        <img src="https://picsum.photos/id/1062/800/400" alt="Join Us">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.</p>
+        <p>Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue.</p>
+        <button>Join Now</button>
+      </section>
+    </main>
+  </body>
+  

@@ -1,5 +1,5 @@
 ---
-title: helpers
+title: Helper
 template: helper.html
 ---
 

@@ -1,29 +1,98 @@
 <meta charset="UTF-8">
 	<style>
 		body {
+			margin: 0;
+			padding: 0;
+			font-family: 'Open Sans', sans-serif;
+			font-size: 16px;
+			line-height: 1.6;
+			color: #333;
 			background-color: #f5f5f5;
-			font-family: Arial, sans-serif;
 		}
-		
-		.loader {
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			border: 16px solid #f3f3f3;
-			border-top: 16px solid #3498db;
-			border-radius: 50%;
-			width: 120px;
-			height: 120px;
-			animation: spin 2s linear infinite;
+
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 30px;
 		}
-		
-		@keyframes spin {
-			0% { transform: rotate(0deg); }
-			100% { transform: rotate(360deg); }
+
+		h1, h2, h3, h4, h5, h6 {
+			margin-top: 0;
+			margin-bottom: 10px;
+			font-weight: 600;
+			line-height: 1.2;
+			color: #333;
+		}
+
+		h1 {
+			font-size: 36px;
+			margin-bottom: 20px;
+		}
+
+		h2 {
+			font-size: 28px;
+			margin-bottom: 15px;
+		}
+
+		h3 {
+			font-size: 24px;
+			margin-bottom: 10px;
+		}
+
+		p {
+			margin-top: 0;
+			margin-bottom: 10px;
+		}
+
+		.section {
+			background-color: #fff;
+			border: 1px solid #ccc;
+			padding: 20px;
+			margin-bottom: 30px;
+		}
+
+		.section h2 {
+			color: #444;
+		}
+
+		.section img {
+			max-width: 100%;
+			height: auto;
+			margin-bottom: 10px;
+		}
+
+		.section p {
+			font-size: 18px;
+			line-height: 1.5;
+			color: #555;
+		}
+
+		.btn {
+			display: inline-block;
+			padding: 8px 16px;
+			font-size: 16px;
+			font-weight: 600;
+			color: #fff;
+			background-color: #333;
+			border-radius: 4px;
+			text-decoration: none;
+			transition: all 0.3s ease-in-out;
+		}
+
+		.btn:hover {
+			background-color: #444;
+		}
+
+		.btn-primary {
+			background-color: #007bff;
+			border-color: #007bff;
+		}
+
+		.btn-primary:hover {
+			background-color: #0069d9;
+			border-color: #0062cc;
 		}
 	</style>
-</head>
 </head>
 {% extends "main.html" %}
 {% block tabs %}
@@ -54,7 +123,53 @@
     <div class="loader"></div>
   </body>
 
-  
+  <body>
+	<div class="container">
+		<header>
+			<h1>Department Info and Join Guidelines</h1>
+			<nav>
+				<ul>
+					<li><a href="#about">About Us</a></li>
+					<li><a href="#team">Meet Our Team</a></li>
+					<li><a href="#join">Join Our Department</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<section id="about" class="section">
+			<h2>About Us</h2>
+			<img src="https://picsum.photos/id/10/800/400" alt="About Us Image">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.</p>
+                <p>Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue.</p>
+            </section>
+    
+            <section id="services" class="section">
+                <h2>Our Services</h2>
+                <img src="https://picsum.photos/id/20/800/400" alt="Our Services Image">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.</p>
+                <p>Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue.</p>
+            </section>
+    
+            <section id="team" class="section">
+                <h2>Meet Our Team</h2>
+                <img src="https://picsum.photos/id/30/800/400" alt="Our Team Image">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.</p>
+                <p>Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue.</p>
+            </section>
+    
+            <section id="contact" class="section">
+                <h2>Contact Us</h2>
+                <img src="https://picsum.photos/id/40/800/400" alt="Contact Us Image">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.</p>
+                <p>Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue.</p>
+            </section>
+        </main>
+    
+        <footer>
+            <p>&copy; 2023 Department Name. All rights reserved.</p>
+        </footer>
+    
+    </body
 
 
 

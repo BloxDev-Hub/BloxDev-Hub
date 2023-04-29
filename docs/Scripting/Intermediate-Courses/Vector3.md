@@ -1,8 +1,10 @@
 ---
 title: Vector3
+template: docs.html
+hide:
+  - navigation
 ---
-
-# Vector
+# Introduction To Vector
 Before learning `Vector3` you need to know what is a "Vector". Vector is a physical quantity that has a magnitude and a direction. A vector is graphically represented by an arrow drawn parallel to the direction of the vector, The length of the arrow represents the magnitude of the vector.
 
 ## 2D Vector

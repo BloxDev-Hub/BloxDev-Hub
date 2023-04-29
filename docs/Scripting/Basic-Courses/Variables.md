@@ -1,5 +1,8 @@
 ---
-Title: Variables
+title: Declaring Variables
+template: docs.html
+hide:
+  - navigation
 ---
 
 # Variables

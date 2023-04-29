@@ -1,5 +1,8 @@
 ---
-Title: Character
+title: Player's Character
+template: docs.html
+hide:
+  - navigation
 ---
 
 # Character

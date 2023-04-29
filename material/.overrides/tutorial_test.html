@@ -5,69 +5,90 @@
 {% block tabs %}
   
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-      .posts-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-      }
-
-      /* Define a grid layout for the posts */
-      .post-grid {
+      .container {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 16px;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        grid-gap: 20px;
+        align-items: center;
+        margin: 0 auto;
+        max-width: 1200px;
+        padding: 0 20px;
       }
-      
-      /* Define the styling for each post */
+  
       .post {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
-        width: 350px;
-        height: 350px;
-        margin: 20px;
-        padding: 10px;
-        box-sizing: border-box;
-        border: 1px solid #ccc;
-        border-radius: 10px;
-        transition: all 0.2s ease-in-out;
-        background: linear-gradient(to bottom, rgb(4, 133, 253), rgb(199, 64, 252));;
+        background-color: #f2f2f200;
+        border: 1px solid #cccccc00;
+        padding: 20px;
       }
-      
-      /* Show the post description when hovering over the post */
-      .post:hover .post-description {
-        opacity: 1;
-        visibility: visible;
-      }
-      
-      /* Style the post image */
-      .post-image {
-        width: 100%;
-        height: 200px;
+  
+      .post img {
+        width: 150px;
+        height: 150px;
         object-fit: cover;
+        margin-right: 20px;
+      }
+  
+      .post h2 {
+        font-size: 24px;
+        margin: 0;
+      }
+  
+      .post p {
+        margin: 10px 0 20px 0;
+        line-height: 1.5;
+      }
+  
+      .post button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+  
+      .post button:hover {
+        background-color: #0062cc;
+      }
+      
+      @media (max-width: 768px) {
+        .container {
+          display: block;
+        }
+        .post {
+          margin-bottom: 20px;
+        }
+      }
+
+      .alert-box {
+        border: 2px solid yellow;
+        background-color: #ffffe000;
+        position: relative;
+        padding: 15px;
+        margin: 10px auto;
+        width: 70%;
         border-radius: 10px;
       }
-      
-      /* Style the post title */
-      .post-title {
-        padding: 16px;
-        font-size: 18px;
+      .alert-box:before {
+        content: "!";
+        color: rgb(255, 174, 0);
+        font-size: 40px;
         font-weight: bold;
-        color: rgb(255, 255, 255);
-        text-transform: uppercase;
-        letter-spacing: 2px;
+        position: absolute;
+        top: -20px;
+        left: -20px;
+        animation: blink 1s infinite;
       }
-      
-      /* Style the post description */
-      .post-description {
-        padding: 16px;
-        opacity: 0;
-        visibility: hidden;
-        transition: all 0.3s ease-in-out;
-        font-size: 14px;
-        color: rgb(221, 220, 220);
+      @keyframes blink {
+        0% { opacity: 1; }
+        50% { opacity: 0; }
+        100% { opacity: 1; }
       }
     </style>
   </head>
@@ -91,60 +112,60 @@
           </a>-->
 </section>
 
-<body>
   <!-- Include the default mkdocs header -->
   <!-- Create a container for the post grid -->
   <!--<div class="post-grid">-->
-    <div class="posts-container">
-    <!-- Define a template for each post -->
-    <div class="post" data-url="https://docs.rodevs.com/Tutorials/Scripting/Detecting_Keyboard_Inputs/">
-      <img src="https://imgur.com/46PQFmf.png" alt="Post Image" class="post-image">
-      <h2 class="post-title">Detecting Inputs</h2>
-      <p class="post-description"><strong> Learn how to detect user input by using userinputservice. Click here to read more!</strong></p>
-    </div>
-    
-    <!-- Repeat the template for each additional post -->
-    <div class="post" data-url="https://docs.rodevs.com/Tutorials/Scripting/Fireball/">
-      <img src="https://imgur.com/46PQFmf.png" alt="Post Image" class="post-image">
-      <h2 class="post-title">Making Shootable Fireballs</h2>
-      <p class="post-description"><strong> Learn how to make shooting fireballs in roblox studio. Click here to read more!</strong></p>
-    </div>
-    
-    <div class="post" data-url="https://docs.rodevs.com/Tutorials/Scripting/Leaderstats/">
-      <img src="https://imgur.com/46PQFmf.png" alt="Post Image" class="post-image">
-      <h2 class="post-title">Leaderstats</h2>
-      <p class="post-description"><strong> Learn how to make leaderstats/leaderboard in roblox studio. Click here to read more!</strong></p>
-    </div>
+    <body>
+      <div class="container">
+        <div class="post">
+          <img src="https://imgur.com/M5C4jFV.png" alt="Post Image">
+          <div>
+            <h2>Detecting Inputs</h2>
+            <p>Learn how to detect player's input with User Input Service.</p>
+            <button><a href="https://docs.rodevs.com/Tutorials/Scripting/Detecting_Keyboard_Inputs/">Read More</a></button>
+          </div>
+        </div>
+        <div class="post">
+          <img src="https://imgur.com/pon1paf.png" alt="Post Image">
+          <div>
+            <h2>Making Shootable Fireball</h2>
+            <p>Learn how to make shootable fireballs in roblox studio</p>
+            <button><a href="https://docs.rodevs.com/Tutorials/Scripting/Fireball/">Read More</a></button>
+          </div>
+        </div>
+        <div class="post">
+          <img src="https://imgur.com/ERzuuSK.png" alt="Post Image">
+          <div>
+            <h2>Pelin Noise Terrain</h2>
+            <p>Learn how to make generate terrain with perlin noise!</p>
+            <button><a href="https://docs.rodevs.com/Tutorials/Scripting/Perlin_Noise_Terrain/">Read More</a></button>
+          </div>
+        </div>
+        <div class="post">
+          <img src="https://via.placeholder.com/150" alt="Post Image">
+          <div>
+            <h2>Leaderstats></h2>
+            <p>Learn how to make a leaderstats/leaderboard for your Roblox game.</p>
+            <button><a href="https://docs.rodevs.com/Tutorials/Scripting/Leaderstats/">Read More</a></button>
+          </div>
+        </div>
+        <div class="post">
+          <img src="https://imgur.com/wuJ1daU.png" alt="Post Image">
+          <div>
+            <h2>Making A Simple Gun</h2>
+            <p>Learn how to make a simple shooting gun in Roblox. </p>
+            <button><a href="https://docs.rodevs.com/Tutorials/Scripting/Making_a_simple_gun/">Read More</a></button>
+          </div>
+        </div>
+      </div>
 
-    <div class="post" data-url="https://docs.rodevs.com/Tutorials/Scripting/Making_a_simple_gun/">
-      <img src="https://imgur.com/46PQFmf.png" alt="Post Image" class="post-image">
-      <h2 class="post-title">Making Simple Gun</h2>
-      <p class="post-description"><strong> Learn how to make a simple gun in roblox studio. Click here to read more!</strong></p>
-    </div>    
-    
-    <div class="post" data-url="https://docs.rodevs.com/Tutorials/Scripting/Perlin_Noise_Terrain/">
-      <img src="https://imgur.com/46PQFmf.png" alt="Post Image" class="post-image">
-      <h2 class="post-title">Perlin Noise Terrain</h2>
-      <p class="post-description"><strong> Learn how to generate terrain with perlin noise in roblox studio. Click here to read more!</strong></p>
-    </div>
-
-    </div>
-    <!--</div>-->
-      <!-- Add a click event for each post to lead to another URL -->
-      <script>
-        const posts = document.querySelectorAll(".post");
-        posts.forEach(post => {
-          post.addEventListener("click", () => {
-            const url = post.getAttribute("data-url");
-            window.location.href = url;
-          });
-        });
-      </script>
+      <body>
+        <div class="alert-box">
+          <p>Do not just copy the code in tutorials but try to read them and understand them.
+            They are made for you to learn so you can utilize these concepts and make something that fulfils the needs of your game.</p>
+        </div>
+      </body>
     </body>
-
-
-  
-
 
 {% endblock %}
 

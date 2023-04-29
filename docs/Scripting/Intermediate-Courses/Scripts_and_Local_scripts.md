@@ -1,8 +1,10 @@
 ---
-Title: Scripts and Local scripts
+title: Scripts and Local scripts
+template: docs.html
+hide:
+  - navigation
 ---
-
-#Script
+# Script
 Script is an object that contains Lua code.
 Normally a script is used for server-side code execution. It has excess to almost all the objects, properties of data model.
 It can also run if it's parent property is set to nil.

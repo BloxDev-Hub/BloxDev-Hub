@@ -1,8 +1,11 @@
 ---
-title: Data Stores
+title: Saving Game Data..
+template: docs.html
+hide:
+  - navigation
 ---
 
-# Introduction
+# Data Stores
 **Data Stores** allow you to save data across multiple sessions of your game. For example, if I had a clicker game, I could save the number of clicks someone has for the next time they join my game. Otherwise, their progress would "reset" every time they re-joined the game.
 
 !!! info "Studio Access to API Services"

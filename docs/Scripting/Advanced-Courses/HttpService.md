@@ -1,9 +1,11 @@
 ---
 title: HttpService
-template: docs.html
+
+hide:
+  - navigationtemplate: docs.html
 ---
 
-# HttpService
+# Introduction
 
 This article will teach you the fundamentals of the `HttpService`. At the end of this article, you will know what HttpService is, what it is used for and how to use it.
 

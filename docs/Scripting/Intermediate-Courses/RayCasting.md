@@ -1,5 +1,8 @@
 ---
-Title: Raycasting
+title: Introduction To Raycasting!
+template: docs.html
+hide:
+  - navigation
 ---
 
 # Raycasting

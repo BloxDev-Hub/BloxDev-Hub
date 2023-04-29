@@ -1,5 +1,8 @@
 ---
-title: Context Action Service
+title: Binding Actions!
+template: docs.html
+hide:
+  - navigation
 ---
 
 # Context Action Service

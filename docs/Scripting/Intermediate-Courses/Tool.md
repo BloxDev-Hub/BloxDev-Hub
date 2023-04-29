@@ -1,7 +1,9 @@
 ---
-Title: Tools
+title: Scripting Tools
+template: docs.html
+hide:
+  - navigation
 ---
-
 # Tools
 As the name suggests, tools are the objects with which players can interact. Tools are equipped by the [Humanoid](https://developer.roblox.com/en-us/api-reference/class/Humanoid) of the player's character. Usually, tools are stored in the player's [Backpack](https://developer.roblox.com/en-us/api-reference/class/Backpack). When a tool is equipped, it is moved from [Backpack](https://developer.roblox.com/en-us/api-reference/class/Backpack) to the player's [Character](https://developer.roblox.com/en-us/api-reference/property/Player/Character). This means parenting a tool to the player's [Character](https://developer.roblox.com/en-us/api-reference/property/Player/Character) forces the character to equip it. However Roblox also offers methods [Humanoid:EquipTool()](https://developer.roblox.com/en-us/api-reference/function/Humanoid/EquipTool) and [Humanoid:UnequipTools()](https://developer.roblox.com/en-us/api-reference/function/Humanoid/UnequipTools) for this purpose.
 Every tool requires a [BasePart](https://developer.roblox.com/en-us/api-reference/class/BasePart) named **Handle** as a child of it unless the property `Tool.RequiresHandle` is set to `false`.

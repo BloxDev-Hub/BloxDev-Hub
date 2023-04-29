@@ -1,8 +1,11 @@
 ---
 title: Introduction To Studio
+template: docs.html
+hide:
+  - navigation
 ---
 
-# Introduction To Studio
+# Studio
 Roblox studio is used for developing games in Roblox. It has lots of cool features and stuff and is one of the best game engines.
 
 **[Downloading Studio](https://www.roblox.com/create)**

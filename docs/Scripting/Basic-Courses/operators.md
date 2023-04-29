@@ -1,8 +1,11 @@
 ---
-title: Operators
+title: What Are Operators?
+template: docs.html
+hide:
+  - navigation
 ---
 
-## What are operators
+## Operators
 Operators are a set of symbols that you can use to do *cool* and *quirky* things.
 
 ## Logical operators

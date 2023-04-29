@@ -1,0 +1,96 @@
+{#-
+  do not edit
+-#}
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="bidenrose.png">
+    {% block site_meta %}
+    <meta charset="UTF-8">
+    <title> Helper Of The Month Poll! - Helper Documents</title>
+    <meta name="description" content="Rodevs Helpers Documents, a place where you can learn multiple things about developing from our incredible helpers.">
+    <meta property="og:image" content="https://docs.rodevs.com/pollcard.png"/>
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1220">
+    <meta property="og:image:height" content="820">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#00FFFF">
+    <meta property="og:type" content="website">
+    <style>
+        .strawpoll-embed iframe {
+            border: none;
+        }
+        
+        .alert-box {
+        border: 2px solid red;
+        background-color: #ffffe000;
+        position: relative;
+        padding: 15px;
+        margin: 10px auto;
+        width: 70%;
+        border-radius: 10px;
+      }
+      .alert-box:before {
+        content: "!";
+        color: rgb(255, 0, 0);
+        font-size: 40px;
+        font-weight: bold;
+        position: absolute;
+        top: -20px;
+        left: -20px;
+        animation: blink 1s infinite;
+      }
+      @keyframes blink {
+        0% { opacity: 1; }
+        50% { opacity: 0; }
+        100% { opacity: 1; }
+      }
+      
+    </style>
+    {% endblock %}
+  </head>
+  {% extends "main.html" %}
+  {% block tabs %}
+    {{ super() }}
+    <style>
+      /* styles for screens with a maximum width of 767px */
+      @media screen and (max-width: 767px) {
+        h1 {
+          font-size: 2em;
+        }
+      }
+      
+      /* styles for screens with a minimum width of 768px */
+      @media screen and (min-width: 768px) {
+        h1 {
+          font-size: 3.5em;
+          white-space: nowrap;
+        }
+      }
+    </style>
+    
+  <!-- <style>.md-header{position:initial}.md-main__inner{margin:0}.md-content{display:none}@media screen and (min-width:60em){.md-sidebar--secondary{display:none}}@media screen and (min-width:76.25em){.md-sidebar--primary{display:none}}</style> -->
+    <section class="mdx-container">
+      <div class="md-grid md-typeset">
+        <div class="mdx-hero">
+          <div class="mdx-hero__image">
+            <!--<img src="illustration.png"  draggable="false"> -->
+          </div>
+          <div class="mdx-hero__content">
+            <h1 style="font-size: 3.2em;"> Helper Of The Month Poll!</h1>
+        </div>
+      </div>
+     </div>
+   </section>
+   
+   <body>
+        <div class="alert-box">
+          <p>*You can only vote one helper and once you have voted, you won't be able to edit your vote.
+          
+             *Please fill every field properly otherwise your vote will be deleted without any notice.
+             </p>
+        </div>
+      </body>
+    <div class="strawpoll-embed" id="strawpoll_w4nWrRMYqyA" style="height: 2540px; max-width: 940px; width: 100%; margin: 0 auto; display: flex; flex-direction: column;"><iframe title="StrawPoll Embed" id="strawpoll_iframe_w4nWrRMYqyA" src="https://strawpoll.com/embed/polls/w4nWrRMYqyA/results" style="position: static; visibility: visible; display: block; width: 100%; flex-grow: 1;" frameborder="0" allowfullscreen allowtransparency>Loading...</iframe><script async src="https://cdn.strawpoll.com/dist/widgets.js" charset="utf-8"></script></div>
+    
+    {% endblock %}
+    {% block content %}{% endblock %}
+    {% block footer %}{% endblock %}

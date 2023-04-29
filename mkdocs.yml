@@ -111,9 +111,7 @@ plugins:
       cards_color:
         fill: "#0FF1CE" 
         text: "#FFFFFF"
-      cards_font: Tilt Warp
   
-
 nav:
   - Home: index.md
   - Scripting:

@@ -43,9 +43,7 @@
         width: 90%;
         max-width: 1200px;
         padding: 20px;
-        opacity: 0; /* hide the frame by default */
-        transform: translateY(20px); /* move the frame down by 20px */
-        animation: fade-in 1s ease-in-out forwards; /* apply the fade-in animation and freeze at the end */
+        animation: fade-in 1s ease-in-out;
       }
       .img-container {
         width: 40%;
@@ -65,7 +63,7 @@
         flex-shrink: 1;
         padding-left: 20px;
       }
-       .text-container h2 {
+      .text-container h2 {
         font-size: 36px;
         font-weight: bold;
         margin-top: 0;
@@ -75,6 +73,16 @@
         line-height: 1.5;
         color: #555;
       }
+      @keyframes fade-in {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
     </style>
   </head>
   {% extends "main.html" %}
@@ -82,31 +90,6 @@
     {{ super() }}
     <style>.md-header{position:initial}.md-main__inner{margin:0}.md-content{display:none}@media screen and (min-width:60em){.md-sidebar--secondary{display:none}}@media screen and (min-width:76.25em){.md-sidebar--primary{display:none}}</style>
     
-    <body>
-      <div class="container">
-        <div class="frame">
-          <div class="img-container">
-            <img src="https://picsum.photos/id/1062/600/400" alt="Development image">
-          </div>
-          <div class="text-container">
-            <h2>Features</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.</p>
-            <p>Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue.</p>
-          </div>
-        </div>
-      </div>
-      <script>
-        window.addEventListener('scroll', function() {
-          const frame = document.querySelector('.frame');
-          const framePosition = frame.getBoundingClientRect().top;
-          const screenPosition = window.innerHeight / 1.2; /* adjust the scrolling threshold here */
-          if (framePosition < screenPosition) {
-            frame.classList.add('animate-frame');
-          }
-        });
-      </script>
-    </body>
-
     <section class="mdx-container">
       <div class="md-grid md-typeset">
         <div class="mdx-hero">
@@ -127,17 +110,18 @@
       </div>
     </section>
 
-    <div class="frame">
-      <h1>My Fancy HTML Page</h1>
-      <img class="dev-img" src="https://picsum.photos/800/400?random=1" alt="Development Image 1">
-      <p class="anim">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam placerat urna ut sapien malesuada, id faucibus mauris varius.</p>
-      <img class="dev-img" src="https://picsum.photos/800/400?random=2" alt="Development Image 2">
-      <p class="anim">Aenean eu velit ut risus pharetra dictum. Fusce viverra tellus eu tellus faucibus, vitae rhoncus sem lobortis.</p>
-      <img class="dev-img" src="https://picsum.photos/800/400?random=3" alt="Development Image 3">
-      <p class="anim">Mauris lobortis, erat non commodo faucibus, sapien sapien sodales est, eget gravida sapien massa ac quam.</p>
-      <img class="dev-img" src="https://picsum.photos/800/400?random=4" alt="Development Image 4">
-      <p class="anim">Aliquam bibendum velit vel justo hendrerit, ac commodo urna ultricies. Ut auctor, nibh at aliquam hendrerit, quam lectus ornare urna, quis egestas tellus neque vitae felis.</p>
-    </div>
+      <div class="container">
+        <div class="frame">
+          <div class="img-container">
+            <img src="https://picsum.photos/id/1062/600/400" alt="Development image">
+          </div>
+          <div class="text-container">
+            <h2>Development Heading</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.</p>
+            <p>Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue.</p>
+          </div>
+        </div>
+      </div>
 
     <!-- Define the script for the animation -->
     <script>

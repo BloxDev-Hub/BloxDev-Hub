@@ -43,7 +43,9 @@
         width: 90%;
         max-width: 1200px;
         padding: 20px;
-        animation: fade-in 1s ease-in-out;
+        opacity: 0; /* hide the frame by default */
+        transform: translateY(20px); /* move the frame down by 20px */
+        animation: fade-in 1s ease-in-out forwards; /* apply the fade-in animation and freeze at the end */
       }
       .img-container {
         width: 40%;
@@ -63,7 +65,7 @@
         flex-shrink: 1;
         padding-left: 20px;
       }
-      .text-container h2 {
+       .text-container h2 {
         font-size: 36px;
         font-weight: bold;
         margin-top: 0;
@@ -72,16 +74,6 @@
         font-size: 18px;
         line-height: 1.5;
         color: #555;
-      }
-      @keyframes fade-in {
-        from {
-          opacity: 0;
-          transform: translateY(20px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
       }
     </style>
   </head>
@@ -110,44 +102,30 @@
       </div>
     </section>
 
-      <div class="container">
-        <div class="frame">
-          <div class="img-container">
-            <img src="https://picsum.photos/id/1062/600/400" alt="Development image">
-          </div>
-          <div class="text-container">
-            <h2>Development Heading</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.</p>
-            <p>Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue.</p>
-          </div>
+    <div class="container">
+      <div class="frame">
+        <div class="img-container">
+          <img src="https://picsum.photos/id/1062/600/400" alt="Development image">
+        </div>
+        <div class="text-container">
+          <h2>Development Heading</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.</p>
+          <p>Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue.</p>
         </div>
       </div>
-
-    <!-- Define the script for the animation -->
+    </div>
     <script>
-      function isInViewport(element) {
-        const rect = element.getBoundingClientRect();
-        return (
-          rect.top >= 0 &&
-          rect.left >= 0 &&
-          rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-          rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-        );
-      }
-
-      function animateOnScroll() {
-        const animElements = document.querySelectorAll('.anim');
-        animElements.forEach(element => {
-          if (isInViewport(element)) {
-            element.classList.add('in-view');
-          }
-        });
-      }
-
-      animateOnScroll();
-      window.addEventListener('scroll', animateOnScroll);
+      window.addEventListener('scroll', function() {
+        const frame = document.querySelector('.frame');
+        const framePosition = frame.getBoundingClientRect().top;
+        const screenPosition = window.innerHeight / 1.2; /* adjust the scrolling threshold here */
+        if (framePosition < screenPosition) {
+          frame.classList.add('animate-frame');
+        }
+      });
     </script>
 
+    
     <section class="tx-container-2">
       <div class="md-grid md-typeset">
           <div class="tx-hero__image-2" style="margin-top: 50px">

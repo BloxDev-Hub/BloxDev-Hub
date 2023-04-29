@@ -1,172 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Departmental Information and Join Guidelines</title>
 	<style>
 		body {
+			font-family: Arial, sans-serif;
 			margin: 0;
 			padding: 0;
-			font-family: 'Open Sans', sans-serif;
-			font-size: 16px;
-			line-height: 1.6;
-			color: #333;
-			background-color: #f5f5f5;
+			background-color: #f9f9f9;
 		}
-
-		.container {
-			max-width: 800px;
-			margin: 0 auto;
-			padding: 30px;
+		header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
 		}
-
-		h1, h2, h3, h4, h5, h6 {
-			margin-top: 0;
-			margin-bottom: 10px;
-			font-weight: 600;
-			line-height: 1.2;
-			color: #333;
-		}
-
 		h1 {
 			font-size: 36px;
+			margin: 0;
+		}
+		nav {
+			background-color: #eee;
+			padding: 20px;
+			text-align: center;
+		}
+		nav ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		nav ul li {
+			margin: 0 10px;
+		}
+		nav ul li a {
+			color: #333;
+			text-decoration: none;
+			font-weight: bold;
+			font-size: 18px;
+			transition: all 0.3s ease-in-out;
+		}
+		nav ul li a:hover {
+			color: #fff;
+			background-color: #333;
+			padding: 10px 20px;
+			border-radius: 5px;
+		}
+		.container {
+			margin: 20px auto;
+			max-width: 1200px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+		section {
+			margin: 40px 0;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+		}
+		section h2 {
+			font-size: 36px;
+			font-weight: bold;
+			margin: 0;
 			margin-bottom: 20px;
 		}
-
-		h2 {
-			font-size: 28px;
-			margin-bottom: 15px;
-		}
-
-		h3 {
-			font-size: 24px;
-			margin-bottom: 10px;
-		}
-
-		p {
-			margin-top: 0;
-			margin-bottom: 10px;
-		}
-
-		.section {
-			background-color: #fff;
-			border: 1px solid #ccc;
-			padding: 20px;
-			margin-bottom: 30px;
-		}
-
-		.section h2 {
-			color: #444;
-		}
-
-		.section img {
-			max-width: 100%;
-			height: auto;
-			margin-bottom: 10px;
-		}
-
-		.section p {
+		section p {
 			font-size: 18px;
 			line-height: 1.5;
 			color: #555;
+			margin: 0;
+			margin-bottom: 20px;
 		}
-
-		.btn {
-			display: inline-block;
-			padding: 8px 16px;
-			font-size: 16px;
-			font-weight: 600;
-			color: #fff;
-			background-color: #333;
-			border-radius: 4px;
-			text-decoration: none;
-			transition: all 0.3s ease-in-out;
-		}
-
-		.btn:hover {
-			background-color: #444;
-		}
-
-		.btn-primary {
-			background-color: #007bff;
-			border-color: #007bff;
-		}
-
-		.btn-primary:hover {
-			background-color: #0069d9;
-			border-color: #0062cc;
+		section img {
+			max-width: 100%;
+			height: auto;
+			margin-bottom: 20px;
+			border-radius: 5px;
+			box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 		}
 	</style>
 </head>
-{% extends "main.html" %}
-{% block tabs %}
-  {{ super() }}
-  <style>.md-header{position:initial}.md-main__inner{margin:0}.md-content{display:none}@media screen and (min-width:60em){.md-sidebar--secondary{display:none}}@media screen and (min-width:76.25em){.md-sidebar--primary{display:none}}</style>
-  
-  <section class="mdx-container">
-    <div class="md-grid md-typeset">
-      <div class="mdx-hero">
-        <div class="mdx-hero__image">
-          <!--<img src="illustration.png"  draggable="false"> -->
-        </div>
-        <div class="mdx-hero__content">
-          <h1>COMING SOON!</h1>
-          <p>Coming soon!</p>
-          <a href="{{ 'https://docs.rodevs.com/' | url }}" title="Home" class="md-button md-button--primary">
-            GO HOME!
-          </a>
-          <a href="{{ 'Others/Help_Us%21/' | url }}" title="Help us!" class="md-button">
-            Help us!
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <body>
+<body>
+	<header>
+		<h1>Departmental Information and Join Guidelines</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="#">About Us</a></li>
+			<li><a href="#">Membership</a></li>
+			<li><a href="#">Events</a></li>
+			<li><a href="#">Contact Us</a></li>
+		</ul>
+	</nav>
 	<div class="container">
-		<header>
-			<h1>Department Info and Join Guidelines</h1>
-			<nav>
-				<ul>
-					<li><a href="#about">About Us</a></li>
-					<li><a href="#team">Meet Our Team</a></li>
-					<li><a href="#join">Join Our Department</a></li>
-				</ul>
-			</nav>
-		</header>
-
-		<section id="about" class="section">
+		<section>
 			<h2>About Us</h2>
-			<img src="https://picsum.photos/id/10/800/400" alt="About Us Image">
+			<img src="https://picsum.photos/id/1047/800/400" alt="Department of Information">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor,
+                <h2>Join Us</h2>
+                <img src="https://picsum.photos/id/1062/800/400" alt="Join Us">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.</p>
                 <p>Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue.</p>
+                <a href="#" class="btn-join">Join Now</a>
             </section>
-    
-            <section id="services" class="section">
-                <h2>Our Services</h2>
-                <img src="https://picsum.photos/id/20/800/400" alt="Our Services Image">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.</p>
-                <p>Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue.</p>
-            </section>
-    
-            <section id="team" class="section">
-                <h2>Meet Our Team</h2>
-                <img src="https://picsum.photos/id/30/800/400" alt="Our Team Image">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.</p>
-                <p>Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue.</p>
-            </section>
-    
-            <section id="contact" class="section">
-                <h2>Contact Us</h2>
-                <img src="https://picsum.photos/id/40/800/400" alt="Contact Us Image">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.</p>
-                <p>Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue.</p>
-            </section>
-        </main>
-    </body>
-
-
-
-
-{% endblock %}
-{% block content %}{% endblock %}
-{% block footer %}{% endblock %}

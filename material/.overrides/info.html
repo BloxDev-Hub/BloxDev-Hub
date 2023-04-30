@@ -1,94 +1,172 @@
-
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>Fancy HTML Template for MkDocs</title>
-	<style>
-		/* Basic styles for the page */
-		body {
-			font-family: Arial, sans-serif;
-			background-color: #f9f9f9;
-			color: #333;
-			margin: 0;
-			padding: 0;
-		}
-
-		h1 {
-			font-size: 2em;
-			margin-top: 0;
-			text-align: center;
-		}
-
-		h2 {
-			font-size: 1.5em;
-			margin-top: 2em;
-		}
-
-		p {
-			font-size: 1.2em;
-			line-height: 1.5;
-			margin: 1em 0;
-		}
-
-		img {
-			display: block;
-			margin: 1em auto;
-			max-width: 100%;
-		}
-
-		/* CSS animations */
-		@keyframes slideIn {
-			from {
-				transform: translateX(-100%);
-			}
-
-			to {
-				transform: translateX(0%);
-			}
-		}
-
-		.slide-in {
-			animation: slideIn 0.5s forwards;
-		}
-
-		@keyframes fadeOut {
-			from {
-				opacity: 1;
-			}
-
-			to {
-				opacity: 0;
-			}
-		}
-
-		.fade-out {
-			animation: fadeOut 0.5s forwards;
-		}
+{#-
+	do not edit
+  -#}
+  <head>
+	<meta charset="UTF-8">
+	  <style>
+		  body {
+			  background-color: #f5f5f5;
+			  font-family: Arial, sans-serif;
+		  }
+		  
+		  .loader {
+			  position: absolute;
+			  top: 50%;
+			  left: 50%;
+			  transform: translate(-50%, -50%);
+			  border: 16px solid #f3f3f3;
+			  border-top: 16px solid #3498db;
+			  border-radius: 50%;
+			  width: 120px;
+			  height: 120px;
+			  animation: spin 2s linear infinite;
+		  }
+		  
+		  @keyframes spin {
+			  0% { transform: rotate(0deg); }
+			  100% { transform: rotate(360deg); }
+		  }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+      }
+      .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .frame {
+        display: flex;
+        flex-direction: row;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        border-radius: 5px;
+        overflow: hidden;
+        margin: 20px;
+        width: 90%;
+        max-width: 1200px;
+        padding: 20px;
+        animation: fade-in 1s ease-in-out;
+      }
+      .img-container {
+        width: 40%;
+        flex-grow: 0;
+        flex-shrink: 0;
+        padding-right: 20px;
+      }
+      .img-container img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 5px;
+      }
+      .text-container {
+        width: 60%;
+        flex-grow: 1;
+        flex-shrink: 1;
+        padding-left: 20px;
+      }
+      .text-container h2 {
+        font-size: 36px;
+        font-weight: bold;
+        margin-top: 0;
+        color: #202020;
+      }
+      .text-container p {
+        font-size: 18px;
+        line-height: 1.5;
+        color: #202020;
+      }
+      @keyframes fade-in {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
 	</style>
-</head>
-<body>
-	<header>
-		<h1>Fancy HTML Template for MkDocs</h1>
-	</header>
+  </head>
+  </head>
+  {% extends "main.html" %}
+  {% block tabs %}
+	{{ super() }}
+	<style>.md-header{position:initial}.md-main__inner{margin:0}.md-content{display:none}@media screen and (min-width:60em){.md-sidebar--secondary{display:none}}@media screen and (min-width:76.25em){.md-sidebar--primary{display:none}}</style>
 	
-	<main>
-		<section class="slide-in">
-			<h2>Section One</h2>
-			<img src="image1.jpg" alt="Image One">
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla, dui ut fringilla suscipit, lorem eros interdum nisi, nec euismod tortor mauris sit amet turpis.</p>
-		</section>
-		
-		<section class="fade-out">
-			<h2>Section Two</h2>
-			<img src="image2.jpg" alt="Image Two">
-			<p>Donec eget ex ac massa consectetur interdum. Nam lacinia tellus vitae ex iaculis, a ultricies sapien blandit. Sed ultricies orci quis diam suscipit malesuada.</p>
-		</section>
-		
-		<section class="slide-in">
-			<h2>Section Three</h2>
-			<img src="image3.jpg" alt="Image Three">
-			<p>Mauris rutrum risus a risus sagittis, eget tempor risus faucibus. Nullam fermentum semper lacus ac aliquet. Aliquam auctor elit eu orci convallis, euismod aliquet quam blandit.</p>
-		</section>
-	</main>
-</body>
-</html>
+	<section class="mdx-container">
+	  <div class="md-grid md-typeset">
+		<div class="mdx-hero">
+		  <div class="mdx-hero__image">
+			<!--<img src="illustration.png"  draggable="false"> -->
+		  </div>
+		  <div class="mdx-hero__content">
+			<h1>COURSES COMING SOON!</h1>
+			<p>Courses is an under development program that is coming soon! Here you will find courses for roblox development skills such as building, modeling etc.., We are excited to bring it for you as soon as possible!.</p>
+			<a href="{{ 'https://docs.rodevs.com/' | url }}" title="Home" class="md-button md-button--primary">
+			  GO HOME!
+			</a>
+			<a href="{{ 'Others/Help_Us%21/' | url }}" title="Help us!" class="md-button">
+			  Help us!
+			</a>
+		  </div>
+		</div>
+	  </div>
+	</section>
+  
+	<body>
+	  <div class="loader"></div>
+	</body>
+  
+	<div class="container">
+		<div class="frame">
+		  <div class="img-container">
+			<img src="https://imgur.com/u7jJc2u.png" alt="Development image">
+		  </div>
+		  <div class="text-container">
+			<h2>Development Heading</h2>
+			<p>Bu dokümanların anlaşılması kolaydır ve yeni başlayanlar için uygundur. Öğrenirken pratik yapmak iyi bir fikir, sadece okumak size pek yardımcı olmayacaktır. Deneyim, becerilerin anahtarıdır. Öneri ve eleştirilerinize ihtiyacımız var. Kılavuzları iyileştirmede çok yardımcı olur. Lütfen deneyimlerinize dayanarak yorumlarınızı bırakın..</p>
+			<p>Hala türkçe öğrenmeye çalışıyorum.</p>
+		  </div>
+		</div>
+	  </div>
+	
+	<!-- Define the script for the animation -->
+	<script>
+	  function isInViewport(element) {
+		const rect = element.getBoundingClientRect();
+		return (
+		  rect.top >= 0 &&
+		  rect.left >= 0 &&
+		  rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+		  rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+		);
+	  }
+	
+	  function animateOnScroll() {
+		const animElements = document.querySelectorAll('.anim');
+		animElements.forEach(element => {
+		  if (isInViewport(element)) {
+			element.classList.add('in-view');
+		  }
+		});
+	  }
+	
+	  animateOnScroll();
+	  window.addEventListener('scroll', animateOnScroll);
+	</script>
+	
+	
+  
+  
+  
+  
+  {% endblock %}
+  {% block content %}{% endblock %}
+  {% block footer %}{% endblock %}
+  

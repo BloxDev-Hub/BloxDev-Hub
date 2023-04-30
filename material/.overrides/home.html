@@ -17,74 +17,6 @@
     <meta name="theme-color" content="#00FFFF">
     <meta property="og:type" content="website">
     {% endblock %}
-
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f9f9f9;
-      }
-      .container {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-      }
-      .frame {
-        display: flex;
-        flex-direction: row;
-        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-        background-color: #fff;
-        border-radius: 5px;
-        overflow: hidden;
-        margin: 20px;
-        width: 90%;
-        max-width: 1200px;
-        padding: 20px;
-        animation: fade-in 1s ease-in-out;
-      }
-      .img-container {
-        width: 40%;
-        flex-grow: 0;
-        flex-shrink: 0;
-        padding-right: 20px;
-      }
-      .img-container img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-        border-radius: 5px;
-      }
-      .text-container {
-        width: 60%;
-        flex-grow: 1;
-        flex-shrink: 1;
-        padding-left: 20px;
-      }
-      .text-container h2 {
-        font-size: 36px;
-        font-weight: bold;
-        margin-top: 0;
-        color: #202020;
-      }
-      .text-container p {
-        font-size: 18px;
-        line-height: 1.5;
-        color: #202020;
-      }
-      @keyframes fade-in {
-        from {
-          opacity: 0;
-          transform: translateY(20px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-    </style>
   </head>
   {% extends "main.html" %}
   {% block tabs %}
@@ -154,44 +86,7 @@
       
   </section>
 
-  <div class="container">
-    <div class="frame">
-      <div class="img-container">
-        <img src="https://imgur.com/u7jJc2u.png" alt="Development image">
-      </div>
-      <div class="text-container">
-        <h2>Development Heading</h2>
-        <p>Bu dokümanların anlaşılması kolaydır ve yeni başlayanlar için uygundur. Öğrenirken pratik yapmak iyi bir fikir, sadece okumak size pek yardımcı olmayacaktır. Deneyim, becerilerin anahtarıdır. Öneri ve eleştirilerinize ihtiyacımız var. Kılavuzları iyileştirmede çok yardımcı olur. Lütfen deneyimlerinize dayanarak yorumlarınızı bırakın..</p>
-        <p>Hala türkçe öğrenmeye çalışıyorum.</p>
-      </div>
-    </div>
-  </div>
-
-<!-- Define the script for the animation -->
-<script>
-  function isInViewport(element) {
-    const rect = element.getBoundingClientRect();
-    return (
-      rect.top >= 0 &&
-      rect.left >= 0 &&
-      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-  }
-
-  function animateOnScroll() {
-    const animElements = document.querySelectorAll('.anim');
-    animElements.forEach(element => {
-      if (isInViewport(element)) {
-        element.classList.add('in-view');
-      }
-    });
-  }
-
-  animateOnScroll();
-  window.addEventListener('scroll', animateOnScroll);
-</script>
-
+  
 
 
 

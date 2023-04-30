@@ -1,6 +1,6 @@
 ---
 title: Home
-template: home.html
+template: info.html
 og_image: illustration.png
 hide:
   - navigation

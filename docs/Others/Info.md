@@ -1,3 +1,3 @@
 ---
-template: info.html
+title: hi
 ---

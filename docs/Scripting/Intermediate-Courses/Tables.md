@@ -38,7 +38,7 @@ print(top_5_friends[1])
 
 
 	Unlike other languages, arrays in Luau start at `1` instead of `0`. If we were to do the same thing in another language, for example Ruby, we'd have to do:
-	```ruby
+	```lua
 	top_5_friends[0]
 	```
 

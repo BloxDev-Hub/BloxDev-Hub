@@ -1,12 +1,11 @@
-## Pre-requisites
-
-Before reading this tutorial, you should know about metatables. An explanation of metatable exists in the Lua-Learning folder.
+!!! attention "Note"
+    Before reading this tutorial, you should know about [metatables](https://docs.rodevs.com/Scripting/Advanced-Courses/metatables/). An explanation of metatable exists in the Lua-Learning folder.
 
 # What are Proxy Tables?
-proxy table are Tables that allow you to detect when a table is updated or changed using __newindex
+Proxy table are Tables that allow you to detect when a table is updated or changed using __newindex
 
 ## How to set on up
-what we want to do it use __newindex to reference the Real Data inside of the Proxy Table. 
+What we want to do it use __newindex to reference the Real Data inside of the Proxy Table. 
 
 We can set it up like this:
 
@@ -40,8 +39,9 @@ ProxyTable.A = 2 --> Detected Change at A new Value 2
 ProxyTable.B = 3 --> Detected Change at B new Value 3 
 ProxyTable.Hao = nil --> Detected Change at Hao new Value nil
 ```
+
 ## Features you can add to your proxy table
-you can also add more features to the proxy table so that the proxy table can act like a normal table. here are some examples:
+You can also add more features to the proxy table so that the proxy table can act like a normal table. here are some examples:
 
 adding the __index metamethod
 ```lua
@@ -87,4 +87,4 @@ end)
 Check out this [**link**](https://create.roblox.com/docs/scripting/luau/metatables) for more metamethods
 
 # Conclusion 
-if you think you're going to use RealData as a key name you can name the key to something random so that when you do ProxyTable.RealData={} it wouldn't override your real data with an empty table. Anyways thats it for this tutorial, hope this helps 
+If you think you're going to use RealData as a key name you can name the key to something random so that when you do ProxyTable.RealData={} it wouldn't override your real data with an empty table. Anyways thats it for this tutorial, hope this helps 

@@ -155,7 +155,7 @@ nav:
       - Scripting/Advanced-Courses/HttpService.md
       - Scripting/Advanced-Courses/Inheritance.md
     # - ... | flat | Scripting/*.md # not sorted yet
+  - ...
   - Others:
     - ... | flat | Others/*.md # not sorted yet
-  - ...
   - Faq: Faq/index.md

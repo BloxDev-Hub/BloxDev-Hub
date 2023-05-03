@@ -157,6 +157,6 @@ nav:
     # - ... | flat | Scripting/*.md # not sorted yet
   - Tutorials:
     - ... | flat | Tutorials/*.md
+  - ...
   - Others:
     - ... | flat | Others/*.md # not sorted yet
-  - ...

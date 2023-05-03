@@ -1,6 +1,6 @@
 ---
 title: FAQ
-template: info.html
+template: docs.html
 ---
 
 

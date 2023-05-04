@@ -12,7 +12,9 @@ The primary objective of the **Helper Department** is to enhance the community's
 ## How to get helper?
 The Helper Department consistently seeks new members, and we invite you to consider joining our team. To be eligible for a role in the Helper Department, prospective candidates should possess excellent communication skills, as well as the necessary skills to assist in the development of channels. It is important to note that begging for Helper role outright may diminish your chances of being selected. By fulfilling these key requirements, you can increase your eligibility for a Helper role.
 
-## Requirements: (NOTE: Meeting these requirements will not automatically grant you the helper role.)
+## Requirements: 
+
+(NOTE: Meeting these requirements will not automatically grant you the helper role.)
 
 * You must follow all guidelines and rules mentioned in server.
 * You must be actively helping in development channels with at least 4,000 messages in these channels combined.  Keep in mind, off-topic messages aren't considered as "helping" but decreases your chances of getting helper. 
@@ -25,6 +27,6 @@ The Helper Department consistently seeks new members, and we invite you to consi
 Thanks for reading and good luck!
 
 ??? Note ""
-    For any concern regarding these guidelines, Please contact **Head Of Helper Deaprtment | [Rumine](https://discord.com/channels/@me/1026558044416524300)**
+    For any concern regarding these guidelines, Please contact **Head Of Helper Department | [Rumine](https://discord.com/channels/@me/1026558044416524300)**
 
 

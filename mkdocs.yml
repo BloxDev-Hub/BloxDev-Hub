@@ -28,13 +28,13 @@ theme:
          toggle:
            icon: material/weather-night
            name: Switch to dark mode
-         primary: blue
-         accent: deep orange
+         primary: black
+         accent: purple
       -  scheme: slate
          toggle:
            icon: material/weather-sunny
            name: Switch to light mode
-         primary: blue
+         primary: white
          accent: purple
     features:
       - announce.dismiss

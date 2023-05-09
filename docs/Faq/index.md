@@ -17,11 +17,15 @@ The Helper Department consistently seeks new members, and we invite you to consi
 ## Requirements: 
 (NOTE: Meeting these requirements will not automatically grant you the helper role.)
 
-*
-*
-*
-*
-*
+* To qualify as a helper, you should demonstrate a high level of activity and engagement in development channels. The specific level of activity required may vary depending on the channel, and it's recommended that you contribute to multiple channels where possible.
+
+* To be considered for the role, you must be actively involved in the community for a certain period of time, such as one month.
+
+* Your record should not include any infractions that would make you unsuitable for the helper role. Instead of focusing solely on major or minor infractions, we will evaluate your overall suitability for the position based on your ability to help others in a constructive, non-toxic way.
+
+* In addition to demonstrating a helpful attitude, it's important that you maintain a positive overall behavior within the community.
+
+* You will need to demonstrate your expertise in a particular field to be considered for the position.
 
 Thanks for reading and good luck!
 

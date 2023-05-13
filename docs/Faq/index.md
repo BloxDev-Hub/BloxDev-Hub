@@ -30,4 +30,4 @@ The Helper Department consistently seeks new members, and we invite you to consi
 Thanks for reading and good luck!
 
 ??? Note ""
-    For any concern regarding these guidelines, Please contact **Head Of Helper Deaprtment | [Rumine](https://discord.com/channels/@me/1026558044416524300)**
+    For any concern regarding these guidelines, Please contact **Head Of Helper Department | [Rumine](https://discord.com/channels/@me/1026558044416524300)**

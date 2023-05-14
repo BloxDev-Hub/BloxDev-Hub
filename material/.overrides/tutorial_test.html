@@ -229,6 +229,21 @@
       </body>
     </body>
 
+    <main>
+      <section class="posts">
+        {% for post in site.posts %}
+          <article>
+            <h2 class="post-title">{{ post.title }}</h2>
+            <img src="{{ post.image }}" alt="{{ post.title }}">
+            <p class="post-description">{{ post.description }}</p>
+            <p class="post-date">{{ post.date }}</p>
+            <a href="{{ post.url }}">Read more</a>
+          </article>
+        {% endfor %}
+      </section>
+    </main>
+  </body>
+
 {% endblock %}
 
 {% block content %}{% endblock %}

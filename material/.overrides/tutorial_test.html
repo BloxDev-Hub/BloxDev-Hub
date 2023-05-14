@@ -90,59 +90,6 @@
         50% { opacity: 0; }
         100% { opacity: 1; }
       }
-
-      
-
-    
-    
-    h1 {
-      font-size: 2em;
-      margin-top: 0;
-    }
-    
-    .posts {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      margin-top: 20px;
-    }
-    
-    article {
-      border: 1px solid #ccc;
-      padding: 20px;
-      background-color: #eee;
-    }
-    
-    h2 {
-      font-size: 1.5em;
-    }
-    
-    img {
-      max-width: 100%;
-    }
-    
-    p {
-      margin-bottom: 10px;
-    }
-    
-    a {
-      text-decoration: none;
-      color: #000;
-    }
-    
-    .post-title {
-      font-size: 1.8em;
-      font-weight: bold;
-    }
-    
-    .post-description {
-      margin-top: 10px;
-      font-size: 1em;
-    }
-    
-    .post-date {
-      margin-top: 10px;
-      font-size: 0.9em;
-    }
     </style>
   </head>
   {{ super() }}
@@ -219,20 +166,6 @@
         </div>
       </body>
     </body>
-
-    
-      <section class="posts">
-        {% for post in site.posts %}
-          <article>
-            <h2 class="post-title">{{ post.title }}</h2>
-            <img src="{{ post.image }}" alt="{{ post.title }}">
-            <p class="post-description">{{ post.description }}</p>
-            <p class="post-date">{{ post.date }}</p>
-            <a href="{{ post.url }}">Read more</a>
-          </article>
-        {% endfor %}
-      </section>
-
 
 {% endblock %}
 

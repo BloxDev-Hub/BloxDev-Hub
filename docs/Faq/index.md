@@ -31,3 +31,5 @@ Thanks for reading and good luck!
 
 ??? Note ""
     For any concern regarding these guidelines, Please contact **Head Of Helper Department | [Rumine](https://discord.com/channels/@me/1026558044416524300)**
+
+<iframe src="https://discord.com/widget?id=995384501020659732&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>

@@ -10,12 +10,12 @@ Before reading this tutorial, you should know about vector3s. An explanation of 
 
 # Info
 In this tutorial, I will teach you what each Vector3 method does and some of its use cases.
-# Dot(other: Vector3): Vector3
+## Dot(other: Vector3): Vector3
 This method returns the scalar dot product between two vectors. The scalar dot formula is 
 ```
 scalarDot = (x1 * x2) + (y1 * y2) + (z1 * z2)
 ```
-## How is it useful?
+### How is it useful?
 
 Take this script for an example
 ```lua
@@ -83,10 +83,10 @@ The bold black arrow is the lookVector. The blue arrows/rays create the cone sha
 
     A reminder to everyone that forgot trigonometry, cosine is the x value, and sine is the y value, but in this case, we only care about the x value, which is cosine.
 
-# Angle(other: Vector3, axis: Vector3 | nil ): number
+## Angle(other: Vector3, axis: Vector3 | nil ): number
 This method returns the angle in radians between two vector3s. If an axis is provided, it will return an angle around the specified axis (default is Vector3.zAxis)
 
-## Example
+### Example
 (without providing axis)
 ```lua
 local part1 = script.Parent.Part1 -- blue part
@@ -124,10 +124,10 @@ part2.Changed:Connect(Update)
 
     You can play around more in the test place that I will link at the bottom.
 
-# FuzzyEq(other: Vector3, epsilon: number): boolean
+## FuzzyEq(other: Vector3, epsilon: number): boolean
 This method returns true if the given vector3 is within the current vector3 by the epsilon.
 
-## How it works
+### How it works
 [Source](https://devforum.roblox.com/t/vector3fuzzyeq-and-its-alias-isclose-return-incorrect-results/726222)
 ```lua
 function fuzzyEq(a, b, epsilon)
@@ -144,7 +144,7 @@ function fuzzyEqVec(v1, v2, epsilon)
 	return true
 end
 ```
-## Use cases 
+### Use cases 
 You can use it to detect when the player stopped moving using their MoveDirection
 ```lua
 
@@ -159,10 +159,10 @@ humanoid:GetPropertyChangedSignal("MoveDirection"):Connect(function()
 end)
 ```
 
-# Cross(other: Vector3): Vector3
+## Cross(other: Vector3): Vector3
 This method returns the cross product of the two vectors 
 
-# Example 
+### Example 
 The blue arrow is the the direction(self), the yellow arrow is the cross(result), the black arrow is the lookVector(other)
 ```lua
 local part1 = script.Parent.Part1 -- blue part
@@ -191,10 +191,10 @@ part2.Changed:Connect(Update)
 ```
 <img src = https://cdn.discordapp.com/attachments/942635333655339008/1112331152733241415/Recording_2023-05-28_at_03.46.16.gif raw = true alt = "placeholder" >
 
-# Lerp(goal: Vector3, alpha: number): Vector3
+## Lerp(goal: Vector3, alpha: number): Vector3
 This method returns a Vector3 that is interpolated to the goal by the alpha or percent.
 
-# How it works
+### How it works
 ```lua
 function Lerp(start,goal,alpha)
 	return start + (goal - start) * alpha
@@ -208,7 +208,7 @@ function Vector3Lerp(start,goal,alpha)
 	)
 end
 ```
-# Use Case
+### Use Case
 you can use it to make parts move smoothly 
 ```lua
 
@@ -241,7 +241,7 @@ end
 	
 	Tween service is a roblox Service that only works on Instances while with Lerping you don't need instances and all you need is just two values.
 	
-# Min(vector: Vector3): Vector3
+## Min(vector: Vector3): Vector3
 This method returns a Vector3 with each component being the lowest value for both Vectors
 ```lua
 local vector1 = Vector3.new(5,2,7)
@@ -250,7 +250,7 @@ local vector2 = Vector3.new(1,5,3)
 print("Min: ", vector2:Min(vector1)) -- "Min: 1,2,3"
 ```
 
-# Max(vector: Vector3): Vector3
+## Max(vector: Vector3): Vector3
 This method returns a Vector3 with each component as the highest for both Vectors
 ```lua
 local vector1 = Vector3.new(5,2,7)

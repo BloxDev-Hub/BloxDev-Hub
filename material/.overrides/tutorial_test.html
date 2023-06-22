@@ -54,8 +54,22 @@ h1 {
 }
 
 .post p {
-    margin-bottom: 0;
+    margin-bottom: 10px;
     color: #777;
+}
+
+.read-more {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+    background-color: #555;
 }
 
   </style>
@@ -112,28 +126,30 @@ h1 {
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <h1>Posts</h1>
-    <div class="post-grid">
-        <div class="post">
-            <div class="post-image">
-                <img src="path/to/image1.jpg" alt="Post 1">
-            </div>
-            <div class="post-content">
-                <h2>Post 1</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-        </div>
-        <div class="post">
-            <div class="post-image">
-                <img src="path/to/image2.jpg" alt="Post 2">
-            </div>
-            <div class="post-content">
-                <h2>Post 2</h2>
-                <p>Nulla aliquet vestibulum augue non viverra.</p>
-            </div>
-        </div>
-        <!-- Add more posts as needed -->
-    </div>
+  <h1>Posts</h1>
+  <div class="post-grid">
+      <div class="post">
+          <div class="post-image">
+              <img src="path/to/image1.jpg" alt="Post 1">
+          </div>
+          <div class="post-content">
+              <h2>Post 1</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <a href="#" class="read-more">Read More</a>
+          </div>
+      </div>
+      <div class="post">
+          <div class="post-image">
+              <img src="path/to/image2.jpg" alt="Post 2">
+          </div>
+          <div class="post-content">
+              <h2>Post 2</h2>
+              <p>Nulla aliquet vestibulum augue non viverra.</p>
+              <a href="#" class="read-more">Read More</a>
+          </div>
+      </div>
+      <!-- Add more posts as needed -->
+  </div>
 </body>
 </html>
 

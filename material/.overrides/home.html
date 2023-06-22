@@ -17,6 +17,139 @@
     <meta name="theme-color" content="#FFFFFF">
     <meta property="og:type" content="website">
     {% endblock %}
+    <style>
+      /* RESET */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, section, summary, time, mark, audio, video {margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display:block;}
+blockquote, q {quotes:none;}
+blockquote:before, blockquote:after, q:before, q:after {content:'';content:none;}
+body *{-webkit-text-size-adjust:none;box-sizing:border-box;}
+input:focus, select:focus, textarea:focus, button:focus {outline:none;}
+input, textarea, select{font-weight:400;-webkit-appearance:none;appearance:none;border-radius:0;border:0px none;}
+select::-ms-expand{display:none;}
+a {transition:all 0.3s ease-out;-webkit-transition:all 0.3s ease-out;}
+a, a:link, a:visited, a:active, a:hover{cursor:pointer;text-decoration:none;outline:none;}
+html {font-size:13px;}
+body{font-weight:normal;}
+ul, ol{list-style:none;}
+b {font-weight:700;}
+
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:200,300,400,700');
+*{-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;margin:0;padding:0;}
+html{background:url('http://semicorpus.com/yarden/backgr-flower-blur.png');background-size:cover;}
+body{background:#110725;color:#e8dff6;font-family: 'Titillium Web', sans-serif;overflow:hidden;/*transform:scale(.9);*/}
+h1,h2,h4,h6{transform:scaleY(0.9);}
+a{color:#e8dff6;}
+p{color:#FFF;}
+.body-overlay{font-weight:300;}
+
+.container{box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);min-height:100%;}
+
+.outer-top{background:#110725;padding:40px 55px;height:115px;width:100%;position:sticky;top:0;z-index:4;}
+.outer-top .aka{font-size:1.8em;display:inline-block;letter-spacing:8px;padding-top:5px;width:12%;}
+.outer-top .aka a{color:#da8335;}
+.outer-top .btn-explore{display:inline-block;text-align:center;padding-top:5px;vertical-align:top;width:72%;}
+.outer-top .btn-explore svg{fill:#FFF;margin:0 10px;vertical-align:middle;opacity:.6;transform:rotate(137deg) scaleX(.8);}
+.outer-top .btn-explore a{font-size:1.2em;letter-spacing:1px;}
+.outer-top .btn-burger{display:inline-block;position:absolute;top:50px;right:45px;}
+.outer-top .btn-burger img{width:20px;}
+.outer-top .btn-burger:hover{box-shadow:inset -3px 5px 15px rgba(213,78,24,.1),0px 0px 15px rgba(213,78,24,.2);opacity:.5}
+
+.leftandin{width:100%;z-index: 3}
+.leftandin2{top:115px;bottom:0;opacity:0;width:100%;z-index:3;}
+
+.outer-left{background:#110725;display:inline-block;min-height:calc(100vh - 115px);height:100%;padding:45px 60px;width:20%;}
+.outer-left .timeline{font-size:1.1em;letter-spacing:1.5px;padding-top:14%;z-index:1;}
+.outer-left .headline{font-size:7em;font-weight:700;line-height:90px;padding:20px 5px;position:absolute;z-index:1;}
+.outer-left .title{font-size:1.7em;font-weight:300;letter-spacing:1.5px;line-height:50px;padding:20px 110px;position:absolute;margin-top:8.5em;z-index:1;}
+.outer-left .description{font-size:1.3em;position:absolute;margin-top:15.5em;padding:0 110px;z-index:1;width:39em}
+
+.outer-left .cta{
+	background: rgb(213,113,24);
+	background: -moz-linear-gradient(120deg, rgba(213,113,24,1) 0%, rgba(214,0,59,1) 72%);
+	background: -webkit-linear-gradient(120deg, rgba(213,113,24,1) 0%, rgba(214,0,59,1) 72%);
+	background: linear-gradient(120deg, rgba(213,113,24,1) 0%, rgba(214,0,59,1) 72%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d57118",endColorstr="#d6003b",GradientType=1);
+	border:none;
+	border-radius:20em;
+	box-shadow:-1px 2px 7px rgba(213,78,24,.4),1px -1px 7px rgba(7,6,25,.4);
+	color:#e8dff6;
+	font-size:1.3em;
+	letter-spacing:1px;
+	margin-left:140px;	
+	margin-top:24em;
+	padding:.8em 3em;
+	position:absolute;
+	text-shadow:0px 0px 3px rgba(200,200,200,.4);
+	transition:background-size .9s ease-in;
+	z-index:1;
+}
+.outer-left .cta:hover{
+	backface-visibility:hidden;
+	background-size:150%;
+	box-shadow:1px 2px 7px rgba(213,78,24,.3),1px 1px 10px rgba(7,6,25,.3);
+	cursor:pointer;
+	text-shadow:0px 0px 4px rgba(0,0,0,.4);
+	transition:background-size .9s ease-in;
+	transform:scale(0.98)!important;
+}
+
+.inner{border-top-left-radius:50vh;box-shadow:inset 0 14px 5px rgba(0,0,0,0.2),inset 0 14px 10px rgba(0,0,0,0.5);display:inline-block;min-height:calc(100vh - 115px);vertical-align:top;position:absolute;right:0;width:80%;}
+#inner1{background:url('http://semicorpus.com/yarden/backgr-flower.png');background-size:cover;}
+#inner2{background:url('http://semicorpus.com/yarden/backgroundflowers.jpg');background-size:cover;}
+
+.inner .toggler{position:absolute;bottom:0;width:100%;}
+.inner .toggler a{font-size:3em;color:#e8dff6;opacity:.6;text-align:center;height:1.8em;border-radius:10em;width:2em;z-index:2;}
+.inner .toggler a:hover{opacity:.9;transform:scale(1.03);}
+.inner .previous-article{position:absolute;bottom:8em;right:0;}
+.inner .next-article{position:absolute;bottom:6em;right:0;}
+.inner .article-position{color:#e8dff6;font-size:.4em;font-weight:700;letter-spacing:-2px;}
+/* - TOOLS - */
+
+/* for Animations :
+*/
+.delay-06s{animation-delay: 0.6s;-webkit-animation-delay: 0.6s;}
+
+
+body{transform:scale(.9);border-radius:40px;}
+.container{border-radius:40px;}
+.outer-top{border-top-left-radius:40px;border-top-right-radius:40px;}
+.outer-left{border-bottom-left-radius:40px;}
+.leftandin{border-bottom-left-radius:40px;border-bottom-right-radius:40px;}
+.inner{border-bottom-right-radius:40px;}
+
+
+/* for JS :
+*/
+.displaynone{display:none;}
+.display{display:block;opacity:1;}
+@media only screen and (max-width: 900px){
+	.outer-top .aka{font-size:1.2em;padding-top:6px;width:12%;}
+	.outer-left .timeline{position:relative;width:250px;}
+	.outer-left .headline{font-size:6em;font-weight:700;line-height:75px;padding:30px 0;}
+	.outer-left .title{font-size:1.7em;line-height:50px;padding:20px 0px;margin-top:9em;}
+	.outer-left .description{font-size:1.3em;margin-top:15em;padding:20px 0;}
+	.outer-left .cta{margin-left:33%}
+}
+
+@media only screen and (max-width: 567px){
+	.outer-top{background:#110725;padding:20px 30px;}
+	.outer-top .aka{font-size:1.2em;padding-top:6px;width:12%;}
+	.outer-top .btn-explore{border-top:1px solid rgba(182,159,217,.1);text-align:left;margin:20px auto;padding:15px;width:100%;}
+	.outer-top .btn-explore svg{margin:0 0 0-10px;}
+	.outer-top .btn-burger{top:30px;right:30px;}
+
+	.outer-left{padding-left:30px;}
+	.outer-left .timeline{position:relative;width:250px;}
+	.outer-left .headline{font-size:4em;font-weight:700;line-height:60px;padding:30px 0;width:250px;}
+	.outer-left .title{font-size:1.7em;line-height:50px;padding:20px 0px;margin-top:10em;}
+	.outer-left .description{font-size:1.3em;margin-top:17em;padding:20px 0;width:230px}
+	.outer-left .cta{margin:31em 10% 3em 5%;width:80%;}
+
+	.inner{border-top-left-radius:25vh;}
+}
+
+    </style>
   </head>
   {% extends "main.html" %}
   {% block tabs %}
@@ -85,6 +218,90 @@
       </div>
       
   </section>
+
+  
+
+  <body class="animated fadeIn">
+    <div class="body-overlay">
+        <div class="container">
+            <div class="outer-top">
+                <h2 class="aka animated fadeIn"><a>Scripting</a></h2>
+                <div class="btn-explore">
+                    <a href="" class="">
+                    <svg version="1.0" id="Livello_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="14px" viewBox="0 0 77.082 61.834" xml:space="preserve">
+                        <ellipse cx="38.541" cy="10.667" rx="11.166" ry="10.667"/>
+                        <ellipse cx="38.541" cy="51.167" rx="11.166" ry="10.667"/>
+                        <ellipse cx="11.166" cy="31.208" rx="11.166" ry="10.667"/>
+                        <ellipse cx="65.916" cy="31.208" rx="11.166" ry="10.667"/>
+                    </svg>
+                        
+                    </a>
+                </div>
+                <div class="btn-burger"><a class="" href=""><img src="http://semicorpus.com/yarden/icon-burger.png"><img src="http://semicorpus.com/yarden/icon-burger.png"></a></div>
+            </div>
+            <div class="leftandin animated" id="leftandin1">
+                <div class="outer-left">
+                    <h6 class="timeline animated fadeIn"> 2023 &nbsp; — &nbsp; Series</h6>
+                    <h1 class="headline animated fadeInLeft">The Art of<br>Fresher Flowers</h1>
+                    <h3 class="title animated bounceInLeft">Helpers Documents</h3>
+                    <p class="description animated fadeInDown delay-06s">Read and explore the endless possibilities of development in roblox.</p>
+                    <a class="fadeIn"><button class="cta animated pulse"><p class="animated fadeIn delay-06s">See Article</p></button></a>
+                </div>
+                <div class="inner animated fadeIn" id="inner1">
+                    <div class="toggler">
+                        <!--
+                        <a class="next-article" href="#leftandin2" onclick="toggleNext();">
+                            <h4 class="article-position">01</h4>
+                            <img src="img/icon-next.png" height="18px" width="18px">
+                        </a>
+                        -->
+                        <a class="next-article" href="#leftandin2" onclick="toggleNext();">
+                            <h4 class="article-position">01</h4>
+                            <img src="http://semicorpus.com/yarden/icon-next.png" height="18px" width="18px">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="leftandin2 displaynone fadeIn" id="leftandin2">
+                <div class="outer-left">
+                    <h6 class="timeline animated fadeIn">2018 &nbsp; — &nbsp; P-frame</h6>
+                    <h1 class="headline animated fadeInLeft">Lorem Ipsum<br>Recoda</h1>
+                    <h3 class="title animated bounceInLeft">Semi Corpus Plextendis</h3>
+                    <p class="description animated fadeInDown delay-06s">Utque aegrum corpus quassari etiam levibus solet offensis, ita animus eius angustus et tener, quicquid increpuisset, ad salutis suae dispendium existimans factum aut cogitatum.</p>
+                    <a class="fadeIn"><button class="cta animated pulse"><p class="animated fadeIn delay-06s">Learn</p></button></a>
+                </div>
+                <div class="inner animated fadeIn" id="inner2">
+                    <div class="toggler">
+                        <!--
+                        <a class="previous-article" href="#leftandin1" onclick="togglePrevious();">
+                            <img src="img/icon-previous.png" height="18px" width="18px">
+                        </a>
+                        -->
+                        <a class="next-article" href="#leftandin1" onclick="toggleNext();">
+                            <h4 class="article-position">02</h4>
+                            <img src="http://semicorpus.com/yarden/icon-next.png" height="18px" width="18px">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleNext() {
+            var element = document.getElementById('leftandin1');
+            element.classList.toggle('delay-06s');
+            element.classList.toggle('fadeout');
+            element.classList.toggle('displaynone');
+                var element = document.getElementById('leftandin2');
+                element.classList.toggle('display');
+                element.classList.toggle('animated');
+                var element = document.getElementById('inner2');
+                element.classList.toggle('delay-06s');
+                element.classList.toggle('fadeIn');
+        }
+    </script>
+    </script>
+</body>
 
   
 

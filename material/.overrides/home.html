@@ -1,95 +1,200 @@
 {#-
-    do not edit
-  -#}
-  <head>
-    <link rel="stylesheet" href="{{ 'assets/stylesheets/custom.9097afc2.min.css' | url }}">
-    <link rel="shortcut icon" type="image/x-icon" href="https://docs.rodevs.com/bidenrose.png">
-    {% block site_meta %}
-    <meta charset="UTF-8">
-    <title>{{ page.title }} - Helper Documents</title>
-    <meta name="description" content="Rodevs Helpers Documents, a place where you can learn multiple things about developing from our incredible helpers.">
-    <meta property="og:image" content="https://docs.rodevs.com/metacard.png" />
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="1220">
-    <meta property="og:image:height" content="700">
-    <meta property="og:image:alt" content="Helpers Documents">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#FFFFFF">
-    <meta property="og:type" content="website">
-    {% endblock %}
-  </head>
-  {% extends "main.html" %}
-  {% block tabs %}
-    {{ super() }}
-    <style>.md-header{position:initial}.md-main__inner{margin:0}.md-content{display:none}@media screen and (min-width:60em){.md-sidebar--secondary{display:none}}@media screen and (min-width:76.25em){.md-sidebar--primary{display:none}}</style>
-    
-    <section class="mdx-container">
-      <div class="md-grid md-typeset">
-        <div class="mdx-hero">
-          <div class="mdx-hero__image">
-            <!--<img src="illustration.png"  draggable="false"> -->
-          </div>
-          <div class="mdx-hero__content">
-            <h1>Technical documentation for Roblox game development</h1>
-            <p>{{ config.site_description }}.</p>
-            <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | e }}" class="md-button md-button--primary">
-              Quick start!
-            </a>
-            <a href="{{ 'Others/Help_Us%21/' | url }}" title="Help us!" class="md-button">
-              Help us!
-            </a>
-          </div>
-        </div>
+do not edit
+-#}
+
+<head>
+  <link rel="stylesheet" href="{{ 'assets/stylesheets/custom.9097afc2.min.css' | url }}">
+  <link rel="shortcut icon" type="image/x-icon" href="https://docs.rodevs.com/bidenrose.png">
+  {% block site_meta %}
+  <meta charset="UTF-8">
+  <title>{{ page.title }} - Helper Documents</title>
+  <meta name="description"
+    content="Rodevs Helpers Documents, a place where you can learn multiple things about developing from our incredible helpers.">
+  <meta property="og:image" content="https://docs.rodevs.com/metacard.png" />
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1220">
+  <meta property="og:image:height" content="700">
+  <meta property="og:image:alt" content="Helpers Documents">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#FFFFFF">
+  <meta property="og:type" content="website">
+  {% endblock %}
+  <style>
+    .slider-container {
+      overflow: hidden;
+      width: 100%;
+    }
+
+    .slider {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .slider-item {
+      flex: 0 0 auto;
+      width: 300px;
+      margin-right: 20px;
+      padding: 20px;
+      box-sizing: border-box;
+      background-color: #f1f1f1;
+    }
+
+    .slider-item img {
+      width: 100%;
+      height: auto;
+    }
+
+    .slider-content {
+      text-align: center;
+    }
+
+    .slider-content h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .slider-content p {
+      font-size: 14px;
+    }
+  </style>
+</head>
+{% extends "main.html" %}
+{% block tabs %}
+{{ super() }}
+<style>
+  .md-header {
+    position: initial
+  }
+
+  .md-main__inner {
+    margin: 0
+  }
+
+  .md-content {
+    display: none
+  }
+
+  @media screen and (min-width:60em) {
+    .md-sidebar--secondary {
+      display: none
+    }
+  }
+
+  @media screen and (min-width:76.25em) {
+    .md-sidebar--primary {
+      display: none
+    }
+  }
+</style>
+
+<section class="mdx-container">
+  <div class="md-grid md-typeset">
+    <div class="mdx-hero">
+      <div class="mdx-hero__image">
+        <!--<img src="illustration.png"  draggable="false"> -->
       </div>
-    </section>
+      <div class="mdx-hero__content">
+        <h1>Technical documentation for Roblox game development</h1>
+        <p>{{ config.site_description }}.</p>
+        <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | e }}"
+          class="md-button md-button--primary">
+          Quick start!
+        </a>
+        <a href="{{ 'Others/Help_Us%21/' | url }}" title="Help us!" class="md-button">
+          Help us!
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
 
-      
 
-    <section class="tx-container-2">
-      <div class="md-grid md-typeset">
-          <div class="tx-hero__image-2" style="margin-top: 50px">
-              <img
-                      src="illustration.png"
-                      alt=""
-                      width="800"
-                      draggable="false"
-                      align="left"
-              >
-          </div>
-          <div class="tx-hero">
-              <!-- Hero content -->
-              <div class="txx-hero__content-2">
-                  <h1 id="what-are-Helpers-Documents">What are Helpers Documents?</h1><br>
-  
-                  <p>
-                      Helpers Documents are composed of guides and tutorials of Roblox game development. Our focus is on creating high quality, user friendly guides for community to enhance their learnng experience.<br>
-                      
-                      We respect your whim to contribute but currently the only way to contribute is to be a part of 
-                      <strong> RoDevs Helper Department </strong> .
-                      <!--<strong>
+
+<section class="tx-container-2">
+  <div class="md-grid md-typeset">
+    <div class="tx-hero__image-2" style="margin-top: 50px">
+      <img src="illustration.png" alt="" width="800" draggable="false" align="left">
+    </div>
+    <div class="tx-hero">
+      <!-- Hero content -->
+      <div class="txx-hero__content-2">
+        <h1 id="what-are-Helpers-Documents">What are Helpers Documents?</h1><br>
+
+        <p>
+          Helpers Documents are composed of guides and tutorials of Roblox game development. Our focus is on creating
+          high quality, user friendly guides for community to enhance their learnng experience.<br>
+
+          We respect your whim to contribute but currently the only way to contribute is to be a part of
+          <strong> RoDevs Helper Department </strong> .
+          <!--<strong>
                           <a href="https://www.binbash.com.ar/team">Engineering Support Team.</a>
                       </strong>-->
-  
-                  </p><br>
-                  <!-- fix link -->
-  
-                  <a
-                          href="https://docs.rodevs.com/Faq/"
-                          title="{{ page.next_page.title | e }}"
-                          class="md-button md-button--primary"
-                  >
-                      More Info!
-                  </a>
-              </div>
-          </div>
+
+        </p><br>
+        <!-- fix link -->
+
+        <a href="https://docs.rodevs.com/Faq/" title="{{ page.next_page.title | e }}"
+          class="md-button md-button--primary">
+          More Info!
+        </a>
       </div>
-      
-  </section>
+    </div>
+  </div>
 
-  
+</section>
+
+
+<div class="slider-container">
+  <div class="slider">
+    {% for post in posts %}
+    <div class="slider-item">
+      <img src="{{ post.image }}" alt="{{ post.title }}">
+      <div class="slider-content">
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.description }}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const slider = document.querySelector('.slider');
+    const sliderItems = document.querySelectorAll('.slider-item');
+
+    let currentPosition = 0;
+
+    function slide(direction) {
+      const sliderWidth = slider.offsetWidth;
+      const itemWidth = sliderItems[0].offsetWidth;
+      const visibleItems = Math.floor(sliderWidth / itemWidth);
+
+      if (direction === 'next' && currentPosition > -(sliderItems.length - visibleItems) * itemWidth) {
+        currentPosition -= itemWidth;
+      } else if (direction === 'prev' && currentPosition < 0) {
+        currentPosition += itemWidth;
+      }
+
+      slider.style.transform = `translateX(${currentPosition}px)`;
+    }
+
+    const nextButton = document.querySelector('.slider-next');
+    const prevButton = document.querySelector('.slider-prev');
+
+    nextButton.addEventListener('click', function () {
+      slide('next');
+    });
+
+    prevButton.addEventListener('click', function () {
+      slide('prev');
+    });
+  });
+</script>
 
 
 
-  {% endblock %}
-  {% block content %}{% endblock %}
-  {% block footer %}{% endblock %}
+
+{% endblock %}
+{% block content %}{% endblock %}
+{% block footer %}{% endblock %}

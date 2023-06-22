@@ -7,40 +7,57 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    .post-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      grid-gap: 20px;
-    }
+    body {
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+}
 
-    .post {
-      background-color: #f5f5f5;
-      border-radius: 5px;
-      overflow: hidden;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
 
-    .post img {
-      width: 100%;
-      height: auto;
-      display: block;
-      object-fit: cover;
-    }
+.post-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
 
-    .post-content {
-      padding: 20px;
-    }
+.post {
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
 
-    .post h2 {
-      margin-top: 10px;
-      font-size: 20px;
-      color: #333;
-    }
+.post-image {
+    height: 200px;
+    overflow: hidden;
+}
 
-    .post p {
-      margin-bottom: 0;
-      color: #777;
-    }
+.post-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.post-content {
+    padding: 20px;
+}
+
+.post h2 {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #333;
+}
+
+.post p {
+    margin-bottom: 0;
+    color: #777;
+}
+
   </style>
 </head>
 {{ super() }}
@@ -88,24 +105,38 @@
 </section>
 
 <body>
-  <h1>Posts</h1>
-  <div class="post-grid">
-      <div class="post">
-          <img src="path/to/image1.jpg" alt="Post 1">
-          <div class="post-content">
-              <h2>Post 1</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </div>
-      </div>
-      <div class="post">
-          <img src="path/to/image2.jpg" alt="Post 2">
-          <div class="post-content">
-              <h2>Post 2</h2>
-              <p>Nulla aliquet vestibulum augue non viverra.</p>
-          </div>
-      </div>
-      <!-- Add more posts as needed -->
-  </div>
+  <!DOCTYPE html>
+<html>
+<head>
+    <title>Posts</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Posts</h1>
+    <div class="post-grid">
+        <div class="post">
+            <div class="post-image">
+                <img src="path/to/image1.jpg" alt="Post 1">
+            </div>
+            <div class="post-content">
+                <h2>Post 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-image">
+                <img src="path/to/image2.jpg" alt="Post 2">
+            </div>
+            <div class="post-content">
+                <h2>Post 2</h2>
+                <p>Nulla aliquet vestibulum augue non viverra.</p>
+            </div>
+        </div>
+        <!-- Add more posts as needed -->
+    </div>
+</body>
+</html>
+
 </body>
 
 <!-- Include the default mkdocs header -->

@@ -10,7 +10,7 @@
     body {
     margin: 0;
     padding: 0px;
-    background-color: #b8131300;
+    background-color: #f9f9f9;
     font-family: Arial, sans-serif;
 }
 
@@ -21,14 +21,11 @@ h1 {
 
 .post-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 20px;
 }
 
 .post {
-    width: 150px;
-    height: 150px;
     background-color: #ffffff;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -36,7 +33,7 @@ h1 {
 }
 
 .post-image {
-    height: 100%;
+    height: 200px;
     overflow: hidden;
 }
 
@@ -47,23 +44,23 @@ h1 {
 }
 
 .post-content {
-    padding: 10px;
+    padding: 20px;
 }
 
 .post h2 {
-    margin-top: 5px;
-    font-size: 14px;
+    margin-top: 10px;
+    font-size: 20px;
     color: #333;
 }
 
 .post p {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     color: #777;
 }
 
 .read-more {
     display: inline-block;
-    padding: 5px 10px;
+    padding: 10px 20px;
     background-color: #333;
     color: #fff;
     text-decoration: none;
@@ -74,6 +71,7 @@ h1 {
 .read-more:hover {
     background-color: #555;
 }
+
   </style>
 </head>
 {{ super() }}
@@ -127,7 +125,7 @@ h1 {
     <title>Posts</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
-
+<body>
   <h1>Posts</h1>
   <div class="post-grid">
       <div class="post">
@@ -152,9 +150,10 @@ h1 {
       </div>
       <!-- Add more posts as needed -->
   </div>
-
+</body>
 </html>
 
+</body>
 
 <!-- Include the default mkdocs header -->
 <!-- Create a container for the post grid -->

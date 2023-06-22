@@ -141,56 +141,57 @@ do not edit
     </div>
   </div>
 
+  <div class="slider-container">
+    <div class="slider">
+      {% for post in posts %}
+      <div class="slider-item">
+        <img src="{{ post.image }}" alt="{{ post.title }}">
+        <div class="slider-content">
+          <h2>{{ post.title }}</h2>
+          <p>{{ post.description }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const slider = document.querySelector('.slider');
+      const sliderItems = document.querySelectorAll('.slider-item');
+  
+      let currentPosition = 0;
+  
+      function slide(direction) {
+        const sliderWidth = slider.offsetWidth;
+        const itemWidth = sliderItems[0].offsetWidth;
+        const visibleItems = Math.floor(sliderWidth / itemWidth);
+  
+        if (direction === 'next' && currentPosition > -(sliderItems.length - visibleItems) * itemWidth) {
+          currentPosition -= itemWidth;
+        } else if (direction === 'prev' && currentPosition < 0) {
+          currentPosition += itemWidth;
+        }
+  
+        slider.style.transform = `translateX(${currentPosition}px)`;
+      }
+  
+      const nextButton = document.querySelector('.slider-next');
+      const prevButton = document.querySelector('.slider-prev');
+  
+      nextButton.addEventListener('click', function () {
+        slide('next');
+      });
+  
+      prevButton.addEventListener('click', function () {
+        slide('prev');
+      });
+    });
+  </script>
 </section>
 
 
-<div class="slider-container">
-  <div class="slider">
-    {% for post in posts %}
-    <div class="slider-item">
-      <img src="{{ post.image }}" alt="{{ post.title }}">
-      <div class="slider-content">
-        <h2>{{ post.title }}</h2>
-        <p>{{ post.description }}</p>
-      </div>
-    </div>
-    {% endfor %}
-  </div>
-</div>
 
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const slider = document.querySelector('.slider');
-    const sliderItems = document.querySelectorAll('.slider-item');
-
-    let currentPosition = 0;
-
-    function slide(direction) {
-      const sliderWidth = slider.offsetWidth;
-      const itemWidth = sliderItems[0].offsetWidth;
-      const visibleItems = Math.floor(sliderWidth / itemWidth);
-
-      if (direction === 'next' && currentPosition > -(sliderItems.length - visibleItems) * itemWidth) {
-        currentPosition -= itemWidth;
-      } else if (direction === 'prev' && currentPosition < 0) {
-        currentPosition += itemWidth;
-      }
-
-      slider.style.transform = `translateX(${currentPosition}px)`;
-    }
-
-    const nextButton = document.querySelector('.slider-next');
-    const prevButton = document.querySelector('.slider-prev');
-
-    nextButton.addEventListener('click', function () {
-      slide('next');
-    });
-
-    prevButton.addEventListener('click', function () {
-      slide('prev');
-    });
-  });
-</script>
 
 
 

@@ -38,7 +38,7 @@ return ModuleScript
 Then in a server script, we're going to require the module script. It will print "This module script has been required".
 
 ```lua
-local MoudleScript = require(game.ReplicatedStorage.MyModuleScript) -- This module script has been required.
+local ModuleScript = require(game.ReplicatedStorage.MyModuleScript) -- This module script has been required.
 print(ModuleScript) -- SalzuIsTheBest
 ```
 
@@ -97,4 +97,4 @@ end
 No other script will be able to use that function.
 
 # Closing!
-That's pretty much of it. Hope you enjoyed reading it. In case of any mistake, typos, etc. Please report the article. You can also give us reviews [here](https://rodevs-helpers.github.io/Helpers-Documents/Others/Help_Us%21/)
+That's pretty much of it. Hope you enjoyed reading it. In case of any mistake, typos, etc. Please report the article. You can also give us reviews [here](https://docs.rodevs.com/Others/Help_Us%21/)

@@ -66,7 +66,7 @@ We will use [MouseClick](https://developer.roblox.com/en-us/api-reference/event/
 
 ```lua
 workspace.Part.ClickDetector.MouseClick:Connect(function(player)
-    player.leaderstats.Value = player.leaderstats.Points.Value + 1
+    player.leaderstats..Points.Value = player.leaderstats.Points.Value + 1
 end)
 ```
 Now every time you click the part. It will increase your points by 1

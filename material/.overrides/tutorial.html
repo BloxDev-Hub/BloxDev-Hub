@@ -159,12 +159,6 @@
         </div>
       </div>
 
-      <button onclick="handlePostButtonClick(event)">
-        <a href="https://docs.rodevs.com/Tutorials/Scripting/Detecting_Keyboard_Inputs/">Read More</a>
-      </button>
-      
-      <script>
-        
         function handlePostButtonClick(event) {
           if (event.button === 0 || event.button === 1) {
             window.location.href = event.currentTarget.querySelector('a').href;

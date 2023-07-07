@@ -122,17 +122,8 @@
           <div>
             <h2>Detecting Inputs</h2>
             <p>Learn how to detect player's input with User Input Service.</p>
-            <button onclick="handlePostButtonClick(event)">
-              <a href="https://docs.rodevs.com/Tutorials/Scripting/Detecting_Keyboard_Inputs/">Read More</a>
-            </button>
-            
-            <script>
-              function handlePostButtonClick(event) {
-                if (event.button === 0 || event.button === 1) {
-                  window.location.href = event.currentTarget.querySelector('a').href;
-                }
-              }
-            </script>
+            <button><a href="https://docs.rodevs.com/Tutorials/Scripting/Detecting_Keyboard_Inputs/">Read More</a></button>
+          </div>
         </div>
         <div class="post">
           <img src="https://imgur.com/pon1paf.png" alt="Post Image">
@@ -168,6 +159,18 @@
         </div>
       </div>
 
+      <button onclick="handlePostButtonClick(event)">
+        <a href="https://docs.rodevs.com/Tutorials/Scripting/Detecting_Keyboard_Inputs/">Read More</a>
+      </button>
+      
+      <script>
+        
+        function handlePostButtonClick(event) {
+          if (event.button === 0 || event.button === 1) {
+            window.location.href = event.currentTarget.querySelector('a').href;
+          }
+        }
+      </script>
       <body>
         <div class="alert-box">
           <p>Do not just copy the code in tutorials but try to read them and understand them.

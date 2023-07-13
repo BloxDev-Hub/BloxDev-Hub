@@ -1,5 +1,8 @@
 ---
 title: Collection Service
+template: docs.html
+hide:
+  - navigation
 ---
 
 # Collection Service in Roblox Studio

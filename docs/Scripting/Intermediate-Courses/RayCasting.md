@@ -43,19 +43,19 @@ local direction = (GreenPart.Position - RedPart.Position).Unit * 100
 In above example, the magnitude of ray is set to 100 studs.
 
 ### RaycastParams
-[RaycastParams](https://developer.roblox.com/en-us/api-reference/datatype/RaycastParams) carries the parameters of `Raycast()`. It's property, `FilterDescendantsInstances` stores a table. It can be either a `Blacklist` or `Whitelist` depending on `FilterType`.
+[RaycastParams](https://developer.roblox.com/en-us/api-reference/datatype/RaycastParams) carries the parameters of `Raycast()`. It's property, `FilterDescendantsInstances` stores a table. It can be either a `Exclude` or `Include` depending on `FilterType`.
 
 !!! note
-    * `Enum.RaycastFilterType.Whitelist` Every `BasePart` other than those given in filter list and their descendants will be ignored.
-    * `Enum.RaycastFilterType.Blacklist` Every `BasePart` other than those given in filter list and their descendants will be considered.
+    * `Enum.RaycastFilterType.Include` Every `BasePart` other than those given in filter list and their descendants will be ignored.
+    * `Enum.RaycastFilterType.Exclude` Every `BasePart` other than those given in filter list and their descendants will be considered.
       
 ```lua
 local RaycastParams = RaycastParams.new()
 RaycastParams.FilterDescendantsInstances = {RedPart}
-raycastParams.FilterType = Enum.RaycastFilterType.Blacklist
+raycastParams.FilterType = Enum.RaycastFilterType.Exclude
 ```
 
-In these params we have blacklisted the red part in order to prevent ray from being incident on the walls of red part.
+In these params we have excluded the red part in order to prevent ray from being incident on the walls of red part.
 
 Our overall code will be:
 
@@ -65,7 +65,7 @@ local direction = (GreenPart.Position - RedPart.Position).Unit * 100
 
 local RaycastParams = RaycastParams.new()
 RaycastParams.FilterDescendantsInstances = {RedPart}
-raycastParams.FilterType = Enum.RaycastFilterType.Blacklist
+raycastParams.FilterType = Enum.RaycastFilterType.Exclude
 
 local Raycast_result = workspace:Raycast(origin, direction, raycastparams)
 ```
@@ -84,7 +84,7 @@ local direction = (GreenPart.Position - RedPart.Position).Unit * 100
 
 local RaycastParams = RaycastParams.new()
 RaycastParams.FilterDescendantsInstances = {RedPart}
-raycastParams.FilterType = Enum.RaycastFilterType.Blacklist
+raycastParams.FilterType = Enum.RaycastFilterType.Exclude
 
 local Raycast_result = workspace:Raycast(origin, direction, raycastparams)
 

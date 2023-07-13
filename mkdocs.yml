@@ -111,9 +111,7 @@ plugins:
       cards_color:
         fill: "#0FF1CE" 
         text: "#FFFFFF"
-      cards_font: Tilt Warp
   
-
 nav:
   - Home: index.md
   - Scripting:
@@ -142,6 +140,7 @@ nav:
       - Scripting/Intermediate-Courses/Attributes.md
       - Scripting/Intermediate-Courses/Data_Stores.md
       - Scripting/Intermediate-Courses/ContextActionService.md
+      - Scripting/Intermediate-Courses/Collection_Service.md
       - Scripting/Intermediate-Courses/selection_and_highlights.md
       - Scripting/Intermediate-Courses/Remote_Events_And_Functions.md
       - Scripting/Intermediate-Courses/Bindable_events_and_functions.md
@@ -154,9 +153,9 @@ nav:
       - Scripting/Advanced-Courses/More_on_Dictionaries.md
       - Scripting/Advanced-Courses/metatables.md
       - Scripting/Advanced-Courses/HttpService.md
+      - Scripting/Advanced-Courses/Inheritance.md
     # - ... | flat | Scripting/*.md # not sorted yet
   - ...
-  - Courses:
-    - ... | flat | Courses/*.md # not sorted yet
   - Others:
     - ... | flat | Others/*.md # not sorted yet
+  - Faq: Faq/index.md

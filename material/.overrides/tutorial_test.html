@@ -3,116 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <title>Grid Posts with Sliders</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-        }
-
+        /* Grid container */
         .grid-container {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             grid-gap: 20px;
-            margin: 20px;
-        }
-
-        .post {
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             padding: 20px;
-            transition: transform 0.3s ease-in-out;
-            text-align: center;
-            cursor: pointer;
         }
 
-        .post:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        /* Post card */
+        .post-card {
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
         }
 
-        .post img {
-            max-width: 100%;
-            border-radius: 10px;
-            margin-bottom: 20px;
+        /* Slider */
+        .slider {
+            width: 100%;
+            height: 200px;
+            background-color: #e9e9e9;
+            border-radius: 5px;
         }
 
-        .post h3 {
-            font-size: 20px;
+        /* Content styling (example) */
+        h2 {
+            font-size: 18px;
             margin-bottom: 10px;
-            color: #333;
         }
 
-        .post p {
-            font-size: 16px;
-            color: #666;
-            margin-bottom: 15px;
-        }
-
-        .slick-dots {
-            bottom: 10px;
-        }
-
-        .slick-dots li button:before {
-            font-size: 12px;
-            color: #999;
-        }
-
-        .slick-dots li.slick-active button:before {
-            color: #555;
+        p {
+            font-size: 14px;
+            line-height: 1.5;
         }
     </style>
 </head>
 <body>
     <div class="grid-container">
-        <div class="post">
-            <img src="https://via.placeholder.com/300" alt="Post 1">
-            <h3>Post 1</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="post-card">
+            <h2>Post 1</h2>
+            <div class="slider"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor euismod mi, a iaculis leo bibendum nec.</p>
         </div>
-        <div class="post">
-            <img src="https://via.placeholder.com/300" alt="Post 2">
-            <h3>Post 2</h3>
-            <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <div class="post-card">
+            <h2>Post 2</h2>
+            <div class="slider"></div>
+            <p>Sed vel metus eu mauris hendrerit varius eget at est. Nullam non diam in justo consequat pulvinar.</p>
         </div>
-        <div class="post">
-            <img src="https://via.placeholder.com/300" alt="Post 3">
-            <h3>Post 3</h3>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+        <div class="post-card">
+            <h2>Post 3</h2>
+            <div class="slider"></div>
+            <p>Phasellus tincidunt vestibulum nunc, ac tristique turpis hendrerit ut. Quisque nec vestibulum odio.</p>
         </div>
-        <!-- Add more posts as needed -->
+        <div class="post-card">
+            <h2>Post 4</h2>
+            <div class="slider"></div>
+            <p>Fusce sit amet bibendum elit. Sed vehicula finibus neque, sit amet venenatis lacus dignissim vitae.</p>
+        </div>
     </div>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('.grid-container').slick({
-                dots: true,
-                infinite: true,
-                speed: 500,
-                slidesToShow: 3,
-                slidesToScroll: 3,
-                responsive: [
-                    {
-                        breakpoint: 768,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 2
-                        }
-                    },
-                    {
-                        breakpoint: 480,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1
-                        }
-                    }
-                ]
-            });
-        });
-    </script>
 </body>
 </html>

@@ -1,167 +1,67 @@
-{#-
-- do not edit
--#}
-{% extends "main.html" %}
-{% block tabs %}
-
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-    margin: 0;
-    padding: 0px;
-    background-color: #f9f9f9;
-    font-family: Arial, sans-serif;
-}
-
-h1 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.post-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 20px;
-}
-
-.post {
-    background-color: #ffffff;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-}
-
-.post-image {
-    height: 200px;
-    overflow: hidden;
-}
-
-.post-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.post-content {
-    padding: 20px;
-}
-
-.post h2 {
-    margin-top: 10px;
-    font-size: 20px;
-    color: #333;
-}
-
-.post p {
-    margin-bottom: 10px;
-    color: #777;
-}
-
-.read-more {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.read-more:hover {
-    background-color: #555;
-}
-
-  </style>
-</head>
-{{ super() }}
-<style>
-  .md-header {
-    position: initial
-  }
-
-  .md-main__inner {
-    margin: 0
-  }
-
-  .md-content {
-    display: none
-  }
-
-  @media screen and (min-width:60em) {
-    .md-sidebar--secondary {
-      display: none
-    }
-  }
-
-  @media screen and (min-width:76.25em) {
-    .md-sidebar--primary {
-      display: none
-    }
-  }
-</style>
-<section class="mdx-container">
-  <div class="md-grid md-typeset">
-    <div class="mdx-hero">
-      <!--<div class="mdx-hero__image">
-          <img src="illustration.png"  draggable="false">
-        </div>-->
-
-      <div class="mdx-hero__content">
-        <h1>Tutorials</h1>
-        <p>{{ config.site_description }}.</p>
-        <!--<a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | e }}" class="md-button md-button--primary">
-            Quick start
-          </a>
-          <a href="{{ 'Others/Help_Us%21/' | url }}" title="Help us!" class="md-button">
-            Help us!
-          </a>-->
-</section>
-
-<body>
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-    <title>Posts</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Grid Posts with Sliders</title>
+    <style>
+        /* Grid container */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 20px;
+            padding: 20px;
+        }
+
+        /* Post card */
+        .post-card {
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        /* Slider */
+        .slider {
+            width: 100%;
+            height: 200px;
+            background-color: #e9e9e9;
+            border-radius: 5px;
+        }
+
+        /* Content styling (example) */
+        h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+    </style>
 </head>
 <body>
-  <h1>Posts</h1>
-  <div class="post-grid">
-      <div class="post">
-          <div class="post-image">
-              <img src="https://imgur.com/M5C4jFV.png" alt="Post 1">
-          </div>
-          <div class="post-content">
-              <h2>Post 1</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <a href="#" class="read-more">Read More</a>
-          </div>
-      </div>
-      <div class="post">
-          <div class="post-image">
-              <img src="https://imgur.com/M5C4jFV.png" alt="Post 2">
-          </div>
-          <div class="post-content">
-              <h2>Post 2</h2>
-              <p>Nulla aliquet vestibulum augue non viverra.</p>
-              <a href="#" class="read-more">Read More</a>
-          </div>
-      </div>
-      <!-- Add more posts as needed -->
-  </div>
+    <div class="grid-container">
+        <div class="post-card">
+            <h2>Post 1</h2>
+            <div class="slider"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor euismod mi, a iaculis leo bibendum nec.</p>
+        </div>
+        <div class="post-card">
+            <h2>Post 2</h2>
+            <div class="slider"></div>
+            <p>Sed vel metus eu mauris hendrerit varius eget at est. Nullam non diam in justo consequat pulvinar.</p>
+        </div>
+        <div class="post-card">
+            <h2>Post 3</h2>
+            <div class="slider"></div>
+            <p>Phasellus tincidunt vestibulum nunc, ac tristique turpis hendrerit ut. Quisque nec vestibulum odio.</p>
+        </div>
+        <div class="post-card">
+            <h2>Post 4</h2>
+            <div class="slider"></div>
+            <p>Fusce sit amet bibendum elit. Sed vehicula finibus neque, sit amet venenatis lacus dignissim vitae.</p>
+        </div>
+    </div>
 </body>
 </html>
-
-</body>
-
-<!-- Include the default mkdocs header -->
-<!-- Create a container for the post grid -->
-<!--<div class="post-grid">-->
-
-
-{% endblock %}
-
-{% block content %}{% endblock %}
-
-{% block footer %}{% endblock %}

@@ -1,216 +1,168 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Grid Posts with Sliders</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        margin: 0;
+        padding: 20px;
+      }
 
-<head>
-  <meta charset="UTF-8">
-  <title>Grid Posts with Sliders</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f5f5f5;
-      margin: 0;
-      padding: 20px;
-    }
+      .section-title {
+        text-align: center;
+        margin-bottom: 30px;
+      }
 
-    .section-title {
-      text-align: center;
-      margin-bottom: 30px;
-    }
+      .slick-slide {
+        padding: 20px;
+      }
 
-    .slick-slide {
-      padding: 20px;
-    }
+      .slick-list {
+        margin: 0 -20px;
+      }
 
-    .slick-list {
-      margin: 0 -20px;
-    }
+      .slick-track {
+        margin: 0 20px;
+      }
 
-    .slick-track {
-      margin: 0 20px;
-    }
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+        margin: 0 auto;
+        max-width: 900px;
+      }
 
-    .grid-container {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-gap: 30px;
-      margin: 0 auto;
-      max-width: 900px;
-      justify-content: center;
-    }
+      .post {
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        transition: transform 0.3s ease-in-out;
+        text-align: center;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
 
-    .post {
-      background-color: #fff;
-      border-radius: 5px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      padding: 20px;
-      transition: transform 0.3s ease-in-out;
-      text-align: center;
-    }
+      .post:hover {
+        transform: translateY(-5px);
+      }
 
-    .post:hover {
-      transform: translateY(-5px);
-    }
+      .post img {
+        max-width: 100%;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
 
-    .post img {
-      max-width: 100%;
-      border-radius: 5px;
-      margin-bottom: 10px;
-    }
+      .post h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        color: #333;
+      }
 
-    .post h3 {
-      font-size: 18px;
-      margin-bottom: 10px;
-      color: #333;
-    }
+      .post p {
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 15px;
+      }
 
-    .post p {
-      font-size: 14px;
-      color: #666;
-      margin-bottom: 15px;
-    }
+      .slick-dots {
+        bottom: -25px;
+      }
 
-    .slick-dots {
-      bottom: -25px;
-    }
+      .slick-dots li button:before {
+        font-size: 10px;
+        color: #999;
+      }
 
-    .slick-dots li button:before {
-      font-size: 10px;
-      color: #999;
-    }
-
-    .slick-dots li.slick-active button:before {
-      color: #555;
-    }
-  </style>
-</head>
-
-<body>
-  <div class="section-title">
-    <h2>Featured Posts</h2>
-  </div>
-  <div class="grid-container">
-    <div class="post">
-      <img src="https://via.placeholder.com/300" alt="Post 1">
-      <h3>Post 1</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      .slick-dots li.slick-active button:before {
+        color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="section-title">
+      <h2>Featured Posts</h2>
     </div>
-    <div class="post">
-      <img src="https://via.placeholder.com/300" alt="Post 2">
-      <h3>Post 2</h3>
-      <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
-    <div class="post">
-      <img src="https://via.placeholder.com/300" alt="Post 2">
-      <h3>Post 2</h3>
-      <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
-    <div class="post">
-      <img src="https://via.placeholder.com/300" alt="Post 2">
-      <h3>Post 2</h3>
-      <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
-    <div class="post">
-      <img src="https://via.placeholder.com/300" alt="Post 2">
-      <h3>Post 2</h3>
-      <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
-    <div class="post">
-      <img src="https://via.placeholder.com/300" alt="Post 2">
-      <h3>Post 2</h3>
-      <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
-    <div class="post">
-      <img src="https://via.placeholder.com/300" alt="Post 2">
-      <h3>Post 2</h3>
-      <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
-    <div class="post">
-      <img src="https://via.placeholder.com/300" alt="Post 2">
-      <h3>Post 2</h3>
-      <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
-    <div class="post">
-      <img src="https://via.placeholder.com/300" alt="Post 2">
-      <h3>Post 2</h3>
-      <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
-    <div class="post">
-      <img src="https://via.placeholder.com/300" alt="Post 2">
-      <h3>Post 2</h3>
-      <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
-    <div class="post">
-      <img src="https://via.placeholder.com/300" alt="Post 2">
-      <h3>Post 2</h3>
-      <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
-    <div class="post">
-      <img src="https://via.placeholder.com/300" alt="Post 2">
-      <h3>Post 2</h3>
-      <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <div class="grid-container">
+      <!-- Define a template for each post -->
+      <div class="post">
+        <img src="https://imgur.com/WEbD6Be.png" alt="Post 1" class="post-image">
+        <h3>Introduction</h3>
+      </div>
+
+      <div class="post">
+        <img src="https://imgur.com/5cpePYK.png" alt="Post 2" class="post-image">
+        <h3>Variables</h3>
+      </div>
+
+      <div class="post">
+        <img src="https://imgur.com/PWqf8GK.png" alt="Post 3" class="post-image">
+        <h3>Strings</h3>
+      </div>
+
+      <!-- Add more posts as needed -->
+
     </div>
 
-    <div class="post">
-      <img src="https://via.placeholder.com/300" alt="Post 3">
-      <h3>Post 3</h3>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+    <div class="section-title">
+      <h2>Recent Posts</h2>
     </div>
-    <!-- Add more posts as needed -->
-  </div>
+    <div class="grid-container">
+      <div class="post">
+        <img src="https://imgur.com/9DC83ft.png" alt="Post 4" class="post-image">
+        <h3>Operator</h3>
+      </div>
 
-  <div class="section-title">
-    <h2>Recent Posts</h2>
-  </div>
-  <div class="grid-container">
-    <div class="post">
-      <img src="https://via.placeholder.com/300" alt="Post 4">
-      <h3>Post 4</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </div>
-    <div class="post">
-      <img src="https://via.placeholder.com/300" alt="Post 5">
-      <h3>Post 5</h3>
-      <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
-    <div class="post">
-      <img src="https://via.placeholder.com/300" alt="Post 6">
-      <h3>Post 6</h3>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-    </div>
-    <!-- Add more posts as needed -->
-  </div>
+      <div class="post">
+        <img src="https://imgur.com/AVtNN6E.png" alt="Post 5" class="post-image">
+        <h3>Properties</h3>
+      </div>
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      $('.grid-container').slick({
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        responsive: [
-          {
-            breakpoint: 768,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2
+      <div class="post">
+        <img src="https://imgur.com/WPlCX6A.png" alt="Post 6" class="post-image">
+        <h3>If Statements</h3>
+      </div>
+
+      <!-- Add more posts as needed -->
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.grid-container').slick({
+          dots: true,
+          infinite: true,
+          speed: 500,
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
             }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
-          }
-        ]
+          ]
+        });
       });
-    });
-  </script>
-</body>
-
+    </script>
+  </body>
 </html>

@@ -30,7 +30,7 @@ local origin = RedPart.Position
 We have selected position of red part as origin for the ray.
 
 ### Direction
-Direction is the [Vector3](https://developer.roblox.com/en-us/api-reference/datatype/Vector3) with a defined magnitude. Direction of a ray from a known destination (GreenPart.Position) can be easily caluclated by using following formula
+Direction is the [Vector3](https://developer.roblox.com/en-us/api-reference/datatype/Vector3) with a defined magnitude. Direction of a ray from a known destination (GreenPart.Position) can be easily calculated by using following formula
 
 * Destination - Origin = Direction
 

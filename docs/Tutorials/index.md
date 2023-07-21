@@ -1,6 +1,6 @@
 ---
 title: Tutorials
-template: tutorials.html
+template: tutorial.html
 hide:
   - navigation
 ---

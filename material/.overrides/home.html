@@ -2,6 +2,21 @@
     do not edit
   -#}
   <head>
+
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+      }
+      canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  
     <link rel="stylesheet" href="{{ 'assets/stylesheets/custom.9097afc2.min.css' | url }}">
     <link rel="shortcut icon" type="image/x-icon" href="https://docs.rodevs.com/bidenrose.png">
     {% block site_meta %}
@@ -86,8 +101,78 @@
       
   </section>
 
-  
+<script>
+const canvas = document.getElementById("confettiCanvas");
+const ctx = canvas.getContext("2d");
 
+// Set canvas size to the window dimensions
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+// Helper function to generate a random number between min and max
+function getRandom(min, max) {
+  return Math.random() * (max - min) + min;
+}
+
+// Confetti class
+class Confetti {
+  constructor() {
+    this.x = getRandom(0, canvas.width); // Initial horizontal position
+    this.y = -20; // Initial vertical position
+    this.size = getRandom(5, 12); // Random size of confetti
+    this.color = `hsl(${getRandom(0, 360)}, 100%, 50%)`; // Random color
+    this.speedX = getRandom(-2, 2); // Horizontal speed
+    this.speedY = getRandom(5, 12); // Vertical speed
+    this.rotation = getRandom(0, 2 * Math.PI); // Initial rotation
+    this.rotationSpeed = getRandom(-0.2, 0.2); // Rotation speed
+  }
+
+  update() {
+    // Update position and rotation
+    this.x += this.speedX;
+    this.y += this.speedY;
+    this.rotation += this.rotationSpeed;
+
+    // Remove confetti if it goes off the screen
+    if (this.y > canvas.height) {
+      confettiArray.splice(confettiArray.indexOf(this), 1);
+    }
+  }
+
+  draw() {
+    // Draw the confetti
+    ctx.save();
+    ctx.translate(this.x, this.y);
+    ctx.rotate(this.rotation);
+    ctx.fillStyle = this.color;
+    ctx.fillRect(-this.size / 2, -this.size / 2, this.size, this.size);
+    ctx.restore();
+  }
+}
+
+const confettiArray = [];
+
+function animateConfetti() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+  // Create new confetti at a certain rate
+  if (Math.random() < 0.05) {
+    confettiArray.push(new Confetti());
+  }
+
+  // Update and draw all confetti
+  for (const confetti of confettiArray) {
+    confetti.update();
+    confetti.draw();
+  }
+
+  // Repeat the animation
+  requestAnimationFrame(animateConfetti);
+}
+
+// Start the confetti animation when the page loads
+window.onload = animateConfetti;
+</script>
 
 
   {% endblock %}

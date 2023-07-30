@@ -1,95 +1,192 @@
 {#-
-    do not edit
-  -#}
-  <head>
-    <link rel="stylesheet" href="{{ 'assets/stylesheets/custom.9097afc2.min.css' | url }}">
-    <link rel="shortcut icon" type="image/x-icon" href="https://docs.rodevs.com/bidenrose.png">
-    {% block site_meta %}
-    <meta charset="UTF-8">
-    <title>{{ page.title }} - Helper Documents</title>
-    <meta name="description" content="Rodevs Helpers Documents, a place where you can learn multiple things about developing from our incredible helpers.">
-    <meta property="og:image" content="https://docs.rodevs.com/metacard.png" />
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="1220">
-    <meta property="og:image:height" content="700">
-    <meta property="og:image:alt" content="Helpers Documents">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#FFFFFF">
-    <meta property="og:type" content="website">
-    {% endblock %}
-  </head>
-  {% extends "main.html" %}
-  {% block tabs %}
-    {{ super() }}
-    <style>.md-header{position:initial}.md-main__inner{margin:0}.md-content{display:none}@media screen and (min-width:60em){.md-sidebar--secondary{display:none}}@media screen and (min-width:76.25em){.md-sidebar--primary{display:none}}</style>
-    
-    <section class="mdx-container">
-      <div class="md-grid md-typeset">
-        <div class="mdx-hero">
-          <div class="mdx-hero__image">
-            <!--<img src="illustration.png"  draggable="false"> -->
-          </div>
-          <div class="mdx-hero__content">
-            <h1>Technical documentation for Roblox game development</h1>
-            <p>{{ config.site_description }}.</p>
-            <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | e }}" class="md-button md-button--primary">
-              Quick start!
-            </a>
-            <a href="{{ 'Others/Help_Us%21/' | url }}" title="Help us!" class="md-button">
-              Help us!
-            </a>
-          </div>
-        </div>
+do not edit
+-#}
+
+<head>
+  <link rel="stylesheet" href="{{ 'assets/stylesheets/custom.9097afc2.min.css' | url }}">
+  <link rel="shortcut icon" type="image/x-icon" href="https://docs.rodevs.com/bidenrose.png">
+  {% block site_meta %}
+  <meta charset="UTF-8">
+  <title>{{ page.title }} - Helper Documents</title>
+  <meta name="description"
+    content="Rodevs Helpers Documents, a place where you can learn multiple things about developing from our incredible helpers.">
+  <meta property="og:image" content="https://docs.rodevs.com/metacard.png" />
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1220">
+  <meta property="og:image:height" content="700">
+  <meta property="og:image:alt" content="Helpers Documents">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#FFFFFF">
+  <meta property="og:type" content="website">
+  {% endblock %}
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+    .confetti {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: transparent;
+      border-radius: 50%;
+      pointer-events: none;
+      transform-origin: 50% 50%;
+      animation: confetti-fall 6s linear infinite;
+    }
+
+    @keyframes confetti-fall {
+      0% {
+        transform: translateY(-10vh) rotateZ(0deg) scale(0.2);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(100vh) rotateZ(1440deg) scale(1);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+{% extends "main.html" %}
+{% block tabs %}
+{{ super() }}
+<style>
+  .md-header {
+    position: initial
+  }
+
+  .md-main__inner {
+    margin: 0
+  }
+
+  .md-content {
+    display: none
+  }
+
+  @media screen and (min-width:60em) {
+    .md-sidebar--secondary {
+      display: none
+    }
+  }
+
+  @media screen and (min-width:76.25em) {
+    .md-sidebar--primary {
+      display: none
+    }
+  }
+
+  body {
+    margin: 0;
+    overflow: hidden;
+  }
+
+  canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+</style>
+
+<section class="mdx-container">
+  <div class="md-grid md-typeset">
+    <div class="mdx-hero">
+      <div class="mdx-hero__image">
+        <!--<img src="illustration.png"  draggable="false"> -->
       </div>
-    </section>
+      <div class="mdx-hero__content">
+        <h1>Technical documentation for Roblox game development</h1>
+        <p>{{ config.site_description }}.</p>
+        <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | e }}"
+          class="md-button md-button--primary">
+          Quick start!
+        </a>
+        <a href="{{ 'Others/Help_Us%21/' | url }}" title="Help us!" class="md-button">
+          Help us!
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
 
-      
 
-    <section class="tx-container-2">
-      <div class="md-grid md-typeset">
-          <div class="tx-hero__image-2" style="margin-top: 50px">
-              <img
-                      src="illustration.png"
-                      alt=""
-                      width="800"
-                      draggable="false"
-                      alignzzz="left"
-              >
-          </div>
-          <div class="tx-hero">
-              <!-- Hero content -->
-              <div class="txx-hero__content-2">
-                  <h1 id="what-are-Helpers-Documents">What are Helpers Documents?</h1><br>
-  
-                  <p>
-                      Helpers Documents are composed of guides and tutorials of Roblox game development. Our focus is on creating high quality, user friendly guides for community to enhance their learnng experience.<br>
-                      
-                      We respect your whim to contribute but currently the only way to contribute is to be a part of 
-                      <strong> RoDevs Helper Department </strong> .
-                      <!--<strong>
+
+<section class="tx-container-2">
+  <div class="md-grid md-typeset">
+    <div class="tx-hero__image-2" style="margin-top: 50px">
+      <img src="illustration.png" alt="" width="800" draggable="false" alignzzz="left">
+    </div>
+
+    <div class="tx-hero">
+      <!-- Hero content -->
+      <div class="txx-hero__content-2">
+        <h1 id="what-are-Helpers-Documents">What are Helpers Documents?</h1><br>
+
+        <p>
+          Helpers Documents are composed of guides and tutorials of Roblox game development. Our focus is on creating
+          high quality, user friendly guides for community to enhance their learnng experience.<br>
+
+          We respect your whim to contribute but currently the only way to contribute is to be a part of
+          <strong> RoDevs Helper Department </strong> .
+          <!--<strong>
                           <a href="https://www.binbash.com.ar/team">Engineering Support Team.</a>
                       </strong>-->
-  
-                  </p><br>
-                  <!-- fix link -->
-  
-                  <a
-                          href="https://docs.rodevs.com/Faq/"
-                          title="{{ page.next_page.title | e }}"
-                          class="md-button md-button--primary"
-                  >
-                      More Info!
-                  </a>
-              </div>
-          </div>
+
+        </p><br>
+        <!-- fix link -->
+
+        <a href="https://docs.rodevs.com/Faq/" title="{{ page.next_page.title | e }}"
+          class="md-button md-button--primary">
+          More Info!
+        </a>
+
+        <script>
+    function createConfetti() {
+      const confetti = document.createElement('div');
+      confetti.className = 'confetti';
+      confetti.style.left = `${Math.random() * 100}vw`;
+      confetti.style.animationDuration = `${Math.random() * 2 + 1}s`; // Vary animation duration for each confetti
+      const randomShape = Math.random() < 0.5 ? 'circle' : 'square'; // Randomly choose between circle and square
+      if (randomShape === 'circle') {
+        confetti.style.borderRadius = '50%';
+      } else {
+        confetti.style.borderRadius = '0%';
+      }
+      const randomColor = getRandomColor();
+      confetti.style.backgroundColor = randomColor;
+      document.body.appendChild(confetti);
+
+      // Remove the confetti element after a few seconds
+      setTimeout(() => {
+        confetti.remove();
+      }, 8000); // Adjust the time (in milliseconds) to control how long the confetti stays on the page
+    }
+
+    // Generate more confetti periodically (adjust the interval as desired)
+    setInterval(createConfetti, 100); // Every 0.1 seconds, a new confetti element will be added.
+
+    // Function to generate a random color
+    function getRandomColor() {
+      const letters = '0123456789ABCDEF';
+      let color = '#';
+      for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    }
+        </script>
+
       </div>
-      
-  </section>
+    </div>
+  </div>
 
-  
+</section>
 
 
 
-  {% endblock %}
-  {% block content %}{% endblock %}
-  {% block footer %}{% endblock %}
+
+
+{% endblock %}
+{% block content %}{% endblock %}
+{% block footer %}{% endblock %}

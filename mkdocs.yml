@@ -107,10 +107,10 @@ markdown_extensions:
 plugins:
   - search
   - awesome-pages
-  - social:
-      cards_color:
-        fill: "#0FF1CE" 
-        text: "#FFFFFF"
+  # - social:
+    #  cards_color:
+    #    fill: "#0FF1CE" 
+    #    text: "#FFFFFF"
   
 nav:
   - Home: index.md

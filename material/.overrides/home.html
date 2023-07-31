@@ -39,16 +39,15 @@
   
       @keyframes confetti-fall {
         0% {
-          transform: translateY(-10vh) translateX(0) rotateZ(0deg) scale(0.2);
+          transform: translateY(-10vh) rotateZ(0deg) scale(0.2);
           opacity: 0;
         }
         100% {
-          transform: translateY(110vh) translateX(calc(100vw * -1)) rotateZ(1440deg) scale(1);
+          transform: translateY(100vh) rotateZ(1440deg) scale(1);
           opacity: 1;
         }
       }
     </style>
-  
   </head>
   {% extends "main.html" %}
   {% block tabs %}

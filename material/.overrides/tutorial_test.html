@@ -37,9 +37,76 @@
             font-size: 14px;
             line-height: 1.5;
         }
+
+        /*confetti stuff*/
+    body {
+      margin: 0;
+      overflow: hidden;
+      background-color: #222; /* Dark background to make the confetti stand out */
+    }
+    .confetti {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: transparent;
+      border-radius: 50%;
+      pointer-events: none;
+      transform-origin: 50% 50%;
+      animation: confetti-fall 2s linear infinite;
+      box-shadow: 0 0 8px rgba(255, 255, 255, 0.8); /* Add a shiny effect using box-shadow */
+    }
+
+    @keyframes confetti-fall {
+      0% {
+        transform: translateY(-10vh) rotateZ(0deg) scale(0.2);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(100vh) rotateZ(1440deg) scale(1);
+        opacity: 1;
+      }
+    }
+    /*confetti stuff end*/
     </style>
 </head>
 <body>
+
+    <script>
+        function createConfetti() {
+          const confetti = document.createElement('div');
+          confetti.className = 'confetti';
+          confetti.style.left = `${Math.random() * 100}vw`;
+          confetti.style.animationDuration = `${Math.random() * 2 + 1}s`; // Vary animation duration for each confetti
+          const randomShape = Math.random() < 0.5 ? 'circle' : 'square'; // Randomly choose between circle and square
+          if (randomShape === 'circle') {
+            confetti.style.borderRadius = '50%';
+          } else {
+            confetti.style.borderRadius = '0%';
+          }
+          const randomColor = getRandomColor();
+          confetti.style.backgroundColor = randomColor;
+          document.body.appendChild(confetti);
+    
+          // Remove the confetti element after a few seconds
+          setTimeout(() => {
+            confetti.remove();
+          }, 2000); // Adjust the time (in milliseconds) to control how long the confetti stays on the page
+        }
+    
+        // Generate more confetti periodically (adjust the interval as desired)
+        setInterval(createConfetti, 100); // Every 0.1 seconds, a new confetti element will be added.
+    
+        // Function to generate a random color
+        function getRandomColor() {
+          const letters = '0123456789ABCDEF';
+          let color = '#';
+          for (let i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+          }
+          return color;
+        }
+      </script>
+      
     <div class="grid-container">
         <div class="post-card">
             <h2>Post 1</h2>

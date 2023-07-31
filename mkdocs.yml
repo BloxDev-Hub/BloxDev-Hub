@@ -159,7 +159,7 @@ nav:
   - Others:
     - Others/Help_Us!.md
     - Others/Resources.md
-    - Others/Fireworks.
+    - Others/Fireworks.md
     - ... | flat | Others/*.md # not sorted yet
     
   - Faq: Faq/index.md

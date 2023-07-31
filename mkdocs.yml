@@ -157,6 +157,9 @@ nav:
     # - ... | flat | Scripting/*.md # not sorted yet
   - ...
   - Others:
+    - Others/Help_Us!.md
+    - Others/Resources.md
+    - Others/Fireworks.
     - ... | flat | Others/*.md # not sorted yet
-    - Others/Fireworks.md
+    
   - Faq: Faq/index.md

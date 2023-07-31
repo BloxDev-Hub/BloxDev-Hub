@@ -1,5 +1,5 @@
 ---
-title: meow
+title: Fireworks!
 template: Special.html
 ---
 a

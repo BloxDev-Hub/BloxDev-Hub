@@ -158,4 +158,5 @@ nav:
   - ...
   - Others:
     - ... | flat | Others/*.md # not sorted yet
+    - Others/Fireworks.md
   - Faq: Faq/index.md

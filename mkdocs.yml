@@ -107,7 +107,7 @@ markdown_extensions:
 plugins:
   - search
   - awesome-pages
-   - social:
+  - social:
       cards_color:
         fill: "#0FF1CE" 
         text: "#FFFFFF"

@@ -18,7 +18,7 @@ For casting a ray we use the method **`:Raycast()`** of worldroot ([workspace](h
 ```lua
 local Raycast_result = workspace:Raycast(origin, direction, raycastparams)
 ```
-<img src=https://github.com/Rodevs-Helpers/Helpers-Documents/blob/main/images/raycast1.png?raw=true width="500" height="500"/> 
+<img src=https://github.com/Rodevs-Helpers/docs-test/blob/main/images/raycast1.png?raw=true width="500" height="500"/> 
 
 ### Origin
 Origin of a ray is basically a [Vector3](https://developer.roblox.com/en-us/api-reference/datatype/Vector3) position of the world, from where the ray will start. 
@@ -94,7 +94,7 @@ print(Raycast_result.Position)
 !!! warning
     `Raycast_result` will be `nil` if ray didn't hit any object.
 
-<img src=https://github.com/Rodevs-Helpers/Helpers-Documents/blob/main/images/raycast2.png?raw=true width="500" height="500"/>
+<img src=https://github.com/Rodevs-Helpers/docs-test/blob/main/images/raycast2.png?raw=true width="500" height="500"/>
 
 Now if we place another part between the two parts then ray will intersect the middle one and `Raycast_result` will carry properties related to  the yellow part.
 

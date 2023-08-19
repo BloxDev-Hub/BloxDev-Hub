@@ -5,12 +5,12 @@ Title: Creating Leaderstats
 # Leaderstats
 Leaderstats/Leaderboard is the board that appears on the right top of the player's screen. If you are used to playing games on Roblox then you must have seen this in many games.
 
-<img src=https://github.com/Rodevs-Helpers/Helpers-Documents/blob/editing/images/leaderstats1.png?raw=true width="500" height="500"/>
+<img src=https://github.com/Rodevs-Helpers/docs-test/blob/editing/images/leaderstats1.png?raw=true width="500" height="500"/>
 
 ## How to create one?
 Making a leader stats is pretty simple. First of all we will add a **script** in [ServerScriptService](https://developer.roblox.com/en-us/api-reference/class/ServerScriptService).
 
-<img src=https://github.com/Rodevs-Helpers/Helpers-Documents/blob/editing/images/leaderstats2.png?raw=true width="200" height="200"/>
+<img src=https://github.com/Rodevs-Helpers/docs-test/blob/editing/images/leaderstats2.png?raw=true width="200" height="200"/>
 
 For making leader stats, we have to add a folder inside every player and name it **leaderstats**. Once made the folder, we will add value objects such as [IntValue](https://developer.roblox.com/en-us/api-reference/class/IntValue), [NumberValue](https://developer.roblox.com/en-us/api-reference/class/NumberValue), [StringValue](https://developer.roblox.com/en-us/api-reference/class/StringValue) etc.
 
@@ -62,7 +62,7 @@ No, if you run the game. Your points will be `100`.
 As an example of usage. Create a part in the workspace and add [ClickDetector](https://developer.roblox.com/en-us/api-reference/class/ClickDetector) to it. You can either make a separate script or use the ordinary one.
 We will use [MouseClick](https://developer.roblox.com/en-us/api-reference/event/ClickDetector/MouseClick) event of [ClickDetector](https://developer.roblox.com/en-us/api-reference/class/ClickDetector) which is fired whenever a player interacts with it. This event also returns that [Player](https://developer.roblox.com/en-us/api-reference/class/Player).
 
-<img src=https://github.com/Rodevs-Helpers/Helpers-Documents/blob/main/images/leaderstats3.png?raw=true width="500" height="500"/>
+<img src=https://github.com/Rodevs-Helpers/docs-test/blob/main/images/leaderstats3.png?raw=true width="500" height="500"/>
 
 ```lua
 workspace.Part.ClickDetector.MouseClick:Connect(function(player)

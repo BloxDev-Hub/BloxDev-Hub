@@ -1,6 +1,7 @@
 ---
 title: Declaring Variables
 template: docs.html
+comments: true
 hide:
   - navigation
 ---

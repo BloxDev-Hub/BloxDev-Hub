@@ -1,6 +1,7 @@
 ---
 title: Basics Of String
 template: docs.html
+comments: true
 hide:
   - navigation
 ---

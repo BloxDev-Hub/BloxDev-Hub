@@ -1,6 +1,7 @@
 ---
 title: Introduction To Tweening
 template: docs.html
+comments: true
 hide:
   - navigation
 ---

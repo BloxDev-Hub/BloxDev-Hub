@@ -1,6 +1,7 @@
 ---
 title: Vector3
 template: docs.html
+comments: true
 hide:
   - navigation
 ---

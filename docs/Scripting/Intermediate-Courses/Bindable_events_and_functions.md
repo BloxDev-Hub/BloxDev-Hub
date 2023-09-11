@@ -1,6 +1,7 @@
 ---
 title: Bindable Events and Functions
 template: docs.html
+comments: true
 hide:
   - navigation
 ---

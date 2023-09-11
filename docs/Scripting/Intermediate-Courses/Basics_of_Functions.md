@@ -1,6 +1,7 @@
 ---
 title: Basics Of Functions
 template: docs.html
+comments: true
 hide:
   - navigation
 ---

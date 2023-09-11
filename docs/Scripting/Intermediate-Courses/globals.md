@@ -1,6 +1,7 @@
 ---
 title: Lua Globals
 template: docs.html
+comments: true
 hide:
   - navigation
 ---

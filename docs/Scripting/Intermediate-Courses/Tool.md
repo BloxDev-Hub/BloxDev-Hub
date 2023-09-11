@@ -1,6 +1,7 @@
 ---
 title: Scripting Tools
 template: docs.html
+comments: true
 hide:
   - navigation
 ---

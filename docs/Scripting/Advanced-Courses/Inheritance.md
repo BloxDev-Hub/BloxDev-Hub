@@ -1,6 +1,7 @@
 ---
 title: Inheritance
 template: docs.html
+comments: true
 hide:
   - navigation
 ---

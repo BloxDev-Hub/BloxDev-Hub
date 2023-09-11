@@ -1,6 +1,7 @@
 ---
 title: Understanding events
 template: docs.html
+comments: true
 hide:
   - navigation
 ---

@@ -1,6 +1,7 @@
 ---
 title: Metatables
 template: docs.html
+comments: true
 hide:
   - navigation
 ---

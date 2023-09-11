@@ -1,6 +1,7 @@
 ---
 title: Intoduction To Selection And Highlights
 template: docs.html
+comments: true
 hide:
   - navigation
 ---

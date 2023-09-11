@@ -1,6 +1,7 @@
 ---
 title: Introduction To Players Service
 template: docs.html
+comments: true
 hide:
   - navigation
 ---

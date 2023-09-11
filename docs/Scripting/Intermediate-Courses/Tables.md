@@ -1,6 +1,7 @@
 ---
 title: Understanding the Basics of Tables
 template: docs.html
+comments: true
 hide:
   - navigation
 ---

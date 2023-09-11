@@ -1,6 +1,7 @@
 ---
 title: What Are Operators?
 template: docs.html
+comments: true
 hide:
   - navigation
 ---

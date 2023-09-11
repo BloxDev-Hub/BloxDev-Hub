@@ -1,6 +1,7 @@
 ---
 title: More on Dictionaries
 template: docs.html
+comments: true
 hide:
   - navigation
 ---

@@ -1,6 +1,7 @@
 ---
 title: Client-Server Communication
 template: docs.html
+comments: true
 hide:
   - navigation
 ---

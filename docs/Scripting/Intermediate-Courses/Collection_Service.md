@@ -1,6 +1,7 @@
 ---
 title: Collection Service
 template: docs.html
+comments: true
 hide:
   - navigation
 ---

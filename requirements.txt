@@ -1,4 +1,8 @@
-mkdocs-material==9.1.18
+mkdocs==1.5.2
+pip==23.2.1
+mkdocs-material==9.2.8
 mkdocs-awesome-pages-plugin 
 pillow
 cairosvg
+mkdocs-blogging-plugin
+

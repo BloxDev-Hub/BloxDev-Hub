@@ -1,6 +1,7 @@
 ---
 title: More About Functions
 template: docs.html
+comments: true
 hide:
   - navigation
 ---

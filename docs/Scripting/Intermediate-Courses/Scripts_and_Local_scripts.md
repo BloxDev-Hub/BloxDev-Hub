@@ -1,6 +1,7 @@
 ---
 title: Scripts and Local scripts
 template: docs.html
+comments: true
 hide:
   - navigation
 ---

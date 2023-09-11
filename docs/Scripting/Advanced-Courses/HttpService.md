@@ -1,6 +1,6 @@
 ---
 title: HttpService
-
+comments: true
 hide:
   - navigationtemplate: docs.html
 ---

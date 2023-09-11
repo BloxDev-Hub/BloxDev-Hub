@@ -1,6 +1,7 @@
 ---
 title: Introduction To Size and Position 
 template: docs.html
+comments: true
 hide:
   - navigation
 ---

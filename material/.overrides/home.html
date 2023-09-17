@@ -138,6 +138,14 @@ do not edit
         transform: translateY(0);
       }
     }
+
+  df-messenger {
+    z-index: 999;
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+  }
+    
   </style>
 
 </head>
@@ -291,6 +299,17 @@ do not edit
   animateOnScroll();
   window.addEventListener('scroll', animateOnScroll);
 </script>
+
+<script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+<df-messenger
+  project-id="ai-333-399017"
+  agent-id="98b1ba33-1d52-4f4d-9f47-7ce272eb9e00"
+  language-code="en">
+  <df-messenger-chat-bubble
+   chat-title="Helper Bot">
+  </df-messenger-chat-bubble>
+</df-messenger>
+
 
 {% endblock %}
 {% block content %}{% endblock %}

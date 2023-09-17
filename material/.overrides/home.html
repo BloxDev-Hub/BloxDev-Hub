@@ -310,6 +310,17 @@ do not edit
   </df-messenger-chat-bubble>
 </df-messenger>
 
+<script>
+  document.addEventListener('keydown', (e) => {
+  e.stopPropagation();
+});
+document.addEventListener('keydown', (f) => {
+  f.stopPropagation();
+});
+document.addEventListener('keydown', (s) => {
+  s.stopPropagation();
+});
+</script>
 
 {% endblock %}
 {% block content %}{% endblock %}

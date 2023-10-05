@@ -1,61 +1,88 @@
 <html>
-<style>
-body, html {
-  height: 100%;
-  margin: 0;
-}
 
-.bgimg {
-  background-image: url('https://imgur.com/aEWeLvD.jpg');
-  height: 100%;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  color: white;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 25px;
-}
+<head>
+    <link rel="stylesheet" href="{{ 'assets/stylesheets/custom.9097afc2.min.css' | url }}">
+    <link rel="shortcut icon" type="image/x-icon" href="https://docs.rodevs.com/bidenrose.png">
+    {% block site_meta %}
+    <meta charset="UTF-8">
+    <title>中国发布 - Helper Documents</title>
+    <meta name="description"
+        content="Rodevs Helpers Documents，在这里您可以从我们令人难以置信的助手那里学到有关开发的多种知识.">
+    <meta property="og:image" content="https://docs.rodevs.com/metacard2.png" />
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1220">
+    <meta property="og:image:height" content="700">
+    <meta property="og:image:alt" content="Helpers Documents">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#FFFFFF">
+    <meta property="og:type" content="website">
+    {% endblock %}
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+        }
 
-.topleft {
-  position: absolute;
-  top: 0;
-  left: 16px;
-}
+        .bgimg {
+            background-image: url('https://imgur.com/aEWeLvD.jpg');
+            height: 100%;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            color: white;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 25px;
+        }
 
-.bottomleft {
-  position: absolute;
-  bottom: 0;
-  left: 16px;
-}
+        .topleft {
+            position: absolute;
+            top: 0;
+            left: 16px;
+        }
 
-.middle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
+        .bottomleft {
+            position: absolute;
+            bottom: 0;
+            left: 16px;
+        }
 
-hr {
-  margin: auto;
-  width: 40%;
-}
-</style>
+        .middle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        hr {
+            margin: auto;
+            width: 40%;
+        }
+    </style>
+</head>
+
 <body>
 
-<div class="bgimg">
-  <div class="topleft">
-    <p>Helpers Documents</p>
-  </div>
-  <div class="middle">
-    <h1>Helpers Documents</h1>
-    <hr>
-    <p><strong>助手文档</strong></p>
-  </div>
-  <div class="bottomleft">
-    <p>由 RoDevs 助手部门提供</p>
-  </div>
-</div>
+    <div class="bgimg">
+        <div class="topleft">
+            <p>Helpers Documents</p>
+            <img src="hhtps://docs.rodevs.com/whiteicon.png" alt="Development image" draggable="false">
+        </div>
+        <div class="middle">
+            <h1>助手文档</h1>
+            <hr>
+            <p><strong>即将推出！</strong></p>
+            <p>即将推出中文版，符合互联网标准 https://www.bynr.gov.cn/ztlm/gjaqzl/flfg/202304/t20230419_508520.html 和
+                http://www.npc.gov.cn/zgrdw/npc/新闻/2017-06/27/content_2024529.htm
+
+                很快再见！</p>
+        </div>
+        <div class="bottomleft">
+            <p>由 RoDevs 助手部门提供</p>
+        </div>
+    </div>
 
 </body>
+
 </html>

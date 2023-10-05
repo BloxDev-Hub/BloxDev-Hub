@@ -1,7 +1,7 @@
 ---
-title: September 2023 Update
+title: 中国发布
 time: 2023-4-13
-description: As we continue our work on helper documents, we believe our users should be updated with the latest updates for this purpose. From now on, every new update (excluding bug fixes) will be documented here as patch notes.
+exclude_from_blog: true
 author: Nya
 template: china.html
 ---

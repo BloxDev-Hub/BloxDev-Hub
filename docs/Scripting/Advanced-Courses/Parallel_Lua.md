@@ -187,8 +187,11 @@ print(SharedTable.Value)
 ```
 !!!info More Explanation
     The reason why it's happening can be shown in this diagram.
+
     ![Race Conditions](https://raw.githubusercontent.com/haotian2006/HelperDocs-contributions/master/Images/ThreadSafety_.png)
+
     If you look at Value, each time a thread reads and writes it is reading and writing at the same time (this will not always happen). So it means that if both Threads run a for loop increasing Value by 100, the Value will not be 200 most of the time.
+
 ### Avoiding Race Conditions
 When working with the DataModel roblox already implemented Thread Safety as shown above. Otherwise what you can do is combine the data in a Synchronized state so there is a lesser chance of data overlapping with each other or if you are working with a shared table use the functions [increment()](https://create.roblox.com/docs/reference/engine/datatypes/SharedTable#increment) or [update()](https://create.roblox.com/docs/reference/engine/datatypes/SharedTable#update) to update data as it does an atomic update to the values.
 
@@ -225,6 +228,7 @@ calculatePrimesFrom(0,10000)
 This will allow you to see how long primes takes to calculate.
 
 ![Alt text](https://raw.githubusercontent.com/haotian2006/HelperDocs-contributions/master/Images/primes.png)
+
 which you can see here takes 1.313 ms
 
 
@@ -232,24 +236,34 @@ which you can see here takes 1.313 ms
 
 !!!info How to look for profiles
     Profiles will have a unique color depending on the name, so each profile will have the each color each time. To look for a profile look for colored boxes that stand out more.
+
     ![Alt text](https://raw.githubusercontent.com/haotian2006/HelperDocs-contributions/master/Images/primes1.png)
+
     But if your profiles last very short you can sort them by going to ```Groups``` and disabling [ALL] and enabling just Script and it will make it easier to spot
+
     ![Alt text](https://raw.githubusercontent.com/haotian2006/HelperDocs-contributions/master/Images/primes2.png)
     Some other groups I recommend enabling are ```Lua``` and ```TaskQueue```. Lua will display the Scripts while TaskQueue will display stuff like the Sleep timer.
+
 ### Accessing MicroProfiler for Server
 To see the microprofiler of a server you would need to go to Developer Console (f9) and go to the ```MicroProfiler``` tab.
+
 ![Alt text](https://raw.githubusercontent.com/haotian2006/HelperDocs-contributions/master/Images/serverMP.png)
+
 After that, I recommend setting ```Frames Per Second``` to 60 and ```Seconds to Record``` to 4 (maximum time). And to Record press ```Start Recording```. After it is done Recording it will display a path in which it is saved. Follow that and you can view the data in a browser.
 ## Why multithread
 Multithreading can help increase performance by a lot. For example, if we try to calculate the primes from 0-100000 it will take the server
+
 ![Alt text](https://raw.githubusercontent.com/haotian2006/HelperDocs-contributions/master/Images/p1.png)
+
 The tasks takes 26.920ms to calculate which is going to cause performance issues as each frame lasts 1/60 seconds which is ~16ms and since the task takes over 16ms the server will lag for 10ms.
 
 
 
 
 But if we split the tasks into 8 separate tasks
+
 ![Alt text](https://raw.githubusercontent.com/haotian2006/HelperDocs-contributions/master/Images/p8.png)
+
 each task only takes about 4ms and since they are running in parallel to each other calculating 100000 primes only takes 4ms in total.
 
 
@@ -257,7 +271,9 @@ each task only takes about 4ms and since they are running in parallel to each ot
 
 ## Utilizing Parallel Luau properly
 When using Parallel Luau it is recommended to separate tasks into smaller tasks. So let's say you have a task that takes 5ms to compute on a single thread. What you can do is split the tasks into 5 threads, Each chunk taking ~1 ms to compute, Saving 4 ms. Also when using Parallel Luau avoid yielding threads with wait or coroutine. Because when you use task.wait it will bring it out of parallel. And it is also recommended to Avoid long tasks as it will cause the main Thread (not to be confused with the Main script in the Image) to wait for that parallel task to finish. Show below with the ```Sleep``` timer.
+
 ![Alt text](https://raw.githubusercontent.com/haotian2006/HelperDocs-contributions/master/Images/sleep.png)
+
 What we could have done better here was to split the tasks into smaller tasks and use more Actors.
 
 
@@ -271,10 +287,13 @@ What we could have done better here was to split the tasks into smaller tasks an
 
 ### How many actors should you use
 On a roblox server, the amount of workers is determined by the maximum player count ([source](https://devforum.roblox.com/t/live-game-servers-do-not-allocate-more-cores-for-parallelized-games/2460052/4?u=haotian2006)). While on the client it depends on the client's device. Workers are just how many threads can be utilized. Every time you run a parallel task the task will go to one of these workers. Roblox will try to balance which Worker should a task go to.
+
 ![Alt text](https://raw.githubusercontent.com/haotian2006/HelperDocs-contributions/master/Images/workers1.png)
 
 So when determining the number of Actors you want to use it is usually recommended to use more Actors than workers as roblox will balance the tasks between workers.
+
 ![Alt text](https://raw.githubusercontent.com/haotian2006/HelperDocs-contributions/master/Images/multipleactors.png)
+
 but avoid using too many or else other problems such as memory will show up.
 
 ## Conclusion  

@@ -163,7 +163,7 @@ nav:
       - Scripting/Basic-Courses/basics_of_properties.md
       - Scripting/Basic-Courses/If_statements.md
       - Scripting/Basic-Courses/basic_loops.md
-      - Scripting/Basic-Courses/Basic_Instance_Methods
+      - Scripting/Basic-Courses/Basic_Instance_Methods.md
     - Intermediate-Courses:
       - Scripting/Intermediate-Courses/Basics_of_Functions.md
       - Scripting/Intermediate-Courses/Tables.md

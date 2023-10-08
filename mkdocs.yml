@@ -163,6 +163,7 @@ nav:
       - Scripting/Basic-Courses/basics_of_properties.md
       - Scripting/Basic-Courses/If_statements.md
       - Scripting/Basic-Courses/basic_loops.md
+      - Scripting/Basic-Courses/Basic_Instance_Methods
     - Intermediate-Courses:
       - Scripting/Intermediate-Courses/Basics_of_Functions.md
       - Scripting/Intermediate-Courses/Tables.md
@@ -192,6 +193,7 @@ nav:
       - Scripting/Advanced-Courses/metatables.md
       - Scripting/Advanced-Courses/HttpService.md
       - Scripting/Advanced-Courses/Inheritance.md
+      
     # - ... | flat | Scripting/*.md # not sorted yet
   - ...
   - Others:

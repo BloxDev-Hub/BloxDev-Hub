@@ -193,7 +193,7 @@ nav:
       - Scripting/Advanced-Courses/metatables.md
       - Scripting/Advanced-Courses/HttpService.md
       - Scripting/Advanced-Courses/Inheritance.md
-      
+      - Scripting/Advanced-Courses/Parallel_Lua.md
     # - ... | flat | Scripting/*.md # not sorted yet
   - ...
   - Others:

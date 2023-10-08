@@ -297,5 +297,5 @@ So when determining the number of Actors you want to use it is usually recommend
 but avoid using too many or else other problems such as memory will show up.
 
 ## Conclusion  
-Parallel Luau is not an easy thing to explain and understand so don't worry if you don't understand. If you want to see the code I used for the Images above, make a copy of this [place](https://www.roblox.com/games/14931452798/Parallel-Luau-Example). If you want to learn more about Parallel Luau check out [here](https://create.roblox.com/docs/fr-fr/scripting/multithreading#parallel-programming-model).
+Parallel Luau is not an easy thing to explain and understand so don't worry if you don't understand. If you want to see the code I used for the Images above, make a copy of this [place](https://www.roblox.com/games/14931452798/Parallel-Luau-Example). If you want to learn more about Parallel Luau check out [here](https://create.roblox.com/docs/en-us/scripting/multithreading#parallel-programming-model).
 

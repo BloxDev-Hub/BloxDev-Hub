@@ -5,8 +5,9 @@ comments: true
 hide:
   - navigation
 ---
-!!! attention "Note"
-    Before reading this tutorial, you should know about [metatables](https://docs.rodevs.com/Scripting/Advanced-Courses/metatables/). An explanation of metatable exists in the Lua-Learning folder.
+## Pre-requisites
+
+Before reading this tutorial, you should know about metatables. An explanation of [metatables](https://docs.rodevs.com/Scripting/Advanced-Courses/metatables/) exists in the Lua-Learning folder.
 
 # What is Inheritance?
 
@@ -21,10 +22,6 @@ Let’s say we have a class called Person Class that is set up like this
 local Person = {}
 
 Person.__index = Person
--- for those that don't remember these two methods of creating __index does the same thing 
-Person.__index = function(self,key)
-    return Person[key]
-end
 
 function Person.new(Name,Age,Balance)
    return setmetatable({Name = Name,Age = Age, Balance = Balance},Person)
@@ -48,14 +45,11 @@ end
 return Person
 ```
 Now lets make a Class call Student that will inherit from the Person Class and give it a Method called PayStudentTuition
-
 ```lua
 local Student = {}
 local Person = require(Path.To.Person.Class)
 
-Student.__index = function(self,key)
-    return Student[key] or Person[key]
-end
+Student.__index = setmetatable(Student,Person)
 
 function Student.__tostring(self)
     return "Student: "..self.Name
@@ -77,7 +71,6 @@ end
 
 return Student
 ```
-
 Basically what we've done is modify the __index metamethod so it also checks the Person class if the method you're looking for does not exist in the Student Class
 
 For those that are wondering why we need to do it like that and we can't just do this
@@ -96,15 +89,12 @@ end
 it's because using setmetatable on a metatable will override the current metatable's metamethods.
 
 
-Now lets make a Class call Teacher that will inherit from the Person Class and give it a Method called `GetPaycheck`
-
+Now lets make a Class call Teacher that will inherit from the Person Class and give it a Method called GetPaycheck
 ```lua
 local Teacher = {}
 local Person = require(Path.To.Person.Class)
 
-Teacher.__index = function(self,key)
-    return Teacher[key] or Person[key]
-end
+Teacher.__index = setmetatable(Teacher,Person)
 
 function Teacher.__tostring(self)
     return "Teacher: "..self.Name
@@ -145,17 +135,14 @@ print(Hao) --> "Hao"
 
 ```
 
-Also if you want to inherit from multiple classes you would just keep adding to the `__index` metamethod 
+Also if you want to inherit from multiple classes you would just keep adding to the __index metamethod 
 
 ```lua
 local MiddleSchoolStudent = {}
 
-MiddleSchoolStudent.__index = function(self,key)
-    return MiddleSchoolStudent[key] or Student[key] or Person[key] -- you can keep adding to this 
-    -- this will first check MiddleSchoolStudent then Student and lastly Person
-    --*the order of this will effect the outcome 
-end
+MiddleSchoolStudent.__index = setmetatable(MiddleSchoolStudent,Student)
+-- will first check MiddleSchoolStudent then check Student and lastly it will check Person class if a key dose not exist 
 ```
 
 ## Thanks for reading!
-Thats pretty much it for this method of inheritance. if you have any more questions you can ask in #scripting-help or if you have any more suggestions you can send me a dm (@Haotian2006#3314)
+Thats pretty much it for this method of inheritance. if you have any more questions you can ask in #scripting-help.

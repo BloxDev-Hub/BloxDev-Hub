@@ -1,7 +1,7 @@
-site_name: Helpers Documents
+site_name: BloxDev Hub Documents
 site_url: https://bloxdev-hub.pages.dev/
 repo_url: https://bloxdev-hub.pages.dev/
-repo_name: "| RoDevs Helpers Department"
+repo_name: "| Have to fix this"
 copyright: Not affiliated with Roblox or Discord.
 site_description: A place where you can learn multiple things about Roblox developing.
 
@@ -101,13 +101,6 @@ extra:
             Thanks for your feedback! Help us improve this page by sharing your views.
             
   generator: false
-  social:
-    - icon: fontawesome/brands/discord
-      link: https://discord.gg/rodevs
-      name: Join the discord server!
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/RoDevsWorld
-      name: Follow us on twitter!
 
 markdown_extensions:
   - attr_list

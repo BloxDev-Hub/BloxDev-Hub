@@ -3,7 +3,7 @@ site_url: https://bloxdev-hub.pages.dev/
 repo_url: https://bloxdev-hub.pages.dev/
 repo_name: "| Have to fix this"
 copyright: Not affiliated with Roblox or Discord.
-site_description: A place where you can learn multiple things about Roblox developing.
+site_description: BloxDev Hub Documents, a place where you can learn multiple things about Roblox developing.
 
 extra_css:
   - stylesheets/extra.css

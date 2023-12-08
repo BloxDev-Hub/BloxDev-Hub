@@ -63,13 +63,13 @@ theme:
       quote: fontawesome/solid/quote-left
 extra:
   extra:
-  alternate:
-    - name: English
-      link: /cn/ 
-      lang: zh
-    - name: Deutsch
-      link: /de/
-      lang: de
+  #alternate:
+  #  - name: English
+  #    link: /cn/ 
+  #    lang: zh
+  #  - name: Deutsch
+  #    link: /de/
+  #    lang: de
   consent:
     title: Cookie consent
     description: >- 
@@ -150,10 +150,15 @@ plugins:
       post_dir: blog/posts
       pagination_per_page: 3
       
-  #- social:
-  #    cards_color:
-  #      fill: "#0FF1CE" 
-  #      text: "#FFFFFF"
+  - social:
+      debug: false
+      debug_color: yellow
+      cards_layout: custom
+      cards_layout_options:
+        background_color: "#0FF1CE8F"
+        background_image: layouts/stairs.jpg
+        color: "#DE9151"
+        font_family: Caveat
   
 nav:
   - Home: index.md

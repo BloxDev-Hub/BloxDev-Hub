@@ -2,8 +2,8 @@ site_name: Helpers Documents
 site_url: https://bloxdev-hub.pages.dev/
 repo_url: https://bloxdev-hub.pages.dev/
 repo_name: "| RoDevs Helpers Department"
-copyright: By Rodevs Helper Department. Not affiliated with Roblox or Discord.
-site_description: Rodevs Helpers Documents, a place where you can learn multiple things about developing from our incredible helpers.
+copyright: Not affiliated with Roblox or Discord.
+site_description: A place where you can learn multiple things about Roblox developing.
 
 extra_css:
   - stylesheets/extra.css

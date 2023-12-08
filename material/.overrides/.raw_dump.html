@@ -1,0 +1,53 @@
+# add in main.html for custom meta tags
+
+{% block extrahead %}
+    <link rel="stylesheet" href="{{ 'assets/stylesheets/custom.9097afc2.min.css' | url }}">
+    <link rel="shortcut icon" type="image/x-icon" href="https://docs.rodevs.com/bidenrose.png">
+    {% block site_meta %}
+    <meta charset="UTF-8">
+    <title>{{ page.title }} - Helper Documents</title>
+    <meta name="description" content="Rodevs Helpers Documents, a place where you can learn multiple things about developing from our incredible helpers.">
+    {% if page.meta.og_image %}
+    <meta property="og:image" content="{{ page.meta.og_image | url }}" />
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Helpers Documents">
+    {% else %}
+    <meta property="og:image" content="https://docs.rodevs.com/metaicon.png" />
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="113">
+    <meta property="og:image:height" content="128">
+    {% endif %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#00FFFF">
+    <meta property="og:type" content="website">
+    {% endblock %}
+  {% endblock %}
+
+# ci.yml
+<!--
+name: ci
+on:
+  push:
+    branches:
+      - master
+      - main
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: 3.x
+      - uses: actions/cache@v2
+        with:
+          key: ${{ github.ref }}
+          path: .cache
+      - run: pip install pillow cairosvg
+      - run: pip install mkdocs-material
+      - run: pip install mkdocs-awesome-pages-plugin
+      - run: mkdocs gh-deploy --force
+-->
+

@@ -1,0 +1,334 @@
+{#-
+do not edit
+-#}
+
+<head>
+
+  <script>
+    
+    window.danteEmbed = "https://chat.dante-ai.com/embed?kb_id=67a27e9d-e1ac-4314-80f5-ad249f0f1d10&token=eced2af0-6b31-48ba-bf3d-8d9e45194cd7&modeltype=gpt-3.5-turbo&mode=undefined&bubble=true&image=null&bubbleopen=false"
+</script>
+<script src="https://chat.dante-ai.com/bubble-embed.js"></script>
+
+  <link rel="stylesheet" href="{{ 'assets/stylesheets/custom.9097afc2.min.css' | url }}">
+  <link rel="shortcut icon" type="image/x-icon" href="https://docs.rodevs.com/bidenrose.png">
+  {% block site_meta %}
+  <meta charset="UTF-8">
+  <title>{{ page.title }} - Helper Documents</title>
+  <meta name="description"
+    content="Rodevs Helpers Documents, a place where you can learn multiple things about developing from our incredible helpers.">
+  <meta property="og:image" content="https://docs.rodevs.com/metacard2.png" />
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1220">
+  <meta property="og:image:height" content="700">
+  <meta property="og:image:alt" content="Helpers Documents">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#FFFFFF">
+  <meta property="og:type" content="website">
+  {% endblock %}
+
+  <style>
+    .why-use-docs {
+      /*background-color: #f8f8f8;*/
+      padding: 30px;
+      text-align: center;
+    }
+
+    .why-use-docs-title {
+      font-size: 38px;
+      /*color: #333;*/
+      margin-bottom: 20px;
+    }
+
+    .why-use-docs-description {
+      font-size: 16px;
+      /*color: #555;*/
+      margin-bottom: 30px;
+    }
+
+    .why-use-docs-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .why-use-docs-list li {
+      font-size: 18px;
+      /*: #444;*/
+      margin: 10px 0;
+    }
+
+    .why-use-docs-list li strong {
+      font-weight: bold;
+      color: #a63fd9;
+    }
+
+    .why-use-docs-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .why-use-docs-btn:hover {
+      background-color: #0056b3;
+    }
+
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      height: 50vh;
+    }
+
+    .frame {
+      display: flex;
+      flex-direction: row;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+      /*background-color: #fff;*/
+      border-radius: 5px;
+      overflow: hidden;
+      margin: 20px;
+      width: 90%;
+      max-width: 1200px;
+      padding: 20px;
+      animation: fade-in 1s ease-in-out;
+    }
+
+    .img-container {
+      width: 40%;
+      flex-grow: 0;
+      flex-shrink: 0;
+      padding-right: 20px;
+    }
+
+    .img-container img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .text-container {
+      width: 60%;
+      flex-grow: 1;
+      flex-shrink: 1;
+      padding-left: 20px;
+    }
+
+    .text-container h2 {
+      font-size: 36px;
+      font-weight: bold;
+      margin-top: 0;
+      /*color: #202020;*/
+    }
+
+    .text-container p {
+      font-size: 18px;
+      line-height: 1.5;
+      /*color: #202020;*/
+    }
+
+    @keyframes fade-in {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    df-messenger {
+    z-index: 999;
+    position: fixed;
+    bottom: 16px;
+    right: 16px;}
+  </style>
+
+</head>
+{% extends "main.html" %}
+{% block tabs %}
+{{ super() }}
+<style>
+  .md-header {
+    position: initial
+  }
+
+  .md-main__inner {
+    margin: 0
+  }
+
+  .md-content {
+    display: none
+  }
+
+  @media screen and (min-width:60em) {
+    .md-sidebar--secondary {
+      display: none
+    }
+  }
+
+  @media screen and (min-width:76.25em) {
+    .md-sidebar--primary {
+      display: none
+    }
+  }
+</style>
+
+<section class="mdx-container">
+  <div class="md-grid md-typeset">
+    <div class="mdx-hero">
+      <div class="mdx-hero__image">
+        <!--  <img src="sora.png"  draggable="false"> -->
+      </div>
+      <div class="mdx-hero__content">
+        <h1>Technical documentation for Roblox game development</h1>
+        <p>{{ config.site_description }}.</p>
+        <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | e }}"
+          class="md-button md-button--primary">
+          Quick start!
+        </a>
+        <a href="{{ 'Others/Help_Us%21/' | url }}" title="Help us!" class="md-button">
+          Help us!
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <iframe
+  src="https://chat.dante-ai.com/embed?kb_id=67a27e9d-e1ac-4314-80f5-ad249f0f1d10&token=a3d01a57-eaa1-456d-8b44-c2292c583d76&modeltype=gpt-3.5-turbo&logo=ZmFsc2U=&mode=undefined"
+  allow="clipboard-write; microphone"
+  width="100%"
+  height="700"
+  frameborder="0"
+  ></iframe>
+
+</section>
+
+<div class="container">
+  <div class="frame">
+    <div class="img-container">
+      <img src="illustration.png" alt="Development image" draggable="false">
+    </div>
+    <div class="text-container">
+      <h2>What are Helpers Documents?</h2>
+      <p></p>
+      <p>Helpers Documents are composed of guides and tutorials of Roblox game development. Our focus is on creating
+        high quality, user friendly guides for community to enhance their learnng experience.
+        We respect your whim to contribute but currently the only way to contribute is to be a part of RoDevs Helper
+        Department ..</p>
+    </div>
+  </div>
+</div>
+
+<section class="why-use-docs">
+  <div class="why-use-docs-content">
+    <h2 class="why-use-docs-title">Why Use Our Documentation?</h2>
+    <p class="why-use-docs-description">Our documentation is designed to provide you with the best resources and support
+      for your needs. Here's why you should choose our docs:</p>
+    <ul class="why-use-docs-list">
+      <li><strong>Comprehensive Information:</strong> Our documentation covers all the basic aspects, from
+        getting started to advanced usage.</li>
+      <li><strong>Clear and Concise:</strong> We present information in a clear and concise manner, making it easy to
+        understand and follow.</li>
+      <li><strong>Step-by-Step Tutorials:</strong> We offer step-by-step tutorials and examples to guide you through
+        common tasks.</li>
+      <li><strong>Frequently Updated:</strong> Our guides are frequently updated to reflect the latest changes and
+        improvements.</li>
+      <li><strong>Responsive Support:</strong> If you have questions or encounter issues, please use comments/reviews so we can
+        assist you.</li>
+    </ul>
+  </div>
+</section>
+
+<!--
+<section class="tx-container-2">
+  <div class="md-grid md-typeset">
+    <div class="tx-hero__image-2" style="margin-top: 50px">
+      <img src="illustration.png" alt="" width="800" draggable="false" alignzzz="left">
+    </div>
+
+    <div class="tx-hero">
+       Hero content -->
+<!-- <div class="txx-hero__content-2">
+        <h1 id="what-are-Helpers-Documents">What are Helpers Documents?</h1><br>
+
+        <p>
+          Helpers Documents are composed of guides and tutorials of Roblox game development. Our focus is on creating
+          high quality, user friendly guides for community to enhance their learnng experience.<br>
+
+          We respect your whim to contribute but currently the only way to contribute is to be a part of
+          <strong> RoDevs Helper Department </strong> .
+          <strong>
+                          <a href="https://www.binbash.com.ar/team">Engineering Support Team.</a>
+                      </strong>-->
+
+<!-- </p><br>
+        fix link -->
+
+<!--<a href="https://docs.rodevs.com/Faq/" title="{{ page.next_page.title | e }}"
+          class="md-button md-button--primary">
+          More Info!
+        </a>
+
+       
+      </div>
+    </div>
+  </div> 
+
+</section> -->
+
+
+
+
+<!-- Define the script for the animation -->
+<script>
+  function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+
+  function animateOnScroll() {
+    const animElements = document.querySelectorAll('.anim');
+    animElements.forEach(element => {
+      if (isInViewport(element)) {
+        element.classList.add('in-view');
+      }
+    });
+  }
+
+  animateOnScroll();
+  window.addEventListener('scroll', animateOnScroll);
+</script>
+
+<script>
+  document.addEventListener('keydown', (e) => {
+  e.stopPropagation();
+});
+document.addEventListener('keydown', (f) => {
+  f.stopPropagation();
+});
+document.addEventListener('keydown', (s) => {
+  s.stopPropagation();
+});
+</script>
+
+
+
+
+{% endblock %}
+{% block content %}{% endblock %}
+{% block footer %}{% endblock %}

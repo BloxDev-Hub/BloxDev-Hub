@@ -1,0 +1,40 @@
+{#-
+  do not edit
+-#}
+<head>
+  <link rel="shortcut icon" type="image/x-icon" href="bidenrose.png">
+  {% block site_meta %}
+  <meta charset="UTF-8">
+  <title>{{ page.title }} - Helper Documents</title>
+  <meta name="description" content="Rodevs Helpers Documents, a place where you can learn multiple things about developing from our incredible helpers.">
+  <meta property="og:image" content="https://docs.rodevs.com/metacard2.png" />
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="113">
+  <meta property="og:image:height" content="128">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% endblock %}
+</head>
+  {% extends "main.html" %}
+  {% block tabs %}
+    {{ super() }}
+    <style>.md-header{position:initial}.md-main__inner{margin:0}.md-content{display:none}@media screen and (min-width:60em){.md-sidebar--secondary{display:none}}@media screen and (min-width:76.25em){.md-sidebar--primary{display:none}}</style>
+    <section class="mdx-container">
+      <div class="md-grid md-typeset">
+        <div class="mdx-hero">
+          <div class="mdx-hero__image">
+            <img src="sora.png"  draggable="false">
+          </div>
+          <div class="mdx-hero__content">
+            <h1>404 - Page Not Found</h1>
+            <p> You came the wrong way!</p>
+            <a href="{{ "https://docs.rodevs.com/" | url }}" title="Home" class="md-button md-button--primary">
+              GO HOME!
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+  {% endblock %}
+  {% block content %}{% endblock %}
+  {% block footer %}{% endblock %}

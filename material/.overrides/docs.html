@@ -1,0 +1,61 @@
+{#-
+  do not edit
+-#}
+
+<head>
+  <link rel="stylesheet" href="{{ 'assets/stylesheets/custom.9097afc2.min.css' | url }}">
+  <link rel="shortcut icon" type="image/x-icon" href="https://docs.rodevs.com/bidenrose.png">
+  {% block site_meta %}
+  <meta charset="UTF-8">
+  <title>{{ page.title }} - Helper Documents</title>
+  <meta name="description" content="Rodevs Helpers Documents, a place where you can learn multiple things about developing from our incredible helpers.">
+  <meta property="og:image" content="https://docs.rodevs.com/metacard2.png" />
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1220">
+  <meta property="og:image:height" content="700">
+  <meta property="og:image:alt" content="Helpers Documents">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#FFFFFF">
+  <meta property="og:type" content="website">
+  {% endblock %}
+ 
+</head>
+  {% extends "main.html" %}
+  {% block tabs %}
+    {{ super() }}
+    <style>
+      /* styles for screens with a maximum width of 767px */
+      @media screen and (max-width: 767px) {
+        h1 {
+          font-size: 2em;
+        }
+      }
+      
+      /* styles for screens with a minimum width of 768px */
+      @media screen and (min-width: 768px) {
+        h1 {
+          font-size: 3.5em;
+          white-space: nowrap;
+        }
+      }
+    </style>
+    
+
+
+
+  <!-- <style>.md-header{position:initial}.md-main__inner{margin:0}.md-content{display:none}@media screen and (min-width:60em){.md-sidebar--secondary{display:none}}@media screen and (min-width:76.25em){.md-sidebar--primary{display:none}}</style> -->
+    <section class="mdx-container">
+      <div class="md-grid md-typeset">
+        <div class="mdx-hero">
+          <div class="mdx-hero__image">
+            <!--<img src="illustration.png"  draggable="false"> -->
+          </div>
+          <div class="mdx-hero__content">
+            <h1 style="font-size: 3.2em;">{{ page.title }}</h1>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    {% endblock %}
+    

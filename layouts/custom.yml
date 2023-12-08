@@ -3,7 +3,7 @@ layers:
 
   - background:
       image: layouts/stairs.jpg
-      color: "#0000008F"
+    #  color: "#####0000008F"
 
   # Black Mesa Logo
   - size: { width: 96, height: 96 }

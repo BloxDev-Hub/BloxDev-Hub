@@ -86,7 +86,7 @@ layers:
       # Page date icon
   - size: { width: 32, height: 32 }
     offset: { x: 656, y: 510 }
-    icon:
+    icon: whiteicon.png
       value: >-
         {%- if page.meta.date -%}
           material/calendar-clock

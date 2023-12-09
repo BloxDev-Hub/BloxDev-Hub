@@ -19,10 +19,10 @@ local user = 'EdenRose#1968'
 A Multi-line string can be declared by using double brackets (`[[`)
 
 ```lua
-local str = [[Helpers of Rodevs are very skilled.
+local str = [[Helpers are very skilled
 They help a lot in development channels.]]
 
-local str2 = [[Helpers are the pride of Rodevs.
+local str2 = [[Helpers are the best.
 They spend their free time helping out others. :) ]]
 ```
 
@@ -46,12 +46,12 @@ In a string declared with (") or ('), You can produce almost any character using
 
 === "Code"
     ```lua
-    print("Greetings \"Rodevs\"")
+    print("Greetings \"Devs\"")
     print("First line \nSecond line)
     ```
 === "Output"
     ```
-    Greetings "Rodevs"
+    Greetings "Devs"
     First line
     Second line
     ```

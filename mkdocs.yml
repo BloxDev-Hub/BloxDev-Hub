@@ -143,15 +143,15 @@ plugins:
       post_dir: blog/posts
       pagination_per_page: 3
       
-  - social:
-      debug: false
-      debug_color: yellow
-      cards_layout: custom
-      cards_layout_options:
-        # background_color: "#0FF1CE8F"
-        background_image: layouts/stairs.jpg
+  #- social:
+  #    debug: false
+  #    debug_color: yellow
+  #    cards_layout: custom
+  #    cards_layout_options:
+  #      # background_color: "#0FF1CE8F"
+  #      background_image: layouts/stairs.jpg
         # color: "#DE9151"
-        font_family: Caveat
+  #      font_family: Caveat
   
 nav:
   - Home: index.md

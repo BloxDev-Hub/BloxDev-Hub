@@ -1,9 +1,9 @@
-site_name: BloxDev Hub Documents
+site_name: Blox Hub Documents
 site_url: https://blox-hub.pages.dev
 repo_url: https://blox-hub.pages.dev
 repo_name: "| Have to fix this"
 copyright: Not affiliated with Roblox or Discord.
-site_description: BloxDev Hub Documents, a place where you can learn multiple things about Roblox developing.
+site_description: Blox Hub Documents, a place where you can learn multiple things about Roblox developing.
 
 extra_css:
   - stylesheets/extra.css
@@ -148,9 +148,9 @@ plugins:
       debug_color: yellow
       cards_layout: custom
       cards_layout_options:
-         background_color: "#0FF1CE8F"
+        background_color: "#0FF1CE8F"
         background_image: layouts/stairs.jpg
-         color: "#DE9151"
+        color: "#DE9151"
         font_family: Caveat
   
 nav:

@@ -28,7 +28,7 @@ Place the **Fire_Ball** in **ServerStorage**. Add a **Script** in **ServerScript
 
 
 ## Scripting Client Side
-In the local script, we will use [UserInputService](https://www.helpers-documents.ml/Tutorials/Scripting/Detecting_Keyboard_Inputs/).
+In the local script, we will use [UserInputService](https://blox-hub.pages.dev/Tutorials/Scripting/Detecting_Keyboard_Inputs/).
 Connect a function to `InputBegan`. In the function, check the input type. Get the mouse position and fire it along with the remote event to the server.
 
 ```lua

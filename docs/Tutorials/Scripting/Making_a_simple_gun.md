@@ -5,9 +5,9 @@ title: Making Simple Gun
 # Introduction
 In this tutorial, we will be making a simple, blocky gun. This tutorial requires a basic knowledge of the following topics
 
-* [Tools](https://www.helpers-documents.ml/Luau-Learning/Tool/)
-* [Vectors](https://www.helpers-documents.ml/Luau-Learning/Vector3/)
-* [Client And Server Communication](https://www.helpers-documents.ml/Luau-Learning/Remote_Events_And_Functions/)
+* [Tools](https://blox-hub.pages.dev/Scripting/Intermediate-Courses/Tool/)
+* [Vectors](https://blox-hub.pages.dev/Scripting/Intermediate-Courses/Vector3/)
+* [Client And Server Communication](https://blox-hub.pages.dev/Scripting/Intermediate-Courses/Remote_Events_And_Functions/)
 
 It's highly recommended not to proceed if you haven't covered those topics.
 

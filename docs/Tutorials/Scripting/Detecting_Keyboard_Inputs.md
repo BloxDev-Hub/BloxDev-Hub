@@ -6,7 +6,7 @@ description: Learn to make inputs!
 # Detecting Keyboard Inputs With UserInputService
 In this tutorial, I will be showing you how to detect keyboard inputs with [**UserInputService**](https://developer.roblox.com/en-us/api-reference/class/UserInputService). 
 
-If you don't have a basic understanding of Lua and Roblox scripting I would recommend starting [**here**](https://rodevs-helpers.github.io/Helpers-Documents/Luau-Learning/basic_loops/) before going through this tutorial. Otherwise, you may get confused when we get into Events and other things.
+If you don't have a basic understanding of Lua and Roblox scripting I would recommend starting [**here**](https://blox-hub.pages.dev/Scripting/Basic-Courses/basic_loops/) before going through this tutorial. Otherwise, you may get confused when we get into Events and other things.
 
 ## What is UserInputService?
 UserInputService is a neat [**API Service**](https://developer.roblox.com/en-us/api-reference/index) that Roblox has put together to help up manage a client's user input, hence the name. A popular alternative to UserInputService is [**ContextActionService**](https://developer.roblox.com/en-us/api-reference/class/ContextActionService) which is sometimes preferred when you are working with input for different devices (mobile/console).

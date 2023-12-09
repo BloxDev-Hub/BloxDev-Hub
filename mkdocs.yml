@@ -1,6 +1,6 @@
 site_name: BloxDev Hub Documents
-site_url: https://bloxdev-hub.pages.dev/
-repo_url: https://bloxdev-hub.pages.dev/
+site_url: https://blox-hub.pages.dev
+repo_url: https://blox-hub.pages.dev
 repo_name: "| Have to fix this"
 copyright: Not affiliated with Roblox or Discord.
 site_description: BloxDev Hub Documents, a place where you can learn multiple things about Roblox developing.
@@ -143,15 +143,15 @@ plugins:
       post_dir: blog/posts
       pagination_per_page: 3
       
-  #- social:
-  #    debug: false
-  #    debug_color: yellow
-  #    cards_layout: custom
-  #    cards_layout_options:
-  #      # background_color: "#0FF1CE8F"
-  #      background_image: layouts/stairs.jpg
-        # color: "#DE9151"
-  #      font_family: Caveat
+  - social:
+      debug: false
+      debug_color: yellow
+      cards_layout: custom
+      cards_layout_options:
+         background_color: "#0FF1CE8F"
+        background_image: layouts/stairs.jpg
+         color: "#DE9151"
+        font_family: Caveat
   
 nav:
   - Home: index.md

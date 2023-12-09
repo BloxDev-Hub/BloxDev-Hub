@@ -8,13 +8,17 @@ site_description: Blox Hub Documents, a place where you can learn multiple thing
 extra_css:
   - stylesheets/extra.css
   - https://unpkg.com/mermaid@7.1.2/dist/mermaid.css
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
 extra_javascript:
   - https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js
   - javascripts/config.js
+  - javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - meta_tag.js
-
+  - javascripts/katex.js 
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
 theme:
     icon:
       repo: fontawesome/brands/discord
@@ -48,6 +52,9 @@ theme:
       - navigation.tabs
       - navigation.indexes
       - navigation.footer
+      - content.code.select
+      - content.code.copy
+      - content.code.annotate
     admonition:
       note: fontawesome/solid/sticky-note
       abstract: fontawesome/solid/book
@@ -102,25 +109,35 @@ extra:
             
   generator: false
 
+
 markdown_extensions:
+- pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.snippets
   - attr_list
   - abbr
   - def_list
   - admonition
   - meta
   - pymdownx.details
-  - pymdownx.highlight
   - md_in_html
+  - toc:
+      permalink: ⚓︎
+      permalink_title: Anchor link to this section for reference
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.inlinehilite
   - pymdownx.keys
-  - pymdownx.arithmatex:
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
           class: mermaid-experimental
           format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.arithmatex:
+      generic: true
+
 
 plugins:
   - search
@@ -143,15 +160,15 @@ plugins:
       post_dir: blog/posts
       pagination_per_page: 3
       
-  - social:
-      debug: false
-      debug_color: yellow
-      cards_layout: custom
-      cards_layout_options:
-        background_color: "#0FF1CE8F"
-        background_image: layouts/stairs.jpg
-        color: "#DE9151"
-        font_family: Caveat
+  #- social:
+  #    debug: false
+  #    debug_color: yellow
+  #    cards_layout: custom
+  #    cards_layout_options:
+  #      background_color: "#0FF1CE8F"
+  #      background_image: layouts/stairs.jpg
+  #      color: "#DE9151"
+  #      font_family: Caveat
   
 nav:
   - Home: index.md

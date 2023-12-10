@@ -203,7 +203,7 @@ plugins:
       debug_color: yellow
       cards_layout_dir: layouts
       cards_layout: custom
-      #cards_layout_options:
+      cards_layout_options:
       #  background_color: null 
         background_image: layouts/stairs.jpg
       #  color: "#DE9151"

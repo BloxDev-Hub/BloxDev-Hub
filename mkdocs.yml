@@ -170,14 +170,7 @@ markdown_extensions:
 
 plugins:
   - search
-  - awesome-pages
-
-  - rss:
-      match_path: blog/posts/.* 
-      categories:
-        - categories
-        - tags
-        
+  - awesome-pages        
   - blogging:
       dirs: # The directories to be included
         - Updates
@@ -196,16 +189,16 @@ plugins:
       post_dir: blog/posts
       pagination_per_page: 3
       
-  #- social:
-  #    debug: false
-  #    debug_color: yellow
-  #    cards_layout_dir: layouts
-  #    cards_layout: custom
-  #    cards_layout_options:
-  #    #  background_color: null 
-  #      background_image: layouts/stairs.jpg
+  - social:
+      debug: false
+      debug_color: yellow
+      cards_layout_dir: layouts
+      cards_layout: custom
+      cards_layout_options:
+      #  background_color: null 
+        background_image: layouts/stairs.jpg
       #  color: "#DE9151"
-  #      font_family: Caveat
+        font_family: Caveat
   
 nav:
   - Home: index.md

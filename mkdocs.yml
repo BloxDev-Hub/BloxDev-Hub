@@ -1,8 +1,8 @@
 site_name: Blox Hub Documents
 site_url: https://blox-hub.pages.dev
-repo_url: https://blox-hub.pages.dev
-repo_name: "| Have to fix this"
-copyright: Not affiliated with Roblox or Discord.
+repo_url: https://discord.gg/kN5aMkU9GP
+repo_name: "| Join our server"
+copyright: By Blox Hub Community, Not affiliated with Roblox or Discord.
 site_description: Blox Hub Documents, a place where you can learn multiple things about Roblox developing.
 
 extra_css:
@@ -181,13 +181,13 @@ plugins:
       theme:
         name: card
       size: 5            # Number of articles in one page, default: 10
-  - blog:
-      enabled: !ENV [CI, true]
-      blog_dir: blog
-      post_url_date_format: yyyy
-      post_url_format: "{date}/{file}"
-      post_dir: blog/posts
-      pagination_per_page: 3
+  #- blog:
+  #    enabled: !ENV [CI, true]
+  #    blog_dir: blog
+  #    post_url_date_format: yyyy
+  #    post_url_format: "{date}/{file}"
+  #    post_dir: blog/posts
+  #    pagination_per_page: 3
       
   - social:
       debug: false

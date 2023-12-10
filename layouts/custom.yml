@@ -3,7 +3,7 @@ layers:
 
   - background:
       image: layouts/stairs.jpg
-    #  color: "#####0000008F"
+      color: "#0000008F"
 
   # Black Mesa Logo
   - size: { width: 96, height: 96 }
@@ -86,7 +86,7 @@ layers:
       # Page date icon
   - size: { width: 32, height: 32 }
     offset: { x: 656, y: 510 }
-    icon: whiteicon.png
+    icon:
       value: >-
         {%- if page.meta.date -%}
           material/calendar-clock

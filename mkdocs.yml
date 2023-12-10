@@ -171,6 +171,15 @@ markdown_extensions:
 plugins:
   - search
   - awesome-pages
+
+  - rss:
+      match_path: blog/posts/.* 
+      date_from_meta:
+        as_creation: date
+      categories:
+        - categories
+        - tags
+        
   - blogging:
       dirs: # The directories to be included
         - Updates

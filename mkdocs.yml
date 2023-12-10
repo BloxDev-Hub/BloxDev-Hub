@@ -149,6 +149,10 @@ markdown_extensions:
   - meta
   - pymdownx.details
   - md_in_html
+  - pymdownx.critic
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.caret
   - toc:
       permalink: ⚓︎
       permalink_title: Anchor link to this section for reference

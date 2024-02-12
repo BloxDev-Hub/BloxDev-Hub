@@ -185,6 +185,15 @@ plugins:
       theme:
         name: card
       size: 5            # Number of articles in one page, default: 10
+
+  - blog:
+      blog_dir: blog
+      blog_toc: true
+      post_date_format: full
+      post_url_date_format: yyyy/MM/dd
+      post_url_format: "{date}/{slug}"
+      post_excerpt_separator: <!-- more -->
+      archive: false
   #- blog:
   #    enabled: !ENV [CI, true]
   #    blog_dir: blog

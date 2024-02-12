@@ -202,16 +202,16 @@ plugins:
   #    post_dir: blog/posts
   #    pagination_per_page: 3
       
-  - social:
-      debug: false
-      debug_color: yellow
-      cards_layout_dir: layouts
-      cards_layout: custom
-      cards_layout_options:
+  #- social:
+  #    debug: false
+  #    debug_color: yellow
+  #    cards_layout_dir: layouts
+  #    cards_layout: custom
+  #    cards_layout_options:
       #  background_color: null 
-        background_image: layouts/stairs.jpg
+  #      background_image: layouts/stairs.jpg
       #  color: "#DE9151"
-        font_family: Caveat
+ #       font_family: Caveat
   
 nav:
   - Home: index.md

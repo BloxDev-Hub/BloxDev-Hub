@@ -1,0 +1,87 @@
+# Your Fancy Post
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac justo nec ligula laoreet sodales.
+
+## Image Gallery
+
+<style>
+  .image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .image-item {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .image-label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #3498db;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+
+  .image-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .image-item:hover {
+    transform: scale(1.05);
+  }
+
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 15px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .image-item:hover .overlay {
+    opacity: 1;
+  }
+
+  .overlay p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: center;
+  }
+</style>
+
+<div class="image-gallery">
+  <div class="image-item" id="image1">
+    <div class="image-label">1</div>
+    <img src="https://via.placeholder.com/800x600" alt="Image 1">
+    <div class="overlay">
+      <p>This is a modern and stylish description for Image 1. It includes more details and provides a better user experience.</p>
+    </div>
+  </div>
+
+  <div class="image-item" id="image2">
+    <div class="image-label">2</div>
+    <img src="https://via.placeholder.com/800x600" alt="Image 2">
+    <div class="overlay">
+      <p>This is another fantastic image with a detailed and captivating description to enhance the user's engagement.</p>
+    </div>
+  </div>
+
+  <!-- Add more image items as needed -->
+</div>

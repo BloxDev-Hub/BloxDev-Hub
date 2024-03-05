@@ -1,0 +1,2876 @@
+<head>
+  <link rel="stylesheet" href="../../../assets/stylesheets/custom.9097afc2.min.css">
+  <link rel="shortcut icon" type="image/x-icon" href="https://blox-hub.pages.dev/bidenrose.png">
+  
+  <meta charset="UTF-8">
+  <title>Introduction To Tweening - Blox Hub Documents</title>
+  <meta name="description" content="Blox Hub Documents, A place where you can learn multiple things about Roblox developing.">
+  <meta property="og:image" content="https://blox-hub.pages.dev/metacard2.png" />
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1220">
+  <meta property="og:image:height" content="700">
+  <meta property="og:image:alt" content="dev-hub">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#FFFFFF">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  
+ 
+</head>
+  
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+  <meta charset="UTF-8">
+  <title>Introduction To Tweening - Blox Hub Documents</title>
+  <meta name="description" content="Blox Hub Documents, A place where you can learn multiple things about Roblox developing.">
+  <meta property="og:image" content="https://blox-hub.pages.dev/metacard2.png" />
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1220">
+  <meta property="og:image:height" content="700">
+  <meta property="og:image:alt" content="dev-hub">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#FFFFFF">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  
+    
+      
+        <title>Introduction To Tweening - Blox Hub Documents</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.7e359304.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="https://unpkg.com/mermaid@7.1.2/dist/mermaid.css">
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-DK4D1FN7GD"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-DK4D1FN7GD",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-DK4D1FN7GD",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+  
+    <script>var consent;"undefined"==typeof __md_analytics||(consent=__md_get("__consent"))&&consent.analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  <link rel="stylesheet" href="../../../assets/stylesheets/custom.9097afc2.min.css">
+  <link rel="shortcut icon" type="image/x-icon" href="https://blox-hub.pages.dev/bidenrose.png">
+  
+  <meta charset="UTF-8">
+  <title>Introduction To Tweening - Blox Hub Documents</title>
+  <meta name="description" content="Blox Hub Documents, A place where you can learn multiple things about Roblox developing.">
+  <meta property="og:image" content="https://blox-hub.pages.dev/metacard2.png" />
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1220">
+  <meta property="og:image:height" content="700">
+  <meta property="og:image:alt" content="dev-hub">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#FFFFFF">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#tweening" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+              <button class="md-banner__button md-icon" aria-label="Don't show this again">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+              </button>
+            
+            
+  <a href="https://blox-hub.site/Others/What_Happened/">
+    <strong> Yep, We are back!! 🎉🎉 </strong>
+  </a>
+
+          </div>
+          
+            <script>var content,el=document.querySelector("[data-md-component=announce]");el&&(content=el.querySelector(".md-typeset"),__md_hash(content.innerHTML)===__md_get("__announce")&&(el.hidden=!0))</script>
+          
+        </aside>
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Blox Hub Documents" class="md-header__button md-logo" aria-label="Blox Hub Documents" data-md-component="logo">
+      
+  <img src="../../../whiteicon.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Blox Hub Documents
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Introduction To Tweening
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9h-1.9M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69m-9.15 3.96h2.3L12 9l-1.15 3.65Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="purple"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="deep-orange"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://discord.gg/kN5aMkU9GP" title="Join our server!" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485.065 485.065 0 0 0 404.081 32.03a1.816 1.816 0 0 0-1.923.91 337.461 337.461 0 0 0-14.9 30.6 447.848 447.848 0 0 0-134.426 0 309.541 309.541 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.689 483.689 0 0 0-119.688 37.107 1.712 1.712 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.016 2.016 0 0 0 .765 1.375 487.666 487.666 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348.2 348.2 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321.173 321.173 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251.047 251.047 0 0 0 9.109-7.137 1.819 1.819 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.812 1.812 0 0 1 1.924.233 234.533 234.533 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.407 301.407 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391.055 391.055 0 0 0 30.014 48.815 1.864 1.864 0 0 0 2.063.7A486.048 486.048 0 0 0 610.7 405.729a1.882 1.882 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541ZM222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241Zm195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241Z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    | Join our server
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+    
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+    
+  
+  Scripting
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../Tutorials/" class="md-tabs__link">
+          
+  
+    
+  
+  Tutorials
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../Updates/" class="md-tabs__link">
+          
+  
+    
+  
+  Updates
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../Others/Help_Us%21/" class="md-tabs__link">
+          
+  
+    
+  
+  Others
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+    <style>
+      /* styles for screens with a maximum width of 767px */
+      @media screen and (max-width: 767px) {
+        h1 {
+          font-size: 2em;
+        }
+      }
+      
+      /* styles for screens with a minimum width of 768px */
+      @media screen and (min-width: 768px) {
+        h1 {
+          font-size: 3.5em;
+          white-space: nowrap;
+        }
+      }
+    </style>
+    
+
+
+
+  <!-- <style>.md-header{position:initial}.md-main__inner{margin:0}.md-content{display:none}@media screen and (min-width:60em){.md-sidebar--secondary{display:none}}@media screen and (min-width:76.25em){.md-sidebar--primary{display:none}}</style> -->
+    <section class="mdx-container">
+      <div class="md-grid md-typeset">
+        <div class="mdx-hero">
+          <div class="mdx-hero__image">
+            <!--<img src="illustration.png"  draggable="false"> -->
+          </div>
+          <div class="mdx-hero__content">
+            <h1 style="font-size: 3.2em;">Introduction To Tweening</h1>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Blox Hub Documents" class="md-nav__button md-logo" aria-label="Blox Hub Documents" data-md-component="logo">
+      
+  <img src="../../../whiteicon.png" alt="logo">
+
+    </a>
+    Blox Hub Documents
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://discord.gg/kN5aMkU9GP" title="Join our server!" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485.065 485.065 0 0 0 404.081 32.03a1.816 1.816 0 0 0-1.923.91 337.461 337.461 0 0 0-14.9 30.6 447.848 447.848 0 0 0-134.426 0 309.541 309.541 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.689 483.689 0 0 0-119.688 37.107 1.712 1.712 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.016 2.016 0 0 0 .765 1.375 487.666 487.666 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348.2 348.2 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321.173 321.173 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251.047 251.047 0 0 0 9.109-7.137 1.819 1.819 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.812 1.812 0 0 1 1.924.233 234.533 234.533 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.407 301.407 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391.055 391.055 0 0 0 30.014 48.815 1.864 1.864 0 0 0 2.063.7A486.048 486.048 0 0 0 610.7 405.729a1.882 1.882 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541ZM222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241Zm195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241Z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    | Join our server
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Scripting
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Scripting
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Basic-Courses
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Basic-Courses
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Basic-Courses/Introduction_To_Studio/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction To Studio
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Basic-Courses/Variables/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Declaring Variables
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Basic-Courses/Strings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basics Of String
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Basic-Courses/operators/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    What Are Operators?
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Basic-Courses/basics_of_properties/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basics Of Properties
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Basic-Courses/If_statements/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction To If Statements
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Basic-Courses/basic_loops/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basics about Loops
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Intermediate-Courses
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Intermediate-Courses
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Basics_of_Functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basics Of Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tables/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Understanding the Basics of Tables
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../handling_events/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Understanding events
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Scripts_and_Local_scripts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Scripts and Local scripts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Players_Service/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction To Players Service
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Character/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Player's Character
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tool/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Scripting Tools
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modules/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    What Is A Module Script?
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Vector3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Vector3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Position_and_Size/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction To Size and Position
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Introduction To Tweening
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Introduction To Tweening
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-what-is-tweening" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. What is "tweening"?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-how-useful-is-tweening" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. How useful is tweening?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tweenservice" class="md-nav__link">
+    <span class="md-ellipsis">
+      TweenService
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="TweenService">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-what-is-tweenservice" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. What is TweenService?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-list-of-types-that-can-be-tweened" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. List of types that can be tweened
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-use-the-tweenservice" class="md-nav__link">
+    <span class="md-ellipsis">
+      How do I use the TweenService?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How do I use the TweenService?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-determine-the-target-to-tween" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Determine the target to tween
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-determine-what-to-tween" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Determine what to tween
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-determine-how-the-tween-will-be-using-tweeninfo" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Determine how the tween will be, using TweenInfo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-create-a-tween-using-tweenservicecreate" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Create a tween using TweenService:Create()
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-play-the-tween-using-tweenplay" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Play the tween using tween:Play()
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-tweencancel-tweenpause-and-tweenresume" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. tween:Cancel(), tween:Pause() and tween:Resume()
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-the-tweencompleted-event" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. The tween.Completed event
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Additional sources
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#thats-about-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      That's about it
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Attributes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    What Are Attributes?
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Data_Stores/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Saving Game Data..
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ContextActionService/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Binding Actions!
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Collection_Service/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Collection Service
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../selection_and_highlights/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Intoduction To Selection And Highlights
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Remote_Events_And_Functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Client-Server Communication
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Bindable_events_and_functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bindable Events and Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../intro_of_ui/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Coding With UI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RayCasting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction To Raycasting!
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../globals/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lua Globals
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Advanced-Courses
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            Advanced-Courses
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Advanced-Courses/Vector3_Part_2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Vector3 Part 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Advanced-Courses/more_about_functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    More About Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Advanced-Courses/More_on_Dictionaries/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    More on Dictionaries
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Advanced-Courses/metatables/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Metatables
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Advanced-Courses/HttpService/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    HttpService
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Advanced-Courses/Inheritance/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Inheritance
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../Tutorials/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Tutorials
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Tutorials
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Scripting
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Scripting
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Tutorials/Scripting/Detecting_Keyboard_Inputs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Detecting Keyboard Inputs With UserInputService
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Tutorials/Scripting/Fireball/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Making Shootable Fireballs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Tutorials/Scripting/Leaderstats/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Leaderstats
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Tutorials/Scripting/Making_a_simple_gun/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Making Simple Gun
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Tutorials/Scripting/Perlin_Noise_Terrain/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Perlin Noise Terrain
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Tutorials/Scripting/ProxyTables/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ProxyTables
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../Updates/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Updates
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Updates
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Updates/Dec%202023/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    December 2023 Update
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Updates/Sept%202023/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    September 2023 Update
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Updates/cn/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cn
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Others
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Others
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Others/Help_Us%21/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Help Us!
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Others/Resources/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Resources
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Others/What_Happened/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    What happened?
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-what-is-tweening" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. What is "tweening"?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-how-useful-is-tweening" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. How useful is tweening?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tweenservice" class="md-nav__link">
+    <span class="md-ellipsis">
+      TweenService
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="TweenService">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-what-is-tweenservice" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. What is TweenService?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-list-of-types-that-can-be-tweened" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. List of types that can be tweened
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-use-the-tweenservice" class="md-nav__link">
+    <span class="md-ellipsis">
+      How do I use the TweenService?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How do I use the TweenService?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-determine-the-target-to-tween" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Determine the target to tween
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-determine-what-to-tween" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Determine what to tween
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-determine-how-the-tween-will-be-using-tweeninfo" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Determine how the tween will be, using TweenInfo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-create-a-tween-using-tweenservicecreate" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Create a tween using TweenService:Create()
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-play-the-tween-using-tweenplay" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Play the tween using tween:Play()
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-tweencancel-tweenpause-and-tweenresume" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. tween:Cancel(), tween:Pause() and tween:Resume()
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-the-tweencompleted-event" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. The tween.Completed event
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Additional sources
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#thats-about-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      That's about it
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="tweening">Tweening<a class="headerlink" href="#tweening" title="Anchor link to this section for reference">⚓︎</a></h1>
+<p>This article will teach you about the concept of tweening, how tweening is useful in development and how to use the <code>TweenService</code> in Roblox.</p>
+<h2 id="1-what-is-tweening">1. What is "tweening"?<a class="headerlink" href="#1-what-is-tweening" title="Anchor link to this section for reference">⚓︎</a></h2>
+<p>Inbetweening - <strong>tweening</strong> for short - is basically an animated process to create an illusion or effect, usually smooth, in transition between two keyframes in an animation or presentation.</p>
+<p><img alt="steps" src="https://i.imgur.com/s81yAPS.png" /></p>
+<p>Here's what the animation looks like in action:</p>
+<p><img alt="visual" src="https://i.imgur.com/3LJxRmd.png" /></p>
+<p>A comparison between tweening and no tweening, both have the same transition interval of 1 second:</p>
+<p><img alt="compare" src="https://i.imgur.com/7t4PdJs.png" /></p>
+<p>In this example, the <strong>size</strong> of both circles is being "tweened", both have the same transition interval of 1 second:</p>
+<p><img alt="compare_size" src="https://i.imgur.com/CGvn0v5.png" /></p>
+<p>As you can see, tweening did a good job in visualize the transition inbetween the 2 keyframes.</p>
+<h2 id="2-how-useful-is-tweening">2. How useful is tweening?<a class="headerlink" href="#2-how-useful-is-tweening" title="Anchor link to this section for reference">⚓︎</a></h2>
+<p>I don't know about you, but I like my animation smooth and appealing. Besides that, tweening can also help you:</p>
+<ul>
+<li>Create animations / presentation easier, considering that tweening can reduce the amount of keyframes</li>
+<li>Execute multiple animation on a single instance (e.g. color, size, ...)</li>
+<li>Create VFX (Visual Effect)</li>
+<li>Simply make the animations less snappy and more easy-looking for the audience</li>
+</ul>
+<p>Now that you have the basics and uses of tweening on hand, let's do some animation in Roblox!</p>
+<hr />
+<h2 id="tweenservice">TweenService<a class="headerlink" href="#tweenservice" title="Anchor link to this section for reference">⚓︎</a></h2>
+<h3 id="1-what-is-tweenservice">1. What is TweenService?<a class="headerlink" href="#1-what-is-tweenservice" title="Anchor link to this section for reference">⚓︎</a></h3>
+<p><code>TweenService</code> is a built-in API Service, allowing developers to script the <strong>tweening</strong> effect on instances such as <code>BasePart</code> (Part, MeshPart, ...) and <code>GuiObject</code> (TextLabel, ImageLabel, ...) through interpolation in properties. Basically, this service creates animation on an object by changing it's properties in a particular way.</p>
+<h3 id="2-list-of-types-that-can-be-tweened">2. List of types that can be tweened<a class="headerlink" href="#2-list-of-types-that-can-be-tweened" title="Anchor link to this section for reference">⚓︎</a></h3>
+<p><code>TweenService</code> can only help animating properties of type in the following list:</p>
+<ul>
+<li><code>number</code></li>
+<li><code>boolean</code></li>
+<li><a href="https://create.roblox.com/docs/reference/engine/datatypes/CFrame"><code>CFrame</code></a></li>
+<li><a href="https://create.roblox.com/docs/reference/engine/datatypes/Rect"><code>Rect</code></a></li>
+<li><a href="https://create.roblox.com/docs/reference/engine/datatypes/Color3"><code>Color3</code></a></li>
+<li><a href="https://create.roblox.com/docs/reference/engine/datatypes/UDim"><code>UDim</code></a></li>
+<li><a href="https://create.roblox.com/docs/reference/engine/datatypes/UDim2"><code>UDim2</code></a></li>
+<li><a href="https://create.roblox.com/docs/reference/engine/datatypes/Vector2"><code>Vector2</code></a></li>
+<li><a href="https://create.roblox.com/docs/reference/engine/datatypes/Vector2int16"><code>Vector2int16</code></a></li>
+<li><a href="https://create.roblox.com/docs/reference/engine/datatypes/Vector3"><code>Vector3</code></a></li>
+<li><a href="https://create.roblox.com/docs/reference/engine/datatypes/EnumItem"><code>EnumItem</code></a></li>
+</ul>
+<p>This list is important to remember, any other properties of type outside of this list can <strong>NOT</strong> be animated by <code>TweenService</code>.</p>
+<details class="note">
+<summary>What are some valid properties?</summary>
+<p>For instances like Part: <code>Position</code>, <code>CFrame</code>, <code>Size</code>, <code>Color</code>, <code>Transparency</code>, ...
+For UI elements: <code>Position</code>, <code>Size</code>, <code>Rotation</code>, <code>BackgroundColor3</code>, <code>TextColor3</code>, <code>BackgroundTransparency</code>, ...</p>
+</details>
+<hr />
+<h2 id="how-do-i-use-the-tweenservice">How do I use the TweenService?<a class="headerlink" href="#how-do-i-use-the-tweenservice" title="Anchor link to this section for reference">⚓︎</a></h2>
+<h3 id="1-determine-the-target-to-tween">1. Determine the target to tween<a class="headerlink" href="#1-determine-the-target-to-tween" title="Anchor link to this section for reference">⚓︎</a></h3>
+<p>In this article, we are going to make a <strong>dance floor</strong> for our players. A little party area is fun for hanging out or show off your newly equipped emotes!</p>
+<p>I made this little 3x3 dance floor so it's easier to demonstrate. Each gray tiles is a <code>Part</code> instance. You can design it however you want!</p>
+<div class="admonition attention">
+<p class="admonition-title">If you don't follow this example's structure, make sure:</p>
+<ul>
+<li>To make the code suit with your own structure</li>
+<li>To have the list of valid properties in mind</li>
+</ul>
+</div>
+<p><img alt="floor" src="https://i.imgur.com/kmzJqYc.png" /></p>
+<p>And here's how the Explorer hierachy looks like (<strong>View -&gt; Explorer</strong> to open the Explorer window)
+* The black bars go into the <strong>"Bars"</strong> folder, which will be ignored later on.
+* The gray tiles go into the <strong>"Tiles"</strong> folder, which will be our <strong>tweening targets</strong>.
+* The <strong>"Control"</strong> script, which we will write the <strong>tweening code</strong>.</p>
+<p><img alt="explorer" src="https://i.imgur.com/xRusspE.png" /></p>
+<h3 id="2-determine-what-to-tween">2. Determine what to tween<a class="headerlink" href="#2-determine-what-to-tween" title="Anchor link to this section for reference">⚓︎</a></h3>
+<p>Take a look at this simple but fancy dance floor we're going to make:</p>
+<p><img alt="dancefloor" src="https://i.imgur.com/MaEEF8R.gif" /></p>
+<p>As you can see, each floor tiles is smoothly changing it's color, creating a colorful atmosphere around our player. So, we will tween the tiles' <code>Color</code> properties  with the <code>TweenService</code>.</p>
+<h3 id="3-determine-how-the-tween-will-be-using-tweeninfo">3. Determine how the tween will be, using <code>TweenInfo</code><a class="headerlink" href="#3-determine-how-the-tween-will-be-using-tweeninfo" title="Anchor link to this section for reference">⚓︎</a></h3>
+<p>Now, take a closer look into the video. <strong>There's a pattern on how the tiles are tweening</strong>. To determine how they tween, we will use the <code>TweenInfo</code> datatype, as for <strong>tween</strong>ing <strong>info</strong>rmation.</p>
+<p><code>TweenInfo</code> have <strong>only one</strong> constructor, <code>TweenInfo.new()</code>, along with <strong>six parameters</strong>:</p>
+<ul>
+<li><code>time: number</code> - Duration of the tween, in seconds</li>
+<li><code>easingStyle: Enum.EasingStyle</code> - The "style", or how the tween looks like</li>
+<li><code>easingDirection: Enum.EasingDirection</code> - The direction for the <code>EasingStyle</code> to occur</li>
+<li><code>repeatCount: number</code> - The amount of times the tween will repeat itself</li>
+<li><code>reverses: boolean</code> - Whether or not reverse to the original state after the initial tween</li>
+<li><code>delayTime: number</code> - The duration that elapses before the tween play, in seconds</li>
+</ul>
+<div class="admonition attention">
+<p class="admonition-title">The order of the parameters are absolute</p>
+<p>You can NOT rearrange this order. Hence, wrong parameter order can result in an unwanted tween behaviour or even an error.
+You must also give the correct type (they're written after the colon) for each parameter.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Repeat the tween indefintely</p>
+<p>To make the tween repeat itself forever, set the <code>repeatCount</code> value to <code>-1</code>.</p>
+</div>
+<details class="tip">
+<summary>Visual example of each EasingStyle and EasingDirection</summary>
+<p>Roblox has made a video covering all 6 <code>EasingStyle</code> and 2 <code>EasingDirection</code>:
+<img alt="ease" src="https://developer.roblox.com/assets/blt164bc3fd53630e3a/Easingstyle.gif" /></p>
+</details>
+<details class="tip">
+<summary>The default values of TweenInfo.new()</summary>
+<p>Assume you're lazy and you don't want to type out all 6 parameters, <code>TweenInfo.new()</code> will automatically fill the missing arguments with the follow values:
+<code>time</code>: 1
+<code>easingStyle</code>: <code>Enum.EasingStyle.Quad</code>
+<code>easingDirection</code>: <code>Enum.EasingDirection.Out</code>
+<code>repeatCount</code>: 0
+<code>reverses</code>: false
+<code>delayTime</code>: 0</p>
+</details>
+<p>I will cover them all in this example, so pay attention!
+Open the control script, type in the following code. The comments will help you understand what line contribute what to the tween animation:</p>
+<div class="language-lua highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kd">local</span> <span class="n">tween_info</span> <span class="o">=</span> <span class="n">TweenInfo</span><span class="p">.</span><span class="n">new</span><span class="p">(</span> <span class="c1">-- Remember: parenthesis () not brackets {}</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="mi">1</span><span class="p">,</span> <span class="c1">-- The color will change in 1 second</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="n">Enum</span><span class="p">.</span><span class="n">EasingStyle</span><span class="p">.</span><span class="n">Linear</span><span class="p">,</span> <span class="c1">-- Tween at a constant speed</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="n">Enum</span><span class="p">.</span><span class="n">EasingDirection</span><span class="p">.</span><span class="n">In</span><span class="p">,</span> <span class="c1">-- In or Out doesn&#39;t matter, as the tween is in constant speed</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="c1">-- Automatically repeat the tween indefinitely, so we don&#39;t have to</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="kc">true</span><span class="p">,</span> <span class="c1">-- Reverse to the original color, for a little colorful effect</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="mi">0</span> <span class="c1">-- Make the tween play instantly</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="p">)</span>
+</span></code></pre></div>
+<div class="admonition tip">
+<p class="admonition-title">You can adjust the values to your liking</p>
+<p>Make sure to give the correct type for each parameter.</p>
+</div>
+<h3 id="4-create-a-tween-using-tweenservicecreate">4. Create a tween using <code>TweenService:Create()</code><a class="headerlink" href="#4-create-a-tween-using-tweenservicecreate" title="Anchor link to this section for reference">⚓︎</a></h3>
+<p>To create a tween sequence, we will use the <code>TweenService:Create()</code> method. This method will return a <code>Tween</code> sequence for us to interact in the next section.</p>
+<p><code>TweenService:Create()</code> has <strong>3 parameters</strong>, the order is absolute:</p>
+<ul>
+<li><code>instance</code> - The target instance to tween</li>
+<li><code>tweenInfo</code> - The <code>TweenInfo</code> for the tween sequence</li>
+<li><code>propertyTable</code> - The target properties to tween</li>
+</ul>
+<div class="admonition attention">
+<p class="admonition-title">The <code>propertyTable</code> parameter</p>
+<p><code>propertyTable</code> takes a <code>dictionary</code> table as an argument. The syntax is as the following:
+<div class="language-lua highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kd">local</span> <span class="n">target</span> <span class="o">=</span> <span class="p">{</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="o">&lt;</span><span class="n">property_name_1</span><span class="o">&gt;</span> <span class="o">=</span> <span class="o">&lt;</span><span class="n">target_value_1</span><span class="o">&gt;</span><span class="p">,</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    <span class="o">&lt;</span><span class="n">property_name_2</span><span class="o">&gt;</span> <span class="o">=</span> <span class="o">&lt;</span><span class="n">target_value_2</span><span class="o">&gt;</span><span class="p">,</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    <span class="p">...,</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    <span class="o">&lt;</span><span class="n">property_name_n</span><span class="o">&gt;</span> <span class="o">=</span> <span class="o">&lt;</span><span class="n">target_value_n</span><span class="o">&gt;</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="p">}</span>
+</span></code></pre></div></p>
+</div>
+<p>Remember those <strong>gray tiles</strong> in the <strong>"Tiles"</strong> folder? That's our targets to tween. <strong>But,</strong> the <code>instance</code> parameter only takes <strong>1</strong> instance. So, we will have to create <strong>9</strong> tween sequences for our dance floor.</p>
+<p>We can use a <code>for</code> loop to simutaneously create one tween sequence for each tiles in the folder.</p>
+<details class="attention">
+<summary>Regarding the following code</summary>
+<p>While this code is not the most efficient way to tween multiple instances, it is written for the sake of beginners. You can, later on, alter the code and the overall structure to your liking.</p>
+</details>
+<div class="language-lua highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1">-- Get the service with the GetService() method</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kd">local</span> <span class="n">TweenService</span> <span class="o">=</span> <span class="n">game</span><span class="p">:</span><span class="n">GetService</span><span class="p">(</span><span class="s2">&quot;TweenService&quot;</span><span class="p">)</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="c1">-- Get the &quot;Tiles&quot; folder, which is holding our gray tiles</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="kd">local</span> <span class="n">tiles</span> <span class="o">=</span> <span class="n">script</span><span class="p">.</span><span class="n">Parent</span><span class="p">.</span><span class="n">Tiles</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="c1">-- The TweenInfo we created earlier, I have collapsed into one line</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="kd">local</span> <span class="n">tween_info</span> <span class="o">=</span> <span class="n">TweenInfo</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">Enum</span><span class="p">.</span><span class="n">EasingStyle</span><span class="p">.</span><span class="n">Linear</span><span class="p">,</span> <span class="n">Enum</span><span class="p">.</span><span class="n">EasingDirection</span><span class="p">.</span><span class="n">In</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="kc">true</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="c1">-- We will determine the target color for the tiles with a dictionary</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="c1">-- &quot;Color&quot; is one of the tile&#39;s properties. To see all the properties of a part, go to &quot;View&quot; -&gt; &quot;Properties&quot; to toggle the &quot;Properties&quot; window </span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="kd">local</span> <span class="n">target_color</span> <span class="o">=</span> <span class="p">{</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>    <span class="n">Color</span> <span class="o">=</span> <span class="n">Color3</span><span class="p">.</span><span class="n">fromRGB</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">57</span><span class="p">,</span> <span class="mi">64</span><span class="p">)</span> <span class="c1">-- This is red, you can change to whatever color you want</span>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="p">}</span>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="c1">-- The following code require basic understandings of the for loop</span>
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="c1">-- tiles:GetChildren() return an array containing all the tiles</span>
+</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="kr">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">tile</span> <span class="kr">in</span> <span class="nb">ipairs</span><span class="p">(</span><span class="n">tiles</span><span class="p">:</span><span class="n">GetChildren</span><span class="p">())</span> <span class="kr">do</span>
+</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a>    <span class="c1">-- Create a tween sequence</span>
+</span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a>    <span class="kd">local</span> <span class="n">tween</span> <span class="o">=</span> <span class="n">TweenService</span><span class="p">:</span><span class="n">Create</span><span class="p">(</span>
+</span><span id="__span-2-21"><a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a>        <span class="n">tile</span><span class="p">,</span>           <span class="c1">-- The gray tile instance</span>
+</span><span id="__span-2-22"><a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a>        <span class="n">tween_info</span><span class="p">,</span>     <span class="c1">-- The tween info</span>
+</span><span id="__span-2-23"><a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a>        <span class="n">target_color</span>    <span class="c1">-- The target color</span>
+</span><span id="__span-2-24"><a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a>    <span class="p">)</span>
+</span><span id="__span-2-25"><a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a><span class="kr">end</span>
+</span></code></pre></div>
+<p>Now, we have successfully assign 9 tween sequences to 9 tiles. <strong>But we're not done yet</strong>. When you play test the game, you will see the dance floor is just sitting still and nothing happen. This is because we have just created the tween sequences, <strong>but we haven't actually play them yet.</strong> The following section will help you with that.</p>
+<h3 id="5-play-the-tween-using-tweenplay">5. Play the tween using <code>tween:Play()</code><a class="headerlink" href="#5-play-the-tween-using-tweenplay" title="Anchor link to this section for reference">⚓︎</a></h3>
+<p>This method is self-explanatory. It will play the tween sequence the moment it is called.</p>
+<div class="admonition attention">
+<p class="admonition-title">Note</p>
+<p>Keep in mind that this method is <strong>exclusive</strong> to the <strong>tween sequence</strong> (created by the <code>TweenService:Create()</code> method). This is <strong>NOT</strong> a method of the  <code>TweenService</code>.</p>
+</div>
+<p>We just need to add a single line of code to call this method and play the tween:
+<div class="language-lua highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kd">local</span> <span class="n">TweenService</span> <span class="o">=</span> <span class="n">game</span><span class="p">:</span><span class="n">GetService</span><span class="p">(</span><span class="s2">&quot;TweenService&quot;</span><span class="p">)</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="kd">local</span> <span class="n">tiles</span> <span class="o">=</span> <span class="n">script</span><span class="p">.</span><span class="n">Parent</span><span class="p">.</span><span class="n">Tiles</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="kd">local</span> <span class="n">tween_info</span> <span class="o">=</span> <span class="n">TweenInfo</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">Enum</span><span class="p">.</span><span class="n">EasingStyle</span><span class="p">.</span><span class="n">Linear</span><span class="p">,</span> <span class="n">Enum</span><span class="p">.</span><span class="n">EasingDirection</span><span class="p">.</span><span class="n">In</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="kc">true</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="kd">local</span> <span class="n">target_color</span> <span class="o">=</span> <span class="p">{</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>    <span class="n">Color</span> <span class="o">=</span> <span class="n">Color3</span><span class="p">.</span><span class="n">fromRGB</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">57</span><span class="p">,</span> <span class="mi">64</span><span class="p">)</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="p">}</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="kr">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">tile</span> <span class="kr">in</span> <span class="nb">ipairs</span><span class="p">(</span><span class="n">tiles</span><span class="p">:</span><span class="n">GetChildren</span><span class="p">())</span> <span class="kr">do</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>    <span class="kd">local</span> <span class="n">tween</span> <span class="o">=</span> <span class="n">TweenService</span><span class="p">:</span><span class="n">Create</span><span class="p">(</span><span class="n">tile</span><span class="p">,</span> <span class="n">tween_info</span><span class="p">,</span> <span class="n">target_color</span><span class="p">)</span>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>    <span class="n">tween</span><span class="p">:</span><span class="n">Play</span><span class="p">()</span> <span class="c1">-- Play the tween</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="kr">end</span>
+</span></code></pre></div></p>
+<p>Now we play test again:</p>
+<p><img alt="floor" src="https://i.imgur.com/pjhKepX.png" /></p>
+<p>It's actually a bad timing GIF, so hopefully it will look better on your side! But more importantly, <strong>you have successfully know how to use the <code>TweenService</code> to make a simple tween animation!</strong></p>
+<details class="question">
+<summary>Exercise: Complete the dance floor at the beginning (open for solution)</summary>
+<p>As you can see from the original video, there are 2 different tweening patterns. So let's do that: The tiles that create the cross shape will be named "Tile1", the other four, "Tile2".
+Initially, all 9 tiles are gray colored, so how does the video shows blue and red? The trick here is:
+- Instead of gray, the tiles are colored with their designated colors at the beginning: Tile1 is blue, Tile2 is red.
+- Set the color target: Tile1 will be tweened red, while Tile2 will be tweened blue.
+- Distinguish the tiles using <strong>conditional statements</strong>.
+Since we set the tween <code>reverses</code> property to <code>true</code>, it will reverse back to it's original color. Instead of gray, it will be red and blue.
+Here's how the code looks like:
+<div class="language-lua highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>    <span class="kd">local</span> <span class="n">TweenService</span> <span class="o">=</span> <span class="n">game</span><span class="p">:</span><span class="n">GetService</span><span class="p">(</span><span class="s2">&quot;TweenService&quot;</span><span class="p">)</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>    <span class="kd">local</span> <span class="n">tiles</span> <span class="o">=</span> <span class="n">script</span><span class="p">.</span><span class="n">Parent</span><span class="p">.</span><span class="n">Tiles</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    <span class="kd">local</span> <span class="n">tween_info</span> <span class="o">=</span> <span class="n">TweenInfo</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">Enum</span><span class="p">.</span><span class="n">EasingStyle</span><span class="p">.</span><span class="n">Linear</span><span class="p">,</span> <span class="n">Enum</span><span class="p">.</span><span class="n">EasingDirection</span><span class="p">.</span><span class="n">In</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="kc">true</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    <span class="kd">local</span> <span class="n">color1</span> <span class="o">=</span> <span class="p">{</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>        <span class="n">Color</span> <span class="o">=</span> <span class="n">Color3</span><span class="p">.</span><span class="n">fromRGB</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">89</span><span class="p">,</span> <span class="mi">89</span><span class="p">)</span> <span class="c1">-- Red, for Tile2</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>    <span class="p">}</span>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>    <span class="kd">local</span> <span class="n">color2</span> <span class="o">=</span> <span class="p">{</span>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>        <span class="n">Color</span> <span class="o">=</span> <span class="n">Color3</span><span class="p">.</span><span class="n">fromRGB</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">175</span><span class="p">,</span> <span class="mi">236</span><span class="p">)</span> <span class="c1">-- Blue, for Tile1</span>
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>    <span class="p">}</span>
+</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a>
+</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a>    <span class="kr">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">tile</span> <span class="kr">in</span> <span class="nb">ipairs</span><span class="p">(</span><span class="n">tiles</span><span class="p">:</span><span class="n">GetChildren</span><span class="p">())</span> <span class="kr">do</span>
+</span><span id="__span-4-15"><a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a>        <span class="kd">local</span> <span class="n">tween</span> <span class="c1">-- A placeholder for the tween</span>
+</span><span id="__span-4-16"><a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a>
+</span><span id="__span-4-17"><a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a>        <span class="c1">-- Filter the tiles</span>
+</span><span id="__span-4-18"><a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a>        <span class="kr">if</span> <span class="n">tile</span><span class="p">.</span><span class="n">Name</span> <span class="o">==</span> <span class="s2">&quot;Tile1&quot;</span> <span class="kr">then</span>
+</span><span id="__span-4-19"><a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a>            <span class="n">tween</span> <span class="o">=</span> <span class="n">TweenService</span><span class="p">:</span><span class="n">Create</span><span class="p">(</span><span class="n">tile</span><span class="p">,</span> <span class="n">tween_info</span><span class="p">,</span> <span class="n">color1</span><span class="p">)</span>
+</span><span id="__span-4-20"><a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a>        <span class="kr">else</span>
+</span><span id="__span-4-21"><a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a>            <span class="n">tween</span> <span class="o">=</span> <span class="n">TweenService</span><span class="p">:</span><span class="n">Create</span><span class="p">(</span><span class="n">tile</span><span class="p">,</span> <span class="n">tween_info</span><span class="p">,</span> <span class="n">color2</span><span class="p">)</span>
+</span><span id="__span-4-22"><a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a>        <span class="kr">end</span>
+</span><span id="__span-4-23"><a id="__codelineno-4-23" name="__codelineno-4-23" href="#__codelineno-4-23"></a>
+</span><span id="__span-4-24"><a id="__codelineno-4-24" name="__codelineno-4-24" href="#__codelineno-4-24"></a>        <span class="n">tween</span><span class="p">:</span><span class="n">Play</span><span class="p">()</span> <span class="c1">-- Play the tween</span>
+</span><span id="__span-4-25"><a id="__codelineno-4-25" name="__codelineno-4-25" href="#__codelineno-4-25"></a>    <span class="kr">end</span>
+</span></code></pre></div></p>
+</details>
+<h3 id="6-tweencancel-tweenpause-and-tweenresume">6. <code>tween:Cancel()</code>, <code>tween:Pause()</code> and <code>tween:Resume()</code><a class="headerlink" href="#6-tweencancel-tweenpause-and-tweenresume" title="Anchor link to this section for reference">⚓︎</a></h3>
+<p>These methods is self-explanatory in name. This section will help you <strong>distinguish the differences</strong> between <code>tween:Cancel()</code> and <code>tween:Pause()</code>.</p>
+<p>Both methods will <strong>halt</strong> the playing tween at the current interpolation at the moment they're called. This means that the target instance will <strong>not</strong> be reset to it's original state before tweening is initiated.</p>
+<p>A quick visual example, both circles have the tween duration of 1 second. <code>tween:Cancel()</code> is called after 0.5 second. The same effect is applied when <code>tween:Pause()</code> is used.</p>
+<p><img alt="cancel" src="https://i.imgur.com/xzmrZUI.png" /></p>
+<p><strong>Here are the differences between the 2 methods:</strong>
+* <code>tween:Pause()</code> can be resumed by either <code>tween:Play()</code> or <code>tween:Resume()</code>. Upon resuming, <strong>the tween will continue at the moment it was halted</strong>.
+* <code>tween:Cancel</code> can be continued by the <code>tween:Play()</code> method <strong>only</strong>. Upon continuing, <strong>all current tweening information will be reset</strong>. For example: it will take full duration of the tween to finish the animation.</p>
+<h3 id="7-the-tweencompleted-event">7. The <code>tween.Completed</code> event<a class="headerlink" href="#7-the-tweencompleted-event" title="Anchor link to this section for reference">⚓︎</a></h3>
+<p><code>tween.Completed</code> is an Event (<a href="https://create.roblox.com/docs/reference/engine/datatypes/RBXScriptSignal"><code>RbxScriptSignal</code></a>) that fires after the tweening process is completed or cancelled by  the <code>Cancel</code> method.</p>
+<p><code>tween.Completed</code> pass 1 parameter, the <code>playbackState</code>. You can see all types of <code>playbackState</code> in <a href="https://create.roblox.com/docs/reference/engine/enums/PlaybackState">this page</a>.</p>
+<div class="language-lua highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">tween</span><span class="p">.</span><span class="n">Completed</span><span class="p">:</span><span class="n">Connect</span><span class="p">(</span><span class="kr">function</span><span class="p">(</span><span class="n">playbackState</span><span class="p">)</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">playbackState</span><span class="p">)</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="kr">end</span><span class="p">)</span>
+</span></code></pre></div>
+<p>!!! info "playbackState" is likely to be one of 2 values:
+    - <code>Enum.PlaybackState.Completed</code>: If the tween completed successfully.
+    - <code>Enum.PlaybackState.Cancelled</code>: If the tween is cancelled by the <code>Cancel</code> method before completion.</p>
+<hr />
+<h2 id="additional-sources">Additional sources<a class="headerlink" href="#additional-sources" title="Anchor link to this section for reference">⚓︎</a></h2>
+<ul>
+<li><a href="https://create.roblox.com/docs/reference/engine/classes/TweenService">Official Roblox TweenService documentation</a></li>
+<li><a href="https://www.w3schools.com/tags/ref_httpmethods.asp">Official Roblox Tween sequence documentation</a></li>
+<li><a href="https://create.roblox.com/docs/reference/engine/enums/EasingStyle">Detailed Roblox documentation regarding Easing Styles and Directions</a></li>
+<li><a href="https://create.roblox.com/docs/building-and-visuals/ui/tweening-user-interface-animations">Roblox guide on User Interface Tweening</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Inbetweening">More about the concept of Tweening (wikipedia)</a></li>
+</ul>
+<hr />
+<h2 id="thats-about-it">That's about it<a class="headerlink" href="#thats-about-it" title="Anchor link to this section for reference">⚓︎</a></h2>
+<p>Use TweenService to further improve in-game experience as you please. Good luck!</p>
+<hr />
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+  
+
+
+  <form class="md-feedback" name="feedback" hidden>
+    <fieldset>
+      <legend class="md-feedback__title">
+        Was this guide helpful?
+      </legend>
+      <div class="md-feedback__inner">
+        <div class="md-feedback__list">
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="Yep! This guide was helpful" data-md-value="1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 21.35-1.45-1.32C5.4 15.36 2 12.27 2 8.5 2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53L12 21.35Z"/></svg>
+            </button>
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This guide could be improved" data-md-value="0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 21.35-1.45-1.32C5.4 15.36 2 12.27 2 8.5 2 5.41 4.42 3 7.5 3c.67 0 1.32.12 1.94.33L13 9.35l-4 5 3 7M16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53L12 21.35l-1-7 4.5-5-2.65-5.08C13.87 3.47 15.17 3 16.5 3Z"/></svg>
+            </button>
+          
+        </div>
+        <div class="md-feedback__note">
+          
+            <div data-md-value="1" hidden>
+              
+              
+                
+              
+              Thanks for your feedback!
+            </div>
+          
+            <div data-md-value="0" hidden>
+              
+              
+                
+              
+              Thanks for your feedback! Help us improve this page by sharing your views.
+            </div>
+          
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+
+<h2 id="__comments">Comments</h2>
+<!-- Insert generated snippet here -->
+<script src="https://giscus.app/client.js" data-repo="The-Sora/Helper-Docs-Comments" data-repo-id="R_kgDOKRLXow"
+    data-category="General" data-category-id="DIC_kwDOKRLXo84CZL9I" data-mapping="pathname" data-strict="0"
+    data-reactions-enabled="0" data-emit-metadata="0" data-input-position="top" data-theme="preferred_color_scheme"
+    data-lang="en" data-loading="lazy" crossorigin="anonymous" async>
+    </script>
+<!-- Synchronize Giscus theme with palette -->
+<script>
+    var giscus = document.querySelector("script[src*=giscus]")
+
+    /* Set palette on initial load */
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+        var theme = palette.color.scheme === "slate" ? "dark" : "light"
+        giscus.setAttribute("data-theme", theme)
+    }
+
+    /* Register event handlers after documented loaded */
+    document.addEventListener("DOMContentLoaded", function () {
+        var ref = document.querySelector("[data-md-component=palette]")
+        ref.addEventListener("change", function () {
+            var palette = __md_get("__palette")
+            if (palette && typeof palette.color === "object") {
+                var theme = palette.color.scheme === "slate" ? "dark" : "light"
+
+                /* Instruct Giscus to change theme */
+                var frame = document.querySelector(".giscus-frame")
+                frame.contentWindow.postMessage(
+                    { giscus: { setConfig: { theme } } },
+                    "https://giscus.app"
+                )
+            }
+        })
+    })
+</script>
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+        
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../Position_and_Size/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Introduction To Size and Position">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Introduction To Size and Position
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../Attributes/" class="md-footer__link md-footer__link--next" aria-label="Next: What Are Attributes?">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                What Are Attributes?
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      By Blox Hub Community, Not affiliated with Roblox or Discord.
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+  
+
+
+
+
+
+  
+
+<h4>Cookie consent</h4>
+<p>We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better.</p>
+<input class="md-toggle" type="checkbox" id="__settings" checked>
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+      
+      
+        
+        
+          
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="analytics" checked>
+          <span class="task-list-indicator"></span>
+          Google Analytics
+        </label>
+      </li>
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Accept</button>
+    
+    
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["announce.dismiss", "navigation.top", "navigation.tabs", "navigation.indexes", "navigation.footer", "content.code.select", "content.code.copy", "content.code.annotate"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.c8d2eff1.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js"></script>
+      
+        <script src="../../../javascripts/config.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="../../../meta_tag.js"></script>
+      
+        <script src="../../../javascripts/katex.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js"></script>
+      
+    
+  </body>
+</html>

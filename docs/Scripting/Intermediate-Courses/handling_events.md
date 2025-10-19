@@ -2,8 +2,7 @@
 title: Understanding events
 template: docs.html
 comments: true
-hide:
-  - navigation
+
 ---
 
 # Events on Roblox Studio

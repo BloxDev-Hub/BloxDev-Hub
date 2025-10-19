@@ -2,8 +2,7 @@
 title: Player's Character
 template: docs.html
 comments: true
-hide:
-  - navigation
+
 ---
 
 # Character

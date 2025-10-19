@@ -2,8 +2,7 @@
 title: Lua Globals
 template: docs.html
 comments: true
-hide:
-  - navigation
+
 ---
 # Global Functions
 Global functions in lua are the built-in funcions which are pre declared and are very useful.

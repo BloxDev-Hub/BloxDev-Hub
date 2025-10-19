@@ -2,8 +2,7 @@
 title: What Is A Module Script?
 template: docs.html
 comments: true
-hide:
-  - navigation
+
 ---
 
 # Module Scripts

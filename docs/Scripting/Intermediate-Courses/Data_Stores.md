@@ -2,8 +2,7 @@
 title: Saving Game Data..
 template: docs.html
 comments: true
-hide:
-  - navigation
+
 ---
 
 # Data Stores

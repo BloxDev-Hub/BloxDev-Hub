@@ -2,8 +2,7 @@
 title: What Are Attributes?
 template: docs.html
 comments: true
-hide:
-  - navigation
+
 ---
 
 # Attributes

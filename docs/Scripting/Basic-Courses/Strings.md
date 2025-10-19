@@ -2,8 +2,6 @@
 title: Basics Of String
 template: docs.html
 comments: true
-hide:
-  - navigation
 ---
 # Strings
 Strings are an important part of programming and are used in many high-level programming languages. A string is a combination of alphabetical letters, numbers, and other symbols.

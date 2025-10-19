@@ -2,8 +2,7 @@
 title: Understanding the Basics of Tables
 template: docs.html
 comments: true
-hide:
-  - navigation
+
 ---
 # Tables
 One of the things you're going to be doing a lot when scripting is handling data and values: *strings*, *numbers*, *booleans*, etc. Wouldn't it be nice to have a way *“encapsulate”* or *“group”* that data together into one single data type?

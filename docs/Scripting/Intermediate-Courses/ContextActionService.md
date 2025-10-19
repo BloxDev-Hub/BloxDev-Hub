@@ -2,8 +2,7 @@
 title: Binding Actions!
 template: docs.html
 comments: true
-hide:
-  - navigation
+
 ---
 
 # Context Action Service

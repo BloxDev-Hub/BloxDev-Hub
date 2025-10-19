@@ -2,8 +2,7 @@
 title: Introduction To If Statements
 template: docs.html
 comments: true
-hide:
-  - navigation
+
 ---
 
 # If Statements?

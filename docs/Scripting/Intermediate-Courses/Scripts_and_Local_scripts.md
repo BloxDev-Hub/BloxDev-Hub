@@ -2,8 +2,6 @@
 title: Scripts and Local scripts
 template: docs.html
 comments: true
-hide:
-  - navigation
 ---
 # Script
 Script is an object that contains Lua code.

@@ -2,8 +2,7 @@
 title: Collection Service
 template: docs.html
 comments: true
-hide:
-  - navigation
+
 ---
 
 # Collection Service in Roblox Studio

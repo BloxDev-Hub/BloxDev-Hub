@@ -2,8 +2,7 @@
 title: Coding With UI
 template: docs.html
 comments: true
-hide:
-  - navigation
+
 ---
 
 # User Inter Face

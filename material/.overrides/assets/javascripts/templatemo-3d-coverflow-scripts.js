@@ -44,8 +44,8 @@ https://templatemo.com/tm-595-3d-coverflow
         // Image data with titles and descriptions
         const imageData = [
             {
-                title: "Mountain Landscape",
-                description: "Majestic peaks covered in snow during golden hour"
+                title: "Smelly",
+                description: "Majestic smell, smelling 24/7"
             },
             {
                 title: "Forest Path",
@@ -371,10 +371,41 @@ https://templatemo.com/tm-595-3d-coverflow
         });
 
         // Form submission
-        function handleSubmit(event) {
+        //function handleSubmit(event) {
+          //  const WEBHOOK_PROXY = "https://request-handler.thequietharumi.workers.dev/";
+            //event.preventDefault();
+            //alert('Thank you for your message! We\'ll get back to you soon.');
+            //event.target.reset();
+        //}
+        const WORKER_URL = "https://request-handler.thequietharumi.workers.dev/";
+        
+        async function handleSubmit(event) {
             event.preventDefault();
-            alert('Thank you for your message! We\'ll get back to you soon.');
-            event.target.reset();
+
+            const form = event.target;
+            const data = {
+                name: form.name.value,
+                email: form.email.value,
+                subject: form.subject.value,
+                message: form.message.value
+            };
+
+            try {
+                const response = await fetch(WORKER_URL, {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify(data)
+                });
+
+                if (response.ok) {
+                    alert("✅ Message sent successfully!");
+                    form.reset();
+                } else {
+                    alert("❌ Failed to send message. Check the Worker console.");
+                }
+            } catch (error) {
+                alert("⚠️ Error: " + error.message);
+            }
         }
 
         // Initialize

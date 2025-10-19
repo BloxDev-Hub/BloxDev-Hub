@@ -1,6 +1,6 @@
 ---
 title: Home
-template: home.html
+template: index_temp.html
 hide:
   - navigation
 ---
